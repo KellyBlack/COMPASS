@@ -37,8 +37,8 @@ class BasicPlot:
         plt.setp(ygridlines, 'linestyle', style)
         plt.setp(yticklabels, 'color', 'k', fontsize='medium')
         plt.setp(xticklabels, 'color', 'k', fontsize='medium')
-        ax.set_yticks(np.arange(startx,endx,deltax))
-        ax.set_xticks(np.arange(starty,endy,deltay))
+        ax.set_xticks(np.arange(startx,endx,deltax))
+        ax.set_yticks(np.arange(starty,endy,deltay))
 
         ax.xaxis.grid(linewidth=thickness)
         ax.yaxis.grid(linewidth=thickness)
@@ -64,8 +64,8 @@ if (__name__ =='__main__') :
     with plt.xkcd():
         plotter.addFunction([0,1,2,3],[0,-1.0,2,1], 'k-',2.0)
         plotter.setupGrid(0.5,'--',
-                            -1.0,0.5,2.0,
-                            0.0,1.0,3.0)
+                          0.0,1.0,3.0,
+                         -1.0,0.5,2.0,)
         plotter.axesDecorations('Position of an Object','Time (sec)','Position (m)')
         #plt.text(1.0,3.025, r'$\alpha=100,\ \sigma=15$'
 
