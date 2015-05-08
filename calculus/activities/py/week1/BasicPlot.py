@@ -44,11 +44,23 @@ class BasicPlot:
         ax.yaxis.grid(linewidth=thickness)
         plt.grid(True)
 
+    def xAxisTicks(self,positions,labels,rot="horizontal",margins=0.2):
+        plt.xticks(positions,labels,rotation=rot)
+        plt.margins(margins)
+
+    def yAxisTicks(self,positions,labels,rot="horizontal",margins=0.2):
+        plt.yticks(positions,labels,rotation=rot)
+        plt.margins(margins)
+
+
     def axesDecorations(self,title,horiztonalLabel,verticallabel):
 
         plt.xlabel(horiztonalLabel)
         plt.ylabel(verticallabel)
         plt.title(title)
+
+    def placeText(self,xpos,ypos,text,**kwargs):
+        plt.text(xpos,ypos,text,kwargs)
 
     def clearPlot(self):
         plt.clf()
