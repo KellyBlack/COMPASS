@@ -12,6 +12,11 @@ class BasicPlot:
     def clearPlot(self):
         plt.clf()
 
+    def setFigure(self,number=None,aspectRatio=(1,1),
+                  dotsPerInch=80,face='w',edge='k'):
+        return(plt.figure(num=number, figsize=aspectRatio,
+                          dpi=dotsPerInch, facecolor=face, edgecolor=edge))
+
     def addFunction(self,domain,range,format,width=2.0):
         plt.plot(domain,range,format,linewidth=width)
 

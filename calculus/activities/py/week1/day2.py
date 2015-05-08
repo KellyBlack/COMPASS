@@ -98,13 +98,16 @@ plotter.axesDecorations('Position of an Object','Time (sec)','Position (m)')
 #plt.show()
 plt.savefig('estimateAvgRateChangeNeg_day2.pgf',format='pgf')
 
-
+plotter.setFigure(None,(8, 2),80,'w','k')
 plotter.clearPlot()
 plotter.setupGrid(0.3,'--',
                   1.0,1.0,7.1,
                   0.0,0.25,1.1)
 plotter.setAxesBounds(0.9,7.1,-0.1,1.1)
 plotter.axesDecorations('Sequence of Numbers','n','Value')
+
+ax = plt.gca()
+ax.set_aspect(0.9)
 #plt.show()
 plt.savefig('sequenceOne_day2.pgf',format='pgf')
 
