@@ -33,4 +33,78 @@ plotter.placeText(a,f(b)+2.0,r"slope=$\frac{f(b)-f(a)}{b-a}$",fontsize=18)
 plotter.axesDecorations('Position of an Object','Time (sec)','Position (m)')
 
 #plt.show()
-plt.savefig('averageRateChange_day1.pgf',format='pgf')
+plt.savefig('averageRateChange_day2.pgf',format='pgf')
+
+
+plotter.clearPlot()
+plotter.subplot(2,1,1)
+plotter.setupGrid(0.3,'--',
+                  0.0,0.5,2.1,
+                  -3.0,1.0,3.1)
+plotter.setAxesBounds(-0.1,2.1,-3.1,3.1)
+plotter.axesDecorations('Velocity of an Object','','Position (m)')
+
+plotter.subplot(2,1,2)
+plotter.setupGrid(0.3,'--',
+                  0.0,0.5,2.1,
+                  -2.0,1.0,2.1)
+plotter.setAxesBounds(-0.1,2.1,-2.1,2.1)
+plotter.axesDecorations('Position of an Object','Time (sec)','Position (m)')
+
+#plt.show()
+plt.savefig('table2graph_day2.pgf',format='pgf')
+
+
+plotter.clearPlot()
+
+def vel(t):
+    return(t*(t-3)*(t-5)/(1*(1-3)*(1-5)) - 2*t*(t-1)*(t-5)/(3*(3-1)*(3-5)) + 0*t*(t-1)*(t-3)/(5*(5-1)*(5-3)))
+
+t = np.arange(0.0,6.0,0.1)
+plotter.addFunction(t,vel(t),'b-',2.0)
+#plotter.markJumps([[1.0,vel(1.0),True],[2.0,vel(2.0),True],
+#                   [2.5,vel(2.5),True],[2.75,vel(2.75),True],
+#                   [3,vel(3),True],
+#        ],8.0)
+
+for pos in [1.0,2.0,2.5,2.75,3.0]:
+    plotter.markJumps([[pos,vel(pos),True]],8.0)
+    plotter.addFunction(np.array([pos,pos]),np.array([-3.1,vel(pos)]),'k:',1.0)
+
+plotter.setupGrid(0.3,'--',
+                  0.0,1.0,6.1,
+                  -3.0,0.5,3.1)
+plotter.setAxesBounds(-0.1,6.1,-3.1,3.1)
+plotter.axesDecorations('Position of an Object','Time (sec)','Position (m)')
+
+#plt.show()
+plt.savefig('estimateAvgRateChange_day2.pgf',format='pgf')
+
+plotter.clearPlot()
+
+t = np.arange(0.0,6.0,0.1)
+plotter.addFunction(t,vel(t),'b-',2.0)
+#plotter.markJumps([[1.0,vel(1.0),True],[2.0,vel(2.0),True],
+#                   [2.5,vel(2.5),True],[2.75,vel(2.75),True],
+#                   [3,vel(3),True],
+#        ],8.0)
+
+plotter.setupGrid(0.3,'--',
+                  0.0,1.0,6.1,
+                  -3.0,0.5,3.1)
+plotter.setAxesBounds(-0.1,6.1,-3.1,3.1)
+plotter.axesDecorations('Position of an Object','Time (sec)','Position (m)')
+
+#plt.show()
+plt.savefig('estimateAvgRateChangeNeg_day2.pgf',format='pgf')
+
+
+plotter.clearPlot()
+plotter.setupGrid(0.3,'--',
+                  1.0,1.0,7.1,
+                  0.0,0.25,1.1)
+plotter.setAxesBounds(0.9,7.1,-0.1,1.1)
+plotter.axesDecorations('Sequence of Numbers','n','Value')
+#plt.show()
+plt.savefig('sequenceOne_day2.pgf',format='pgf')
+
