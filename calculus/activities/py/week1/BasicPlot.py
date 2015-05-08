@@ -53,6 +53,16 @@ class BasicPlot:
     def clearPlot(self):
         plt.clf()
 
+    def markJumps(self,jumps,symbolSize):
+        for jump in jumps:
+            if(jump[2]):
+                plt.plot(jump[0],jump[1],'ok',markersize=symbolSize,mfc='black')
+            else:
+                plt.plot(jump[0],jump[1],'ok',markersize=symbolSize,mfc='white')
+
+    def subplot(self,row,col,number):
+        plt.subplot(row,col,number)
+
 
 if (__name__ =='__main__') :
     plotter = BasicPlot()
