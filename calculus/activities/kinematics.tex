@@ -471,7 +471,7 @@ then the average rate of change is positive.
 \begin{problem}
 \item Use the axes below to graph the functions as requested.
 
-  \scalebox{0.7}{\input{py/week1/compareLinearQuadraditic_day2.pgf}}
+  \scalebox{0.7}{\input{py/week1/compareLinearQuadraditic_day3.pgf}}
 
   \begin{subproblem}
   \item Make a sketch of the function $f(t)=t$ and then $g(t)=t^2$.
@@ -489,7 +489,7 @@ then the average rate of change is positive.
 
 \item Use the axes below to graph the functions as requested.
 
-  \scalebox{0.7}{\input{py/week1/compareLinearQuadraditic_day2.pgf}}
+  \scalebox{0.7}{\input{py/week1/compareLinearQuadraditic_day3.pgf}}
 
   \begin{subproblem}
   \item Make a sketch of the function $f(t)=c t$ and then $g(t)=t^2$
@@ -528,7 +528,7 @@ then the average rate of change is positive.
   \item Make a sketch of the function $x(t)$ on the axes below and
     mark the height of the functions in the times given in the table above.
 
-    \scalebox{0.7}{\input{py/week1/compareLinearQuadraditic_day2.pgf}}
+    \scalebox{0.7}{\input{py/week1/compareLinearQuadraditic_day3.pgf}}
 
   \item What is the overall trend in the function?
     \vspace{2em}
@@ -540,7 +540,7 @@ then the average rate of change is positive.
 \item Use the function $f(t)=c t^2$ and $g(t)=t^3$ to answer the
   questions below.
 
-  \scalebox{0.7}{\input{py/week1/compareQuadraditicCubic_day2.pgf}}
+  \scalebox{0.7}{\input{py/week1/compareQuadraditicCubic_day3.pgf}}
 
   \begin{subproblem}
   \item Make a sketch of the function $f(t)$ and then $g(t)$
@@ -566,7 +566,7 @@ then the average rate of change is positive.
 
 \item Use the function $f(t)=t^n$ to answer the questions below.
 
-  \scalebox{0.7}{\input{py/week1/compareQuadraditicCubic_day2.pgf}}
+  \scalebox{0.7}{\input{py/week1/compareQuadraditicCubic_day3.pgf}}
 
   \begin{subproblem}
   \item Make a sketch of the function $f(t)$ when $n=1,~2,~3$.
@@ -582,10 +582,88 @@ then the average rate of change is positive.
 
 \actTitle{Operations on Polynomials}
 \begin{problem}
-\item 
+\item For the following question use $f(t)=t^2$ and $g(t)=t^3$.
   \begin{subproblem}
-    \item
+  \item Make a rough sketch of the function $g(t)-f(t)$.  \sideNote{
+      Be sure to label your axes and label all important points on
+      your graph.}
+
+    \vfill
+
+  \item Make a rough sketch of the function $g(t)-2f(t)$.  \sideNote{
+      Be sure to label your axes and label all important points on
+      your graph.}
+
+    \vfill
+
+  \item Determine the values of $t$ where $g(t)-f(t)$ is equal to
+    zero. What does this imply about the relationship between the two
+    functions, $g(t)$ and $f(t)$?
+
+    \vspace{3em}
+
   \end{subproblem}
+
+  \clearpage
+
+\item The questions below refer to the following plot, and the
+  position is given by $x(t)=t^2$.
+
+  \scalebox{0.7}{\input{py/week1/averageRateChange_day3.pgf}}
+
+  \begin{subproblem}
+    \item Draw the secant lines that go through the function from
+      $t=1.0$ to $t=3.0$, then from $t=2.0$ to $t=3.0$, and then from
+      $t=2.5$ to $t=3.0$.
+    \item Calculate the values of the slope of each of the secant
+      lines using the definition of the position above.
+
+      \begin{tabular}{l|l|l|l}
+        $t$ & $h$ & $x(t)-x(t-h)$ & $\frac{x(t)-x(t-h)}{h}$ \\ \hline
+        3.0 & 2.0 & & \\ [15pt]
+        3.0 & 1.0 & & \\ [15pt]
+        3.0 & 0.5 & & \\ [15pt]
+      \end{tabular}
+
+  \end{subproblem}
+
+  \clearpage
+
+\item The position of an object is given by $x(t)=t^2$. 
+  \begin{subproblem}
+    \item Determine the formula for the change in the position from
+      $t=3$ to a time $t-h$.
+      \vfill
+
+    \item Determine the formula for the average rate of change in the
+      position from $t=3$ to a time $t-h$.
+      \vfill
+
+    \item Determine the formula for the average rate of change in the
+      position from $t=3$ to a time $t-h$ when we let $h_n=\lp\frac{1}{2}\rp^n$.
+
+      \vspace{3em}
+
+  \end{subproblem}
+
+
+  \clearpage
+
+\item Using the formula from the previous equation for the average
+  rate of change plot the value of the average rate of change for
+  different values of $n$.
+
+  \scalebox{0.7}{\input{py/week1/averageRateChangeSequence_day3.pgf}}
+
+  \begin{subproblem}
+    \item What happens as $n$ increases?
+      \vspace{3em}
+    \item What value does the rate approach?
+      \vspace{3em}
+    \item Explain how this result follows based on the equation.
+      \vspace{3em}
+  \end{subproblem}
+
 \end{problem}
 
 \postClass
