@@ -80,6 +80,15 @@ class BasicPlot:
     def subplot(self,row,col,number):
         plt.subplot(row,col,number)
 
+    def addInterpolant(self,interpolants,t,format,width=2.0):
+        function = 0*t;
+        for point in interpolants:
+            currentSpline = 0*t + 1.0
+            for spline in interpolants:
+                if(spline != point):
+                    currentSpline *= (t-spline[0])/(point[0]-spline[0])
+            function += point[1]*currentSpline
+        self.addFunction(t,function,format,width)
 
 if (__name__ =='__main__') :
     plotter = BasicPlot()
@@ -89,15 +98,17 @@ if (__name__ =='__main__') :
     plotter.clearPlot()
 
     with plt.xkcd():
-        plotter.addFunction([0,1,2,3],[0,-1.0,2,1], 'k-',2.0)
+        plotter.addFunction([0.0,1.0,2.0,3.0],[0.0,-1.0,2.0,1.0], 'k-',2.0)
+        plotter.addInterpolant([[0.0,0.0],[1.0,-1.0],[2.0,2.0],[3.0,1.0]],
+                               np.arange(0.0,3.1,0.1),'r--',1.0)
         plotter.setupGrid(0.5,'--',
-                          0.0,1.0,3.0,
-                         -1.0,0.5,2.0,)
+                          0.0,1.0,3.1,
+                         -2.0,0.5,4.1,)
         plotter.axesDecorations('Position of an Object','Time (sec)','Position (m)')
         #plt.text(1.0,3.025, r'$\alpha=100,\ \sigma=15$'
 
 
-    plotter.setAxesBounds(0.0,3.05,-1.05,2.05)
+    plotter.setAxesBounds(0.0,3.05,-2.05,4.05)
     plt.show()
     #plt.savefig('preClass3.pgf')
 
