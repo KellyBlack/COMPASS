@@ -59,3 +59,5 @@ plotter.axesDecorations('Position of an Object','Time (sec)','Position (m)')
 
 #plt.show()
 plt.savefig('vel2Pos_week2day2.pgf',format='pgf')
+
+
