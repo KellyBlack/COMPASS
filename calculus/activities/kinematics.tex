@@ -1371,8 +1371,8 @@ then the average rate of change is positive.
 \actTitle{Non-Constant Acceleration}
 \begin{problem}
 \item A new projectile will be tested. It is designed to propel itself
-  toward a target. To keep things simpler we assume that the force in
-  the horizontal direction changes in time, but the force in the
+  toward a target. To keep things simpler we assume that the force (N)
+  in the horizontal direction changes in time, but the force in the
   vertical direction is constant and is due to gravity.
   \begin{subproblem}
     \item We assume that the force on the object in the horizontal
@@ -1380,11 +1380,12 @@ then the average rate of change is positive.
       \begin{eqnarray*}
         F_x(t) & = & \left\{
                      \begin{array}{r@{\hspace{2em}}rcccl}
-                       0.5-t, & 0 & < & t & < & 0.5, \\
-                       0,     &   &   & t & \geq & 0.5.
+                       m(0.5-t), & 0 & < & t & < & 0.5, \\
+                       0,        &   &   & t & \geq & 0.5,
                      \end{array}
                      \right.
       \end{eqnarray*}
+      where $m$ is the mass of the projectile.
       Make a sketch of the force as a function of time from $t=0$ to
       $t=1$ seconds. 
       \vfill
@@ -1414,16 +1415,17 @@ then the average rate of change is positive.
   itself. In this case the force changes in time in the vertical
   direction.
   \begin{subproblem}
-    \item We assume that the force on the object in the vertical
-      direction is 
+  \item We assume that the force on the object (N) in the vertical
+    direction is
       \begin{eqnarray*}
         F_x(t) & = & \left\{
                      \begin{array}{r@{\hspace{2em}}rcccl}
-                       10.8-t, & 0 & < & t & < & 1.0, \\
-                       9.8,     &   &   & t & \geq & 1.0.
+                       m(10.8-t), & 0 & < & t & < & 1.0, \\
+                       9.8,       &   &   & t & \geq & 1.0,
                      \end{array}
                      \right.
       \end{eqnarray*}
+      where $m$ is the mass of the projectile.
       Make a sketch of the force as a function of time from $t=0$ to
       $t=2$ seconds. 
       \vfill
@@ -1451,10 +1453,77 @@ then the average rate of change is positive.
 
 \actTitle{Working With Parameters in Kinematics}
 \begin{problem}
-\item 
+\item A car will move on a straight set of rails will be
+  constructed. It will start from rest at the origin, $x=0$m. The
+  force (N) on the car is given by the equation
+  \begin{eqnarray*}
+    F_x(t) & = & m(at + b).
+  \end{eqnarray*}
+  The parameters $a$ and $b$ are constants, and $m$ is the mass of the
+  car.
+
   \begin{subproblem}
-    \item
+    \item Draw a free body diagram of the car.
+      \vfill
+    \item Determine the position of the car at any time. 
+      \vfill
+
+      \clearpage
+      
+    \item You are asked to determine values of $a$ and $b$ so that the
+      object moves back to the origin 20 seconds after its start and
+      minimizes the velocity at that time. Determine the objective and
+      constraint function and explicitly write and label them.
+
+      \vfill
+
+    \item Make a sketch that demonstrates the relationships between
+      the parameters $a$ and $b$. Use the horizontal axis for $a$ and
+      vertical axis for $b$.
+
+      \vfill
+
   \end{subproblem}
+
+  \clearpage
+
+\item The evil super villain, Nasty Canasty, fires a projectile to the
+  east from the western edge of Kansas.  (Ignore the curvature of the
+  earth and just pretend that Kansas is flat.)  The super hero, Super
+  McDuper, arrives just as it is fired and immediately applies a
+  downward force on the projectile that is equal in magnitude to
+  $\frac{m}{10}t$N where $m$ is the mass of the object.
+
+  \begin{subproblem}
+  \item Nasty Canasty fires the projectile at some initial velocity
+    $v$ and at an angle $\theta$. Draw a sketch of the initial
+    condition, and also draw a sketch of the free body diagram.
+
+    \vfill
+
+  \item Determine the coordinates of the position of the projectile at
+    any time.
+
+    \vfill
+
+  \item Nasty Canasty knew that Super McDuper would decipher the
+    riddle that was left behind and predicted what Super McDuper would
+    do. Nasty Canasty would like for the projectile to strike the
+    ground 200 miles away but do so in a minimal amount of
+    time. Express this in terms of an objective and a constraint.
+
+    \vfill
+
+    \clearpage
+
+  \item Make a sketch that demonstrates the relationships between
+      the parameters $v$ and $\theta$. Use the horizontal axis for $v$ and
+      vertical axis for $\theta$.
+
+      \vfill
+    
+  \end{subproblem}
+
 \end{problem}
 
 \postClass
