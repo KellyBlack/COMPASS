@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 class BasicPlot:
 
     def __init__(self):
+        plt.rcParams['axes.unicode_minus']=False
         self.clearPlot()
 
 
