@@ -1224,11 +1224,123 @@ then the average rate of change is positive.
   accomplish the following:
   \begin{eqnarray*}
     \mathrm{Minimize:} & & x^2 + y^2, \\
-    \mathrm{Subject~to:} & & x + y = 1.
+    \mathrm{Constraint:} & & x + y = 1.
   \end{eqnarray*}
+
+  \vspace{-1em}
+  \scalebox{0.6}{\input{py/week3/constrainedOptimizationOne.pgf}}
+
   \begin{subproblem}
-    \item
+    \item Add a sketch of the constraint to the plot. The value of $x$
+      and $y$ that we choose must be on this line.
+    \item Add a sketch of the set of points that satisfy
+      \begin{eqnarray*}
+        x^2 + y^2 & = & 4.
+      \end{eqnarray*}
+    \item Add a sketch of the set of points that satisfy
+      \begin{eqnarray*}
+        x^2 + y^2 & = & 2.
+      \end{eqnarray*}
+    \item Add a sketch of the set of points that satisfy
+      \begin{eqnarray*}
+        x^2 + y^2 & = & 1.
+      \end{eqnarray*}
+    \item Add a sketch of the set of points that satisfy
+      \begin{eqnarray*}
+        x^2 + y^2 & = & \frac{1}{2}.
+      \end{eqnarray*}
+    \item Draw the smallest circle that has points that coincides with
+      the constraint.
+    \item What are the values of $x$ and $y$ that minimize the
+      objective function subject to the constraint?
   \end{subproblem}
+
+  \clearpage
+
+\item We will try to determine the value of $x$ and $y$ that will
+  accomplish the following:
+  \begin{eqnarray*}
+    \mathrm{Minimize:} & & x + y, \\
+    \mathrm{Constraint:} & & x^2 + y^2 = 1.
+  \end{eqnarray*}
+
+  \vspace{-1em}
+  \scalebox{0.55}{\input{py/week3/constrainedOptimizationOne.pgf}}
+
+  \begin{subproblem}
+    \item Add a sketch of the constraint to the plot. The value of $x$
+      and $y$ that we choose must be on this line.
+    \item Add a sketch of the set of points that satisfy
+      \begin{eqnarray*}
+        x + y & = & 2.
+      \end{eqnarray*}
+    \item Add a sketch of the set of points that satisfy
+      \begin{eqnarray*}
+        x + y & = & 1.
+      \end{eqnarray*}
+    \item Add a sketch of the set of points that satisfy
+      \begin{eqnarray*}
+        x + y & = & 0.
+      \end{eqnarray*}
+    \item Add a sketch of the set of points that satisfy
+      \begin{eqnarray*}
+        x + y & = & -2.
+      \end{eqnarray*}
+    \item Draw the line consistent with the objective function that
+      has points that coincides with the constraint.
+    \item What are the values of $x$ and $y$ that minimize the
+      objective function subject to the constraint?
+  \end{subproblem}
+
+  \clearpage
+
+\item Go back to the previous two questions and determine the slope of
+  the relationships. Determine where the slope of the tangent lines to
+  the objective is equal to the slope of the tangent line to the
+  constraint. (Insure that the constraint is also satisfied to give
+  two equations and two unknowns.)
+
+  \hfill
+
+  \clearpage
+
+\item An object will be fired at ground level at a velocity $v$ at an
+  angle $\theta$. The object should strike the ground a distance of
+  100 meters away. The goal is to minimize the time that the object is
+  in the air.
+  \begin{subproblem}
+  \item Make a rough sketch of the situation, and also draw a free
+    body diagram of the object in the air.
+    \vfill
+  \item Determine the two relationships that govern the position of
+    the object at any time.
+    \vfill
+  \item Determine the formula for the constraint.
+    \vfill
+  \item Determine the formula for the cost.
+    \vfill
+
+    \clearpage
+
+  \item What are the two variables to determine?
+    \vspace{2em}
+
+  \item Formally express the cost and objective functions:
+    \begin{eqnarray*}
+      \mathrm{Minimize:} & &  \\
+      \mathrm{Constraint:} & & 
+    \end{eqnarray*}
+
+
+  \item Make a sketch of the constraint and also include various
+    sketches of the objective for different values.
+
+    \vfill
+
+  \item 
+
+  \end{subproblem}
+
 \end{problem}
 
 \postClass
@@ -1239,8 +1351,7 @@ then the average rate of change is positive.
   \item 
   \item 
   \end{itemize}
-\item 
-  \begin{subproblem}
-    \item
-  \end{subproblem}
+\item Determine the values of $v$ and $\theta$ that minimize the cost
+  function and also meet the objective function in the last problem.
+  \vfill
 \end{problem}
