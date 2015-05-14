@@ -59,11 +59,12 @@ plt.savefig('preClassTriangle2_week4day2.pgf',format='pgf')
 ###############################
 plotter.clearPlot()
 
+fig = plotter.setFigure(None,(8.0, 4.0),80,'w','k')
 plotter.setAxes(False)
 axis = plotter.getAxes()
 plotter.setAxesBounds(0.0,9.0,0.0,6.0)
-axis.add_patch(patches.Rectangle((4.5,3.2),1.0,0.5,angle=33.0,fill=False,edgecolor="black",
-                                 linewidth=2.0,linestyle='solid',hatch='\\'))
+axis.add_patch(patches.Rectangle((4.5,3.2),1.0,0.5,angle=33.0,fill=True,edgecolor="black",
+                                 linewidth=2.0,linestyle='solid',facecolor='black'))
 triangle = path.Path(np.array([[0.5,0.5],[8.0,0.5],[8.0,5.5],[0.5,0.5]]),
                 codes=np.array([path.Path.MOVETO,path.Path.LINETO,path.Path.LINETO,path.Path.LINETO]),
                 closed=True
