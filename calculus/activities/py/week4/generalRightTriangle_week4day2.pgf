@@ -22,7 +22,7 @@
 \begingroup%
 \makeatletter%
 \begin{pgfpicture}%
-\pgfpathrectangle{\pgfpointorigin}{\pgfqpoint{4.000000in}{8.000000in}}%
+\pgfpathrectangle{\pgfpointorigin}{\pgfqpoint{8.000000in}{4.000000in}}%
 \pgfusepath{use as bounding box, clip}%
 \begin{pgfscope}%
 \pgfsetbuttcap%
@@ -34,14 +34,14 @@
 \pgfsetstrokecolor{currentstroke}%
 \pgfsetdash{}{0pt}%
 \pgfpathmoveto{\pgfqpoint{0.000000in}{0.000000in}}%
-\pgfpathlineto{\pgfqpoint{4.000000in}{0.000000in}}%
-\pgfpathlineto{\pgfqpoint{4.000000in}{8.000000in}}%
-\pgfpathlineto{\pgfqpoint{0.000000in}{8.000000in}}%
+\pgfpathlineto{\pgfqpoint{8.000000in}{0.000000in}}%
+\pgfpathlineto{\pgfqpoint{8.000000in}{4.000000in}}%
+\pgfpathlineto{\pgfqpoint{0.000000in}{4.000000in}}%
 \pgfpathclose%
 \pgfusepath{fill}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{0.500000in}{0.800000in}}{\pgfqpoint{3.100000in}{6.400000in}} %
+\pgfpathrectangle{\pgfqpoint{1.000000in}{0.400000in}}{\pgfqpoint{6.200000in}{3.200000in}} %
 \pgfusepath{clip}%
 \pgfsetbuttcap%
 \pgfsetmiterjoin%
@@ -51,14 +51,14 @@
 \definecolor{currentstroke}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{currentstroke}%
 \pgfsetdash{}{0pt}%
-\pgfpathmoveto{\pgfqpoint{0.672222in}{1.333333in}}%
-\pgfpathlineto{\pgfqpoint{3.255556in}{1.333333in}}%
-\pgfpathlineto{\pgfqpoint{3.255556in}{6.666667in}}%
-\pgfpathlineto{\pgfqpoint{0.672222in}{1.333333in}}%
+\pgfpathmoveto{\pgfqpoint{1.344444in}{0.666667in}}%
+\pgfpathlineto{\pgfqpoint{6.511111in}{0.666667in}}%
+\pgfpathlineto{\pgfqpoint{6.511111in}{3.333333in}}%
+\pgfpathlineto{\pgfqpoint{1.344444in}{0.666667in}}%
 \pgfusepath{stroke,fill}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{0.500000in}{0.800000in}}{\pgfqpoint{3.100000in}{6.400000in}} %
+\pgfpathrectangle{\pgfqpoint{1.000000in}{0.400000in}}{\pgfqpoint{6.200000in}{3.200000in}} %
 \pgfusepath{clip}%
 \pgfsetrectcap%
 \pgfsetroundjoin%
@@ -66,22 +66,22 @@
 \definecolor{currentstroke}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{currentstroke}%
 \pgfsetdash{}{0pt}%
-\pgfpathmoveto{\pgfqpoint{3.083333in}{1.333333in}}%
-\pgfpathlineto{\pgfqpoint{3.083333in}{1.866667in}}%
-\pgfpathlineto{\pgfqpoint{3.255556in}{1.866667in}}%
+\pgfpathmoveto{\pgfqpoint{6.166667in}{0.666667in}}%
+\pgfpathlineto{\pgfqpoint{6.166667in}{0.933333in}}%
+\pgfpathlineto{\pgfqpoint{6.511111in}{0.933333in}}%
 \pgfusepath{stroke}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgftext[x=0.844444in,y=1.386667in,left,base]{\sffamily\fontsize{18.000000}{21.600000}\selectfont \(\displaystyle \theta\)}%
+\pgftext[x=1.688889in,y=0.693333in,left,base]{\sffamily\fontsize{18.000000}{21.600000}\selectfont \(\displaystyle \theta\)}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgftext[x=1.774444in,y=0.960000in,left,base]{\sffamily\fontsize{18.000000}{21.600000}\selectfont \(\displaystyle x\)}%
+\pgftext[x=3.548889in,y=0.480000in,left,base]{\sffamily\fontsize{18.000000}{21.600000}\selectfont \(\displaystyle x\)}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgftext[x=3.324444in,y=3.200000in,left,base]{\sffamily\fontsize{18.000000}{21.600000}\selectfont \(\displaystyle y\)}%
+\pgftext[x=6.648889in,y=1.600000in,left,base]{\sffamily\fontsize{18.000000}{21.600000}\selectfont \(\displaystyle y\)}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgftext[x=1.774444in,y=4.266667in,left,base]{\sffamily\fontsize{18.000000}{21.600000}\selectfont \(\displaystyle r\)}%
+\pgftext[x=3.548889in,y=2.133333in,left,base]{\sffamily\fontsize{18.000000}{21.600000}\selectfont \(\displaystyle r\)}%
 \end{pgfscope}%
 \end{pgfpicture}%
 \makeatother%
