@@ -99,7 +99,7 @@
 \pgftext[x=1.620000in,y=0.600000in,left,base]{\sffamily\fontsize{18.000000}{21.600000}\selectfont 0}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgftext[x=3.418000in,y=0.600000in,left,base]{\sffamily\fontsize{18.000000}{21.600000}\selectfont \(\displaystyle t\)}%
+\pgftext[x=3.418000in,y=0.600000in,left,base]{\sffamily\fontsize{18.000000}{21.600000}\selectfont \(\displaystyle g(t)\)}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \pgftext[x=1.465000in,y=0.792000in,left,base]{\sffamily\fontsize{18.000000}{21.600000}\selectfont 0}%
@@ -114,7 +114,7 @@
 \pgftext[x=4.472000in,y=0.792000in,left,base]{\sffamily\fontsize{18.000000}{21.600000}\selectfont 0}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgftext[x=6.580000in,y=0.600000in,left,base]{\sffamily\fontsize{18.000000}{21.600000}\selectfont \(\displaystyle t+\Delta t\)}%
+\pgftext[x=6.580000in,y=0.600000in,left,base]{\sffamily\fontsize{18.000000}{21.600000}\selectfont \(\displaystyle g(t+\Delta t)\)}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \pgftext[x=3.635000in,y=5.040000in,left,base]{\sffamily\fontsize{18.000000}{21.600000}\selectfont \(\displaystyle f(t+\Delta t)\)}%
