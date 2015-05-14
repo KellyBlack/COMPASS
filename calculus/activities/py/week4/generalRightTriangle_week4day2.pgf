@@ -43,17 +43,19 @@
 \begin{pgfscope}%
 \pgfpathrectangle{\pgfqpoint{0.500000in}{0.800000in}}{\pgfqpoint{3.100000in}{6.400000in}} %
 \pgfusepath{clip}%
-\pgfsetrectcap%
-\pgfsetroundjoin%
-\pgfsetlinewidth{2.007500pt}%
+\pgfsetbuttcap%
+\pgfsetmiterjoin%
+\definecolor{currentfill}{rgb}{1.000000,1.000000,1.000000}%
+\pgfsetfillcolor{currentfill}%
+\pgfsetlinewidth{1.003750pt}%
 \definecolor{currentstroke}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{currentstroke}%
 \pgfsetdash{}{0pt}%
-\pgfpathmoveto{\pgfqpoint{1.120000in}{1.440000in}}%
-\pgfpathlineto{\pgfqpoint{2.980000in}{1.440000in}}%
-\pgfpathlineto{\pgfqpoint{2.980000in}{7.200000in}}%
-\pgfpathlineto{\pgfqpoint{1.120000in}{1.440000in}}%
-\pgfusepath{stroke}%
+\pgfpathmoveto{\pgfqpoint{0.672222in}{1.333333in}}%
+\pgfpathlineto{\pgfqpoint{3.255556in}{1.333333in}}%
+\pgfpathlineto{\pgfqpoint{3.255556in}{6.666667in}}%
+\pgfpathlineto{\pgfqpoint{0.672222in}{1.333333in}}%
+\pgfusepath{stroke,fill}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \pgfpathrectangle{\pgfqpoint{0.500000in}{0.800000in}}{\pgfqpoint{3.100000in}{6.400000in}} %
@@ -64,22 +66,22 @@
 \definecolor{currentstroke}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{currentstroke}%
 \pgfsetdash{}{0pt}%
-\pgfpathmoveto{\pgfqpoint{2.670000in}{1.440000in}}%
-\pgfpathlineto{\pgfqpoint{2.670000in}{1.888000in}}%
-\pgfpathlineto{\pgfqpoint{2.980000in}{1.888000in}}%
+\pgfpathmoveto{\pgfqpoint{3.083333in}{1.333333in}}%
+\pgfpathlineto{\pgfqpoint{3.083333in}{1.866667in}}%
+\pgfpathlineto{\pgfqpoint{3.255556in}{1.866667in}}%
 \pgfusepath{stroke}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgftext[x=1.244000in,y=1.504000in,left,base]{\sffamily\fontsize{18.000000}{21.600000}\selectfont \(\displaystyle \theta\)}%
+\pgftext[x=0.844444in,y=1.386667in,left,base]{\sffamily\fontsize{18.000000}{21.600000}\selectfont \(\displaystyle \theta\)}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgftext[x=2.670000in,y=5.920000in,left,base]{\sffamily\fontsize{18.000000}{21.600000}\selectfont \(\displaystyle \psi\)}%
+\pgftext[x=1.774444in,y=0.960000in,left,base]{\sffamily\fontsize{18.000000}{21.600000}\selectfont \(\displaystyle x\)}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgftext[x=2.050000in,y=1.120000in,left,base]{\sffamily\fontsize{18.000000}{21.600000}\selectfont 5.0}%
+\pgftext[x=3.324444in,y=3.200000in,left,base]{\sffamily\fontsize{18.000000}{21.600000}\selectfont \(\displaystyle y\)}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgftext[x=3.135000in,y=3.680000in,left,base]{\sffamily\fontsize{18.000000}{21.600000}\selectfont 2.0}%
+\pgftext[x=1.774444in,y=4.266667in,left,base]{\sffamily\fontsize{18.000000}{21.600000}\selectfont \(\displaystyle r\)}%
 \end{pgfscope}%
 \end{pgfpicture}%
 \makeatother%
