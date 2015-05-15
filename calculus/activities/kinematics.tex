@@ -2191,9 +2191,9 @@ then the average rate of change is positive.
 
   \clearpage
 
-\item We would like to find a function whose derivative is the same as
-  the original function. Just for kicks suppose that the function
-  looks like
+\item To simplify things we would like to find a function whose
+  derivative is the same as the original function. Just for kicks
+  suppose that the function looks like
   \begin{eqnarray*}
     v_x(t) & = & a^t,
   \end{eqnarray*}
@@ -2223,11 +2223,60 @@ then the average rate of change is positive.
 
 \actTitle{The Relationship Between Velocity and Time}
 \begin{problem}
-\item 
+\item We examine the exponential function. Use the following plot for
+  sketching the functions given below.
+
+  \scalebox{0.75}{\input{py/week5/exponential_week5day1.pgf}}
+
   \begin{subproblem}
-    \item
+  \item $f(t) = e^t$
+  \item $g(t) = e^{2t}$
+  \item $h(t) = e^{t/2}$
+  \item What is the general trend. How does the function $e^{at}$
+    compare for different values of $a$?
   \end{subproblem}
 
+  \clearpage
+
+\item We examine the exponential function. Use the following plot for
+  sketching the functions given below.
+
+  \scalebox{0.75}{\input{py/week5/exponential_week5day1.pgf}}
+
+  \begin{subproblem}
+  \item $f(t) = e^{-t}$
+  \item $g(t) = e^{-2t}$
+  \item $h(t) = e^{-t/2}$
+  \item What is the general trend. How does the function $e^{at}$
+    compare for different values of $a$?
+  \end{subproblem}
+
+
+  \clearpage
+\item We examine the function
+  \begin{eqnarray*}
+    x(t) & = & 1 + t + \frac{1}{2} t^2 + \frac{1}{3!} t^3 + \frac{1}{4!} t^4.
+  \end{eqnarray*}
+  \begin{subproblem}
+  \item Make a sketch of the function and then add a sketch of the
+    function's derivative on the same plot.
+    \vfill
+  \item Suppose that the function is   
+    \begin{eqnarray*}
+      x(t) & = & 1 + t + \frac{1}{2} t^2 + \frac{1}{3!} t^3 +
+                 \frac{1}{4!} t^4 + \frac{1}{5!} t^5.
+    \end{eqnarray*}
+    Repeat the previous question with this new function. 
+    \vfill
+
+  \item Determine a ``better'' way to define $x(t)$ so that it is the
+    same as its derivative. 
+    \vfill
+
+  \item If you keep repeating this approach what function do you get?
+    How does the plot compare with the plot of $e^t$?
+    \vspace{2em}
+  \end{subproblem}
 \end{problem}
 
 \postClass
