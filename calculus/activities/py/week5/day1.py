@@ -5,6 +5,7 @@ import matplotlib.patches as patches
 import matplotlib.path as path
 from matplotlib.patches import FancyArrowPatch
 from matplotlib.patches import Ellipse
+import math
 
 import sys
 
@@ -19,16 +20,19 @@ plotter.clearPlot()
 
 plotter.setAxes(True)
 axis = plotter.getAxes()
-plotter.setAxesBounds(-5.0,5.0,-5.0,5.0)
+t = np.arange(0.0,3.0,0.1)
+#plotter.addFunction(t,np.exp(t),'k-',2.0)
+
+plotter.setAxesBounds(0.0,3.0,0.0,20.0)
 plotter.setupGrid(0.3,'--',
-                  -5.0,1.0,5.1,
-                  -5.0,1.0,5.1)
-plotter.axesDecorations('Position of an Object','x (m)','y (m)')
+                  -0.0,1.0,3.1,
+                   0.0,5.0,20.1)
+plotter.axesDecorations('Position of an Object','x (m)','x (m)')
 
 
 plt.draw()
 #plt.show()
-plt.savefig('path_week4day3.pgf',format='pgf')
+plt.savefig('exponential_week5day1.pgf',format='pgf')
 
 
 
