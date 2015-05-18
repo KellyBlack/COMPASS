@@ -1,0 +1,86 @@
+%% Creator: Matplotlib, PGF backend
+%%
+%% To include the figure in your LaTeX document, write
+%%   \input{<filename>.pgf}
+%%
+%% Make sure the required packages are loaded in your preamble
+%%   \usepackage{pgf}
+%%
+%% Figures using additional raster images can only be included by \input if
+%% they are in the same directory as the main LaTeX file. For loading figures
+%% from other directories you can use the `import` package
+%%   \usepackage{import}
+%% and then include the figures with
+%%   \import{<path to file>}{<filename>.pgf}
+%%
+%% Matplotlib used the following preamble
+%%   \usepackage{fontspec}
+%%   \setmainfont{Bitstream Vera Serif}
+%%   \setsansfont{Bitstream Vera Sans}
+%%   \setmonofont{Bitstream Vera Sans Mono}
+%%
+\begingroup%
+\makeatletter%
+\begin{pgfpicture}%
+\pgfpathrectangle{\pgfpointorigin}{\pgfqpoint{4.000000in}{8.000000in}}%
+\pgfusepath{use as bounding box, clip}%
+\begin{pgfscope}%
+\pgfsetbuttcap%
+\pgfsetmiterjoin%
+\definecolor{currentfill}{rgb}{1.000000,1.000000,1.000000}%
+\pgfsetfillcolor{currentfill}%
+\pgfsetlinewidth{0.000000pt}%
+\definecolor{currentstroke}{rgb}{1.000000,1.000000,1.000000}%
+\pgfsetstrokecolor{currentstroke}%
+\pgfsetdash{}{0pt}%
+\pgfpathmoveto{\pgfqpoint{0.000000in}{0.000000in}}%
+\pgfpathlineto{\pgfqpoint{4.000000in}{0.000000in}}%
+\pgfpathlineto{\pgfqpoint{4.000000in}{8.000000in}}%
+\pgfpathlineto{\pgfqpoint{0.000000in}{8.000000in}}%
+\pgfpathclose%
+\pgfusepath{fill}%
+\end{pgfscope}%
+\begin{pgfscope}%
+\pgfpathrectangle{\pgfqpoint{0.500000in}{0.800000in}}{\pgfqpoint{3.100000in}{6.400000in}} %
+\pgfusepath{clip}%
+\pgfsetrectcap%
+\pgfsetroundjoin%
+\pgfsetlinewidth{2.007500pt}%
+\definecolor{currentstroke}{rgb}{0.000000,0.000000,0.000000}%
+\pgfsetstrokecolor{currentstroke}%
+\pgfsetdash{}{0pt}%
+\pgfpathmoveto{\pgfqpoint{1.120000in}{1.440000in}}%
+\pgfpathlineto{\pgfqpoint{2.980000in}{1.440000in}}%
+\pgfpathlineto{\pgfqpoint{2.980000in}{7.200000in}}%
+\pgfpathlineto{\pgfqpoint{1.120000in}{1.440000in}}%
+\pgfusepath{stroke}%
+\end{pgfscope}%
+\begin{pgfscope}%
+\pgfpathrectangle{\pgfqpoint{0.500000in}{0.800000in}}{\pgfqpoint{3.100000in}{6.400000in}} %
+\pgfusepath{clip}%
+\pgfsetrectcap%
+\pgfsetroundjoin%
+\pgfsetlinewidth{1.003750pt}%
+\definecolor{currentstroke}{rgb}{0.000000,0.000000,0.000000}%
+\pgfsetstrokecolor{currentstroke}%
+\pgfsetdash{}{0pt}%
+\pgfpathmoveto{\pgfqpoint{2.670000in}{1.440000in}}%
+\pgfpathlineto{\pgfqpoint{2.670000in}{1.888000in}}%
+\pgfpathlineto{\pgfqpoint{2.980000in}{1.888000in}}%
+\pgfusepath{stroke}%
+\end{pgfscope}%
+\begin{pgfscope}%
+\pgftext[x=1.244000in,y=1.504000in,left,base]{\sffamily\fontsize{18.000000}{21.600000}\selectfont \(\displaystyle \theta\)}%
+\end{pgfscope}%
+\begin{pgfscope}%
+\pgftext[x=2.670000in,y=5.920000in,left,base]{\sffamily\fontsize{18.000000}{21.600000}\selectfont \(\displaystyle \psi\)}%
+\end{pgfscope}%
+\begin{pgfscope}%
+\pgftext[x=2.050000in,y=1.120000in,left,base]{\sffamily\fontsize{18.000000}{21.600000}\selectfont 5.0}%
+\end{pgfscope}%
+\begin{pgfscope}%
+\pgftext[x=3.135000in,y=3.680000in,left,base]{\sffamily\fontsize{18.000000}{21.600000}\selectfont 2.0}%
+\end{pgfscope}%
+\end{pgfpicture}%
+\makeatother%
+\endgroup%

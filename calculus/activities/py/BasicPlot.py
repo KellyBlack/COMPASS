@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 class BasicPlot:
 
     def __init__(self):
+        plt.rcParams['axes.unicode_minus']=False
         self.clearPlot()
 
 
@@ -28,7 +29,7 @@ class BasicPlot:
                   startx=0.0,deltax=0.1,endx=1.0,
                   starty=0.0,deltay=0.1,endy=1.0):
 
-        ax = plt.gca()
+        ax = self.getAxes()
         xticklines = plt.getp(ax, 'xticklines')
         yticklines = plt.getp(ax, 'yticklines')
         xgridlines = plt.getp(ax, 'xgridlines')
@@ -89,6 +90,16 @@ class BasicPlot:
                     currentSpline *= (t-spline[0])/(point[0]-spline[0])
             function += point[1]*currentSpline
         self.addFunction(t,function,format,width)
+
+        
+    def getAxes(self):
+        return(plt.gca())
+
+    def setAxes(self,value):
+        if(value):
+            plt.axis('on')
+        else:
+            plt.axis('off')
 
 if (__name__ =='__main__') :
     plotter = BasicPlot()
