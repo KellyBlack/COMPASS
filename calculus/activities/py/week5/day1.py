@@ -27,7 +27,7 @@ plotter.setAxesBounds(0.0,3.0,0.0,20.0)
 plotter.setupGrid(0.3,'--',
                   -0.0,1.0,3.1,
                    0.0,5.0,20.1)
-plotter.axesDecorations('Position of an Object','x (m)','x (m)')
+plotter.axesDecorations('Position of an Object','t (s)','x (m)')
 
 
 plt.draw()
