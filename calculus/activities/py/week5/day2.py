@@ -23,16 +23,16 @@ axis = plotter.getAxes()
 t = np.arange(0.0,3.0,0.1)
 #plotter.addFunction(t,np.exp(t),'k-',2.0)
 
-plotter.setAxesBounds(0.0,3.0,0.0,20.0)
+plotter.setAxesBounds(0.0,3.0,-20.0,20.0)
 plotter.setupGrid(0.3,'--',
                   -0.0,1.0,3.1,
-                   0.0,5.0,20.1)
-plotter.axesDecorations('Position of an Object','x (m)','x (m)')
+                   -20.0,5.0,20.1)
+plotter.axesDecorations('Position of an Object','t (s)','x (m)')
 
 
 plt.draw()
 #plt.show()
-plt.savefig('exponential_week5day1.pgf',format='pgf')
+plt.savefig('logarithm_week5day2.pgf',format='pgf')
 
 
 
