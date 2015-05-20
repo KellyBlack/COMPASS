@@ -15,39 +15,69 @@ from BasicPlot import BasicPlot
 
 plotter = BasicPlot()
 
+def force(t):
+    return(t*t)
+
 ###############################
 plotter.clearPlot()
 
 plotter.setAxes(True)
 axis = plotter.getAxes()
 
-plotter.setAxesBounds(-5.0,5.0,-5.0,5.0)
+plotter.setAxesBounds(0.0,4.0,-1.0,16.0)
+for pos in range(2):
+    t = 2.0*float(pos)
+    plotter.addFunction([t,t+2.0],[force(t),force(t)],'k-',2.0)
+    plotter.markJumps([[t,force(t),False],[t+2.0,force(t),True]],8.0)
+
 plotter.setupGrid(0.3,'--',
-                  -5.0,1.0,5.1,
-                  -5.0,1.0,5.1)
-plotter.axesDecorations('Position','x (m)','y (m)')
+                   0.0,1.0,4.1,
+                  -1.0,1.0,16.1)
+plotter.axesDecorations('Nonconstant Force','Time (sec)','Force (N)')
 
 
 plt.draw()
 #plt.show()
-plt.savefig('trigPath_week6day3.pgf',format='pgf')
+plt.savefig('piecewiseConstantForceI_week8day1.pgf',format='pgf')
 
 ###############################
 plotter.clearPlot()
-#fig = plotter.setFigure(None,(8.0, 8.0),80,'w','k')
 
+plotter.setAxes(True)
 axis = plotter.getAxes()
-plotter.setAxesBounds(-1.1,1.1,-1.1,1.1)
 
-axis.add_patch(Ellipse((0.0,0.0),2.0,2.0,edgecolor='black',facecolor='none'))
-plotter.axesDecorations('Unit Circle','x (m)','y (m)')
+plotter.setAxesBounds(0.0,4.0,-1.0,16.0)
+for pos in range(4):
+    t = float(pos)
+    plotter.addFunction([t,t+1.0],[force(t),force(t)],'k-',2.0)
+    plotter.markJumps([[t,force(t),False],[t+1.0,force(t),True]],8.0)
+
 plotter.setupGrid(0.3,'--',
-                  -1.0,0.5,1.1,
-                  -1.0,0.5,1.1)
-axis.set_aspect(1.0)
+                   0.0,1.0,4.1,
+                  -1.0,1.0,16.1)
+plotter.axesDecorations('Nonconstant Force','Time (sec)','Force (N)')
+
 
 plt.draw()
 #plt.show()
-plt.savefig('unitCircle_week6day3.pgf',format='pgf')
+plt.savefig('piecewiseConstantForceII_week8day1.pgf',format='pgf')
+
+###############################
+plotter.clearPlot()
+
+plotter.setAxes(True)
+axis = plotter.getAxes()
+
+plotter.setAxesBounds(0.0,4.0,-1.0,16.0)
+plotter.setupGrid(0.3,'--',
+                   0.0,1.0,4.1,
+                  -1.0,1.0,16.1)
+plotter.axesDecorations('Nonconstant Force','Time (sec)','Force (N)')
+
+
+plt.draw()
+#plt.show()
+plt.savefig('changingForceGrid_week8day1.pgf',format='pgf')
+
 
 
