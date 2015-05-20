@@ -33,12 +33,12 @@ for pos in range(2):
 plotter.setupGrid(0.3,'--',
                    0.0,1.0,4.1,
                   -1.0,1.0,16.1)
-plotter.axesDecorations('Nonconstant Force','Time (sec)','Force (N)')
+plotter.axesDecorations('Nonconstant Velocity','Time (sec)','Force (N)')
 
 
 plt.draw()
 #plt.show()
-plt.savefig('piecewiseConstantForceI_week8day1.pgf',format='pgf')
+plt.savefig('piecewiseConstantVelI_week8day2.pgf',format='pgf')
 
 ###############################
 plotter.clearPlot()
@@ -55,12 +55,12 @@ for pos in range(4):
 plotter.setupGrid(0.3,'--',
                    0.0,1.0,4.1,
                   -1.0,1.0,16.1)
-plotter.axesDecorations('Nonconstant Force','Time (sec)','Force (N)')
+plotter.axesDecorations('Nonconstant Velocity','Time (sec)','Force (N)')
 
 
 plt.draw()
 #plt.show()
-plt.savefig('piecewiseConstantForceII_week8day1.pgf',format='pgf')
+plt.savefig('piecewiseConstantVekII_week8day2.pgf',format='pgf')
 
 ###############################
 plotter.clearPlot()
@@ -72,12 +72,12 @@ plotter.setAxesBounds(0.0,4.0,-1.0,16.0)
 plotter.setupGrid(0.3,'--',
                    0.0,1.0,4.1,
                   -1.0,1.0,16.1)
-plotter.axesDecorations('Nonconstant Force','Time (sec)','Force (N)')
+plotter.axesDecorations('Nonconstant Velocity','Time (sec)','Force (N)')
 
 
 plt.draw()
 #plt.show()
-plt.savefig('changingForceGrid_week8day1.pgf',format='pgf')
+plt.savefig('changingVelGrid_week8day2.pgf',format='pgf')
 
 
 
