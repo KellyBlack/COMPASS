@@ -1,0 +1,1935 @@
+%=========================================================================
+% Day on the anti-derivative. A day to bring things together.
+%=========================================================================
+\preClass{Practicing the Anti-Derivative}
+
+\begin{problem}
+\item Determine the anti-derivative for each function below. In each
+  case assume that $f(0)=2$.
+  \begin{subproblem}
+  \item $v(t)= 10 - t^3$
+    \vfill
+  \item $v(t)= -t^3+2t+1$
+    \vfill
+  \item $v(t)= 3 t^4 + 2 t^2 - 1$
+    \vfill
+  \item $v(t)= 2t^5 + 8t - 4$
+    \vfill
+  \end{subproblem}
+\end{problem}
+
+
+\actTitle{The Relationship Between Velocity and Time}
+\begin{problem}
+\item A ball is dropped off of the top of a 40m building. It is
+  initially at rest when released.
+  \begin{subproblem}
+    \item Make a sketch of the free body diagram.
+      \vspace{7em}
+    \item Determine the equation for the acceleration.
+      \vspace{5em}
+    \item Determine the formula for the position at any time.
+      \vfill
+    \item At what time does the ball hit the ground?
+      \vspace{5em}
+  \end{subproblem}
+  \clearpage
+\item A motorized car is placed at the end of a 100m field. The car
+  starts from rest, and when the switch is turned on, the force on the
+  car due to the motor is
+  \begin{eqnarray*}
+    F_x(t) & = & 0.1 t N.
+  \end{eqnarray*}
+  \begin{subproblem}
+    \item Make a sketch of the free body diagram.
+      \vspace{7em}
+    \item Determine the equation for the acceleration.
+      \vspace{5em}
+    \item Determine the formula for the position at any time.
+      \vfill
+    \item How long does it take for the car to move across the field?
+      \vspace{5em}
+  \end{subproblem}
+
+\end{problem}
+
+\actTitle{The Relationship Between Velocity and Time}
+\begin{problem}
+\item The velocity of an object is
+  $\frac{3}{2}t^3-6t^2+\frac{11}{2}t$. Four different possible
+  positions of the object is shown in the plot below.
+
+  \scalebox{0.7}{\input{py/week2/whichAntiderivative_week2Day3.pgf}}
+
+  \begin{subproblem}
+    \item Determine the formulas for each of the four positions.
+      \begin{itemize}
+      \item A
+        \vfill
+      \item B
+        \vfill
+      \item C
+        \vfill
+      \item D
+        \vfill
+      \end{itemize}
+  \end{subproblem}
+
+  \clearpage
+
+\item The velocity for an object is given in the plot below. Assume
+  that it starts at the origin, $x=0$m.
+
+  \scalebox{0.7}{\input{py/week2/noContDeriv_week2Day3.pgf}}
+
+  \begin{subproblem}
+    \item Make a sketch of the position of the object.
+    \item Determine the total change in the object's position.
+      \vspace{2em}
+    \item Determine the area under the curve (between $x(t)=0$ and the
+      curve).
+      \vspace{3em}
+    \item What is the derivative of the velocity at $t=2$ seconds?
+      \sideNote{How many tangent lines can you draw at $t=2$?}
+      \vspace{3em}
+  \end{subproblem}
+
+  \clearpage
+
+\item A motorized car is placed at the end of a 100m field. The car
+  starts from rest. There are three motors, A, B, and C. Each motor
+  applies a force of one Newton when it is turned on. The motors are
+  turned on and off using the following schedule: \\
+  \begin{tabular}{l|lll}
+    Time (sec) & Motor A & Motor B & Motor C \\ \hline
+    0.0 - 1.0  & on      & off     & off     \\ 
+    1.0 - 2.0  & off     & on      & on      \\ 
+    2.0 - 3.0  & on      & on      & on      \\ 
+    3.0 - ?    & on      & off     & off     
+  \end{tabular}
+
+  \begin{subproblem}
+  \item Make a sketch of the free body diagram.
+    \vspace{5em}
+  \item Make a sketch of the acceleration. Then make a sketch of the
+    velocity beneath it, and then make a sketch of the position under
+    the velocity plot.
+    \vfill
+  \item How long will it take until the car reaches the end of the
+    field?
+    \vspace{4em}
+  \end{subproblem}
+
+\end{problem}
+
+\postClass
+
+\begin{problem}
+\item Briefly state two ideas from today's class.
+  \begin{itemize}
+  \item 
+  \item 
+  \end{itemize}
+\item 
+  \begin{subproblem}
+    \item
+  \end{subproblem}
+\end{problem}
+
+
+%=========================================================================
+% Start of day 1, week 3 - optimization
+%=========================================================================
+\preClass{Average Rate of Change}
+
+\begin{problem}
+\item The velocity of an object is given in the plot
+  below. Assume that the object starts from the origin, $x=0$m. Make a
+  sketch of the object's position.
+
+  \scalebox{0.7}{\input{py/week3/preclass_week3day1.pgf}}
+
+  \clearpage
+
+\item The velocity of an object is given in the plot
+  below. Assume that the object starts from the origin, $x=0$m. Make a
+  sketch of the object's position.
+
+  \scalebox{0.7}{\input{py/week3/preclassTwo_week3day1.pgf}}
+
+\end{problem}
+
+
+\actTitle{The Relationship Between Velocity and Time}
+\begin{problem}
+\item The velocity of an object is given in the plot below. Assume
+  that the object starts from the origin, $x=0$m.
+
+  \scalebox{0.7}{\input{py/week3/localMaxPiecewiseConstVel_week3day1.pgf}}
+
+  \begin{subproblem}
+  \item Sketch a plot of the object's position as a function of time.
+  \item Where does the object's maximum displacement from its start
+    position occur?
+    \vspace{3em}
+  \item Where does the object's maximum displacement from its start
+    position occur?
+    \vspace{3em}
+  \item Briefly describe what is happening with the velocity where the
+    maximum occurs.
+    \vfill
+  \end{subproblem}
+
+  \clearpage
+
+\item The velocity of an object is given in the plot below. Assume
+  that the object starts from the origin, $x=0$m.
+
+  \scalebox{0.7}{\input{py/week3/localMaxPiecewiseConstVelTwo_week3day1.pgf}}
+
+  \begin{subproblem}
+  \item Sketch a plot of the object's position as a function of time.
+  \item Where does the object's maximum displacement from its start
+    position occur?
+    \vspace{3em}
+  \item Where does the object's maximum displacement from its start
+    position occur?
+    \vspace{3em}
+  \item Briefly describe what is happening with the velocity where the
+    minimum occurs.
+    \vfill
+  \end{subproblem}
+
+\item The velocity of an object is given in the plot below. Assume
+  that the object starts from the origin, $x=0$m.
+
+  \scalebox{0.7}{\input{py/week3/localMaxPiecewiseConstVelThree_week3day1.pgf}}
+
+  \begin{subproblem}
+  \item Sketch a plot of the object's position as a function of time.
+  \item Where does the object's maximum displacement from its start
+    position occur?
+    \vspace{3em}
+  \item Where does the object's maximum displacement from its start
+    position occur?
+    \vspace{3em}
+  \item Briefly describe what is happening with the velocity where the
+    minimum occurs.
+    \vfill
+  \end{subproblem}
+
+\end{problem}
+
+\actTitle{The Relationship Between Velocity and Time}
+\begin{problem}
+\item We will try to determine the value of $x$ and $y$ that will
+  accomplish the following:
+  \begin{eqnarray*}
+    \mathrm{Minimize:} & & x^2 + y^2, \\
+    \mathrm{Constraint:} & & x + y = 1.
+  \end{eqnarray*}
+
+  \vspace{-1em}
+  \scalebox{0.6}{\input{py/week3/constrainedOptimizationOne.pgf}}
+
+  \begin{subproblem}
+    \item Add a sketch of the constraint to the plot. The value of $x$
+      and $y$ that we choose must be on this line.
+    \item Add a sketch of the set of points that satisfy
+      \begin{eqnarray*}
+        x^2 + y^2 & = & 4.
+      \end{eqnarray*}
+    \item Add a sketch of the set of points that satisfy
+      \begin{eqnarray*}
+        x^2 + y^2 & = & 2.
+      \end{eqnarray*}
+    \item Add a sketch of the set of points that satisfy
+      \begin{eqnarray*}
+        x^2 + y^2 & = & 1.
+      \end{eqnarray*}
+    \item Add a sketch of the set of points that satisfy
+      \begin{eqnarray*}
+        x^2 + y^2 & = & \frac{1}{2}.
+      \end{eqnarray*}
+    \item Draw the smallest circle that has points that coincides with
+      the constraint.
+    \item What are the values of $x$ and $y$ that minimize the
+      objective function subject to the constraint?
+  \end{subproblem}
+
+  \clearpage
+
+\item We will try to determine the value of $x$ and $y$ that will
+  accomplish the following:
+  \begin{eqnarray*}
+    \mathrm{Minimize:} & & x + y, \\
+    \mathrm{Constraint:} & & x^2 + y^2 = 1.
+  \end{eqnarray*}
+
+  \vspace{-1em}
+  \scalebox{0.55}{\input{py/week3/constrainedOptimizationOne.pgf}}
+
+  \begin{subproblem}
+    \item Add a sketch of the constraint to the plot. The value of $x$
+      and $y$ that we choose must be on this line.
+    \item Add a sketch of the set of points that satisfy
+      \begin{eqnarray*}
+        x + y & = & 2.
+      \end{eqnarray*}
+    \item Add a sketch of the set of points that satisfy
+      \begin{eqnarray*}
+        x + y & = & 1.
+      \end{eqnarray*}
+    \item Add a sketch of the set of points that satisfy
+      \begin{eqnarray*}
+        x + y & = & 0.
+      \end{eqnarray*}
+    \item Add a sketch of the set of points that satisfy
+      \begin{eqnarray*}
+        x + y & = & -2.
+      \end{eqnarray*}
+    \item Draw the line consistent with the objective function that
+      has points that coincides with the constraint.
+    \item What are the values of $x$ and $y$ that minimize the
+      objective function subject to the constraint?
+  \end{subproblem}
+
+  \clearpage
+
+\item Go back to the previous two questions and determine the slope of
+  the relationships. Determine where the slope of the tangent lines to
+  the objective is equal to the slope of the tangent line to the
+  constraint. (Insure that the constraint is also satisfied to give
+  two equations and two unknowns.)
+
+  \hfill
+
+  \clearpage
+
+\item An object will be fired at ground level at a velocity $v$ at an
+  angle $\theta$. The object should strike the ground a distance of
+  100 meters away. The goal is to minimize the time that the object is
+  in the air.
+  \begin{subproblem}
+  \item Make a rough sketch of the situation, and also draw a free
+    body diagram of the object in the air.
+    \vfill
+  \item Determine the two relationships that govern the position of
+    the object at any time.
+    \vfill
+  \item Determine the formula for the constraint.
+    \vfill
+  \item Determine the formula for the cost.
+    \vfill
+
+    \clearpage
+
+  \item What are the two variables to determine?
+    \vspace{2em}
+
+  \item Formally express the cost and objective functions:
+    \begin{eqnarray*}
+      \mathrm{Minimize:} & &  \\
+      \mathrm{Constraint:} & & 
+    \end{eqnarray*}
+
+
+  \item Make a sketch of the constraint and also include various
+    sketches of the objective for different values.
+
+    \vfill
+
+  \item 
+
+  \end{subproblem}
+
+\end{problem}
+
+\postClass
+
+\begin{problem}
+\item Briefly state two ideas from today's class.
+  \begin{itemize}
+  \item 
+  \item 
+  \end{itemize}
+\item Determine the values of $v$ and $\theta$ that minimize the cost
+  function and also meet the objective function in the last problem.
+  \vfill
+\end{problem}
+
+
+
+%=========================================================================
+% Start of activity on projectile motion
+%=========================================================================
+\preClass{Non-Constant Acceleration}
+
+\begin{problem}
+\item
+\end{problem}
+
+
+\actTitle{Non-Constant Acceleration}
+\begin{problem}
+\item A new projectile will be tested. It is designed to propel itself
+  toward a target. To keep things simpler we assume that the force (N)
+  in the horizontal direction changes in time, but the force in the
+  vertical direction is constant and is due to gravity.
+  \begin{subproblem}
+    \item We assume that the force on the object in the horizontal
+      direction is 
+      \begin{eqnarray*}
+        F_x(t) & = & \left\{
+                     \begin{array}{r@{\hspace{2em}}rcccl}
+                       m(0.5-t), & 0 & < & t & < & 0.5, \\
+                       0,        &   &   & t & \geq & 0.5,
+                     \end{array}
+                     \right.
+      \end{eqnarray*}
+      where $m$ is the mass of the projectile.
+      Make a sketch of the force as a function of time from $t=0$ to
+      $t=1$ seconds. 
+      \vfill
+
+    \item Draw a free body diagram of the object.
+      \vfill
+
+    \item Determine the equations relating the acceleration in the
+      horizontal and vertical directions.
+
+      \vfill
+
+      \clearpage
+
+    \item The object starts at the origin, $x=0$m and $y=0$m, and the
+      initial time, and the initial velocity is 10 m/sec in the
+      horizontal direction and 20 m/sec in the vertical
+      direction. Determine the equations for the position at any time.
+
+      \vfill
+
+  \end{subproblem}
+
+  \clearpage
+
+\item A different projectile will be tested. It is designed to propel
+  itself. In this case the force changes in time in the vertical
+  direction.
+  \begin{subproblem}
+  \item We assume that the force on the object (N) in the vertical
+    direction is
+      \begin{eqnarray*}
+        F_x(t) & = & \left\{
+                     \begin{array}{r@{\hspace{2em}}rcccl}
+                       m(10.8-t), & 0 & < & t & < & 1.0, \\
+                       9.8,       &   &   & t & \geq & 1.0,
+                     \end{array}
+                     \right.
+      \end{eqnarray*}
+      where $m$ is the mass of the projectile.
+      Make a sketch of the force as a function of time from $t=0$ to
+      $t=2$ seconds. 
+      \vfill
+
+    \item Draw a free body diagram of the object.
+      \vfill
+
+    \item Determine the equations relating the acceleration in the
+      horizontal and vertical directions.
+
+      \vfill
+
+      \clearpage
+
+    \item The object starts at the origin, $x=0$m and $y=0$m, and the
+      initial time, and the initial velocity is 10 m/sec in the
+      horizontal direction and 20 m/sec in the vertical
+      direction. Determine the equations for the position at any time.
+
+      \vfill
+
+  \end{subproblem}
+
+\end{problem}
+
+\actTitle{Working With Parameters in Kinematics}
+\begin{problem}
+\item A car will move on a straight set of rails will be
+  constructed. It will start from rest at the origin, $x=0$m. The
+  force (N) on the car is given by the equation
+  \begin{eqnarray*}
+    F_x(t) & = & m(at + b).
+  \end{eqnarray*}
+  The parameters $a$ and $b$ are constants, and $m$ is the mass of the
+  car.
+
+  \begin{subproblem}
+    \item Draw a free body diagram of the car.
+      \vfill
+    \item Determine the position of the car at any time. 
+      \vfill
+
+      \clearpage
+      
+    \item You are asked to determine values of $a$ and $b$ so that the
+      object moves back to the origin 20 seconds after its start and
+      minimizes the velocity at that time. Determine the objective and
+      constraint function and explicitly write and label them.
+
+      \vfill
+
+    \item Make a sketch that demonstrates the relationships between
+      the parameters $a$ and $b$. Use the horizontal axis for $a$ and
+      vertical axis for $b$.
+
+      \vfill
+
+  \end{subproblem}
+
+  \clearpage
+
+\item The evil super villain, Nasty Canasty, fires a projectile to the
+  east from the western edge of Kansas.  (Ignore the curvature of the
+  earth and just pretend that Kansas is flat.)  The super hero, Super
+  McDuper, arrives just as it is fired and immediately applies a
+  downward force on the projectile that is equal in magnitude to
+  $\frac{m}{10}t$N where $m$ is the mass of the object.
+
+  \begin{subproblem}
+  \item Nasty Canasty fires the projectile at some initial velocity
+    $v$ and at an angle $\theta$. Draw a sketch of the initial
+    condition, and also draw a sketch of the free body diagram.
+
+    \vfill
+
+  \item Determine the coordinates of the position of the projectile at
+    any time.
+
+    \vfill
+
+  \item Nasty Canasty knew that Super McDuper would decipher the
+    riddle that was left behind and predicted what Super McDuper would
+    do. Nasty Canasty would like for the projectile to strike the
+    ground 200 miles away but do so in a minimal amount of
+    time. Express this in terms of an objective and a constraint.
+
+    \vfill
+
+    \clearpage
+
+  \item Make a sketch that demonstrates the relationships between
+      the parameters $v$ and $\theta$. Use the horizontal axis for $v$ and
+      vertical axis for $\theta$.
+
+      \vfill
+    
+  \end{subproblem}
+
+\end{problem}
+
+\postClass
+
+\begin{problem}
+\item Briefly state two ideas from today's class.
+  \begin{itemize}
+  \item 
+  \item 
+  \end{itemize}
+\item 
+  \begin{subproblem}
+    \item
+  \end{subproblem}
+\end{problem}
+
+
+%=========================================================================
+% Start of day on the product rule, quotient rule, and the inverse of
+% a function.
+%=========================================================================
+\preClass{The Inverse of a Function}
+
+\begin{problem}
+\item A function is defined in the following table:
+
+  \begin{tabular}{l|l}
+    $t$ & $f(t)$ \\ \hline 
+    0 & 0 \\
+    1 & 2 \\
+    2 & 1 \\
+    3 & -1 
+  \end{tabular}
+
+  \begin{subproblem}
+  \item What is the value of the function when $t=0$?
+    \vfill
+  \item What is the value of the function when $t=2$?
+    \vfill
+  \item What is the value of $t$ when the function is 2?
+    \vfill
+  \item What is the value of $t$ when the function is -1?
+    \vfill
+  \end{subproblem}
+
+\end{problem}
+
+
+\actTitle{The Inverse}
+\begin{problem}
+\item The position of an object is given in the plot below.
+
+  \scalebox{0.55}{\input{py/week4/simpleInverse_week4day1.pgf}}
+
+  \begin{subproblem}
+    \item What is the object's position when $t=-1$s?
+      \vfill
+
+    \item What is the object's position when $t=-1$s?
+      \vfill
+
+    \item At what time is the object's position 0m?
+      \vfill
+
+    \item At what time is the object's position 4m?
+      \vfill
+
+  \end{subproblem}
+
+  \clearpage
+
+\item The position of an object is given in the plot below.
+
+  \scalebox{0.55}{\input{py/week4/simpleNoInverse_week4day1.pgf}}
+
+  \begin{subproblem}
+    \item What is the object's position when $t=0$s?
+      \vfill
+
+    \item What is the object's position when $t=1.5$s?
+      \vfill
+
+    \item At what time is the object's position 0m?
+      \vfill
+
+    \item At what time is the object's position 2m?
+      \vfill
+
+    \item Determine the range of times in which the inverse can be
+      determined.
+      \vfill
+
+    \item Determine the range of times in which the inverse cannot be
+      determined.
+      \vfill
+
+  \end{subproblem}
+
+  \clearpage
+
+\item Sketch and determine the inverse for each of the functions given
+  below.
+
+  \begin{subproblem}
+  \item $f(t)=3t+1$
+    \vfill
+  \item $g(t)=2t^2$
+    \vfill
+  \item $h(t)=4t^3$
+    \vfill
+  \item $x(t)=2t^2 - 3t + 4$
+    \vfill
+  \end{subproblem}
+
+\end{problem}
+
+\actTitle{The Product and Quotient Rule}
+\begin{problem}
+\item Determine the derivative of each of the following functions.
+  \begin{subproblem}
+    \item $y(t)=t^{1/3}$
+      \vfill
+    \item $b(t)=\sqrt{t} - 4t$
+      \vfill
+    \item $c(t) = 8 t^{1/5} - \frac{3}{2} t^{0.2} + 10$
+      \vfill
+  \end{subproblem}
+
+  \clearpage
+
+\item Out goal is to determine the derivative of the product of two
+  functions, $f(t)\cdot g(t)$. We will use the definition of the
+  derivative
+  \begin{eqnarray*}
+    \frac{d}{dt} \lp f(t)\cdot g(t) \rp & = & 
+          \lim_{\Delta t \rightarrow 0} \frac{f(t+\Delta t)\cdot g(t+\Delta t) - f(t)\cdot g(t)}{\Delta t}.
+  \end{eqnarray*}
+
+  Suppose that we have a rectangle. The length of the bottom side
+  is given by the value of a function, $g(t)$. The height is given as the
+  height of a different function, $f(t)$. 
+%  The two functions are given by
+%  \begin{eqnarray*}
+%    f(t) & = & t^2, \\
+%    g(t) & = & 3t + 4.
+%  \end{eqnarray*}
+
+  We ask the question, ``What happens to the area if there is a small
+  change in time from $t$ to $t+\Delta t$?''
+
+  \scalebox{0.55}{\input{py/week4/boxesSideBySide_week4day1.pgf}}
+
+  \begin{subproblem}
+  \item What is the area of the first rectangle at time $t$?
+    \vfill
+  \item What is the area of the second rectangle (dotted line) at time $t+\Delta t$?
+    \vfill
+  \item What is the difference in the areas?
+    \vfill
+  \end{subproblem}
+
+  \clearpage
+
+\item That last expression is not useful by itself. We will need to
+  express it in a different way. Here we take the figure from the
+  previous page and put the two boxes on top of each other so that
+  their left lower corners overlap.
+
+  \scalebox{0.55}{\input{py/week4/boxesTogether_week4day1.pgf}}
+
+  \begin{subproblem}
+    \item Express the difference in the areas in terms of the areas of
+      region A, region B, and the overlap in these two
+      regions. (Region A is across the whole top, and region B is
+      across the whole side.)
+      \vfill
+
+    \item Express the formula you have in the previous question using
+      the formulas for the areas in terms of $f(t)$, $f(t+\Delta t)$,
+      $g(t)$, and $g(t+\Delta t)$.
+      \vfill
+
+    \item Now divide the previous expression by $\Delta t$ and
+      simplify the expression.
+      \vfill
+
+  \end{subproblem}
+  
+
+\end{problem}
+
+\postClass
+
+\begin{problem}
+\item Briefly state two ideas from today's class.
+  \begin{itemize}
+  \item 
+  \item 
+  \end{itemize}
+\item Determine the derivatives of each of the following functions
+  \begin{subproblem}
+    \item $\lp \sqrt{t} - t^2 \rp \lp 5 t^3 + 3 t^2 + 4t +2 \rp$
+      \vfill
+    \item $\lp 8 t^{1/4} - 45 \rp \lp 2 t^3 + 10 t + 7 \rp$
+      \vfill
+    \item $\frac{\lp \sqrt[5]{t}+10 \rp}{8t^4-2}$
+      \vfill
+    \item $\frac{\lp t^{1/3}+2 \rp}{3t^2+4}$
+      \vfill
+  \end{subproblem}
+  \clearpage
+\item Determine the anti-derivatives of each of the following functions
+  \begin{subproblem}
+    \item $\sqrt{t} - 8t$
+      \vfill
+    \item $t^{1/3} - 5 t^3 + 4$
+      \vfill
+    \item $\sqrt[4]{t} + 19 t^3 + 10$
+      \vfill
+    \item $3 t^2 + 4 t^{4/3} + 22$
+      \vfill
+  \end{subproblem}
+
+  \vfill
+
+\end{problem}
+
+
+
+%=========================================================================
+% Start of activities on basic trig
+%=========================================================================
+\preClass{Basic Trigonometry}
+
+\begin{problem}
+\item Use the following diagram to determine the values of the trig
+  functions below.
+
+  \begin{multicols}{2}
+
+      \scalebox{0.35}{\input{py/week4/preClassTriangle1_week4day2.pgf}}
+
+      \columnbreak
+
+      \begin{subproblem}
+      \item $\sin(\theta) = $ \vfill
+      \item $\cos(\theta) = $ \vfill
+      \item $\tan(\theta) = $ \vfill
+      \item $\sin(\psi) = $ \vfill
+      \item $\cos(\psi) = $ \vfill
+      \item $\tan(\psi) = $ \vfill
+      \end{subproblem}
+  \end{multicols}
+
+\item Use the following diagram to determine the values of the trig
+  functions below.
+
+  \begin{multicols}{2}
+    \scalebox{0.35}{\input{py/week4/preClassTriangle2_week4day2.pgf}}
+
+    \columnbreak
+
+    \begin{subproblem}
+    \item $\sin(\theta) = $ \vfill
+    \item $\cos(\theta) = $ \vfill
+    \item $\tan(\theta) = $ \vfill
+    \item $\sin(\psi) = $ \vfill
+    \item $\cos(\psi) = $ \vfill
+    \item $\tan(\psi) = $ \vfill
+    \end{subproblem}
+  \end{multicols}
+\end{problem}
+
+
+\actTitle{Introduction to Right Angle Trigonometry}
+\begin{problem}
+\item A block is placed on an inclined plane.
+
+  \scalebox{0.35}{\input{py/week4/freeBodyDiagram_week4day2.pgf}}
+
+  \begin{subproblem}
+    \item Make a sketch of the free body diagram. (Carefully label all of the angles.)
+      \vfill
+      \vfill
+    \item Briefly describe the possible behaviours of the block.
+      \vfill
+  \end{subproblem}
+
+  \clearpage
+
+\item An inclined plane is shown in the figure below.
+
+  \scalebox{0.35}{\input{py/week4/generalRightTriangle_week4day2.pgf}}
+
+  \begin{subproblem}
+  \item Express the sine, cosine, and tangent of $\theta$ in terms of
+    $x$, $y$, and $r$.
+    \vfill
+  \item What are the possible ranges of values of the sine, cosine, and tangent
+    of $\theta$?
+    \vspace{8em}
+  \end{subproblem}
+
+  \clearpage
+
+\item The unit circle is shown in the figure below. The radius of the
+  circle is one, $r=1$.
+
+  \scalebox{0.35}{\input{py/week4/unitCircle_week4day2.pgf}}
+
+  \begin{subproblem}
+  \item Express the sine, cosine, and tangent of $\theta$ in terms of
+    $x$, and $y$.
+    \vfill
+  \item What are the possible ranges of values of the sine, cosine, and tangent
+    of $\theta$?
+    \vspace{8em}
+  \end{subproblem}
+
+
+\end{problem}
+
+\actTitle{The Relationship Between Velocity and Time}
+\begin{problem}
+\item A spider is walking along the unit circle. It starts at $x=1$
+  and $y=0$.
+
+  \scalebox{0.35}{\input{py/week4/unitCircleBug_week4day2.pgf}}
+
+  \begin{subproblem}
+    \item When the spider walks around to $x=\frac{\sqrt{2}}{2}$ and
+      $y=\frac{\sqrt{2}}{2}$ how far has it walked?
+      \vfill
+    \item When the spider walks around to $x=0$ and
+      $y=1$ how far has it walked?
+      \vfill
+    \item When the spider walks around to $x=-\frac{\sqrt{2}}{2}$ and
+      $y=\frac{\sqrt{2}}{2}$ how far has it walked?
+      \vfill
+    \item When the spider walks around to an angle $\theta$ measured
+      in degrees how far has it walked in terms of $\theta$?
+      \vfill
+    \item When the spider walks around to an angle $\theta$ measured
+      in radians how far has it walked in terms of $\theta$?
+      \vfill
+  \end{subproblem}
+
+  \clearpage
+
+\item The questions below refer to a point $x$ and $y$ on the unit circle.
+
+  \scalebox{0.35}{\input{py/week4/unitCircle_week4day2.pgf}}
+
+  \begin{subproblem}
+  \item Given the value of $x$ and $y$ determine the sine, cosine, and
+    tangent of the angle, $\theta$.
+    \vfill
+  \item Given that $x=\frac{\sqrt{2}}{2}$ and $y=\frac{\sqrt{2}}{2}$
+    what is the value of $\theta$?
+    \vfill
+  \item Given that $x=-\frac{\sqrt{2}}{2}$ and $y=\frac{\sqrt{2}}{2}$
+    what is the value of $\theta$?
+    \vfill
+  \item Given that $x=\frac{\sqrt{2}}{2}$ what is the value of
+    $\theta$?  
+    \vfill
+  \item Given that $y=\frac{\sqrt{2}}{2}$ what is the value of
+    $\theta$?  
+    \vfill
+  \item What do your answers to the previous two questions imply about
+    the inverse of the sine and cosine function?
+    \vfill
+  \end{subproblem}
+
+  \clearpage
+
+\item In the space below make two separate plots. The first plot
+  should be the sine of $\theta$, and the second plot should be the
+  cosine of $\theta$ where $0\leq\theta\leq 4\pi$.  Mark all the
+  notable values of $\pi$ on each of the plots.
+
+  \vfill
+
+\item What are the possible values you can input into the sine and the
+  cosine?
+  \vfill
+
+\item What are the possible values that can be output from the sine
+  and cosine?
+
+  \clearpage
+
+\item Define a subset of the possible inputs for the cosine function
+  so that it is inevitable on the domain you define.
+
+  \vfill
+
+\item Define a subset of the possible inputs for the sine function
+  so that it is inevitable on the domain you define.
+
+  \vfill
+
+\item Make up examples of the inverse sine and inverse cosine from all
+  possible quadrants based on your previous two answers. Include a
+  sketch of the angle on the unit circle.
+
+  \vfill
+
+\end{problem}
+
+\postClass
+
+\begin{problem}
+\item Briefly state two ideas from today's class.
+  \begin{itemize}
+  \item 
+  \item 
+  \end{itemize}
+\item 
+  \begin{subproblem}
+    \item
+  \end{subproblem}
+\end{problem}
+
+
+%=========================================================================
+% Start of day for vectors and paths
+%=========================================================================
+\preClass{Vector Valued Functions}
+
+\begin{problem}
+\item An object is located at $x=2$m and $y=-4$m at the initial time,
+  $t=0$ seconds. Express the location in $\vec{i}$/$\vec{j}$ notation.
+  \vfill
+\item An object is located at $x=2$m and $y=2$m at a later time,
+  $t=2$ seconds. Express the location in $\vec{i}$/$\vec{j}$ notation.
+  \vfill
+\item A spider is walking along the unit circle. It starts at $x=1$
+  and $y=0$.
+
+  \scalebox{0.35}{\input{py/week4/unitCircleBug_week4day2.pgf}}
+
+  Determine the $x$ coordinate and its $y$ coordinate for any
+  angle. Express the result using $\vec{i}$/$\vec{j}$ notation.
+
+  \vfill
+\end{problem}
+
+
+\actTitle{Expressing a Path in Vector Notation}
+
+\begin{problem}
+\item An object is located at $x=2$m and $y=-4$m at the initial time,
+  $t=0$ seconds. At a later time, $t=2$ seconds, it moves to the
+  location $x=2$m and $y=2$m. Assume it moves at a constant velocity.
+  \vfill
+  \begin{subproblem}
+  \item Make a sketch of the path.
+    \sideNote{ Be sure to label your axes and label all important
+      points on your graph.}
+    \vfill
+  \item Determine the $y$ position of the object at any time from
+    $t=0$ to $t=2$ seconds.
+    \vfill
+  \item Express the position of the object at any time using
+    $\vec{i}$/$\vec{j}$ notation.
+    \vspace{3em}
+  \end{subproblem}
+
+  \clearpage
+
+\item An object is located at the origin at the initial time. It moves
+  to the north-east with a constant velocity of 2.0 m/seconds. 
+
+  \begin{subproblem}
+  \item Make a sketch of the path.
+    \sideNote{ Be sure to label your axes and label all important
+      points on your graph.}
+    \vfill
+  \item Determine the object's position after three seconds and mark
+    it on your plot above.
+    \vspace{4em}
+  \item Determine the $x$ and $y$ coordinate at any time, $t$ seconds.
+    \vfill
+  \item Express the location of the object at any time using
+    $\vec{i}$/$\vec{j}$ notation.
+    \vspace{3em}
+  \end{subproblem}
+
+  \clearpage
+
+\item A spider is walking along the unit circle. It starts at $x=1$
+  and $y=0$. It moves at a constant speed and makes one revolution
+  every thirty seconds.
+
+  \scalebox{0.35}{\input{py/week4/unitCircleBug_week4day2.pgf}}
+
+  \begin{subproblem}
+  \item Determine the spider's position at any time.
+    \vfill
+  \item Express the position using $\vec{i}$/$\vec{j}$ notation.
+    \vspace{5em}
+  \end{subproblem}
+
+\end{problem}
+
+\actTitle{Derivatives of Vector Valued Functions}
+
+\begin{problem}
+\item An object is located at $x=2$m and $y=-4$m at the initial time,
+  $t=0$ seconds. At a later time, $t=2$ seconds, it moves to the
+  location $x=2$m and $y=2$m. Assume it moves at a constant velocity.
+  \begin{subproblem}
+  \item Express the velocity of the object using $\vec{i}$/$\vec{j}$
+    notation.  
+    \vfill
+  \item Express the position of the object at any time using
+    $\vec{i}$/$\vec{j}$ notation.
+    \vfill
+  \item Determine the derivative of the position that you derived in
+    the previous problem.
+    \vfill
+  \item What is the magnitude of the derivative?
+    \vfill
+  \end{subproblem}
+
+  \clearpage
+
+\item An object is located at the origin at the initial time. It moves
+  to the north-east with a constant velocity of 2.0 m/seconds. 
+
+  \begin{subproblem}
+  \item Express the velocity of the object using $\vec{i}$/$\vec{j}$
+    notation.  
+    \vfill
+  \item Express the position of the object at any time using
+    $\vec{i}$/$\vec{j}$ notation.
+    \vfill
+  \item Determine the derivative of the position that you derived in
+    the previous problem.
+    \vfill
+  \item What is the magnitude of the derivative?
+    \vfill
+  \end{subproblem}
+
+  \clearpage
+
+\item An object moves along the path given by
+  \begin{eqnarray*}
+    \vec{x}(t) & = & t \vec{i} + 2 t \vec{j}.
+  \end{eqnarray*}
+  The time starts at $t=0$ seconds.
+
+  \begin{subproblem}
+  \item Make a sketch of the path on the plot below.
+
+    \scalebox{0.75}{\input{py/week4/path_week4day3.pgf}}
+
+  \item Identify the location of the object at $t=2$ seconds using a
+    dot on the path.
+  \item Determine the derivative of the path and add the vector for
+    the derivative at the location when $t=2$ seconds.
+    \vspace{5em}
+  \end{subproblem}
+
+  \clearpage
+
+\item An object moves along the path given by
+  \begin{eqnarray*}
+    \vec{x}(t) & = & t \vec{i} + \frac{1}{2} t^2 \vec{j}.
+  \end{eqnarray*}
+  The time starts at $t=0$ seconds.
+
+  \begin{subproblem}
+  \item Make a sketch of the path on the plot below.
+
+    \scalebox{0.75}{\input{py/week4/path_week4day3.pgf}}
+
+  \item Identify the location of the object at $t=2$ seconds using a
+    dot on the path.
+  \item Determine the derivative of the path and add the vector for
+    the derivative at the location when $t=2$ seconds.
+    \vspace{5em}
+  \end{subproblem}
+
+\end{problem}
+
+\postClass
+
+\begin{problem}
+\item Briefly state two ideas from today's class.
+  \begin{itemize}
+  \item 
+  \item 
+  \end{itemize}
+\item 
+  \begin{subproblem}
+    \item
+  \end{subproblem}
+\end{problem}
+
+
+%=========================================================================
+% Start of activity introducing the exponential function
+%=========================================================================
+\preClass{The Exponential Function}
+
+\begin{problem}
+\item The factorial for an integer is defined to be 
+  \begin{eqnarray*}
+    n! & = & n \cdot (n-1) \cdot (n-2) \cdot (n-3) \cdots (3) \cdot (2) \cdot (1).
+  \end{eqnarray*}
+  For example, four factorial is 
+  \begin{eqnarray*}
+    4! & = & 4 \cdot 3 \cdot 2 \cdot 1, \\
+       & = & 24.
+  \end{eqnarray*}
+
+  \begin{subproblem}
+  \item Determine the value of 5!.
+    \vfill
+  \item Determine the value of 6!.
+    \vfill
+  \item Determine the value of $n$ if $n!=362880$.
+    \vfill
+  \end{subproblem}
+\end{problem}
+
+
+\actTitle{The Relationship Between Velocity and Time}
+\begin{problem}
+\item An object of mass 1 kg starts at the origin at $t=0$ and starts
+  with a velocity of 2.0 m/seconds.
+  \begin{subproblem}
+  \item We will examine one way to approximate air friction.
+    \textbf{Suppose} that the force due to air friction is
+    proportional to the speed of the object.  Make a sketch of the
+    free body diagram of the object. Assume that there is no friction
+    from the surface.
+    \sideNote{This is a simplified way to treat air friction, and a
+      better way will be examined later.}
+
+    \vfill
+
+  \item It is determined that the force due to friction is 2N when the
+    speed is 2 m/second. What is the constant of proportionality? 
+
+    \vspace{4em}
+
+  \item Determine and separate the two equations for the acceleration
+    and velocity in the $x$ and $y$ directions.
+
+    \vfill
+
+  \item Express the acceleration in the $x$ direction as $\frac{d}{dt}
+    v_x$ and rewrite the equations.
+    \vspace{4em}
+
+  \item What does this imply about the function that satisfies the
+    equation?
+
+    \vspace{4em}
+
+  \end{subproblem}
+
+  \clearpage
+
+\item To simplify things we would like to find a function whose
+  derivative is the same as the original function. Just for kicks
+  suppose that the function looks like
+  \begin{eqnarray*}
+    v_x(t) & = & a^t,
+  \end{eqnarray*}
+  and $a$ is a constant value. Recall the definition of the derivative
+  \begin{eqnarray*}
+    \frac{d}{dt} v_x(t) & = & \lim_{\Delta t \rightarrow 0}
+                              \frac{v_x(t+\Delta t) - v_x(t)}{\Delta t}.
+  \end{eqnarray*}
+
+  \begin{subproblem}
+  \item Suppose that $a=1$. Find the value of $v_x(1)$ and then make
+    an approximation of the derivative of $v_x(t)$ at $t=1$.  
+    \vfill
+    \item Suppose that $a=2$. Find the value of $v_x(1)$ and then make
+    an approximation of the derivative of $v_x(t)$ at $t=1$.  
+    \vfill
+    \item Suppose that $a=3$. Find the value of $v_x(1)$ and then make
+    an approximation of the derivative of $v_x(t)$ at $t=1$.  
+    \vfill
+    \item Try to determine a value of $a$ where the derivative of
+      $v_x(1)$ is the same as the value of the function itself.
+      \vfill
+  \end{subproblem}
+
+
+\end{problem}
+
+\actTitle{The Relationship Between Velocity and Time}
+\begin{problem}
+\item We examine the exponential function. Use the following plot for
+  sketching the functions given below.
+
+  \scalebox{0.75}{\input{py/week5/exponential_week5day1.pgf}}
+
+  \begin{subproblem}
+  \item $f(t) = e^t$
+  \item $g(t) = e^{2t}$
+  \item $h(t) = e^{t/2}$
+  \item What is the general trend. How does the function $e^{at}$
+    compare for different values of $a$?
+  \end{subproblem}
+
+  \clearpage
+
+\item We examine the exponential function. Use the following plot for
+  sketching the functions given below.
+
+  \scalebox{0.75}{\input{py/week5/exponential_week5day1.pgf}}
+
+  \begin{subproblem}
+  \item $f(t) = e^{-t}$
+  \item $g(t) = e^{-2t}$
+  \item $h(t) = e^{-t/2}$
+  \item What is the general trend. How does the function $e^{at}$
+    compare for different values of $a$?
+  \end{subproblem}
+
+
+  \clearpage
+\item We examine the function
+  \begin{eqnarray*}
+    x(t) & = & 1 + t + \frac{1}{2} t^2 + \frac{1}{3!} t^3 + \frac{1}{4!} t^4.
+  \end{eqnarray*}
+  \begin{subproblem}
+  \item Make a sketch of the function and then add a sketch of the
+    function's derivative on the same plot.
+    \vfill
+  \item Suppose that the function is   
+    \begin{eqnarray*}
+      x(t) & = & 1 + t + \frac{1}{2} t^2 + \frac{1}{3!} t^3 +
+                 \frac{1}{4!} t^4 + \frac{1}{5!} t^5.
+    \end{eqnarray*}
+    Repeat the previous question with this new function. 
+    \vfill
+
+  \item Determine a ``better'' way to define $x(t)$ so that it is the
+    same as its derivative. 
+    \vfill
+
+  \item If you keep repeating this approach what function do you get?
+    How does the plot compare with the plot of $e^t$?
+    \vspace{2em}
+  \end{subproblem}
+\end{problem}
+
+\postClass
+
+\begin{problem}
+\item Briefly state two ideas from today's class.
+  \begin{itemize}
+  \item 
+  \item 
+  \end{itemize}
+\item 
+  \begin{subproblem}
+    \item
+  \end{subproblem}
+\end{problem}
+
+%=========================================================================
+% Start of activity on logarithms
+%=========================================================================
+\preClass{The Exponential Function}
+
+\begin{problem}
+\item Determine the derivatives of the following functions:
+  \begin{subproblem}
+  \item $e^{t}$
+    \vfill
+  \item $5e^{t}$
+    \vfill
+  \item $8e^t$
+    \vfill
+  \end{subproblem}
+\item Determine the most general form for a function whose derivative
+  is equal to the function itself.
+  \vfill
+\end{problem}
+
+
+\actTitle{The Inverse of the Exponential}
+\begin{problem}
+\item We examine the inverse of the exponential function. Use the
+  following plot for sketching the functions given below.
+
+  \scalebox{0.75}{\input{py/week5/exponential_week5day1.pgf}}
+
+  \begin{subproblem}
+  \item Make sketch of the function $f(t) = e^t$.
+  \item Use your sketch to determine the value of $t$ so that
+    $e^t=10$. Mark up the plot to demonstrate how you can find the
+    value of $t$ graphically.
+  \item Use your sketch to determine the value of $t$ so that
+    $e^t=1$. Mark up the plot to demonstrate how you can find the
+    value of $t$ graphically.
+  \end{subproblem}
+
+  \clearpage
+
+\item We define the logarithm, $\ln(t)$, to be the inverse function of
+  the exponential.  Use your calculator to determine the values of the
+  following functions.
+  \begin{subproblem}
+  \item $\ln\lp e^{2.5} \rp$.
+    \vfill
+  \item $\ln\lp e^{8} \rp$.
+    \vfill
+  \item $e^{\ln(7)}$.
+    \vfill
+  \item $e^{\ln(3)}$.
+    \vfill
+  \item $e^{\ln(0)}$.
+    \vfill
+  \end{subproblem}
+
+  \clearpage
+
+\item Use the axes below to make a sketch of the plot of the function
+  $e^t$ and $\ln(t)$.
+
+  \scalebox{0.75}{\input{py/week5/logarithm_week5day2.pgf}}
+
+\end{problem}
+
+\actTitle{Properties of the Logarithm}
+\begin{problem}
+\item We look at one important property of the logarithm. Solve the
+  following relationships as requested.
+  \begin{subproblem}
+  \item Use the properties of the exponential to represent the product
+    $e^a\cdot e^b$ as a single exponential.
+    \sideNote{Write the result as $e^a\cdot e^b=e^{\#}$ }
+    \label{subprob:exponentialExpansion}
+    \vfill
+  \item If $x=e^a$ determine the value of $a$ in terms of $x$.
+    \vfill
+  \item If $y=e^b$ determine the value of $b$ in terms of $y$.
+    \vfill
+  \item Substitute the previous two expressions for $a$ and $b$ into
+    the relationship you found in the first problem, problem
+    \ref{subprob:exponentialExpansion} and take the logarithm of both
+    sides. Simply the expression.
+    \vfill
+  \item What does this imply about the expression 
+    \begin{eqnarray*}
+      \ln\lp a \cdot b \rp & = & \hspace{10em}.
+    \end{eqnarray*}
+  \end{subproblem}
+
+  \clearpage
+
+\item We now examine another property with respect to raising a number
+  to a power.
+  \begin{subproblem}
+  \item We can think of $x^r=\lp x \rp^r$. Substitute the identity
+    $x=e^{\ln(x)}$ into the expression.
+      \vfill
+    \item Expand the exponent in the resulting expression.
+      \vfill
+    \item Take the logarithm of both sides of the expression.
+      \vfill
+    \item What does this imply about the expression
+    \begin{eqnarray*}
+      \ln\lp x^r \rp & = & \hspace{10em}.
+    \end{eqnarray*}
+  \end{subproblem}
+
+\clearpage
+
+\item We define the function $f(t)=e^t$. The goal is to determine the
+  derivative of the inverse of $f(t)$.
+  \begin{subproblem}
+  \item We can thing of the inverse in the following terms
+    \begin{eqnarray*}
+      t & = & f\lp\ln (t) \rp.
+    \end{eqnarray*}
+    Take the derivative of both sides. Keep the result in terms of the
+    derivative of the logarithm.
+    \vfill
+  \item Solve the expression for the derivative of the logarithm.
+    \vfill
+    \item What does this imply about the expression
+    \begin{eqnarray*}
+      \frac{d}{dt} \ln\lp t \rp & = & \hspace{10em}.
+    \end{eqnarray*}
+  \end{subproblem}
+
+\end{problem}
+
+\postClass
+
+\begin{problem}
+\item Briefly state two ideas from today's class.
+  \begin{itemize}
+  \item 
+  \item 
+  \end{itemize}
+\item Determine the following derivatives:
+  \begin{subproblem}
+    \item $\frac{d}{dt} e^{3t}$.
+      \vfill
+    \item $\frac{d}{dt} \ln(3t)$.
+      \vfill
+    \item $\frac{d}{dt} \ln\lp 2t^4 + 5\rp$.
+      \vfill
+    \item $\frac{d}{dt} \lp e^{7t} \cdot \ln \lp 4t^3 - 10\rp \rp$.
+      \vfill
+  \end{subproblem}
+\end{problem}
+
+%=========================================================================
+% Another day on Differential equations
+%=========================================================================
+\preClass{Free Body Diagrams}
+
+\begin{problem}
+\item An object is fired upwards from the ground. Make a sketch of the
+  free body diagram while it is in the air.
+  \vfill
+
+\item An object is fired upwards from the ground. Make a sketch of the
+  free body diagram after it strikes the ground and comes to rest.
+  \vfill
+
+\end{problem}
+
+
+\actTitle{Newton's Second Law and Differential Equations}
+\begin{problem}
+\item An object with mass 2 kg moves to the right on a friction-less
+  track. Assume that the air resistance is proportional to the speed
+  of the object.
+
+  \begin{subproblem}
+  \item Make a sketch of the free body diagram of the object.
+    \vfill
+  \item Determine the relationship between the acceleration and the
+    velocity of the object.
+    \vfill
+  \item Suppose that when the object is moving at 3 m/sec the force
+    due to the drag is determined to have a magnitude of
+    0.5N. Determine the value of the constant of proportionality.
+    \vfill
+  \item Substitute the constant of proportionality into the
+    relationship above and isolate the acceleration,
+    \begin{eqnarray*}
+      \frac{d}{dt} v(t) & = & \hspace{10em}.
+    \end{eqnarray*}
+  \end{subproblem}
+
+\clearpage
+
+\item Determine the general form of a function that is consistent the
+  previous equation. That is what kind of function has a derivative
+  that is proportional to itself? 
+  \sideNote{Express the relationship in terms of general constants to
+    be determined later.}
+
+  \vfill
+
+\item Substitute your general equation above into the last equation on
+  the previous page. Determine the values of the constants.
+
+  \vfill
+
+\clearpage
+
+\end{problem}
+
+\actTitle{Separable Differential Equations}
+\begin{problem}
+\item Determine the values of the following equations.
+  \begin{subproblem}
+    \item $\ln\lp 5t-8\rp$.
+      \vfill
+    \item $\ln\lp 3t^2 - 8t + 19 \rp$.
+      \vfill
+    \item $\ln\lp f(t) \rp$.
+      \vfill
+  \end{subproblem}
+
+  \clearpage
+
+\item The following questions refer to the differential equation
+  \begin{eqnarray*}
+    \frac{d}{dt} v(t) & = & -3 v(t).
+  \end{eqnarray*}
+  \begin{subproblem}
+  \item Divide both sides by $v(t)$.
+    \vfill
+  \item Use the chain rule to determine the derivative of the equation
+    \begin{eqnarray*}
+      \frac{d}{dt} \ln\lp v(t) \rp.
+    \end{eqnarray*}
+    \vfill
+  \item Using the first and second equations determine the value of 
+    \begin{eqnarray*}
+      \frac{d}{dt} \ln\lp v(t) \rp.
+    \end{eqnarray*}
+    \vfill
+  \item Take the anti-derivative of both sides and determine the value
+    of $v(t)$.
+    \sideNote{Do not forget the constant!}
+    \vfill
+  \end{subproblem}
+
+\end{problem}
+
+\postClass
+
+\begin{problem}
+\item Briefly state two ideas from today's class.
+  \begin{itemize}
+  \item 
+  \item 
+  \end{itemize}
+\item 
+  \begin{subproblem}
+    \item
+  \end{subproblem}
+\end{problem}
+
+
+
+%=========================================================================
+% Another day on optimization
+%=========================================================================
+\preClass{Optimization}
+
+\begin{problem}
+\item Graphically determine the values of $x$ and $y$ that achieve the
+  following goals:
+  \begin{eqnarray*}
+    \mathrm{Minimize:}  & & x+y, \\
+    \mathrm{Constraint:}  & & y - \frac{10}{x}  =  0.
+  \end{eqnarray*}
+  \vfill
+
+\item Analytically determine the values of $x$ and $y$ that achieve the
+  following goals:
+  \begin{eqnarray*}
+    \mathrm{Minimize:} && x+y, \\
+    \mathrm{Constraint:} && y - \frac{10}{x}  =  0.
+  \end{eqnarray*}
+  \vfill
+
+\end{problem}
+
+
+\actTitle{Determining Position With Friction}
+\begin{problem}
+\item Determine the values of $x$ and $y$ that achieve the following
+  goals: \sideNote{Examine the problem graphically first and then do
+    it analytically.}
+  \begin{eqnarray*}
+    \mathrm{Minimize:} & & y - e^x, \\
+    \mathrm{Constraint:} & & y - x  =  0.
+  \end{eqnarray*}
+
+  \vfill
+
+  \clearpage
+
+\item An object with a mass of 3kg moves to the right on a
+  friction-less track. Assume that the air resistance is proportional
+  to the speed of the object.
+  \begin{subproblem}
+  \item Make a sketch of the free body diagram of the object.
+    \vfill
+  \item It is determined that the force due to air resistance is equal
+    to $\frac{1}{4}$N when the speed of the object is 3
+    m/second. Determine the differential equation describing the velocity.
+    \vfill
+  \item The object is initially moving at a speed of 4 m/second to the
+    right. Determine the speed at any time.
+    \vfill
+  \item The object starts at the origin, $x=0$, at the initial
+    time. What is the position of the object at any time?
+  \end{subproblem}
+
+\end{problem}
+
+\actTitle{Optimization With Parameters}
+\begin{problem}
+\item An object with a mass of 3kg moves to the right on a
+  friction-less track. Assume that the air resistance is proportional
+  to the speed of the object.
+  \begin{subproblem}
+  \item Make a sketch of the free body diagram of the object.
+    \vfill
+  \item It is determined that the force due to air resistance is equal
+    to $\alpha$N when the speed of the object is 3
+    m/second. Determine the differential equation describing the velocity.
+    \vfill
+  \item The object is initially moving at a speed of $v_0$ m/second to
+    the right. Determine the speed at any time.  
+    \vfill
+  \item The object starts at the origin, $x=0$, at the initial
+    time. What is the position of the object at any time?
+    \vfill
+  \end{subproblem}
+  \clearpage
+\item You are asked to construct a system that will shoot a 3kg
+  object. Assume that the air resistance is proportional to the speed
+  of the object. You are told to construct the systems so that it
+  moves 2 meters after 3 seconds.
+  \begin{subproblem}
+  \item Determine the position of the object at any time.
+    \sideNote{You should have two constants, the initial velocity
+      ($v_0$) and a friction coefficient ($\alpha$).}
+    \vfill
+  \item The cost of the system depends on the value of the initial
+    velocity, $v_0$, and the coefficient of friction, $\alpha$. You
+    are told that the cost of the device used to initially propel the
+    object is twice the initial velocity squared. You are also told
+    that the cost associated with the friction is three times the
+    reciprocal of the friction coefficient squared. Determine the cost
+    of the system.
+    \vfill
+  \item Express the system in terms of the constraint and the cost.
+    \vfill
+    \clearpage
+  \item Determine the values of $v_0$ and $\alpha$ that will achieve
+    the objective with the least cost.
+    \vfill
+  \end{subproblem}
+\end{problem}
+
+\postClass
+
+\begin{problem}
+\item Briefly state two ideas from today's class.
+  \begin{itemize}
+  \item 
+  \item 
+  \end{itemize}
+\item 
+  \begin{subproblem}
+    \item
+  \end{subproblem}
+\end{problem}
+
+
+%=========================================================================
+% Start of 
+%=========================================================================
+\preClass{Right Triangle Trigonometry}
+
+\begin{problem}
+\item
+\end{problem}
+
+
+\actTitle{The Relationship Between Velocity and Time}
+\begin{problem}
+\item A cart is designed so it can only move left and right. A fan is
+  mounted on the cart at an angle, $\alpha$. The cart has a mass of 5
+  kg, and the fan exerts a constant force of 2N. Assume that
+  $\alpha=\frac{\pi}{6}$ and ignore the friction due to the air moving
+  over the cart.  \\
+  \includegraphics[width=9cm]{ink/week6/airCart}
+  \begin{subproblem}
+    \item Make a sketch of the free body diagram.
+      \vspace{10em}
+    \item If the cart starts from rest at $x=1$m, then determine the
+      position of the cart at any time.
+      \vfill
+      \clearpage
+    \item Assume that the angle, $\alpha$, is $\frac{\pi}{2}$. Repeat
+      the steps on the previous page. (Sketch the free body diagram
+      and determine the position at any time.)
+      \vfill
+      \clearpage
+    \item Assume that the angle, $\alpha$, is $\frac{5\pi}{6}$. Repeat
+      the steps on the previous page. (Sketch the free body diagram
+      and determine the position at any time.)
+      \vfill
+  \end{subproblem}
+\end{problem}
+
+\actTitle{The Relationship Between Velocity and Time}
+\begin{problem}
+\item A cart is designed so it can only move left and right. A fan is
+  mounted on the cart at an angle, $\alpha$. The cart has a mass of 5
+  kg, and the fan exerts a constant force of 2N. Assume that the angle
+  changes in time at a constant rate and makes one revolution every 30
+  seconds. Ignore the friction due to the air moving
+  over the cart.  \\
+  \includegraphics[width=9cm]{ink/week6/airCart}
+  \begin{subproblem}
+    \item Make a sketch of the free body diagram.
+      \vspace{10em}
+    \item Make a sketch of the $x$ component of the force due to the
+      fan as a function of time.
+      \sideNote{Be sure to label your axes and label all important
+        points on your graph.}  
+      \vfill
+    \item Make a sketch of the $y$ component of the force due to the
+      fan as a function of time.
+      \sideNote{Be sure to label your axes and label all important
+        points on your graph.}  
+      \vfill
+      \clearpage
+    \item The position of an object is given in the plot below. Make
+      a sketch of the object's velocity. \\
+      \scalebox{0.65}{\input{py/week6/sineInTime_week6day2.pgf}}
+
+    \item The velocity of an object is given in the plot below. Make
+      a sketch of the object's position. \\
+      \scalebox{0.65}{\input{py/week6/sineInTimeVel_week6day2.pgf}}
+
+  \end{subproblem}
+
+  \clearpage
+
+\item We will examine an approximation of the derivative of $\sin(t)$
+  at $t=0$.  Recall the definition of the derivative
+  \begin{eqnarray*}
+    \frac{d}{dt} v_x(t) & = & \lim_{\Delta t \rightarrow 0}
+                              \frac{v_x(t+\Delta t) - v_x(t)}{\Delta t}.
+  \end{eqnarray*}
+  \begin{subproblem}
+  \item Suppose that $v_x(t)=\sin(t)$. Use the limit notation to
+    define the derivative of $\sin(t)$ at $t=0$.
+    \vspace{6em}
+  \item Make an approximation of the derivative for specific values of
+    $\Delta t$ where $\Delta t_n=\frac{1}{2^n}$. Make a sketch of the
+    plot of the approximations for $n=1,~2,~3,\ldots$. What is the
+    derivative of $\sin(t)$ at $t=0$?
+    \vfill
+  \end{subproblem}
+
+\end{problem}
+
+\postClass
+
+\begin{problem}
+\item Briefly state two ideas from today's class.
+  \begin{itemize}
+  \item 
+  \item 
+  \end{itemize}
+\item 
+  \begin{subproblem}
+    \item
+  \end{subproblem}
+\end{problem}
+
+%=========================================================================
+% Start of second activity on basic trig
+%=========================================================================
+\preClass{Basic Trigonometry}
+
+\begin{problem}
+\item
+\end{problem}
+
+
+\actTitle{The Relationship Between Velocity and Time}
+\begin{problem}
+\item A cart is initially located at the origin and is pointing in the
+  direction of the positive $x$-axis. The cart moves at a constant
+  velocity of 0.5 m/second. First it moves forward for 2 seconds. It
+  then stops and turns $\frac{\pi}{3}$ radians to the left and moves
+  forward for 4 seconds. Finally it stops and turns $\frac{5\pi}{6}$
+  radians to the left and moves forward for 8 seconds.
+
+  \scalebox{0.65}{\input{py/week6/trigPath_week6day3.pgf}}
+
+  \begin{subproblem}
+    \item Make a sketch of the path it takes in the grid above.
+    \item Determine the position of the cart at each place where it
+      stops. 
+      \vfill
+      \clearpage
+    \item Determine the formula for the position of the cart at any
+      between 0 and 2 seconds.
+      \vfill
+    \item Determine the formula for the position of the cart at any
+      between 2 and 6 seconds.
+      \vfill
+    \item Determine the formula for the position of the cart at any
+      between 6 and 14 seconds.
+      \vfill
+  \end{subproblem}
+
+  \clearpage
+
+\item The unit circle is shown in the figure below. 
+
+  \scalebox{0.85}{\input{py/week6/unitCircle_week6day3.pgf}}
+
+  \begin{subproblem}
+  \item Mark the locations and associated triangles for the points on
+    the circle with angles $\frac{n\pi}{6}$ for $n=1,~2,~3,\ldots,12$.
+  \item Indicate on the figure the sign (positive or negative) for the
+    cosine in each quadrant.
+  \item Indicate on the figure the sign (positive or negative) for the
+    sine in each quadrant.
+
+    \clearpage
+
+  \item Which angles satisfy
+    \begin{eqnarray*}
+      |\cos(\theta)| & > & |\sin(\theta) |?
+    \end{eqnarray*}
+    \vfill
+  \item Which angles satisfy
+    \begin{eqnarray*}
+      |\cos(\theta)| & = & |\sin(\theta) |?
+    \end{eqnarray*}
+    \vfill
+  \item Which angles satisfy
+    \begin{eqnarray*}
+      |\cos(\theta)| & < & |\sin(\theta) |?
+    \end{eqnarray*}
+    \vfill
+  \end{subproblem}
+
+\end{problem}
+
+\actTitle{The Relationship Between Velocity and Time}
+\begin{problem}
+\item A cart is designed so it can only move left and right. A fan is
+  mounted on the cart at an angle, $\alpha$. The cart has a mass of 5
+  kg, and the fan exerts a constant force of 2N. Assume that the angle
+  changes in time at a constant rate and makes one revolution every 30
+  seconds. Ignore the friction due to the air moving
+  over the cart.  \\
+  \includegraphics[width=9cm]{ink/week6/airCart}
+  \begin{subproblem}
+    \item Make a sketch of the free body diagram.
+      \vfill
+    \item Determine the differential equation describing the motion
+      of the cart.
+      \vfill
+      \clearpage
+    \item Determine the position of the cart at any time assuming that
+      the fan is initially pointing straight up.
+      \vfill
+    \item Determine the position of the cart at any time assuming that
+      the fan is initially pointing directly to the right.
+      \vfill
+  \end{subproblem}
+
+  \clearpage
+
+\item Determine the derivatives of the following functions:
+  \begin{subproblem}
+    \item $\frac{d}{dt} \sin(t) = $ 
+      \vfill
+    \item $\frac{d}{dt} \cos(t) = $ 
+      \vfill
+    \item $\frac{d}{dt} \sin\lp \frac{180 t}{\pi}  \rp = $ 
+      \sideNote{What does this imply about the derivative with respect
+        to degree measure?}
+      \vfill
+    \item $\frac{d}{dt} \sin(4t) = $ 
+      \vfill
+    \item $\frac{d}{dt} \cos(5t^2+3t) = $ 
+      \vfill
+  \end{subproblem}
+
+  \clearpage
+
+\item The goal is to derive a formula for the derivative of the
+  tangent function. Express the tangent as the ratio of the sine
+  divided by the cosine. Then use the quotient rule to determine the
+  derivative of the tangent.
+
+  \sideNote{Use the relationship $\sin^2(\theta)+\cos^2(\theta)$ to
+    put everything in terms of the cosine.}
+
+  \vfill
+
+\end{problem}
+
+\postClass
+
+\begin{problem}
+\item Briefly state two ideas from today's class.
+  \begin{itemize}
+  \item 
+  \item 
+  \end{itemize}
+\item 
+  \begin{subproblem}
+    \item
+  \end{subproblem}
+\end{problem}
+
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "labManual"
+%%% End:
