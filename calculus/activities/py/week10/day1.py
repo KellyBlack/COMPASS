@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 import matplotlib.path as path
-from matplotlib.patches import FancyArrowPatch
+from matplotlib.patches import Polygon
 from matplotlib.patches import Ellipse
 import math
 
@@ -15,69 +15,53 @@ from BasicPlot import BasicPlot
 
 plotter = BasicPlot()
 
-def force(t):
-    return(t*t)
 
 ###############################
 plotter.clearPlot()
 
-plotter.setAxes(True)
+plotter.setAxes(False)
 axis = plotter.getAxes()
 
-plotter.setAxesBounds(0.0,4.0,-1.0,16.0)
-for pos in range(2):
-    t = 2.0*float(pos)
-    plotter.addFunction([t,t+2.0],[force(t),force(t)],'k-',2.0)
-    plotter.markJumps([[t,force(t),False],[t+2.0,force(t),True]],8.0)
+plotter.setAxesBounds(-0.1,2.1,-0.1,2.1)
 
-plotter.setupGrid(0.3,'--',
-                   0.0,1.0,4.1,
-                  -1.0,1.0,16.1)
-plotter.axesDecorations('Nonconstant Force','Time (sec)','Force (N)')
+axis.add_patch(Polygon(np.array([[0.0,1.0],[1.0,1.0],[1.0,1.8]]),edgecolor='black',facecolor='none'))
+plotter.addFunction([0.9,0.9,1.0],[1.0,1.1,1.1],'k-',1.0)
+plotter.placeText(0.12,1.02,r'$\pi/3$',fontsize=14)
+plotter.placeText(0.90,1.54,r'$0.6$',fontsize=14)
+#plotter.placeText(0.45,1.7,r'$0.4$',fontsize=14)
+plotter.placeText(0.02,1.7,'A',fontsize=20)
+
+axis.add_patch(Polygon(np.array([[1.1,1.0],[2.0,1.0],[2.0,2.0]]),edgecolor='black',facecolor='none'))
+plotter.addFunction([1.9,1.9,2.0],[1.0,1.1,1.1],'k-',1.0)
+plotter.placeText(1.22,1.02,r'$\pi/6$',fontsize=14)
+plotter.placeText(1.87,1.54,r'$0.5$',fontsize=14)
+#plotter.placeText(0.45,0.7,r'$0.4$',fontsize=14)
+plotter.placeText(1.06,1.7,'B',fontsize=20)
+
+axis.add_patch(Polygon(np.array([[0.0,0.0],[1.0,0.0],[1.0,0.9]]),edgecolor='black',facecolor='none'))
+plotter.addFunction([0.9,0.9,1.0],[0.0,0.1,0.1],'k-',1.0)
+plotter.placeText(0.12,0.02,r'$\theta$',fontsize=14)
+plotter.placeText(0.82,0.14,r'$0.5$',fontsize=14)
+plotter.placeText(0.45,0.5,r'$0.4$',fontsize=14)
+plotter.placeText(0.02,0.7,'C',fontsize=20)
+
+
+axis.add_patch(Polygon(np.array([[1.1,0.0],[2.0,0.0],[2.0,0.7]]),edgecolor='black',facecolor='none'))
+plotter.addFunction([1.9,1.9,2.0],[0.0,0.1,0.1],'k-',1.0)
+plotter.placeText(1.22,0.02,r'$\theta$',fontsize=14)
+plotter.placeText(1.52,0.02,r'$0.5$',fontsize=14)
+plotter.placeText(1.45,0.4,r'$0.4$',fontsize=14)
+plotter.placeText(1.06,0.7,'D',fontsize=20)
+
+
+
+#plotter.setupGrid(0.3,'--',
+#                   0.0,1.0,4.1,
+#                  -1.0,1.0,16.1)
+#plotter.axesDecorations('Nonconstant Force','Time (sec)','Force (N)')
 
 
 plt.draw()
 #plt.show()
-plt.savefig('piecewiseConstantForceI_week8day1.pgf',format='pgf')
-
-###############################
-plotter.clearPlot()
-
-plotter.setAxes(True)
-axis = plotter.getAxes()
-
-plotter.setAxesBounds(0.0,4.0,-1.0,16.0)
-for pos in range(4):
-    t = float(pos)
-    plotter.addFunction([t,t+1.0],[force(t),force(t)],'k-',2.0)
-    plotter.markJumps([[t,force(t),False],[t+1.0,force(t),True]],8.0)
-
-plotter.setupGrid(0.3,'--',
-                   0.0,1.0,4.1,
-                  -1.0,1.0,16.1)
-plotter.axesDecorations('Nonconstant Force','Time (sec)','Force (N)')
-
-
-plt.draw()
-#plt.show()
-plt.savefig('piecewiseConstantForceII_week8day1.pgf',format='pgf')
-
-###############################
-plotter.clearPlot()
-
-plotter.setAxes(True)
-axis = plotter.getAxes()
-
-plotter.setAxesBounds(0.0,4.0,-1.0,16.0)
-plotter.setupGrid(0.3,'--',
-                   0.0,1.0,4.1,
-                  -1.0,1.0,16.1)
-plotter.axesDecorations('Nonconstant Force','Time (sec)','Force (N)')
-
-
-plt.draw()
-#plt.show()
-plt.savefig('changingForceGrid_week8day1.pgf',format='pgf')
-
-
+plt.savefig('simpleWedge.pgf',format='pgf')
 
