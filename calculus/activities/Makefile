@@ -18,6 +18,9 @@ labManual.pdf: labManual.tex *.tex
 force:
 	$(LATEX) labManual
 
+view:	labManual.pdf
+	/usr/bin/okular labManual.pdf &
+
 
 clean:
 	rm -f *.aux *.nav *.snm *.toc *.log *.dvi *.out *~
