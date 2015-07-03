@@ -750,7 +750,7 @@
 \pgftext[x=0.944444in,y=5.364809in,right,]{\sffamily\fontsize{12.000000}{14.400000}\selectfont 3}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgftext[x=0.708822in,y=4.309091in,,bottom,rotate=90.000000]{\sffamily\fontsize{12.000000}{14.400000}\selectfont Position (m)}%
+\pgftext[x=0.708822in,y=4.309091in,,bottom,rotate=90.000000]{\sffamily\fontsize{12.000000}{14.400000}\selectfont Velocity (m/s)}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \pgftext[x=4.100000in,y=5.469444in,,base]{\sffamily\fontsize{14.400000}{17.280000}\selectfont Velocity of an Object}%

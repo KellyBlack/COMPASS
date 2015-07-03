@@ -46,7 +46,7 @@ plotter.setupGrid(0.3,'--',
                   0.0,0.5,2.1,
                   -3.0,1.0,3.1)
 plotter.setAxesBounds(-0.1,2.1,-3.1,3.1)
-plotter.axesDecorations('Velocity of an Object','','Position (m)')
+plotter.axesDecorations('Velocity of an Object','','Velocity (m/s)')
 
 plotter.subplot(2,1,2)
 plotter.setupGrid(0.3,'--',
