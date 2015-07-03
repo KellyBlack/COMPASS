@@ -7,17 +7,18 @@
 \textbf{Note:} For a general introduction to MATLAB see \textit{The
   MATLAB User's Guide, Reference Manual}, or other \textit{MATLAB}
 manuals.  You can buy the student edition of MATLAB.  It comes with a
-good manual. \index{MATLAB}\\
-
+good manual. \index{MATLAB}
 
 If you are using MATLAB in other classes, you may consider buying the 
 \textbf{MATLAB Guide} by Desmond J. Higham and Nicholas J. Higham, published
-by Siam.\\ 
-  
+by Siam.  
 
-\subsection{Basic operations} Addition, subtraction, and arrays.  The 
-command 'Press Enter' is abbreviated by ENTER. \\
-\vspace{1in}
+\subsection{Basic operations} Examples of common tasks are given
+below.  Try interactively typing these commands at the command prompt
+to get a sense of the environment as well as the language. The
+command 'Press Enter' is abbreviated by ENTER.
+
+\vspace{2em}
 
 
 \begin{tabular}{lll} 
@@ -41,7 +42,8 @@ command 'Press Enter' is abbreviated by ENTER. \\
   \ttt{>>} g2 = 2*g  &ENTER & Multiply array by a constant. \\
 \end{tabular}
 
-\subsection{Creating a function plot} ~ \\
+\subsection{Plotting Examples}  ~
+
 \begin{tabular}{lll}
   \ttt{>>} \verb!x = -5:0.1:5;!  &ENTER  &Set up the independent variable. \\
   \ttt{>>} y = \verb!x.^2!; &ENTER  & Compute dependent variable or
@@ -58,7 +60,8 @@ command 'Press Enter' is abbreviated by ENTER. \\
   property is 'replace'. \\ 
 \end{tabular}
 
-\subsection{Sums and loops} ~ \\
+\subsection{Sums, Loops, and Variables} ~ 
+
 \begin{tabular}{lll}
   \ttt{>>} u = [ 1 2 3 4 5]  &ENTER &Define the row vector 'u'. \\
   \ttt{>>} v = [ 6 7 8 9 10 ]' &ENTER &Define the column vector 'v'.\\
@@ -114,35 +117,36 @@ There are two types:
   \verb!y=x.^2;!\\
   \ttt{plot (x,y)}
   
-  \item Save the M-file to the E: drive in the "Calculus" folder as test1.m.
+  \item Save the M-file to a convenient folder as test1.m.
   
   If this is the first time you are running MATLAB, you may need to create the
   folder "Calculus."
   
-  When MATLAB opens, the default directory is S:$\backslash$NetApps$\backslash$ 
-  MATLAB$\backslash$bin$\backslash$win32.  To change the directory click on the
-  icon to the right of the displayed directory name.  The "Browse for Folder"
+  When MATLAB opens, a default directory is used.  To change the
+  directory click on the icon to the right of the displayed directory
+  name.  The "Browse for Folder"
   window will open.\\
-  $\rightarrow$ Click on E: to select the E: drive.\\
-  $\rightarrow$ Click on the "New Folder" icon and type the word "Calculus" to
-  name the new folder.\\
+  $\rightarrow$ Click on the drive you want to use.\\
+  $\rightarrow$ Click on the sequence of folder icons to get to the
+  folder that you wish to use.\\
   $\rightarrow$ Now save your M-file to the folder "Calculus."
   
   \item To execute the MATLAB script click on the "Save and Run" or "Run" icon. 
-  The first time you select the "Run" command the MATLAB Editor window will open
-  containing the following information:
+  The first time you select the "Run" command the MATLAB Editor window
+  you may be asked to switch to the current directory. If so then
+  choose the option to use the directory.
   
-  File E:$\backslash$Calculus$\backslash$test1.m is not found in the current
-  or on the MATLAB path.\\ 
-  To run this file, select one of the following:
+  If you get a message that the file was not found then you can select
+  on of the following:
   \begin{itemize}
     \item Change MATLAB current directory
     \item Add directory to the top of the MATLAB path
     \item Add directory to the bottom of the MATLAB path.
   \end{itemize}
-  Select "Add directory to the top of the MATLAB path" and click on OK.
-  
-  MATLAB will then execute the script.  What do you observe?
+  Select "Add directory to the top of the MATLAB path" and click on
+  OK.  MATLAB will then execute the script.
+
+  What do you observe?
   
   \item Next create a function called f1.m that will generate the points to plot
   the function $f(x)=e^{(-x/3)}\sin(2x)$ using M-file.
@@ -153,7 +157,7 @@ There are two types:
     % y=f1(x) : This is my second M-file experience
     y=exp(-x/3).*sin(2*x);
   \end{verbatim}
-  Save the file as f1.m to the Calculus folder on the E: drive.
+  Save the file as f1.m to the same folder used above.
   
   To execute the function we first need to define $x$.  Return to the command
   window and define $x$  and execute the function as follow:\\
@@ -177,7 +181,7 @@ There are two types:
     y=exp(-x/3).*sin(2*x);
     z=exp(-x/3).*cos(2*x);
   \end{verbatim}
-  Save the file as f2.m to the Calculus folder on the E: drive.
+  Save the file as f2.m to the same folder used above.
   
   To execute this function and to plot the output type the following commands in 
   the command window:\\
@@ -212,7 +216,7 @@ There are two types:
     ylabel('Sq. Feet');
     clear u v w z
   \end{verbatim}
-  Save the M-file as f2\_plot.m to the Calculus folder on the E: drive.
+  Save the M-file as f2\_plot.m to the same folder used above.
   
   To execute the M-file script either click on the "Run" icon or type f2\_plot
   at the \ttt{>>} command prompt in the command window.
@@ -223,7 +227,7 @@ There are two types:
   \item We will do one more example of a function.  This function will create a
   sequence of numbers, called the Fibonacci sequence.  It will have one input
   and one output and use a "for" loop to generate the sequence.
-  \clearpage
+
   Open a new M-file type the following commands including the comments:
   \begin{verbatim}
     function y=fibonacci(n)
@@ -240,7 +244,7 @@ There are two types:
         y(i)=y(i-1)+y(i-2);
     end
   \end{verbatim}
-  Save the M-file as fibonacci.m in the Calculus folder on the E: drive.
+  Save the M-file as fibonacci.m in the same folder used previously.
   
   To display the comments at the beginning of the fibonacci.m file and to
   execute it, type the following commands in the command window:
