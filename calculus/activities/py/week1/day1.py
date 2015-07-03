@@ -60,10 +60,7 @@ plotter.axesDecorations('Velocity of an Object','','Velocity (m/s)')
 plotter.subplot(2,1,2)
 
 with plt.xkcd():
-    plotter.addFunction([0,1],[ 0 ,1], 'k-',2.0)
-    plotter.addFunction([1,2],[ 1 ,0], 'k-',2.0)
-    plotter.addFunction([2,3],[ 0 ,-1], 'k-',2.0)
-    plotter.addFunction([3,4],[-1,2], 'k-',2.0)
+    plotter.addFunction([0,1,3,4],[ 0 ,1,-1,2], 'k-',2.0)
 
 plotter.setupGrid(0.3,'--',
                   0.0,1.0,4.1,
