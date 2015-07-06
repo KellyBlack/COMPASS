@@ -337,11 +337,11 @@ defined to be
 \begin{eqnarray*}
   \frac{f(b)-f(a)}{b-a}.
 \end{eqnarray*}
-Geometrically this is the equivalent to be the slope of the straight
-line that goes through the two points. Of the function is the position
-of an object, then physically it is the average velocity of an object
-between the two times. In this case the units would be distance
-divided by time.
+Geometrically this is the equivalent to be the \textbf{slope} of the
+straight line that goes through the two points. Of the function is the
+position of an object, then physically it is the average velocity of
+an object between the two times. In this case the units would be
+distance divided by time.
 
 \scalebox{0.5}{\input{py/week1/averageRateChange_day2.pgf}}
 
@@ -355,30 +355,32 @@ then the average rate of change is positive.
 
 \begin{problem}
 \item An experiment is conducted, and the position of an object is
-  measured at specific times. The time of the measurement and the
-  position for each time is given in the table below: \\
-  \begin{tabular}{ll}
-    Time (sec.) & position (m) \\ \hline
-    0.0  & 0.0 \\
-    0.25 & 0.2 \\
-    0.50 & 0.3 \\
-    0.75 & 0.2 \\
-    1.00 & 0.0 \\
-    1.25 & -0.4 \\
-    1.50 & 0.0
-  \end{tabular}
+  measured at specific times. 
   \begin{subproblem}
-  \item Determine the average rate of change in the position over each
-    time interval in the table above.
-    \vfill
+  \item The time of the measurement and the
+    position for each time is given in the table below: \\
+  \begin{tabular}{l|l|c|c}
+    Time (sec.) & Pos. (m) & Change in Pos. (m) & Avg. rate of change (m/s) \\ \hline
+    0.0  &  0.0 & \\ [12pt]
+    0.25 &  0.2 & \\ [12pt]
+    0.50 &  0.3 & \\ [12pt]
+    0.75 &  0.2 & \\ [12pt]
+    1.00 &  0.0 & \\ [12pt]
+    1.25 & -0.4 & \\ [12pt]
+    1.50 &  0.0 &
+  \end{tabular}
+
+  Determine the change in the position between successive
+  measurements, and then determine the average rate of change in the
+  position over each time interval in the table above.
 
   \item What happens to the graph of the position when the average
     velocity changes from positive to negative?  
-    \vspace{2em}
+    \vfill
 
   \item What happens to the graph of the position when the average
     velocity changes from negative to positive?
-    \vspace{2em}
+    \vfill
 
   \end{subproblem}
 
@@ -391,31 +393,34 @@ then the average rate of change is positive.
 
     \begin{subproblem}
     \item The height of the function at various times are indicated on
-      the plot. Sketch the secant line through the time $t=3.0$
-      seconds to $t=1$, $t=2$, $t=2.5$, $t=2.75$ seconds. Make an
-      estimate for the slope of each line. (Organize the estimate as a
-      table with the columns properly labeled.)
+      the plot. Sketch the secant line from the times $t=1$, $t=2$,
+      $t=2.5$, $t=2.75$ seconds to $t=3.0$ seconds. Make an estimate
+      for the slope of each line. (Organize the estimate as a table
+      with the columns properly labeled.)
 
       \vfill
 
-    \item  Repeat the steps you took above but this time use the times
-      through $t=4$ seconds to $t=5$, $t=4.5$, and $t=4.75$.
+    \item Repeat the steps you took above but this time use the times
+      from $t=5$, $t=4.5$, and $t=4.75$ to $t=4$ seconds.
 
       \scalebox{0.5}{\input{py/week1/estimateAvgRateChangeNeg_day2.pgf}}
     
       \vfill
 
-    \item How do the signs of the results compare between the two
-      exercises? Why are they different?
-      \vspace{3em}
+    \item How do the signs (+/-) of the results compare between the
+      two exercises? Why are they different?  
+
+      \vspace{4em}
     
     \item What is happening to the numbers as the time span between
       points decreases?
-      \vspace{3em}
+
+      \vspace{4em}
 
     \item Given the average rate of change, determine a way to
       determine the total change in the position over the given time
-      interval.
+      interval. That is, given a value for the average rate of change
+      how can you determine the total change in the position?
 
       \vfill
 
@@ -425,13 +430,13 @@ then the average rate of change is positive.
 
   \item A sequence of numbers is given by
     \begin{eqnarray*}
-      \left\{ 1,~0.5,~0.3\bar{33},~0.25,~0.20,~0.16\bar{66}, \ldots \right\}.
+      \left\{ 1,~0.5,~0.33\bar{3},~0.25,~0.20,~0.166\bar{6}, \ldots \right\}.
     \end{eqnarray*}
 
     \begin{subproblem}
     \item Determine the formula to get the value of the number in the
-      sequence. Assume that the place is $n$ and that $n=1$ for the
-      first number in the sequence.  
+      sequence as a function of $n$ where $n=1$ is the first number in
+      the sequence.
 
       \vfill
 
@@ -450,8 +455,8 @@ then the average rate of change is positive.
 
     \begin{subproblem}
     \item Determine the formula to get the value of the number in the
-      sequence. Assume that the place is $n$ and that $n=1$ for the
-      first number in the sequence.  
+      sequence as a function of $n$ where $n=1$ is the first number in
+      the sequence.
 
       \vfill
 
