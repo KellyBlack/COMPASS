@@ -52,6 +52,7 @@ def pos(t):
 
 plotter.markJumps([[3.0,pos(3.0),True],[2.5,pos(2.5),True],
                    [2.0,pos(2.0),True],[1.0,pos(1.0),True],
+                   [2.75,pos(2.75),True]
         ],8.0)
 
 plotter.setupGrid(0.3,'--',
