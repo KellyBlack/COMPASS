@@ -63,6 +63,7 @@ fig = plotter.setFigure(None,(8.0, 4.0),80,'w','k')
 plotter.setAxes(False)
 axis = plotter.getAxes()
 plotter.setAxesBounds(0.0,9.0,0.0,6.0)
+
 axis.add_patch(patches.Rectangle((4.5,3.2),1.0,0.5,angle=33.0,fill=True,edgecolor="black",
                                  linewidth=2.0,linestyle='solid',facecolor='black'))
 triangle = path.Path(np.array([[0.5,0.5],[8.0,0.5],[8.0,5.5],[0.5,0.5]]),
@@ -71,8 +72,8 @@ triangle = path.Path(np.array([[0.5,0.5],[8.0,0.5],[8.0,5.5],[0.5,0.5]]),
                 )
 axis.add_patch(patches.PathPatch(triangle,edgecolor='black',facecolor='white'))
 plotter.addFunction([7.5,7.5,8.0],[0.5,1.0,1.0],'k-',1.0)
-plotter.placeText(1.0,0.55,r'$\theta$',fontsize=18)
-plotter.placeText(7.5,4.8,r'$\psi$',fontsize=18)
+plotter.placeText(1.3,0.60,r'$\theta$',fontsize=24)
+plotter.placeText(7.5,4.7,r'$\psi$',fontsize=24)
 #axis.set_aspect(4.0/8.0)
 
 plt.draw()
@@ -93,10 +94,10 @@ triangle = path.Path(np.array([[0.5,0.5],[8.0,0.5],[8.0,5.5],[0.5,0.5]]),
                 )
 axis.add_patch(patches.PathPatch(triangle,edgecolor='black',facecolor='white'))
 plotter.addFunction([7.5,7.5,8.0],[0.5,1.0,1.0],'k-',1.0)
-plotter.placeText(1.0,0.55,r'$\theta$',fontsize=18)
-plotter.placeText(3.7,0.15,r'$x$',fontsize=18)
-plotter.placeText(8.2,2.25,r'$y$',fontsize=18)
-plotter.placeText(3.7,3.25,r'$r$',fontsize=18)
+plotter.placeText(1.3,0.6,r'$\theta$',fontsize=24)
+plotter.placeText(3.7,0.05,r'$x$',fontsize=24)
+plotter.placeText(8.5,2.25,r'$y$',fontsize=24)
+plotter.placeText(3.7,3.25,r'$r$',fontsize=24)
 #axis.set_aspect(4.0/8.0)
 
 plt.draw()

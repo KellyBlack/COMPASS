@@ -90,10 +90,10 @@
 \pgfusepath{stroke}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgftext[x=1.688889in,y=0.693333in,left,base]{\sffamily\fontsize{18.000000}{21.600000}\selectfont \(\displaystyle \theta\)}%
+\pgftext[x=1.895556in,y=0.720000in,left,base]{\sffamily\fontsize{24.000000}{28.800000}\selectfont \(\displaystyle \theta\)}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgftext[x=6.166667in,y=2.960000in,left,base]{\sffamily\fontsize{18.000000}{21.600000}\selectfont \(\displaystyle \psi\)}%
+\pgftext[x=6.166667in,y=2.906667in,left,base]{\sffamily\fontsize{24.000000}{28.800000}\selectfont \(\displaystyle \psi\)}%
 \end{pgfscope}%
 \end{pgfpicture}%
 \makeatother%
