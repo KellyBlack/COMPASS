@@ -55,11 +55,11 @@ plotter.setAxesBounds(0.0,10.0,0.0,10.0)
 axis.add_patch(patches.Rectangle((2.0,0.5),6.0,8.0,fill=False,edgecolor="black",
                                  linewidth=2.0,linestyle='solid'))
 axis.add_patch(patches.Rectangle((8.0,0.5),1.0,8.0,fill=False,edgecolor="black",
-                                 linewidth=2.0,linestyle='dashed',hatch='\\'))
+                                 linewidth=2.0,linestyle='solid',hatch='\\'))
 axis.add_patch(patches.Rectangle((2.0,8.5),6.0,1.0,fill=False,edgecolor="black",
-                                 linewidth=2.0,linestyle='dashed',hatch='/'))
+                                 linewidth=2.0,linestyle='solid',hatch='/'))
 axis.add_patch(patches.Rectangle((8.0,8.5),1.0,1.0,fill=False,edgecolor="black",
-                                 linewidth=2.0,linestyle='dashed',hatch='x'))
+                                 linewidth=2.0,linestyle='solid',hatch='x'))
 
 arrows = FancyArrowPatch(posA=(9.70,8.0), posB=(9.0, 9.1),
                             edgecolor = 'black',facecolor='white',
@@ -69,12 +69,12 @@ arrows = FancyArrowPatch(posA=(9.70,8.0), posB=(9.0, 9.1),
 axis.add_patch(arrows)
 
 plotter.placeText(9.2,7.4,r'$A\cap B$',fontsize=22,color='blue')
-plotter.placeText(5.2,8.75,'A',fontsize=22,color='red')
-plotter.placeText(8.5,4.50,'B',fontsize=22,color='green')
+plotter.placeText(5.2,9.75,'A',fontsize=22,color='red')
+plotter.placeText(9.2,4.50,'B',fontsize=22,color='green')
 
 plotter.placeText(2.0,0.0,r'0',fontsize=18)
-plotter.placeText(7.3,0.0,r'$g(t)$',fontsize=18)
-plotter.placeText(8.4,0.0,r'$g(t+\Delta t)$',fontsize=18)
+plotter.placeText(7.6,0.0,r'$g(t)$',fontsize=18)
+plotter.placeText(8.7,0.0,r'$g(t+\Delta t)$',fontsize=18)
 
 plotter.placeText(1.5,0.4,r'0',fontsize=18)
 plotter.placeText(1.1,8.3,r'$f(t)$',fontsize=18)
