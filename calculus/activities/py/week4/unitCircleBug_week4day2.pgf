@@ -269,28 +269,28 @@
 \pgfusepath{stroke}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgftext[x=4.400000in,y=3.024000in,left,base]{\sffamily\fontsize{18.000000}{21.600000}\selectfont \(\displaystyle \theta\)}%
+\pgftext[x=4.520000in,y=3.072000in,left,base]{\sffamily\fontsize{24.000000}{28.800000}\selectfont \(\displaystyle \theta\)}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgftext[x=4.868000in,y=2.844000in,left,base]{\sffamily\fontsize{18.000000}{21.600000}\selectfont \(\displaystyle x\)}%
+\pgftext[x=4.868000in,y=2.748000in,left,base]{\sffamily\fontsize{24.000000}{28.800000}\selectfont \(\displaystyle x\)}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgftext[x=5.948000in,y=3.420000in,left,base]{\sffamily\fontsize{18.000000}{21.600000}\selectfont \(\displaystyle y\)}%
+\pgftext[x=6.008000in,y=3.420000in,left,base]{\sffamily\fontsize{24.000000}{28.800000}\selectfont \(\displaystyle y\)}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgftext[x=4.988000in,y=3.900000in,left,base]{\sffamily\fontsize{18.000000}{21.600000}\selectfont \(\displaystyle r\)}%
+\pgftext[x=4.988000in,y=3.900000in,left,base]{\sffamily\fontsize{24.000000}{28.800000}\selectfont \(\displaystyle r\)}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgftext[x=6.380000in,y=2.772000in,left,base]{\sffamily\fontsize{18.000000}{21.600000}\selectfont \(\displaystyle 1\)}%
+\pgftext[x=6.380000in,y=2.748000in,left,base]{\sffamily\fontsize{24.000000}{28.800000}\selectfont \(\displaystyle 1\)}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgftext[x=3.944000in,y=5.280000in,left,base]{\sffamily\fontsize{18.000000}{21.600000}\selectfont \(\displaystyle 1\)}%
+\pgftext[x=3.872000in,y=5.280000in,left,base]{\sffamily\fontsize{24.000000}{28.800000}\selectfont \(\displaystyle 1\)}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgftext[x=1.556000in,y=2.772000in,left,base]{\sffamily\fontsize{18.000000}{21.600000}\selectfont \(\displaystyle -1\)}%
+\pgftext[x=1.412000in,y=2.748000in,left,base]{\sffamily\fontsize{24.000000}{28.800000}\selectfont \(\displaystyle -1\)}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgftext[x=3.764000in,y=0.600000in,left,base]{\sffamily\fontsize{18.000000}{21.600000}\selectfont \(\displaystyle -1\)}%
+\pgftext[x=3.692000in,y=0.480000in,left,base]{\sffamily\fontsize{24.000000}{28.800000}\selectfont \(\displaystyle -1\)}%
 \end{pgfscope}%
 \end{pgfpicture}%
 \makeatother%
