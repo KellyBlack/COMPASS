@@ -1406,19 +1406,23 @@
     $e^a\cdot e^b$ as a single exponential.
     \sideNote{Write the result as $e^a\cdot e^b=e^{\#}$ }
     \label{subprob:exponentialExpansion}
+    \begin{eqnarray}
+      \label{eqn:exponentialExpansion}
+      e^a \cdot e^b & = & 
+    \end{eqnarray}
+  \item If $e^a=x$ substitute this value for $e^a$ into the left hand
+    side of equation \ref{eqn:exponentialExpansion}.
+    \vspace{4em}
+  \item If $e^b=y$ substitute this value for $e^a$ into the left hand
+    side of equation \ref{eqn:exponentialExpansion}.
+    \vspace{4em}
+  \item Take the logarithm of both sides of your current form of the expression.
     \vfill
-  \item If $x=e^a$ determine the value of $a$ in terms of $x$.
-    \vfill
-  \item If $y=e^b$ determine the value of $b$ in terms of $y$.
-    \vfill
-  \item Substitute the previous two expressions for $a$ and $b$ into
-    the relationship you found in the first problem, problem
-    \ref{subprob:exponentialExpansion} and take the logarithm of both
-    sides. Simply the expression.
+  \item Solve $e^a=x$ for $a$ and solve $e^b=y$ for $b$.
     \vfill
   \item What does this imply about the expression 
     \begin{eqnarray*}
-      \ln\lp a \cdot b \rp & = & \hspace{10em}.
+      \ln\lp x \cdot y \rp & = & \hspace{10em}.
     \end{eqnarray*}
   \end{subproblem}
 
@@ -1428,11 +1432,16 @@
   to a power.
   \begin{subproblem}
   \item We can think of $x^r=\lp x \rp^r$. Substitute the identity
-    $x=e^{\ln(x)}$ into the expression.
+    $x=e^{\ln(x)}$ into the right hand side of the expression.
+    \begin{eqnarray}
+      \label{eqn:exponentialMultiplication}
+      x^r & = & 
+    \end{eqnarray}
+    \item Expand and simplify the exponent in the right hand side of
+      the expression.
       \vfill
-    \item Expand the exponent in the resulting expression.
-      \vfill
-    \item Take the logarithm of both sides of the expression.
+    \item Take the logarithm of both sides of the expression without
+      simplifying the left hand side of the expression.
       \vfill
     \item What does this imply about the expression
     \begin{eqnarray*}
@@ -1445,12 +1454,14 @@
 \item We define the function $f(t)=e^t$. The goal is to determine the
   derivative of the inverse of $f(t)$.
   \begin{subproblem}
-  \item We can thing of the inverse in the following terms
+  \item We can think of the inverse in the following terms
     \begin{eqnarray*}
       t & = & f\lp\ln (t) \rp.
     \end{eqnarray*}
-    Take the derivative of both sides. Keep the result in terms of the
-    derivative of the logarithm.
+    Take the derivative of both sides. \sideNote{Remember the chain
+      rule!} Keep the result in terms of the derivative of the
+    logarithm.  (That is do not simplify the term
+    $\frac{d}{dt} \ln\lp t \rp$.)
     \vfill
   \item Solve the expression for the derivative of the logarithm.
     \vfill
