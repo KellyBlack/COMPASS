@@ -72,7 +72,7 @@ plotter.setAxesBounds(0.0,4.0,-1.0,16.0)
 plotter.setupGrid(0.3,'--',
                    0.0,1.0,4.1,
                   -1.0,1.0,16.1)
-plotter.axesDecorations('Nonconstant Velocity','Time (sec)','Velocity (m/s)')
+plotter.axesDecorations('Nonconstant Velocity','Time (sec)','Velocity (m/sec)')
 
 
 plt.draw()
