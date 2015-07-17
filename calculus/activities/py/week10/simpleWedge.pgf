@@ -160,7 +160,7 @@
 \pgftext[x=1.620000in,y=3.043636in,left,base]{\sffamily\fontsize{14.000000}{16.800000}\selectfont \(\displaystyle \pi/3\)}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgftext[x=3.818182in,y=4.178182in,left,base]{\sffamily\fontsize{14.000000}{16.800000}\selectfont \(\displaystyle 0.6\)}%
+\pgftext[x=3.818182in,y=3.741818in,left,base]{\sffamily\fontsize{14.000000}{16.800000}\selectfont \(\displaystyle 0.6\)}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \pgftext[x=1.338182in,y=4.527273in,left,base]{\sffamily\fontsize{20.000000}{24.000000}\selectfont A}%
@@ -169,7 +169,7 @@
 \pgftext[x=4.720000in,y=3.043636in,left,base]{\sffamily\fontsize{14.000000}{16.800000}\selectfont \(\displaystyle \pi/6\)}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgftext[x=6.551818in,y=4.178182in,left,base]{\sffamily\fontsize{14.000000}{16.800000}\selectfont \(\displaystyle 0.5\)}%
+\pgftext[x=6.636364in,y=3.741818in,left,base]{\sffamily\fontsize{14.000000}{16.800000}\selectfont \(\displaystyle 0.5\)}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \pgftext[x=4.269091in,y=4.527273in,left,base]{\sffamily\fontsize{20.000000}{24.000000}\selectfont B}%
@@ -178,10 +178,10 @@
 \pgftext[x=1.620000in,y=0.861818in,left,base]{\sffamily\fontsize{14.000000}{16.800000}\selectfont \(\displaystyle \theta\)}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgftext[x=3.592727in,y=1.123636in,left,base]{\sffamily\fontsize{14.000000}{16.800000}\selectfont \(\displaystyle 0.5\)}%
+\pgftext[x=3.818182in,y=1.560000in,left,base]{\sffamily\fontsize{14.000000}{16.800000}\selectfont \(\displaystyle 0.4\)}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgftext[x=2.550000in,y=1.909091in,left,base]{\sffamily\fontsize{14.000000}{16.800000}\selectfont \(\displaystyle 0.4\)}%
+\pgftext[x=2.550000in,y=1.909091in,left,base]{\sffamily\fontsize{14.000000}{16.800000}\selectfont \(\displaystyle 0.6\)}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \pgftext[x=1.338182in,y=2.345455in,left,base]{\sffamily\fontsize{20.000000}{24.000000}\selectfont C}%
@@ -190,10 +190,10 @@
 \pgftext[x=4.720000in,y=0.861818in,left,base]{\sffamily\fontsize{14.000000}{16.800000}\selectfont \(\displaystyle \theta\)}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgftext[x=5.565455in,y=0.861818in,left,base]{\sffamily\fontsize{14.000000}{16.800000}\selectfont \(\displaystyle 0.5\)}%
+\pgftext[x=5.565455in,y=0.861818in,left,base]{\sffamily\fontsize{14.000000}{16.800000}\selectfont \(\displaystyle 0.3\)}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgftext[x=5.368182in,y=1.690909in,left,base]{\sffamily\fontsize{14.000000}{16.800000}\selectfont \(\displaystyle 0.4\)}%
+\pgftext[x=5.368182in,y=1.690909in,left,base]{\sffamily\fontsize{14.000000}{16.800000}\selectfont \(\displaystyle 0.6\)}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \pgftext[x=4.269091in,y=2.345455in,left,base]{\sffamily\fontsize{20.000000}{24.000000}\selectfont D}%
