@@ -5,13 +5,18 @@ import matplotlib.pyplot as plt
 
 class BasicPlot:
 
-    def __init__(self):
+    def __init__(self,number=None,aspectRatio=None,
+                  dotsPerInch=None,face="w",edge=None):
+        self.figure = self.setFigure(number,aspectRatio,dotsPerInch,face,edge)
         plt.rcParams['axes.unicode_minus']=False
         self.clearPlot()
 
 
     def clearPlot(self):
         plt.clf()
+
+    def getFigure(self):
+        return(self.figure)
 
     def setFigure(self,number=None,aspectRatio=(1,1),
                   dotsPerInch=80,face='w',edge='k'):
