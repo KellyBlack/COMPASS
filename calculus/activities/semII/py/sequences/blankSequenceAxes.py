@@ -13,7 +13,7 @@ import sys
 sys.path.insert(0, '../')
 from BasicPlot import BasicPlot
 
-plotter = BasicPlot()
+plotter = BasicPlot(aspectRatio=[7.2,2.2])
 
 
 ###############################
@@ -22,9 +22,11 @@ plotter.clearPlot()
 plt.rc('text', usetex=True)
 plotter.setupGrid(0.3,'--',
                   0.0,1.0,7.1,
-                  -1.0,0.2,1.1)
+                  -1.0,0.25,1.1)
 plotter.setAxesBounds(-0.1,7.1,-1.1,1.1)
-plotter.axesDecorations(r'Sequence','n','a_n')
+plotter.axesDecorations(r'Sequence',r'$n$',r'$a_n$')
+#ax = plotter.getAxes()
+#ax.set_aspect(6.0/7.2)
 
 
 
