@@ -1,0 +1,723 @@
+%=========================================================================
+% Start of first activity on the FTC
+%=========================================================================
+\preClass{Basic Kinematics}
+
+\begin{problem}
+\item The position of an object is given by the equations
+  below. Determine the velocity at any time.
+  \begin{subproblem}
+  \item $x(t) = e^{3t} + 4t  - 5$.
+    \vfill
+  \item $x(t) = 2\cos(\pi t) + \ln(t+2)$.
+    \vfill
+  \end{subproblem}
+\item The velocity of objects are given by the equations
+  below. Determine the position of each object. Assume each object
+  starts at $x=1$m.
+  \begin{subproblem}
+  \item $v(t) = 3t - 5$.
+    \vfill
+  \item $v(t) = -2 t^3 + 10$.
+    \vfill
+  \end{subproblem}
+\end{problem}
+
+
+\actTitle{Change in Position as Area}
+\begin{problem}
+\item A 2 kg object starts from rest on a straight track, and it can
+  only move left or right. The positive direction is to the right, and
+  the $\vec{i}$ component of the velocity is given in the plot below.
+
+  \scalebox{0.5}{\input{py/week8/piecewiseConstantVelI_week8day2.pgf}}
+
+  \begin{subproblem}
+    \item Make a sketch of the free body diagram.
+      \vspace{4em}
+    \item Determine the total change in the position of the object
+      after 4 seconds.
+      \vfill
+  \end{subproblem}
+  \clearpage
+
+\item A 2 kg object starts from rest on a straight track, and it can
+  only move left or right. The positive direction is to the right, and
+  the $\vec{i}$ component of the velocity is given in the plot below.
+
+  \scalebox{0.5}{\input{py/week8/piecewiseConstantVekII_week8day2.pgf}}
+
+  \begin{subproblem}
+    \item Make a sketch of the free body diagram.
+      \vspace{4em}
+    \item Determine the total change in the position of the object
+      after 4 seconds.  
+      \vfill
+  \end{subproblem}
+  \clearpage
+
+\item A 2 kg object starts from rest on a straight track, and it can
+  only move left or right. The positive direction is to the right, and
+  the velocity at any time is $\vec{v}(t)=\vec{i} \; t^2$.
+
+  \begin{subproblem}
+    \item Make a sketch of the free body diagram.
+      \vspace{4em}
+    \item Make a sketch of the \textbf{velocity} in the $\vec{i}$
+      direction using the axes below.
+
+      \scalebox{0.5}{\input{py/week8/changingVelGrid_week8day2.pgf}}
+
+    \item Determine the change in the position of the object after 4
+      seconds by dividing up the time into four equally spaced
+      intervals and assuming that the force is constant over each
+      interval. Sketch the assumed, piecewise constant force, on the
+      axes above.  
+      \vfill
+    \item Determine the change in position of the object after 4
+      seconds by dividing up the time into eight equally spaced
+      intervals and assuming that the force is constant over each
+      interval. Sketch the assumed, piecewise constant force, on the
+      axes above.
+      \vfill
+  \end{subproblem}
+  \clearpage
+
+\end{problem}
+
+\actTitle{The Area Function}
+\begin{problem}
+\item The velocity of an object is 
+  \begin{eqnarray*}
+    \vec{v}(t) & = & \cos(2t) \vec{i}.
+  \end{eqnarray*}
+  \begin{subproblem}
+  \item Make a sketch of the velocity.  
+    \sideNote{ Be sure to label your axes and label all important
+      points on your graph.}
+    \vfill
+  \item Express the change in the position from time 0 to time $T$ as
+    a definite integral.  
+    \vfill
+  \item Determine the change in the position from time 0 to time $T$
+    by solving the definite integral.
+    \vfill
+  \item Make a sketch of the change in position and briefly describe
+    the change in position.
+    \sideNote{Be sure to label your axes and label all important
+      points on your graph.}
+    \vfill
+  \end{subproblem}
+  \clearpage
+
+\item The velocity of an object is 
+  \begin{eqnarray*}
+    \vec{v}(t) & = & \lp 5 - 5 e^{t/3} \rp \vec{i}.
+  \end{eqnarray*}
+  \begin{subproblem}
+  \item Make a sketch of the velocity.  \sideNote{ Be sure to label
+      your axes and label all important points on your graph.}
+    \vfill
+  \item Express the change in the position from time 0 to time $T$ as
+    a definite integral.  
+    \vfill
+  \item Determine the change in the position from time 0 to time $T$
+    by solving the definite integral.  
+    \vfill
+  \end{subproblem}
+
+\end{problem}
+
+\postClass
+
+\begin{problem}
+\item Briefly state two ideas from today's class.
+  \begin{itemize}
+  \item 
+  \item 
+  \end{itemize}
+\item 
+  \begin{subproblem}
+    \item
+  \end{subproblem}
+\end{problem}
+
+
+%=========================================================================
+% Start of activity on u substitution
+%=========================================================================
+\preClass{The Chain Rule}
+
+\begin{problem}
+\item Determine the derivatives of the following functions:
+  \sideNote{Leave the answer in terms of $u'(t)$.}
+  \begin{subproblem}
+  \item $f(t) = \cos(4t) + \ln(5t^2)$.
+    \vfill
+  \item $g(t) = \sin\lp e^{4t^5} \rp  + e^{\cos\lp 8t-5 \rp}$.
+    \vfill
+  \item $h(t) = \ln(4+\sin(2t) ) \cdot \cos \lp e^{2t^8} \rp$.
+    \vfill
+  \end{subproblem}
+\end{problem}
+
+
+\actTitle{$u$-Substitution}
+\begin{problem}
+\item Determine the derivatives of the following functions. In each
+  case $u=u(t)$ is a function of $t$.
+  \begin{subproblem}
+    \item $f(t) = e^{u(t)}$
+      \vfill
+    \item $g(t) = \cos(3 u(t)) $
+      \vfill
+    \item $h(t) = \ln\lp e^{u(t)} + 5 \rp.$
+      \vfill
+  \end{subproblem}
+
+  \clearpage
+
+\item The derivative of a function is given. Determine the
+  anti-derivative of each function. In each case assume that $u=u(t)$
+  is a function of $t$. \sideNote{Do not forget the constant!}
+  \begin{subproblem}
+  \item $f'(t) = \sin(u(t)) u'(t)$
+    \vfill
+  \item $f'(t) = e^{u(t)} u'(t)$
+    \vfill
+  \item $f'(t) = \frac{1}{u(t)} \cdot u'(t)$
+    \vfill
+  \end{subproblem}
+\end{problem}
+
+\actTitle{Using $u$-substitution to Find Anti-Derivatives}
+\begin{problem}
+\item The force in Newtons acting on the car is given below. In each
+  case determine the change in the momentum of the car from $t=0$ to
+  $t=2$. \sideNote{Express the change as a definite integral and use
+    the correct notation.}
+  \begin{subproblem}
+    \item $\vec{F} = \cos(\pi t) \vec{i}.$
+      \vfill
+    \item $\vec{F} = \lp 2 - 2 e^{t/9} \rp \vec{i}.$
+      \vfill
+    \item $\vec{F} = \frac{1}{t+1} \ln\lp t+1 \rp \vec{i}.$
+      \vfill
+  \end{subproblem}
+
+  \clearpage
+
+\item A bag of sand lies on the floor, and its initial mass is 50
+  kg. For each meter it is dragged sand is spilled, and it loses
+  roughly 10\% of its mass each meter. The coefficient of friction
+  between the bag and the floor is approximately $0.1$. A rope is
+  attached to the bag, and the following force is applied to the bag
+  \begin{eqnarray*}
+    \vec{F}(t) & = & 10e^{-2t} \vec{i} + 20 e^{-2t} \vec{j}.
+  \end{eqnarray*}
+  How much work does the force exert on the bag?
+
+  \vfill
+
+\end{problem}
+
+\postClass
+
+\begin{problem}
+\item Briefly state two ideas from today's class.
+  \begin{itemize}
+  \item 
+  \item 
+  \end{itemize}
+\item 
+  \begin{subproblem}
+    \item
+  \end{subproblem}
+\end{problem}
+
+%=========================================================================
+% Start of activities on practice of the ftc
+%=========================================================================
+\preClass{Definite Integrals}
+
+\begin{problem}
+\item For each function and bound determine the areas under the curves
+  geometrically as well as analytically. \sideNote{Make a sketch of
+    the curve and indicate the area.}
+  \begin{subproblem}
+  \item $f(t)=t$ for $t=0$ to $t=1$.
+    \vfill
+  \item $f(t)=t+1$ for $t=0$ to $t=1$.
+    \vfill
+  \item $f(t)=-t$ for $t=0$ to $t=1$.
+    \vfill
+  \item $f(t)=3t-4$ for $t=0$ to $t=2$.
+    \vfill
+  \end{subproblem}
+\end{problem}
+
+
+\actTitle{Impulse as a Definite Integral}
+\begin{problem}
+\item An object has a mass of 3 kg. It initially starts at rest at the
+  point $\vec{x}=1\vec{i}$. It is subject to a force given by
+  $\vec{F}(t) = \cos(\pi t) \vec{i}$.
+  \begin{subproblem}
+    \item Make a sketch of the free body diagram.
+      \vspace{5em}
+    \item Use the impulse/momentum theorem to determine the change in
+      momentum of the object from $t=0$ to any time $t=T$.
+      \vfill
+    \item Solve the previous relationship for the velocity at any time
+      and determine the position of the object at any time.
+      \vfill
+  \end{subproblem}
+
+  \clearpage
+
+\item An object has a mass of 3 kg. It initially starts with a
+  velocity of $2\vec{j}$ at the point $\vec{x}=1\vec{i}$. It is
+  subject to a force given by $\vec{F}(t) = \sin(\pi t)\vec{j}$.
+  \begin{subproblem}
+    \item Make a sketch of the free body diagram.
+      \vspace{5em}
+    \item Use the impulse/momentum theorem to determine the change in
+      momentum of the object from $t=0$ to any time $t=T$.
+      \vfill
+    \item Solve the previous relationship for the velocity at any time
+      and determine the position of the object at any time.
+      \vfill
+  \end{subproblem}
+
+  \clearpage
+
+\item An object has a mass of 3 kg. It initially starts at rest with a
+  velocity of $2\vec{j}$ at the point $\vec{x}=1\vec{i}$. It is
+  subject to a force given by
+  $\vec{F}(t) = \cos(\pi t)\vec{i}+\sin(\pi t)\vec{j}$.
+  \begin{subproblem}
+    \item Make a sketch of the free body diagram.
+      \vspace{5em}
+    \item Use the impulse/momentum theorem to determine the change in
+      momentum of the object from $t=0$ to any time $t=T$.
+      \vfill
+    \item Solve the previous relationship for the velocity at any time
+      and determine the position of the object at any time.
+      \vfill
+  \end{subproblem}
+
+\end{problem}
+
+\actTitle{Work as a Definite Integral}
+\begin{problem}
+\item A 3 kg object is initially located at $\vec{x}=1\vec{i}$. The
+  coefficient of friction between the block and the ground is 0.2. A
+  force of 10N is applied, and the angle changes uniformly from 0 radians
+  to $\pi$ radians over a time of 30 seconds.\\
+  \includegraphics[width=7cm]{ink/week9/workAngleChanging}
+  \begin{subproblem}
+    \item Make a sketch of the free body diagram next to the diagram above.
+    \item Determine the work done over the 30 second time span.
+      \sideNote{Carefully move through the stages required to
+        calculate a work integral. Carefully denote each step and
+        briefly justify your choices.}
+      \vfill
+  \end{subproblem}
+\end{problem}
+
+\postClass
+
+\begin{problem}
+\item Briefly state two ideas from today's class.
+  \begin{itemize}
+  \item 
+  \item 
+  \end{itemize}
+\item 
+  \begin{subproblem}
+    \item
+  \end{subproblem}
+\end{problem}
+
+
+%=========================================================================
+% Start of activity on center of mass
+%=========================================================================
+\preClass{Areas Between Curves}
+
+\begin{problem}
+\item Determine the areas bounded by the curves described below. In
+  each case first make a sketch of the region and then determine the
+  area. Determine the area geometrically rather than analytically if
+  you are able to.
+  \begin{subproblem}
+  \item Above $y=1$, below $y=2x+1$, to the right of $x=0$ and to the
+    left of $x=1$.
+    \vfill
+  \item Above $y=-1$, below $y=x+1$, to the right of $x=0$ and to the
+    left of $x=2$.
+    \vfill
+  \end{subproblem}
+\end{problem}
+
+
+\actTitle{Density}
+\begin{problem}
+\item An object has uniform density, and it is 0.1 m thick. Its mass
+  is 5 kg. The object is bounded on the left by $x=0$, on the right by
+  $x=5$, above by $y=7$, and below by $y=x$.
+  \begin{subproblem}
+    \item Make a sketch of the object.
+      \vfill
+    \item Determine the volume of the object geometrically.
+      \vfill
+    \item Determine the density of the object.
+      \vfill
+  \end{subproblem}
+  \clearpage
+
+\item An object has uniform density, and it is 0.1 m thick. Its mass
+  is 10 kg. The object is bounded on the left by $x=0$, on the right
+  by $x=5$, above by $y=x^2$, and below by $y=-x^2$.
+  \begin{subproblem}
+    \item Make a sketch of the object. 
+      \sideNote{Indicate how you are going to subdivide the object to
+        calculate the volume.}
+      \vfill
+    \item Determine the volume of the object.
+      \vfill
+    \item Determine the density of the object.
+      \vfill
+  \end{subproblem}
+
+\end{problem}
+
+\actTitle{Center of Mass}
+\begin{problem}
+\item An object has uniform density, and it is 0.1 m thick. Its
+  density is 0.2 kg/m\textsuperscript{3}. The object is bounded on the
+  left by $x=0$, on the right by $x=5$, above by $y=7$, and below by
+  $y=x$.
+  \begin{subproblem}
+    \item Make a sketch of the object. Show how you would subdivide
+      the object for using an integral to determine the mass.
+      \sideNote{Will you use vertical or horizontal strips?}
+      \vfill
+    \item Determine the mass of the object analytically.
+      \sideNote{First derive the Riemann sum, take the limit, and then
+        determine and solve the definite integral.}
+      \vfill
+    \item Determine the center of mass of the object.
+      \vfill
+  \end{subproblem}
+  \clearpage
+
+\item An object has a density that changes, and it is 0.1 m thick. Its
+  density is uniform in the $z$ direction, and the density at a point
+  $(x,y)$ is $\rho(x,y)=1+\sqrt{x}$ kg/m\textsuperscript{3}. The
+  object is bounded on the left by $x=0$, on the right by $x=5$, above
+  by $y=7$, and below by $y=x$.
+  \begin{subproblem}
+    \item Make a sketch of the object. Show how you would subdivide
+      the object for using an integral to determine the mass.
+      \sideNote{Will you use vertical or horizontal strips?}
+      \vfill
+    \item Determine the mass of the object analytically.
+      \sideNote{First derive the Riemann sum, take the limit, and then
+        determine and solve the definite integral.}
+      \vfill
+    \item Determine the center of mass of the object.
+      \vfill
+  \end{subproblem}
+
+\end{problem}
+
+\postClass
+
+\begin{problem}
+\item Briefly state two ideas from today's class.
+  \begin{itemize}
+  \item 
+  \item 
+  \end{itemize}
+\item 
+  \begin{subproblem}
+    \item
+  \end{subproblem}
+\end{problem}
+
+%=========================================================================
+% Start of day on optimization and kinematics
+%=========================================================================
+\preClass{Inclined Planes}
+
+\begin{problem}
+\item An object of mass $m$ starts from rest on an inclined plane. The
+  coefficient of dynamic friction is 0.1. The angle of the plane at
+  the bottom is $\theta$.
+  \begin{subproblem}
+  \item Make a sketch of the physical situation.
+    \vfill
+  \item Make a sketch of the free body diagram.
+    \vfill
+  \item The length of the ramp is 1m. Determine how much time it will
+    take for the object to move from the top to the bottom of the
+    ramp.
+    \vfill
+  \end{subproblem}
+\end{problem}
+
+
+\actTitle{Inclined Planed and Kinematics}
+\begin{problem}
+\item An object starts at rest on an inclined plane. The coefficient
+  of dynamic friction is 0.1. The angle of the plane at the bottom is
+  $\theta$. The object has a mass of 2.0 kg, and it also includes 1 kg
+  of salt.
+  \begin{subproblem}
+  \item Make a sketch of the physical situation.  
+    \vfill
+  \item Make a sketch of the free body diagram.
+    \vfill
+    \clearpage
+  \item The length of the ramp is 1m. Determine how much time it will
+    take for the object to move from the top to the bottom of the
+    ramp.  
+    \vfill
+  \end{subproblem}
+\end{problem}
+
+\actTitle{Inclined Plane and Optimization}
+\begin{problem}
+\item An object starts at rest on an inclined plane. The coefficient
+  of dynamic friction is 0.1. The angle of the plane at the bottom is
+  $\theta$. The object has a mass of 2.0 kg, and it also includes
+  $m_0$ kg of a chemical. The cost of the chemical is \$2,500 per kg,
+  and the cost of the ramp is ten times the area of the ramp. What is
+  the best value of $m_0$ and $\theta$ so that the object's change in
+  momentum after it moves the length of the ramp, 1m, is 0.2 kg
+  m/second?
+
+  \vfill
+
+\end{problem}
+
+\postClass
+
+\begin{problem}
+\item Briefly state two ideas from today's class.
+  \begin{itemize}
+  \item 
+  \item 
+  \end{itemize}
+\item 
+  \begin{subproblem}
+    \item
+  \end{subproblem}
+\end{problem}
+
+
+%=========================================================================
+% Start of activity on work-energy as well as impulse relationships
+%=========================================================================
+\preClass{Work}
+
+\begin{problem}
+\item A rope is attached to an object, and it is pulled at an angle of
+  $\frac{\pi}{6}$ from above the horizontal. The object is 3.0 kg, and
+  the coefficient of friction is 0.3. The object is pulled for 3
+  meters at a constant velocity. How much work was done by the force
+  acting on the rope?
+
+  \vfill
+\end{problem}
+
+
+\actTitle{Practice With Work Integrals}
+\begin{problem} 
+\item Two blocks are arranged as shown in the diagram below. The upper
+  block has a mass of 50 kg, and its height, $H$, is 1m. The lower
+  block has a mass of 35 kg, and its width, $L$, is 1m. The
+  coefficient of friction between the blocks and the objects they are
+  resting against is 0.2. A rope connects the two objects, and the
+  rope is hanging over a corner that has negligible friction. The
+  right edge of the upper block is initially a distance $d_1=4.0$m
+  from the edge. The top edge of the lower block is initially a
+  distance of $d_2=6.0$m from the top. \\
+  \includegraphics[width=7cm]{ink/week10/hangingBlocks}
+
+  \begin{subproblem}
+    \item Make a sketch of the free body diagram for both blocks.
+      \vfill
+    \item Assuming that the rope does not stretch what is the
+      mathematical constraint that represents how the objects are
+      connected? 
+      \vfill
+      \clearpage
+    \item Determine the system of equations that relate the
+      acceleration of the two blocks.
+      \vfill
+  \end{subproblem}
+\end{problem}
+
+\actTitle{The Relationship Between Velocity and Time}
+\begin{problem}
+\item Using the previous situation determine the amount of work done
+  by the force of friction on the upper block from the start and until
+  it reaches the corner.
+
+  \vfill
+
+\end{problem}
+
+\postClass
+
+\begin{problem}
+\item Briefly state two ideas from today's class.
+  \begin{itemize}
+  \item 
+  \item 
+  \end{itemize}
+\item 
+  \begin{subproblem}
+    \item
+  \end{subproblem}
+\end{problem}
+
+%=========================================================================
+% Start of session on trig review
+%=========================================================================
+\preClass{Trig Review}
+
+\begin{problem}
+\item Determine the derivatives of the following functions:
+  \begin{subproblem}
+  \item $\sin(3t)$
+    \vfill
+  \item $\cos(3t)$
+    \vfill
+  \item $\tan(3t)$
+    \vfill
+  \item $\sin(t)\cos(t)$
+    \vfill
+  \end{subproblem}
+
+  \clearpage
+
+\item Determine the lengths and angles of the parts of the triangles
+  that are missing in each of the triangles below.
+
+  \scalebox{0.5}{\input{py/week10/simpleWedge.pgf}}
+
+  \vfill
+
+\end{problem}
+
+
+\actTitle{Basic Trigonometry}
+\begin{problem}
+\item A person is standing at the origin, $(0,0)$, and they are facing
+  in the positive $x$-direction. The person turns to the left
+  $\frac{\pi}{3}$ radians, walks 3 meters in 10 seconds. The person
+  stops, turns $\frac{\pi}{4}$ to the right and walks 5 meters in
+  another 10 seconds.
+  \begin{subproblem}
+    \item  Make a sketch of the person's path.
+      \vfill
+    \item Determine the person's position at 10 and 20 seconds.
+      \vfill
+    \item Determine the person's position for any time less than 10
+      seconds.
+      \vfill
+    \item Determine the person's position for any time between 10 and
+      20 seconds.
+      \vfill
+  \end{subproblem}
+  \clearpage
+\item A person is standing at the origin, $(0,0)$, and they are facing
+  in the positive $x$-direction. The person turns to the left
+  $\frac{2\pi}{3}$ radians, walks 3 meters in 10 seconds. The person
+  stops, turns $\frac{\pi}{2}$ to the left and walks 5 meters in
+  another 10 seconds.
+  \begin{subproblem}
+    \item  Make a sketch of the person's path.
+      \vfill
+    \item Determine the person's position at 10 and 20 seconds.
+      \vfill
+    \item Determine the person's position for any time.
+      \vfill
+  \end{subproblem}
+\end{problem}
+
+\actTitle{Derivatives of Other Trigonometric Functions}
+\begin{problem}
+
+\item We examine the identity 
+  \begin{eqnarray*}
+    \sin^2(\theta) + \cos^2(\theta) & = & 1.
+  \end{eqnarray*}
+  
+  \begin{subproblem}
+  \item Make a sketch of the unit circle. Use the definition of sine
+    and cosine to explain why the identity above is true.
+    \sideNote{Just give a heuristic explanation.}
+    \vfill
+
+  \item Divide both sides of the identity by $\cos^2(\theta)$. 
+    \vfill
+
+  \item Use the definition of the tangent and secant to express the
+    new result in terms of these two trigonometric functions.
+    \vfill
+
+  \end{subproblem}
+
+  \clearpage
+
+\item We derive the derivative of $\sec(\theta)$.
+
+  \begin{subproblem}
+    \item Express $\sec(\theta)$ in terms of the cosine.
+      \vspace{4em}
+    \item Use the quotient rule to determine the derivative.
+      \vfill
+    \item Use any appropriate trigonometric identity to simplify the
+      expression.
+      \vfill
+  \end{subproblem}
+  \clearpage
+
+\item We derive the derivative of $\cot(\theta)$.
+
+  \begin{subproblem}
+    \item Express $\cot(\theta)$ in terms of the sine and the cosine.
+      \vspace{4em}
+    \item Use the quotient rule to determine the derivative.
+      \vfill
+    \item Use any appropriate trigonometric identity to simplify the
+      expression.
+      \vfill
+  \end{subproblem}
+  \clearpage
+
+\end{problem}
+
+\postClass
+
+\begin{problem}
+\item Briefly state two ideas from today's class.
+  \begin{itemize}
+  \item 
+  \item 
+  \end{itemize}
+\item 
+  \begin{subproblem}
+    \item
+  \end{subproblem}
+\end{problem}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "labManual"
+%%% End:
