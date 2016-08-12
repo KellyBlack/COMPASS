@@ -66,7 +66,7 @@ plotter.setupGrid(0.3,'--',
 plotter.setAxesBounds(-0.1,4.1,-2.1,1.1)
 plotter.axesDecorations('Position of an Object','Time (sec)','Position (m)')
 
-plt.show()
+#plt.show()
 plt.savefig('pos2Vel_HW1.pgf',format='pgf')
 
 
