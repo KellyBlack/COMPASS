@@ -12,6 +12,34 @@ def f(t):
      
 plotter = BasicPlot()
 
+# Make the plot for the velocity for the pre-class work
+plotter.subplot(1,1,1)
+
+with plt.xkcd():
+    plotter.addFunction([0,1],[ 2 ,2], 'k-',2.0)
+    plotter.addFunction([1,2],[ -1 ,-1], 'k-',2.0)
+    plotter.addFunction([2,3],[ 0 ,0], 'k-',2.0)
+    plotter.addFunction([3,4],[1,1], 'k-',2.0)
+    plotter.markJumps([[0,2,False],[1,2,True],
+                       [1,-1,False],[2,-1,True],
+                       [2,0,False],[3,0,True],
+                       [3,1,False],[4,1,True],
+        ],8.0)
+    plotter.setupGrid(0.3,'--',
+                      0.0,1.0,4.1,
+                      -1.0,1.0,2.1)
+    plotter.setAxesBounds(-0.1,4.1,-1.1,2.1)
+    plotter.axesDecorations('Velocity of an Object','','Velocity (m/s)')
+
+
+#plt.show()
+plt.savefig('activity2PreClass.pgf',format='pgf')
+
+exit(0)
+
+
+# Make the plot for the position
+
 a = 1.0
 b = 5.0
 
