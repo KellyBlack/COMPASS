@@ -729,10 +729,6 @@ then the average rate of change is positive.
       \vfill
     \item $(1-t)^3$
       \vfill
-    \item $(4-t)(t-5)$
-      \vfill
-    \item $(t-8)(t+3)$
-      \vfill
   \end{subproblem}
 \end{problem}
 
@@ -745,15 +741,11 @@ then the average rate of change is positive.
 
       \scalebox{0.7}{\input{py/week2/reviewSequence_week2Day1.pgf}}
 
-    \item Plot the entries in the sequence $\left\{ -1+\frac{1}{2^n}\right\}_{n=1}^7$.
-
-      \scalebox{0.7}{\input{py/week2/reviewSequence_week2Day1.pgf}}
-
-      \clearpage
-
     \item What number do the entries in the sequence
       $\left\{ 1-\frac{1}{n}\right\}_{n=1}^\infty$ get close to as $n$
       gets large?  (Call this number $L$).
+
+      \clearpage
 
     \item Determine a value of $n$ where 
       \begin{eqnarray*}
@@ -775,10 +767,9 @@ then the average rate of change is positive.
       \vspace{3em}
 
   \end{subproblem}
-\end{problem}
 
-\actTitle{The Relationship Between Velocity and Time}
-\begin{problem}
+  \clearpage
+
 \item We examine the average rate of change between two points at
   $t=a$ and $t=b$.
 
@@ -788,15 +779,16 @@ then the average rate of change is positive.
   \item Sketch the secant line through the function in the graph above
     from $t=a$ to $t=b$. Draw the triangle that is used to determine
     the slope of the secant line.
-  \item Write out the formula for the average rate of change, call it
-    AR for short, from $t=a$ to $t=b$ for the function $f(t)$.
+  \item Write out the general formula for the average rate of change,
+    call it ARC for short, from $t=a$ to $t=b$ for the function
+    $f(t)$.
     \begin{eqnarray*}
-      AR & = & ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      ARC & = & ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     \end{eqnarray*}
     \vspace{2em}
   \item The total change from $t=a$ to $t=b$ is defined to be
     $f(b)-f(a)$. Solve the previous equation for the total change in
-    terms of the average rate of change, AR.
+    terms of the average rate of change, ARC.
     \vfill
   \end{subproblem}
 
@@ -828,8 +820,49 @@ then the average rate of change is positive.
       \vspace{3em}
     \end{subproblem}
 
-    \clearpage
+\end{problem}
 
+\postClass
+
+\begin{problem}
+\item Briefly state two ideas from today's class.
+  \begin{itemize}
+  \item 
+  \item 
+  \end{itemize}
+    \item Plot the entries in the sequence $\left\{ -1+\frac{1}{2^n}\right\}_{n=1}^7$.
+
+      \scalebox{0.7}{\input{py/week2/reviewSequence_week2Day1.pgf}}
+      
+      \begin{subproblem}
+        
+      \item What number do the entries in the sequence
+        $\left\{ 1-\frac{1}{n}\right\}_{n=1}^\infty$ get close to as $n$
+        gets large?  (Call this number $L$).
+
+      \item Determine a value of $n$ where 
+        \begin{eqnarray*}
+          \left| \lp 1-\frac{1}{n} \rp - L \right| & < & 0.01.
+        \end{eqnarray*}
+
+        \vfill
+
+      \item Determine a value of $n$ where 
+        \begin{eqnarray*}
+          \left| \lp 1-\frac{1}{n}\rp - L \right| & < & 0.001.
+        \end{eqnarray*}
+
+        \vfill
+
+      \item What is happening to the value of $n$ as the distance
+        between L and the entries in the sequence get smaller?
+
+        \vspace{3em}
+
+      \end{subproblem}
+
+
+  \clearpage
   \item The following questions refer to the function $x(t)=t^3$.
     \begin{subproblem}
     \item Expand and simplify the expression for the average rate of
@@ -855,18 +888,7 @@ then the average rate of change is positive.
       the value of $h$ gets close to zero?
       \vspace{3em}
     \end{subproblem}
-
-
-\end{problem}
-
-\postClass
-
-\begin{problem}
-\item Briefly state two ideas from today's class.
-  \begin{itemize}
-  \item 
-  \item 
-  \end{itemize}
+    \clearpage
 \item Determine the derivatives of each of the following functions:
   \begin{subproblem}
     \item $f(t)=4t^3-8t^2$.
