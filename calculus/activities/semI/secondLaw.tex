@@ -190,10 +190,8 @@
 \actTitle{The Relationship Between Velocity and Time}
 \begin{problem}
 \item The velocity of an object is given in the plot below. Assume
-  that the object starts from the origin, $x=0$m.
-
+  that the object starts from the origin, $x=0$m. \\
   \scalebox{0.7}{\input{py/week3/localMaxPiecewiseConstVel_week3day1.pgf}}
-
   \begin{subproblem}
   \item Sketch a plot of the object's position as a function of time.
   \item When does the object's maximum displacement from its start
@@ -202,54 +200,22 @@
   \item Briefly describe what is happening with the velocity where the
     maximum occurs.
     \vfill
+  \item When does the object's minimum displacement from its start
+    position occur?
+    \vspace{3em}
   \end{subproblem}
 
   \clearpage
 
-\item The velocity of an object is given in the plot below. Assume
-  that the object starts from the origin, $x=0$m.
-
-  \scalebox{0.7}{\input{py/week3/localMaxPiecewiseConstVelTwo_week3day1.pgf}}
-
-  \begin{subproblem}
-  \item Sketch a plot of the object's position as a function of time.
-  \item When does the object's maximum displacement from its start
-    position occur?
-    \vspace{3em}
-  \item Briefly describe what is happening with the velocity where the
-    minimum occurs.
-    \vfill
-  \end{subproblem}
-
-  \clearpage
-
-\item The velocity of an object is given in the plot below. Assume
-  that the object starts from the origin, $x=0$m.
-
-  \scalebox{0.7}{\input{py/week3/localMaxPiecewiseConstVelThree_week3day1.pgf}}
-
-  \begin{subproblem}
-  \item Sketch a plot of the object's position as a function of time.
-  \item When does the object's maximum displacement from its start
-    position occur?
-    \vspace{3em}
-  \item Briefly describe what is happening with the velocity where the
-    minimum occurs.
-    \vfill
-  \end{subproblem}
-
-\end{problem}
-
-\actTitle{The Relationship Between Velocity and Time}
-\begin{problem}
 \item We will try to determine the value of $x$ and $y$ that will
   accomplish the following:
   \begin{eqnarray*}
     \mathrm{Minimize:} & & x^2 + y^2, \\
     \mathrm{Constraint:} & & x + y = 1.
   \end{eqnarray*}
+  \label{optimizationMax}
 
-  \vspace{-1em}
+  \vspace{-2.5em}
   \sideNote{Pay close attention to the scales on the axes.}
   \scalebox{0.6}{\input{py/week3/constrainedOptimizationOne.pgf}}
 
@@ -286,6 +252,7 @@
     \mathrm{Minimize:} & & x + y, \\
     \mathrm{Constraint:} & & x^2 + y^2 = 1.
   \end{eqnarray*}
+  \label{optimizationMin}
 
   \vspace{-1em}
   \sideNote{Pay close attention to the scales on the axes.}
@@ -293,48 +260,94 @@
 
   \begin{subproblem}
     \item Add a sketch of the constraint to the plot. The value of $x$
-      and $y$ that we choose must be on this line.
-    \item Add a sketch of the set of points that satisfy
+      and $y$ that we choose must satisfy this relationship.
+    \item Add a sketch of the set of points where the cost function is
+      equal to two. That is draw the line that satisfies
       \begin{eqnarray*}
         x + y & = & 2.
       \end{eqnarray*}
-    \item Add a sketch of the set of points that satisfy
+    \item Add a sketch of the set of points where the cost function is
+      equal to one. That is draw the line that satisfies
       \begin{eqnarray*}
         x + y & = & 1.
       \end{eqnarray*}
-    \item Add a sketch of the set of points that satisfy
-      \begin{eqnarray*}
-        x + y & = & 0.
-      \end{eqnarray*}
-    \item Add a sketch of the set of points that satisfy
-      \begin{eqnarray*}
-        x + y & = & -2.
-      \end{eqnarray*}
-    \item Draw the line consistent with the objective function that
-      has points that coincides with the constraint.
+    \item Add a sketch of the set of points where the cost function is
+      equal to zero.
+    \item Add a sketch of the set of points where the cost function is
+      equal to negative one.
+    \item Draw the line consistent with the cost function that
+      has points that coincides with the constraint, but the cost
+      function takes on its smallest possible value.
     \item What are the values of $x$ and $y$ that minimize the
       objective function subject to the constraint?
   \end{subproblem}
 
   \clearpage
 
-\item Go back to the previous two questions and determine the slope of
-  the two relationships where the slope of the tangent lines to the
-  objective is equal to the slope of the tangent line to the
-  constraint. (Insure that the constraint is also satisfied to give
-  two equations and two unknowns.)
+\item With respect to the questions \ref{optimizationMax} and
+  \ref{optimizationMin}, what is the relationship between the
+  cost and the constraint functions where the cost is
+  minimized/maximized but still satisfy the constraint?
 
-  \hfill
+  \vspace{5em}
+
+\item With respect to the questions \ref{optimizationMax} and
+  \ref{optimizationMin}, how can you determine the values of $x$ and
+  $y$ analytically?
+
+  \vfill
+
+
+\end{problem}
+
+\postClass
+
+\begin{problem}
+\item Briefly state two ideas from today's class.
+  \begin{itemize}
+  \item 
+  \item 
+  \end{itemize}
+\item The velocity of an object is given in the plot below. Assume
+  that the object starts from the origin, $x=0$m. \\
+  \scalebox{0.7}{\input{py/week3/localMaxPiecewiseConstVelTwo_week3day1.pgf}}
+  \begin{subproblem}
+  \item Sketch a plot of the object's position as a function of time.
+  \item When does the object's maximum displacement from its start
+    position occur?
+    \vspace{3em}
+  \item Briefly describe what is happening with the velocity where the
+    minimum occurs.
+    \vfill
+  \item When does the object's minimum displacement from its start
+    position occur?
+    \vspace{3em}
+  \end{subproblem}
 
   \clearpage
 
+\item The velocity of an object is given in the plot below. Assume
+  that the object starts from the origin, $x=0$m.
+
+  \scalebox{0.7}{\input{py/week3/localMaxPiecewiseConstVelThree_week3day1.pgf}}
+
+  \begin{subproblem}
+  \item Sketch a plot of the object's position as a function of time.
+  \item When does the object's maximum displacement from its start
+    position occur?
+    \vspace{3em}
+  \item Briefly describe what is happening with the velocity where the
+    minimum occurs.
+    \vfill
+  \end{subproblem}
+
+\clearpage
+
 \item An object will be fired from a cannon at ground level. It will
   be fired at a velocity $v$ and at an angle $\theta$ from the
-  horizontal ground. The cannon is initially pointed parallel to the
-  ground and will be raised before firing. The angle can change at a
-  constant 0.1 radians per second. The object should strike the ground
-  a distance of 100 meters away. The goal is to minimize the total
-  time from the start until the object strikes the ground.
+  horizontal ground.  The object should strike the ground a distance
+  of 100 meters away. The goal is to minimize the total time from the
+  start until the object strikes the ground.
   \begin{subproblem}
   \item Make a rough sketch of the situation, and also draw a free
     body diagram of the object in the air.
@@ -370,19 +383,6 @@
 
   \end{subproblem}
 
-\end{problem}
-
-\postClass
-
-\begin{problem}
-\item Briefly state two ideas from today's class.
-  \begin{itemize}
-  \item 
-  \item 
-  \end{itemize}
-\item Determine the values of $v$ and $\theta$ that minimize the cost
-  function and also meet the objective function in the last problem.
-  \vfill
 \end{problem}
 
 
