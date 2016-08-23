@@ -393,7 +393,19 @@
 \preClass{Non-Constant Acceleration}
 
 \begin{problem}
-\item
+\item For each acceleration given below determine the position at any
+  time. In each case the initial velocity and position are given.
+  \begin{subproblem}
+  \item $a(t)=5t^4+1$ m/sec.\textsuperscript{2}, $v(0)=1$ m/sec.,
+    $x(0)=-3$ m.
+    \vfill
+  \item $a(t)=5t+1$ m/sec.\textsuperscript{2}, $v(0)=2$ m/sec.,
+    $x(0)=3$ m.
+    \vfill
+  \item $a(t)=5\sqrt{t}+3t$ m/sec.\textsuperscript{2}, $v(0)=-1$ m/sec.,
+    $x(0)=4$ m.
+    \vfill
+  \end{subproblem}
 \end{problem}
 
 
@@ -407,10 +419,10 @@
     \item We assume that the force on the object in the horizontal
       direction is 
       \begin{eqnarray*}
-        F_x(t) & = & \left\{
+        \vec{F}_x(t) & = & \left\{
                      \begin{array}{r@{\hspace{2em}}rcccl}
-                       m(0.5-t), & 0 & < & t & < & 0.5, \\
-                       0,        &   &   & t & \geq & 0.5,
+                       m\left(\frac{1}{2}-t\right) \vec{\imath}, & 0 & < & t & < & 0.5, \\
+                       0 \vec{\imath},        &   &   & t & \geq & 0.5,
                      \end{array}
                      \right.
       \end{eqnarray*}
@@ -447,10 +459,10 @@
   \item We assume that the force on the object (N) in the vertical
     direction is
       \begin{eqnarray*}
-        F_y(t) & = & \left\{
+        \vec{F}_y(t) & = & \left\{
                      \begin{array}{r@{\hspace{2em}}rcccl}
-                       m(10.8-t), & 0 & < & t & < & 1.0, \\
-                       9.8,       &   &   & t & \geq & 1.0,
+                       m(10.8-t) \vec{\jmath}, & 0 & < & t & < & 1.0, \\
+                       0 \vec{\jmath},       &   &   & t & \geq & 1.0,
                      \end{array}
                      \right.
       \end{eqnarray*}
@@ -478,18 +490,15 @@
 
   \end{subproblem}
 
-\end{problem}
+\clearpage
 
-\actTitle{Working With Parameters in Kinematics}
-\begin{problem}
-\item A car will move on a straight set of rails will be
-  constructed. It will start from rest at the origin, $x=0$m. The
-  force (N) on the car is given by the equation
+\item A car with mass $m$ will move on a straight set of rails. It
+  will start with an initial velocity of $v_0$ at the origin,
+  $x=0$m. The force (N) on the car is given by the equation
   \begin{eqnarray*}
-    F_x(t) & = & m(at + b).
+    \vec{F}_x(t) & = & m\cdot(bt) \vec{\imath}.
   \end{eqnarray*}
-  The parameters $a$ and $b$ are constants, and $m$ is the mass of the
-  car.
+  The parameters $b$ is a constant.
 
   \begin{subproblem}
     \item Draw a free body diagram of the car.
@@ -499,23 +508,34 @@
 
       \clearpage
       
-    \item You are asked to determine values of $a$ and $b$ so that the
-      object moves back to the origin 20 seconds after its start and
-      minimizes the velocity at that time. Determine the objective and
-      constraint function and explicitly write and label them.
+    \item You are asked to determine values of $b$ and $v_0$ so that
+      the object moves back to the origin 20 seconds after its
+      start. It is determined that the cost is roughly twice the value
+      of $b$ plus the square of the initial velocity, and you should
+      minimize the cost of building the car. Determine the objective
+      and constraint function and explicitly write and label them.
 
       \vfill
 
     \item Make a sketch that demonstrates the relationships between
-      the parameters $a$ and $b$. Use the horizontal axis for $a$ and
-      vertical axis for $b$.
+      the parameters $b$ and $v_0$. Use the horizontal axis for $b$
+      and vertical axis for $v_0$.
 
       \vfill
 
   \end{subproblem}
 
-  \clearpage
 
+\end{problem}
+
+\postClass
+
+\begin{problem}
+\item Briefly state two ideas from today's class.
+  \begin{itemize}
+  \item 
+  \item 
+  \end{itemize}
 \item The evil super villain, Nasty Canasty, fires a projectile to the
   east from the western edge of Kansas.  (Ignore the curvature of the
   earth and just pretend that Kansas is flat.)  The super hero, Super
@@ -545,21 +565,6 @@
 
     \vfill
 
-  \end{subproblem}
-
-\end{problem}
-
-\postClass
-
-\begin{problem}
-\item Briefly state two ideas from today's class.
-  \begin{itemize}
-  \item 
-  \item 
-  \end{itemize}
-\item 
-  \begin{subproblem}
-    \item
   \end{subproblem}
 \end{problem}
 
