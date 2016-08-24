@@ -14,6 +14,7 @@ plotter = BasicPlot()
 
 
 
+
 ###############################
 plotter.clearPlot()
 
@@ -144,3 +145,29 @@ plotter.axesDecorations('g','t','Graph of g')
 plt.draw()
 #plt.show()
 plt.savefig('compositionTwoFunctions.pgf',format='pgf')
+
+
+###############################
+plotter.clearPlot()
+
+plotter.subplot(1,2,1)
+t = np.arange(-2,2.05,0.1)
+plotter.addInterpolant([[-2,-2],[-1,2],[0,3],[1,1],[2,-2]],t,'k-',2.0)
+plotter.setupGrid(0.3,'--',
+                  -2.0,1.0,2.1,
+                  -4.0,1.0,4.1)
+plotter.setAxesBounds(-2.1,2.1,-3.1,4.1)
+plotter.axesDecorations('f','t','Graph of f')
+
+plotter.subplot(1,2,2)
+plotter.addInterpolant([[-2,3],[-1,1],[1,-1],[2,-3]],t,'k-',2.0)
+plotter.setupGrid(0.3,'--',
+                  -2.0,1.0,2.1,
+                  -4.0,1.0,4.1)
+plotter.setAxesBounds(-2.1,2.1,-3.1,4.1)
+plotter.axesDecorations('g','t','Graph of g')
+
+
+plt.draw()
+#plt.show()
+plt.savefig('compositionTwoFunctionsDec.pgf',format='pgf')
