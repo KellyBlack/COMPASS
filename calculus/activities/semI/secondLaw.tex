@@ -797,6 +797,146 @@
 
 
 %=========================================================================
+% Start of activities on the chain rule
+%=========================================================================
+
+\preClass{Composition of Functions}
+
+\begin{problem}
+\item Two functions are defined in the following tables:
+
+  \begin{center}
+    \begin{tabular}{l|ll@{\hspace{6em}}l|l}
+      $t$ & $f(t)$ & & $t$ & $g(t)$ \\  \cline{1-2} \cline{4-5} 
+      0 &  3 & & -2 & 1 \\
+      1 &  1 & & -1 & 5 \\
+      2 & -1 & &  0 & 2 \\
+      3 &  4 & &  1 & 1 \\
+      4 & -3 & &  2 & 3 \\
+          &    & &  3 & 4
+    \end{tabular} 
+  \end{center}
+
+  \begin{subproblem}
+  \item What is the value of the function $f(g(t))$ when $t=0$?
+    \vfill
+  \item What is the value of the function $g(f(t))$ when $t=0$?
+    \vfill
+  \item What is the value of the function $f(g(t))$ when $t=3$?
+    \vfill
+  \item What is the value of the function $g(f(t))$ when $t=3$?
+    \vfill
+  \end{subproblem}
+
+  \clearpage
+
+\item The graph of two functions, $f(t)$ and $g(t)$ is given in the
+  figure below. Use the graphs to answer the questions below.
+
+  \scalebox{0.75}{\input{py/week4/compositionTwoFunctions.pgf}}
+
+  \begin{subproblem}
+  \item What is the value of the function $f(g(t))$ when $t=-1$
+    \vfill
+  \item What is the value of the function $g(f(t))$ when $t=-1$
+    \vfill
+  \item What is the value of the function $f(g(t))$ when $t=1$
+    \vfill
+  \item What is the value of the function $g(f(t))$ when $t=1$
+    \vfill
+  \end{subproblem}
+
+\end{problem}
+
+\actTitle{The Chain Rule}
+\begin{problem}
+\item The graph of two functions, $f(t)$ and $g(t)$ is given in the
+  figure below. Use the graphs to answer the questions below.
+
+  \scalebox{0.75}{\input{py/week4/compositionTwoFunctions.pgf}}
+
+  \begin{subproblem}
+  \item For what values of $t$ is the function $f(g(t))$ increasing?
+    \vfill
+  \item For what values of $t$ is the function $f(g(t))$ decreasing?
+    \vfill
+  \item For what values of $t$ is the function $g(f(t))$ increasing?
+    \vfill
+  \item For what values of $t$ is the function $g(f(t))$ decreasing?
+    \vfill
+  \end{subproblem}
+
+  \clearpage
+
+\item The graph of two functions, $f(t)$ and $g(t)$ is given in the
+  figure below. Use the graphs to answer the questions below.
+
+  \scalebox{0.75}{\input{py/week4/compositionTwoFunctionsDec.pgf}}
+
+  \begin{subproblem}
+  \item For what values of $t$ is the function $f(g(t))$ increasing?
+    \vfill
+  \item For what values of $t$ is the function $f(g(t))$ decreasing?
+    \vfill
+  \item For what values of $t$ is the function $g(f(t))$ increasing?
+    \vfill
+  \item For what values of $t$ is the function $g(f(t))$ decreasing?
+    \vfill
+  \end{subproblem}
+
+  \clearpage
+
+\item We look at the function $f(g(t))$.
+  \begin{subproblem}
+  \item Determine an expression for the average rate of change of the
+    function $f(g(t))$ from $t$ to $t+h$.
+    \vfill
+  \item What is the change in the input for the function $g$ in your
+    expression? 
+    \vspace{2em}
+  \item What is the change in the input for the function $f$ in your
+    expression? 
+    \vspace{2em}
+  \item Rewrite the first expression after multiplying and dividing by
+    the change in the previous expression.
+    \vfill
+  \end{subproblem}
+
+\item Use the definition of the derivative to determine an expression
+  of the derivative of the function $f(g(t))$ based on the previous
+  expression.
+  \vspace{5em}
+
+\end{problem}
+
+
+\postClass
+
+\begin{problem}
+\item Briefly state two ideas from today's class.
+  \begin{itemize}
+  \item 
+  \item 
+  \end{itemize}
+\item Determine the derivatives of each of the following functions.
+  \begin{subproblem}
+  \item $(t^3-1)^5$
+    \vfill
+  \item $\sqrt{t^2+1}$
+    \vfill
+  \item $(t^4+t)^5\cdot (t^7+t^{-1})^{-4}$
+    \vfill
+  \item $(t^3+t^2)^8\cdot (t^3-t)^6$
+    \vfill
+  \item $(1+t)^{12}\cdot (1-t)^{-5}$
+    \vfill
+  \end{subproblem}
+\end{problem}
+
+
+
+
+%=========================================================================
 % Start of activities on basic trig
 %=========================================================================
 \preClass{Basic Trigonometry}
