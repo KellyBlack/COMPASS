@@ -1494,35 +1494,16 @@
   \begin{subproblem}
   \item $e^{t}$
     \vfill
-  \item $5e^{t}$
+  \item $5e^{5t}$
     \vfill
-  \item $8e^t$
+  \item $8e^{t^2-3t+12\sqrt{t}}$
     \vfill
   \end{subproblem}
 \item Determine the most general form for a function whose derivative
   is equal to the function itself.
   \vfill
-\end{problem}
 
-
-\actTitle{The Inverse of the Exponential}
-\begin{problem}
-\item We examine the inverse of the exponential function. Use the
-  following plot for sketching the functions given below.
-
-  \scalebox{0.75}{\input{py/week5/exponential_week5day1.pgf}}
-
-  \begin{subproblem}
-  \item Make sketch of the function $f(t) = e^t$.
-  \item Use your sketch to determine the value of $t$ so that
-    $e^t=10$. Mark up the plot to demonstrate how you can find the
-    value of $t$ graphically.
-  \item Use your sketch to determine the value of $t$ so that
-    $e^t=1$. Mark up the plot to demonstrate how you can find the
-    value of $t$ graphically.
-  \end{subproblem}
-
-  \clearpage
+\clearpage
 
 \item We define the logarithm, $\ln(t)$, to be the inverse function of
   the exponential.  Use your calculator to determine the values of the
@@ -1540,29 +1521,36 @@
     \vfill
   \end{subproblem}
 
-  \clearpage
 
-\item Use the axes below to make a sketch of the plot of the function
-  $e^t$ and $\ln(t)$.
-
-  \scalebox{0.75}{\input{py/week5/logarithm_week5day2.pgf}}
-
-  \clearpage
-
-\item For what value of $t$ is the function $e^t$ defined? What range
-  of value can it return?
-
-  \vfill
-
-\item For what values of $t$ is the function $\ln(t)$ defined? What
-  range of values can it return?
-
-  \vfill
 
 \end{problem}
 
-\actTitle{Properties of the Logarithm}
+
+\actTitle{The Inverse of the Exponential}
 \begin{problem}
+
+\item We define the function $f(t)=e^t$. The goal is to determine the
+  derivative of the inverse of $f(t)$.
+  \begin{subproblem}
+  \item We can think of the inverse in the following terms
+    \begin{eqnarray*}
+      t & = & f\lp\ln (t) \rp.
+    \end{eqnarray*}
+    Take the derivative of both sides. \sideNote{Remember the chain
+      rule!} Keep the result in terms of the derivative of the
+    logarithm.  (That is do not simplify the term
+    $\frac{d}{dt} \ln\lp t \rp$.)
+    \vfill
+  \item Solve the expression for the derivative of the logarithm.
+    \vfill
+    \item What does this imply about the expression
+    \begin{eqnarray*}
+      \frac{d}{dt} \ln\lp t \rp & = & \hspace{10em}.
+    \end{eqnarray*}
+  \end{subproblem}
+
+\clearpage
+
 \item We look at one important property of the logarithm. Solve the
   following relationships as requested.
   \begin{subproblem}
@@ -1613,27 +1601,6 @@
     \end{eqnarray*}
   \end{subproblem}
 
-\clearpage
-
-\item We define the function $f(t)=e^t$. The goal is to determine the
-  derivative of the inverse of $f(t)$.
-  \begin{subproblem}
-  \item We can think of the inverse in the following terms
-    \begin{eqnarray*}
-      t & = & f\lp\ln (t) \rp.
-    \end{eqnarray*}
-    Take the derivative of both sides. \sideNote{Remember the chain
-      rule!} Keep the result in terms of the derivative of the
-    logarithm.  (That is do not simplify the term
-    $\frac{d}{dt} \ln\lp t \rp$.)
-    \vfill
-  \item Solve the expression for the derivative of the logarithm.
-    \vfill
-    \item What does this imply about the expression
-    \begin{eqnarray*}
-      \frac{d}{dt} \ln\lp t \rp & = & \hspace{10em}.
-    \end{eqnarray*}
-  \end{subproblem}
 
 \end{problem}
 
@@ -1656,6 +1623,38 @@
     \item $\frac{d}{dt} \lp e^{7t} \cdot \ln \lp 4t^3 - 10\rp \rp$.
       \vfill
   \end{subproblem}
+
+\clearpage
+
+\item We examine the inverse of the exponential function. Use the
+  following plot for sketching the functions given below.
+
+  \scalebox{0.75}{\input{py/week5/exponential_week5day1.pgf}}
+
+  \begin{subproblem}
+  \item Make sketch of the function $f(t) = e^t$.
+  \item Use your sketch to determine the value of $t$ so that
+    $e^t=10$. Mark up the plot to demonstrate how you can find the
+    value of $t$ graphically.
+  \item Use your sketch to determine the value of $t$ so that
+    $e^t=1$. Mark up the plot to demonstrate how you can find the
+    value of $t$ graphically.
+  \end{subproblem}
+
+\item Use the axes below to make a sketch of the plot of the function
+  $e^t$ and $\ln(t)$.
+
+  \scalebox{0.75}{\input{py/week5/logarithm_week5day2.pgf}}
+
+
+\item For what value of $t$ is the function $e^t$ defined? What range
+  of value can it return?
+
+\item For what values of $t$ is the function $\ln(t)$ defined? What
+  range of values can it return?
+
+
+
 \end{problem}
 
 %=========================================================================
