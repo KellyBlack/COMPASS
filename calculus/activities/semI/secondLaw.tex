@@ -131,8 +131,7 @@
     Time (sec) & Motor A & Motor B & Motor C \\ \hline
     0.0 - 1.0  & on      & off     & off     \\ 
     1.0 - 2.0  & off     & on      & on      \\ 
-    2.0 - 3.0  & on      & on      & on      \\ 
-    3.0 - ?    & on      & off     & off     
+    2.0 - ?    & off     & off     & off     
   \end{tabular}
   \label{newtonsLawMotorizedCar}
 
@@ -199,7 +198,7 @@
   \item Briefly describe what is happening with the velocity where the
     maximum occurs.
     \vfill
-  \item When does the object's maximum displacement from its start
+  \item When does the object's minimum displacement from its start
     position occur?
     \vspace{3em}
   \end{subproblem}
@@ -676,9 +675,11 @@
           \lim_{\Delta t \rightarrow 0} \frac{f(t+\Delta t)\cdot g(t+\Delta t) - f(t)\cdot g(t)}{\Delta t}.
   \end{eqnarray*}
 
-  Suppose that we have a rectangle. The length of the bottom side
-  is given by the value of a function, $g(t)$. The height is given as the
-  height of a different function, $f(t)$. 
+  First, we focus on the total change and will look at the average
+  rate of change in the following questions.  Suppose that we have a
+  rectangle. The length of the bottom side is given by the value of a
+  function, $g(t)$. The height is given as the height of a different
+  function, $f(t)$.
 %  The two functions are given by
 %  \begin{eqnarray*}
 %    f(t) & = & t^2, \\
@@ -695,7 +696,8 @@
     \vfill
   \item What is the area of the second rectangle (dotted line) at time $t+\Delta t$?
     \vfill
-  \item What is the difference in the areas?
+  \item What is the difference in the areas in terms of the functions
+    $f$ and $g$?
     \vfill
   \end{subproblem}
 
@@ -720,23 +722,27 @@
       $g(t)$, and $g(t+\Delta t)$.
       \vfill
 
-    \item Now divide the previous expression by $\Delta t$ and
-      simplify the expression.
+    \item To get the average rate of change divide the previous
+      expression by $\Delta t$ and simplify the expression.  
+
       \vfill
 
   \end{subproblem}
 
   \clearpage
 
-\item What does this imply about the derivative of the product of two
-  functions? What is the derivative of $f(t)\cdot g(t)$?
+\item At this point we have the average rate of change and want to use
+  it to get the derivative. What does the previous result imply about
+  the derivative of the product of two functions? What is the
+  derivative of $f(t)\cdot g(t)$?  
+
   \vfill
 
 \item Determine the derivatives of each of the following functions:
   \begin{subproblem}
   \item $(3+t+6t^2) \cdot (8t^2+4t-77)$
     \vfill
-  \item $(5+t^8+t^{16}) \cdot (3t-18t+36t^3+4t^8)$
+  \item $(5+t^8+t^{16}) \cdot (3t-18t^2+36t^3+4t^8)$
     \vfill
   \item $(1-t) \cdot (1+t+t^2+t^3+t^4)$
     \vfill
