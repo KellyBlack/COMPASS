@@ -27,7 +27,7 @@ axis = plotter.getAxes()
 plotter.setAxesBounds(0.0,4.0,-1.0,16.0)
 for pos in range(2):
     t = 2.0*float(pos)
-    plotter.addFunction([t,t+2.0],[force(t),force(t)],'k-',2.0)
+    plotter.addFunction([t,t+2.0],[force(t),force(t)],'k-',3.0)
     plotter.markJumps([[t,force(t),False],[t+2.0,force(t),True]],8.0)
 
 plotter.setupGrid(0.3,'--',
@@ -49,7 +49,7 @@ axis = plotter.getAxes()
 plotter.setAxesBounds(0.0,4.0,-1.0,16.0)
 for pos in range(4):
     t = float(pos)
-    plotter.addFunction([t,t+1.0],[force(t),force(t)],'k-',2.0)
+    plotter.addFunction([t,t+1.0],[force(t),force(t)],'k-',3.0)
     plotter.markJumps([[t,force(t),False],[t+1.0,force(t),True]],8.0)
 
 plotter.setupGrid(0.3,'--',
