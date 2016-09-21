@@ -223,43 +223,119 @@
 %=========================================================================
 % Start of activities on systems of equations
 %=========================================================================
-\preClass{Systems of Equations}
+\preClass{Linearizations}
 
-\begin{problem}
-\item Determine the values of $x$ and $y$ that satisfy both of the
-  following equations:
+\begin{problem} 
+\item We examine the linearization of the function
   \begin{eqnarray*}
-    x + 4y & = & 7, \\
-    x + 3y & = & 5.
-  \end{eqnarray*}
-\end{problem}
-
-
-\actTitle{Graphical View of Systems of Equations}
-\begin{problem}
-\item We will graphically determine the values of $x$ and $y$ that
-  satisfy both of the following equations:
-  \begin{eqnarray*}
-    x + 4y & = & 7, \\
-    x + 3y & = & 5.
+    f(x) & = & \frac{1}{4}x^2-4.
   \end{eqnarray*}
   \begin{subproblem}
-  \item Draw a set of axes where $-3\leq x \leq 3$ and $-3 \leq y \leq
-    3$. 
+  \item Draw a set of axes where $-2\leq x \leq 2$. 
 
     \sideNote{ Be sure to label your axes and label all important
       points on your graph.}
 
     \vfill
 
-  \item Make a sketch of the relationship $x+4y=7$ on the axes.
-  \item Make a sketch of the relationship $x+3y=5$ on the axes.
-  \item Circle and estimate the points where both relationships are
-    satisfied.
+  \item Make a sketch of the function $f(x)$ on the axes.
+  \item Add a sketch of the tangent line to the function at $x=1$.
+  \item Determine the formula for the tangent line at $x=1$.
+    \vfill
+
+  \end{subproblem}
+\end{problem}
+
+
+\actTitle{Approximating Solutions to Nonlinear Equations}
+\begin{problem}
+\item We will examine a way to determine an estimate for the value of
+  $x$ that satisfies $0=\frac{1}{4}x^2-4$.
+  \begin{subproblem}
+  \item Draw a set of axes where $-2\leq x \leq 2$. 
+
+    \sideNote{ Be sure to label your axes and label all important
+      points on your graph.}
+
+    \vfill
+
+  \item Make a sketch of the relationship $f(x)=\frac{1}{4}x^2-4$ on the axes.
+  \item Suppose you cannot determine the value of $x$ where $f(x)=0$,
+    and you make an initial estimate that $x=1$ is a root. Add a
+    sketch of the tangent line to the function at $x=1$.
+
+  \item Mark the point where the height of the \textbf{tangent line}
+    is zero. Is this new $x$ value a better or worse approximation for the value of
+    $x$?  
+
+    \vspace{2em}
+
+    \clearpage
+
+
+  \item Determine analytically the tangent line to the graph of the
+    curve at the initial estimate for the root, $x=1$. Determine the
+    value of $x$ where the height of the tangent line is zero.
+
+    \vfill
+
+
+  \item Add sketch of another tangent line at the new value of $x$ to
+    your original plot on the previous page. 
+
+  \item Mark the point where the height of the \textbf{tangent line}
+    is zero. Is this new $x$ value a better or worse approximation for the value of
+    $x$?  
+
+    \vspace{2em}
+
+  \item Determine analytically the tangent line to the graph of the
+    curve at the new estimate for the root. Determine the value of $x$
+    where the height of this new tangent line is zero.
+
+    \vfill
+
+
+  \item Add sketch of another tangent line at the new value of $x$ to
+    your original plot on the previous page. 
+
+  \item Mark the point where the height of the \textbf{tangent line}
+    is zero. Is this new $x$ value a better or worse approximation for
+    the value of $x$?
+
+
   \end{subproblem}
 
   \clearpage
 
+\item Determine an algorithm to calculate the tangent line to a
+  function at $x=a$, and find the value of $x$ where the tangent line
+  is zero.
+
+  \vfill
+
+\clearpage
+
+\item Use your algorithm multiple times to find an approximation to
+  the root of $f(x)=\frac{1}{4}x^2-4$ using an initial estimate of
+  $x=1$.
+
+  \vfill
+
+\item How do you know when to stop applying the algorithm and your
+  approximation is ``close?''
+
+\end{problem}
+
+
+\postClass
+
+\begin{problem}
+\item Briefly state two ideas from today's class.
+  \begin{itemize}
+  \item 
+  \item 
+  \end{itemize}
 \item We will graphically determine the values of $x$ and $y$ that
   satisfy both of the following equations:
   \begin{eqnarray*}
@@ -281,81 +357,33 @@
   \item Circle and estimate the points where both relationships are
     satisfied.
   \end{subproblem}
-
-
-\end{problem}
-
-\actTitle{Determining Solutions to Systems Analytically}
-\begin{problem}
-\item Use matrices to determine the values of $x$ and $y$ that satisfy
-  both of the following equations:
+\clearpage
+\item Determine the values of $x$ and $y$ that satisfy both of the
+  following equations:
   \begin{eqnarray*}
     x + 4y & = & 7, \\
     x + 3y & = & 5.
   \end{eqnarray*}
-
-  \vfill
-
   \clearpage
-
-\item Use matrices to determine the values of $x$ and $y$ that satisfy
-  both of the following equations:
+\item We will graphically determine the values of $x$ and $y$ that
+  satisfy both of the following equations:
   \begin{eqnarray*}
-     -x +  y + 5z & = & -13, \\
-    -2x +  y + 4z & = & -15, \\
-     2x - 2y - 7z & = & 20.
+    x + 4y & = & 7, \\
+    x + 3y & = & 5.
   \end{eqnarray*}
-
-  \vfill
-
-  \clearpage
-
-\item Determine an estimate for the value of $x$ that satisfies
-  $0=3x^2-4$.
   \begin{subproblem}
-  \item Draw a set of axes where $-2\leq x \leq 2$. 
+  \item Draw a set of axes where $-3\leq x \leq 3$ and $-3 \leq y \leq
+    3$. 
 
     \sideNote{ Be sure to label your axes and label all important
       points on your graph.}
 
     \vfill
 
-  \item Make a sketch of the relationship $y=3x^2-4$ on the axes.
-  \item Make a rough estimate of the value of $x$ where the value of
-    $y$ is zero.
-    \clearpage
-
-  \item Make a sketch of the tangent line to the graph of the curve
-    at your estimate for $x$. Mark the point where the height of the
-    tangent line is zero. Is that a better or worse approximation for
-    the value of $x$?
-    \vspace{2em}
-
-  \item Determine analytically the tangent line to the graph of the curve
-    at your estimate for $x$. Determine where the height of the
-    tangent line is zero. 
-
-    \vfill
-
-  \item How can you determine if the new $x$ is a better estimate if
-    you do not know the true value?
-
-  \end{subproblem}
-
-\end{problem}
-
-
-\postClass
-
-\begin{problem}
-\item Briefly state two ideas from today's class.
-  \begin{itemize}
-  \item 
-  \item 
-  \end{itemize}
-\item 
-  \begin{subproblem}
-    \item
+  \item Make a sketch of the relationship $x+4y=7$ on the axes.
+  \item Make a sketch of the relationship $x+3y=5$ on the axes.
+  \item Circle and estimate the points where both relationships are
+    satisfied.
   \end{subproblem}
 \end{problem}
 
