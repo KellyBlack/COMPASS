@@ -141,16 +141,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="5.0721014"
-     inkscape:cx="342.84004"
-     inkscape:cy="899.98706"
+     inkscape:zoom="3.536195"
+     inkscape:cx="342.96344"
+     inkscape:cy="890.11475"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:window-width="1306"
      inkscape:window-height="962"
-     inkscape:window-x="232"
-     inkscape:window-y="21"
+     inkscape:window-x="390"
+     inkscape:window-y="27"
      inkscape:window-maximized="0"
      inkscape:snap-global="false">
     <inkscape:grid
@@ -229,7 +229,7 @@
        transform="translate(0,62.362183)" />
     <text
        xml:space="preserve"
-       style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36px;line-height:125%;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        x="333.16443"
        y="117.42651"
        id="text7484"
@@ -239,7 +239,7 @@
          id="tspan7486"
          x="333.16443"
          y="117.42651"
-         style="-inkscape-font-specification:Mathematica1;font-family:Mathematica1;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:24px">a</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;font-family:Mathematica1;-inkscape-font-specification:Mathematica1">α</tspan></text>
     <path
        sodipodi:type="arc"
        style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
