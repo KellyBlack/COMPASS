@@ -463,38 +463,77 @@
 %=========================================================================
 % Start of day on optimization and kinematics
 %=========================================================================
-\preClass{Inclined Planes}
+\preClass{Center of Mass}
 
 \begin{problem}
-\item An object of mass $m$ starts from rest on an inclined plane. The
-  coefficient of dynamic friction is 0.1. The angle of the plane at
-  the bottom is $\theta$.
+\item An object has uniform density of 1 kg/m\textsuperscript{3}, and
+  it is 0.1 m thick. The object is bounded on the left by $x=1$, on
+  the right by $x=3$, above by $y=x$, and below by $y=-x$.
   \begin{subproblem}
-  \item Make a sketch of the physical situation.
+  \item Make a sketch of the object.
     \vfill
-  \item Make a sketch of the free body diagram.
+  \item Determine the Riemann sum to approximate the mass using $N$
+    panels. (Divide the object in the $x$-direction so that the panels
+    are arranged vertically.)
     \vfill
-  \item The length of the ramp is 1m. Determine how much time it will
-    take for the object to move from the top to the bottom of the
-    ramp.
+  \item Determine the mass of the object.
     \vfill
   \end{subproblem}
 \end{problem}
 
 
 
-\actTitle{Inclined Plane and Optimization}
+\actTitle{Center of Mass With Varying Density}
 \begin{problem}
-\item An object starts at rest on an inclined plane. The coefficient
-  of dynamic friction is 0.1. The angle of the plane at the bottom is
-  $\theta$. The object has a mass of 2.0 kg, and it also includes
-  $m_0$ kg of a chemical. The cost of the chemical is \$10 per kg,
-  and the cost of the ramp is fifty times the area of the ramp. What is
-  the best value of $m_0$ and $\theta$ so that the object's change in
-  momentum after it moves the length of the ramp, 1m, is 5 kg
-  m/second?
+\item A long, thin rod rests on the $x$-axis. The left end starts at
+  $x=0$, and the other end goes to $x=4$ m. The density of the rod is
+  $\rho(x)=1+\frac{x}{2}$ kg/m.
+  \begin{subproblem}
+  \item Make a sketch of the rod.
+    \vspace{2em}
+  \item Divide the rod into four parts, and approximate the total mass
+    using a left sided Riemann sum.
+    \vfill
+  \item Divide the rod into $N$ parts and determine an expression for
+    the left sided Riemann sum for the mass of the rod.
+    \vfill
+  \item What is the integral that represents the Riemann sum in the
+    limit as $\triangle x \rightarrow 0$?
+    \sideNote{Do not determine the value of the integral just
+      express the result as an integral.}
+
+    \clearpage
+
+  \item Divide the rod into $N$ parts and determine an expression for
+    the total torque of the pieces around the center of mass. (Denote
+    the center of mass as $x_{\mathrm{cm}}$.
+    \vfill
+
+  \item Set the previous expression to zero and solve  for the center of mass.
+    \vfill
+
+  \item Determine the formula for the center of mass in terms of two
+    integrals. State the reason why you can go from the previous step
+    to this step.
+
+    \vfill
+
+  \item What is the center of mass?
+
+    \vfill
+
+  \end{subproblem}
+
+  \clearpage
+
+\item A metal plate is 0.1 m thick. The object is bounded on the left by
+  $x=1$, on the right by $x=3$, above by $y=x$, and below by
+  $y=-x$. The density of the object is $\rho(x)=1+\frac{x^2}{5}$
+  kg/m. Determine the $x$-coordinate of the center of mass of the
+  object.
 
   \vfill
+
 
 \end{problem}
 
@@ -506,20 +545,13 @@
   \item 
   \item 
   \end{itemize}
-\item An object starts at rest on an inclined plane. The coefficient
-  of dynamic friction is 0.1. The angle of the plane at the bottom is
-  $\theta$. The object has a mass of 3.0 kg.
-  \begin{subproblem}
-  \item Make a sketch of the physical situation.  
-    \vfill
-  \item Make a sketch of the free body diagram.
+\item A metal plate is 0.2 m thick. The object is bounded on the left by
+  $x=2$, on the right by $x=5$, above by $y=x^2$, and below by
+  $y=-x^2$. The density of the object is $\rho(x)=x+\frac{x^3}{10}$
+  kg/m. Determine the $x$-coordinate of the center of mass of the
+  object.
     \vfill
     \clearpage
-  \item The length of the ramp is 1m. Determine how much time it will
-    take for the object to move from the top to the bottom of the
-    ramp.  
-    \vfill
-  \end{subproblem}
 \end{problem}
 
 
