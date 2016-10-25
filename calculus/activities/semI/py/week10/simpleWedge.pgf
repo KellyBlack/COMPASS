@@ -64,40 +64,10 @@
 \definecolor{currentstroke}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{currentstroke}%
 \pgfsetdash{}{0pt}%
-\pgfpathmoveto{\pgfqpoint{4.381818in}{3.000000in}}%
-\pgfpathlineto{\pgfqpoint{6.918182in}{3.000000in}}%
-\pgfpathlineto{\pgfqpoint{6.918182in}{5.181818in}}%
-\pgfpathlineto{\pgfqpoint{4.381818in}{3.000000in}}%
-\pgfusepath{stroke}%
-\end{pgfscope}%
-\begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{1.000000in}{0.600000in}}{\pgfqpoint{6.200000in}{4.800000in}} %
-\pgfusepath{clip}%
-\pgfsetbuttcap%
-\pgfsetmiterjoin%
-\pgfsetlinewidth{1.003750pt}%
-\definecolor{currentstroke}{rgb}{0.000000,0.000000,0.000000}%
-\pgfsetstrokecolor{currentstroke}%
-\pgfsetdash{}{0pt}%
-\pgfpathmoveto{\pgfqpoint{1.281818in}{0.818182in}}%
+\pgfpathmoveto{\pgfqpoint{1.563636in}{0.818182in}}%
 \pgfpathlineto{\pgfqpoint{4.100000in}{0.818182in}}%
-\pgfpathlineto{\pgfqpoint{4.100000in}{2.781818in}}%
-\pgfpathlineto{\pgfqpoint{1.281818in}{0.818182in}}%
-\pgfusepath{stroke}%
-\end{pgfscope}%
-\begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{1.000000in}{0.600000in}}{\pgfqpoint{6.200000in}{4.800000in}} %
-\pgfusepath{clip}%
-\pgfsetbuttcap%
-\pgfsetmiterjoin%
-\pgfsetlinewidth{1.003750pt}%
-\definecolor{currentstroke}{rgb}{0.000000,0.000000,0.000000}%
-\pgfsetstrokecolor{currentstroke}%
-\pgfsetdash{}{0pt}%
-\pgfpathmoveto{\pgfqpoint{4.381818in}{0.818182in}}%
-\pgfpathlineto{\pgfqpoint{6.918182in}{0.818182in}}%
-\pgfpathlineto{\pgfqpoint{6.918182in}{2.345455in}}%
-\pgfpathlineto{\pgfqpoint{4.381818in}{0.818182in}}%
+\pgfpathlineto{\pgfqpoint{4.100000in}{2.345455in}}%
+\pgfpathlineto{\pgfqpoint{1.563636in}{0.818182in}}%
 \pgfusepath{stroke}%
 \end{pgfscope}%
 \begin{pgfscope}%
@@ -123,37 +93,9 @@
 \definecolor{currentstroke}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{currentstroke}%
 \pgfsetdash{}{0pt}%
-\pgfpathmoveto{\pgfqpoint{6.636364in}{3.000000in}}%
-\pgfpathlineto{\pgfqpoint{6.636364in}{3.218182in}}%
-\pgfpathlineto{\pgfqpoint{6.918182in}{3.218182in}}%
-\pgfusepath{stroke}%
-\end{pgfscope}%
-\begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{1.000000in}{0.600000in}}{\pgfqpoint{6.200000in}{4.800000in}} %
-\pgfusepath{clip}%
-\pgfsetrectcap%
-\pgfsetroundjoin%
-\pgfsetlinewidth{1.003750pt}%
-\definecolor{currentstroke}{rgb}{0.000000,0.000000,0.000000}%
-\pgfsetstrokecolor{currentstroke}%
-\pgfsetdash{}{0pt}%
 \pgfpathmoveto{\pgfqpoint{3.818182in}{0.818182in}}%
 \pgfpathlineto{\pgfqpoint{3.818182in}{1.036364in}}%
 \pgfpathlineto{\pgfqpoint{4.100000in}{1.036364in}}%
-\pgfusepath{stroke}%
-\end{pgfscope}%
-\begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{1.000000in}{0.600000in}}{\pgfqpoint{6.200000in}{4.800000in}} %
-\pgfusepath{clip}%
-\pgfsetrectcap%
-\pgfsetroundjoin%
-\pgfsetlinewidth{1.003750pt}%
-\definecolor{currentstroke}{rgb}{0.000000,0.000000,0.000000}%
-\pgfsetstrokecolor{currentstroke}%
-\pgfsetdash{}{0pt}%
-\pgfpathmoveto{\pgfqpoint{6.636364in}{0.818182in}}%
-\pgfpathlineto{\pgfqpoint{6.636364in}{1.036364in}}%
-\pgfpathlineto{\pgfqpoint{6.918182in}{1.036364in}}%
 \pgfusepath{stroke}%
 \end{pgfscope}%
 \begin{pgfscope}%
@@ -166,37 +108,16 @@
 \pgftext[x=1.338182in,y=4.527273in,left,base]{\sffamily\fontsize{20.000000}{24.000000}\selectfont A}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgftext[x=4.720000in,y=3.043636in,left,base]{\sffamily\fontsize{14.000000}{16.800000}\selectfont \(\displaystyle \pi/6\)}%
+\pgftext[x=1.901818in,y=0.861818in,left,base]{\sffamily\fontsize{14.000000}{16.800000}\selectfont \(\displaystyle \theta\)}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgftext[x=6.636364in,y=3.741818in,left,base]{\sffamily\fontsize{14.000000}{16.800000}\selectfont \(\displaystyle 0.5\)}%
+\pgftext[x=2.747273in,y=0.861818in,left,base]{\sffamily\fontsize{14.000000}{16.800000}\selectfont \(\displaystyle 0.3\)}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgftext[x=4.269091in,y=4.527273in,left,base]{\sffamily\fontsize{20.000000}{24.000000}\selectfont B}%
+\pgftext[x=2.550000in,y=1.690909in,left,base]{\sffamily\fontsize{14.000000}{16.800000}\selectfont \(\displaystyle 0.6\)}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgftext[x=1.620000in,y=0.861818in,left,base]{\sffamily\fontsize{14.000000}{16.800000}\selectfont \(\displaystyle \theta\)}%
-\end{pgfscope}%
-\begin{pgfscope}%
-\pgftext[x=3.818182in,y=1.560000in,left,base]{\sffamily\fontsize{14.000000}{16.800000}\selectfont \(\displaystyle 0.4\)}%
-\end{pgfscope}%
-\begin{pgfscope}%
-\pgftext[x=2.550000in,y=1.909091in,left,base]{\sffamily\fontsize{14.000000}{16.800000}\selectfont \(\displaystyle 0.6\)}%
-\end{pgfscope}%
-\begin{pgfscope}%
-\pgftext[x=1.338182in,y=2.345455in,left,base]{\sffamily\fontsize{20.000000}{24.000000}\selectfont C}%
-\end{pgfscope}%
-\begin{pgfscope}%
-\pgftext[x=4.720000in,y=0.861818in,left,base]{\sffamily\fontsize{14.000000}{16.800000}\selectfont \(\displaystyle \theta\)}%
-\end{pgfscope}%
-\begin{pgfscope}%
-\pgftext[x=5.565455in,y=0.861818in,left,base]{\sffamily\fontsize{14.000000}{16.800000}\selectfont \(\displaystyle 0.3\)}%
-\end{pgfscope}%
-\begin{pgfscope}%
-\pgftext[x=5.368182in,y=1.690909in,left,base]{\sffamily\fontsize{14.000000}{16.800000}\selectfont \(\displaystyle 0.6\)}%
-\end{pgfscope}%
-\begin{pgfscope}%
-\pgftext[x=4.269091in,y=2.345455in,left,base]{\sffamily\fontsize{20.000000}{24.000000}\selectfont D}%
+\pgftext[x=1.450909in,y=2.345455in,left,base]{\sffamily\fontsize{20.000000}{24.000000}\selectfont B}%
 \end{pgfscope}%
 \end{pgfpicture}%
 \makeatother%
