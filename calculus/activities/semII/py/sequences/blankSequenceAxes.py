@@ -33,4 +33,3 @@ plotter.axesDecorations(r'Sequence',r'$n$',r'$a_n$')
 plt.draw()
 #plt.show()
 plt.savefig('firstSequenceAxes.pgf',format='pgf')
-
