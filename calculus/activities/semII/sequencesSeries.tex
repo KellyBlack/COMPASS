@@ -413,8 +413,105 @@
   \end{subproblem}
 \end{problem}
 
-
 %=========================================================================
+% Review of Sequences and Series
+%=========================================================================
+\preClass{Sequence and Series}
+\begin{problem}
+    \item Make a list of all of the tests we can use to determine if a series converges or diverges.
+\end{problem}
+
+\actTitle{Review of Sequences and Series}
+\begin{problem}
+\item What is a sequence?
+  \vfill
+\item What is a series?
+  \vfill
+
+\item  What is a geometric series, and what are the conditions for a geometric series to converge?
+  \vfill
+
+\item  What is a $p$-series, and what are the conditions for a $p$-series to converge?
+  \vfill
+
+  \item  What is a telescoping series, and what are the conditions for a telescoping series to converge?
+    \vfill
+
+  \clearpage
+
+  \item The different tests that we have covered are given in the flow chart below.
+        Next to each test write out the conditions and steps associated with the test.
+
+  \tikzstyle{known} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm,text centered, draw=black, fill=green!30]
+  \tikzstyle{test}  = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm,text centered, draw=black, fill=blue!30]
+  \tikzstyle{root}  = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm,text centered, draw=black, fill=red!30]
+  \tikzstyle{arrow} = [thick,->,>=stealth]
+  \begin{tikzpicture}[node distance = 3cm]
+    % First Draw the nodes
+    \node [root] (series) {Given $\sum^\infty_{n=0}a_n$.};
+    \node [root, below of=series,yshift=1cm] (root) {Is this a known series?};
+    \node [known, below of=root, xshift=-5cm] (geometric) {Geometric Series};
+    \node [known, below of=geometric] (pseries) {$p$-Series};
+    \node [known, below of=pseries] (telescoping) {Telescoping Series};
+    \node [test, below of=root] (alternating) {Alternating Series};
+    \node [test, below of=root,xshift=5cm] (absconv) {Absolutely Convergent?};
+    \node [test, below of=absconv] (integral) {Integral Test};
+    \node [test, below of=integral] (comparison) {Comparison Test};
+    \node [test, below of=comparison] (limitComp) {Limit Comparison Test};
+    \node [test, below of=limitComp] (rootTest) {Root Test};
+    \node [test, below of=rootTest] (ratio) {Ratio Test};
+    % Next draw the arrows
+    \draw [arrow] (series) -- (root);
+    \draw [arrow] (root) -- node[anchor=east] {yes} (geometric);
+    \draw [arrow] (geometric) -- (pseries);
+    \draw [arrow] (pseries) -- (telescoping);
+    \draw [arrow] (root) -- node[anchor=east,yshift=-0.5cm] {Alternating?} (alternating);
+    \draw [arrow] (root) -- node[anchor=west,xshift=0.1cm] {Other?} (absconv);
+    \draw [arrow] (absconv) -- (integral);
+    \draw [arrow] (integral) -- (comparison);
+    \draw [arrow] (comparison) -- (limitComp);
+    \draw [arrow] (limitComp) -- (rootTest);
+    \draw [arrow] (rootTest) -- (ratio);
+  \end{tikzpicture}
+
+  \clearpage
+
+  \item For each series below determine whether or not the series converges. Justify your answers.
+
+  \begin{subproblem}
+  \item $\displaystyle \sum^\infty_{n=0} \frac{2^n}{n!}$
+    \vfill
+  \item $\displaystyle \sum^\infty_{n=0} \frac{3n}{5n^2+1}$
+    \vfill
+  \item $\displaystyle \sum^\infty_{n=1} \frac{\lp\frac{1}{3}\rp^n}{4n-1}$
+    \vfill
+    \clearpage
+  \item $\displaystyle \sum^\infty_{n=0} n\cdot\frac{1}{6^n}$
+    \vfill
+  \item $\displaystyle \sum^\infty_{n=1} \lp\frac{1+n}{2n}\rp^n$
+    \vfill
+  \item $\displaystyle \sum^\infty_{n=1} \frac{\arctan(n)}{1+n^2}$
+    \vfill
+  \end{subproblem}
+
+\end{problem}
+
+\postClass
+
+\begin{problem}
+\item Briefly state two ideas from today's class.
+  \begin{itemize}
+  \item
+  \item
+  \end{itemize}
+\item
+  \begin{subproblem}
+    \item
+  \end{subproblem}
+\end{problem}
+
+
+%========================================================================\=
 % Power Series
 %=========================================================================
 \preClass{Power Series}
