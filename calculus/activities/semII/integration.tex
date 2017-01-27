@@ -11,7 +11,7 @@
   where the graph of the function, $f(x)$, is given below.
 
    \begin{tikzpicture}[scale=2.5]
-     \draw[step=1,gray,very thin,dotted] (-1,-1) grid (4,4);
+     \draw[step=1,loosely dotted,line width=1] (-1,-1) grid (4,4);
      \draw[line width=2.2,->] (-1,0) -- (4,0);
      \draw[line width=2.2,->] (0,-1) -- (0,4);
      \begin{scope}
@@ -22,9 +22,9 @@
      \node[left] at (-0.2,3.5) {$f$};
      \node[below] at (3.5,-0.2) {$x$};
      \foreach \x in {-1,1,2,3,4}
-        \draw (\x,1pt) -- (\x,-3pt) node[anchor=north] {\x};
+        \draw (\x,1pt) -- (\x,-3pt) node[anchor=north east] {\x};
      \foreach \y in {-1,1,2,3,4}
-         \draw (1pt,\y) -- (-3pt,\y) node[anchor=east] {\y};
+         \draw (1pt,\y) -- (-3pt,\y) node[anchor=north east] {\y};
     \end{tikzpicture}
 
   \clearpage
