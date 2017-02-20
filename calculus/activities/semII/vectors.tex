@@ -1,19 +1,125 @@
+
+%=========================================================================
+% Start of first day of vectors in 3D
+%=========================================================================
+\preClass{Introduction to Vectors in Three Dimensions.}
+
+\begin{problem}
+\item Determine a way to express the point $P$ shown in the diagram below as the sum of
+the $\vec{\imath}$, $\vec{\jmath}$, and $\vec{k}$ vectors.
+
+  \tdplotsetmaincoords{60}{100}
+  \begin{tikzpicture}[tdplot_main_coords]
+    % Draw the coordinates
+    \coordinate (O) at (0, 0, 0);
+    \draw[->] (O) -- +(4, 0, 0) node[font = \small, pos = 1.1] {\(x\)} coordinate (X);
+    \draw[->] (O) -- +(0, 4, 0) node[font = \small, pos = 1.1] {\(y\)} coordinate (Y);
+    \draw[->] (O) -- +(0, 0, 4) node[font = \small, pos = 1.1] {\(z\)} coordinate (Z);
+    %
+    % Draw the unit vectors
+    \draw[very thick,blue,->] (0,0,0) -- (1,0,0) node[font=\small,pos=1.7,anchor=south west] {$\hat{\imath}$};
+    \draw[very thick,blue,->] (0,0,0) -- (0,1,0) node[font=\small,pos=0.9,anchor=south west] {$\hat{\jmath}$};
+    \draw[very thick,blue,->] (0,0,0) -- (0,0,1) node[font=\small,pos=0.9,anchor=south east] {$\hat{k}$};
+    %
+    % Draw a point in space
+    \node[draw=none,shape=circle,fill, inner sep=2pt] (d1) at (3,1,2){};  % circle
+    \node[font=\small,anchor=south] at (d1) {P};  % label
+    \draw[thin,red,dashed] (3,0,0) -- (3,1,0) node[font=\small,pos=0.5,anchor=north] {1};
+    \draw[thin,red,dashed] (0,1,0) -- (3,1,0) node[font=\small,pos=0.25,anchor=north west] {3};
+    \draw[thin,red,dashed] (3,1,0) -- (3,1,2) node[font=\small,pos=0.75,anchor=east] {2};
+  \end{tikzpicture}
+
+  \item Determine the distance between the point $P(2,3)$ and $Q(-1,5)$.
+
+    \vfill
+
+
+\end{problem}
+
+
+\actTitle{Vectors in Three Dimensions}
+\begin{problem}
+\item Make a sketch of the coordinate axes in three dimensions.
+
+  \vfill
+  \begin{subproblem}
+      \item Make sure to label the axes.
+      \item Add the point $P(4,1,2)$ to your plot.
+      \item Add the point $Q(1,-1,0)$ to your plot.
+      \item Add the vector $PQ$ to your plot.
+  \end{subproblem}
+  \clearpage
+
+\item
+
+\tdplotsetmaincoords{60}{100}
+\begin{tikzpicture}[tdplot_main_coords]
+  % Draw the coordinates
+  \coordinate (O) at (0, 0, 0);
+  \draw[->] (O) -- +(4, 0, 0) node[font = \small, pos = 1.1] {\(x\)} coordinate (X);
+  \draw[->] (O) -- +(0, 4, 0) node[font = \small, pos = 1.1] {\(y\)} coordinate (Y);
+  \draw[->] (O) -- +(0, 0, 4) node[font = \small, pos = 1.1] {\(z\)} coordinate (Z);
+  %
+  % Draw a point in space
+  \node[draw=none,shape=circle,fill, inner sep=2pt] (d1) at (3,3,2){};  % circle
+  \node[font=\small,anchor=south] at (d1) {P};  % label
+  \draw[thin,red,dashed] (3,0,0) -- (3,1,0) node[font=\small,pos=0.5,anchor=north] {1};
+  \draw[thin,red,dashed] (0,1,0) -- (3,1,0) node[font=\small,pos=0.25,anchor=north west] {3};
+  \draw[thin,red,dashed] (3,1,0) -- (3,1,2) node[font=\small,pos=0.75,anchor=east] {2};
+\end{tikzpicture}
+
+
+\end{problem}
+
+
+\postClass
+
+\begin{problem}
+\item Briefly state two ideas from today's class.
+  \begin{itemize}
+  \item
+  \item
+  \end{itemize}
+\item
+  \begin{subproblem}
+    \item
+  \end{subproblem}
+\end{problem}
+
+
 %=========================================================================
 % Start of first day of lines and parameterization of a line
 %=========================================================================
 \preClass{Lines}
 
 \begin{problem}
-\item A line with slope 3 goes through the point $(-2,5)$. Express the
-  formula for the line in different ways.
-  \begin{subproblem}
-  \item Express the formula for the line in slope-intercept form.
+\item Determine a way to express the point $P$ shown in the diagram below as the sum of
+the $\vec{\imath}$, $\vec{\jmath}$, and $\vec{k}$ vectors.
+
+  \tdplotsetmaincoords{60}{100}
+  \begin{tikzpicture}[tdplot_main_coords]
+    % Draw the coordinates
+    \coordinate (O) at (0, 0, 0);
+    \draw[->] (O) -- +(4, 0, 0) node[font = \small, pos = 1.1] {\(x\)} coordinate (X);
+    \draw[->] (O) -- +(0, 4, 0) node[font = \small, pos = 1.1] {\(y\)} coordinate (Y);
+    \draw[->] (O) -- +(0, 0, 4) node[font = \small, pos = 1.1] {\(z\)} coordinate (Z);
+    %
+    % Draw the unit vectors
+    \draw[very thick,blue,->] (0,0,0) -- (1,0,0) node[font=\small,pos=1.7,anchor=south west] {$\hat{\imath}$};
+    \draw[very thick,blue,->] (0,0,0) -- (0,1,0) node[font=\small,pos=0.9,anchor=south west] {$\hat{\jmath}$};
+    \draw[very thick,blue,->] (0,0,0) -- (0,0,1) node[font=\small,pos=0.9,anchor=south east] {$\hat{k}$};
+    %
+    % Draw a point in space
+    \node[draw=none,shape=circle,fill, inner sep=2pt] (d1) at (3,1,2){};  % circle
+    \node[font=\small,anchor=south] at (d1) {P};  % label
+    \draw[thin,red,dashed] (3,0,0) -- (3,1,0) node[font=\small,pos=0.5,anchor=north] {1};
+    \draw[thin,red,dashed] (0,1,0) -- (3,1,0) node[font=\small,pos=0.25,anchor=north west] {3};
+    \draw[thin,red,dashed] (3,1,0) -- (3,1,2) node[font=\small,pos=0.75,anchor=east] {2};
+  \end{tikzpicture}
+
+  \item Determine the distance between the point $P(2,3)$ and $Q(-1,5)$.
+
     \vfill
-  \item Express the formula for the line in point-slope form.
-    \vfill
-  \item Express the formula for the line in standard form.
-    \vfill
-  \end{subproblem}
 
   \clearpage
 
@@ -56,15 +162,14 @@
 \begin{problem}
 \item Briefly state two ideas from today's class.
   \begin{itemize}
-  \item 
-  \item 
+  \item
+  \item
   \end{itemize}
-\item 
+\item
   \begin{subproblem}
     \item
   \end{subproblem}
 \end{problem}
-
 
 
 
