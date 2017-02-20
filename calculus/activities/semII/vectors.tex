@@ -50,24 +50,43 @@ the $\vec{\imath}$, $\vec{\jmath}$, and $\vec{k}$ vectors.
   \end{subproblem}
   \clearpage
 
-\item
+\item A point, $P$, has coordinates $(x,y,z)$ as shown in the diagram below.
+  The point $Q$ is directly beneath $P$ at $(x,y,0)$.
 
 \tdplotsetmaincoords{60}{100}
 \begin{tikzpicture}[tdplot_main_coords]
   % Draw the coordinates
   \coordinate (O) at (0, 0, 0);
-  \draw[->] (O) -- +(4, 0, 0) node[font = \small, pos = 1.1] {\(x\)} coordinate (X);
-  \draw[->] (O) -- +(0, 4, 0) node[font = \small, pos = 1.1] {\(y\)} coordinate (Y);
-  \draw[->] (O) -- +(0, 0, 4) node[font = \small, pos = 1.1] {\(z\)} coordinate (Z);
+  \draw[->] (O) -- +(4, 0, 0) node[font = \small, pos = 1.1] {$x$} coordinate (X);
+  \draw[->] (O) -- +(0, 4, 0) node[font = \small, pos = 1.1] {$y$} coordinate (Y);
+  \draw[->] (O) -- +(0, 0, 4) node[font = \small, pos = 1.1] {$z$} coordinate (Z);
+  \node[font=\small,anchor=east] at (0,0,0) {$O$};
   %
   % Draw a point in space
-  \node[draw=none,shape=circle,fill, inner sep=2pt] (d1) at (3,3,2){};  % circle
-  \node[font=\small,anchor=south] at (d1) {P};  % label
-  \draw[thin,red,dashed] (3,0,0) -- (3,1,0) node[font=\small,pos=0.5,anchor=north] {1};
-  \draw[thin,red,dashed] (0,1,0) -- (3,1,0) node[font=\small,pos=0.25,anchor=north west] {3};
-  \draw[thin,red,dashed] (3,1,0) -- (3,1,2) node[font=\small,pos=0.75,anchor=east] {2};
+  \draw[->] (O) -- +(3, 2, 2) node[font = \small, pos = 1.1] {} coordinate (P);
+  \node[font=\small,anchor=south] at (P) {P};  % label
+  \draw[thin,red,dashed]  (3,0,0) -- (3,2,0) node[font=\small,pos=0.5,anchor=north] {$x$};
+  \draw[thin,red,dashed]  (0,2,0) -- (3,2,0) node[font=\small,pos=0.25,anchor=north west] {$y$};
+  \draw[thin,red,dashed]  (3,2,0) -- (3,2,2) node[font=\small,pos=0.75,anchor=west] {$z$};
+  \draw[thin,blue,dashed] (0,0,0) -- (3,2,0) node[font=\small,pos=0.5,anchor=west] {$h$};
+  \draw[thin,blue] (2.8,1.8,0) -- (2.8,1.8,.4) -- (3,2,.4);
+  \node[draw=none,shape=circle,fill, inner sep=2pt] (Q) at (3,2,0) {};
+  \node[font=\small,anchor=north] at (Q) {Q};
 \end{tikzpicture}
 
+\begin{subproblem}
+  \item Determine the distance, $h$, from the origin, $O$, to the point $Q$.
+    \vfill
+  \item Determine the distance between $Q$ and $P$.
+    \vfill
+  \item Determine the distance between $P$ and the origin. (Hint: Draw a side view of the triangle $OPQ$.
+    \vfill
+\end{subproblem}
+
+\clearpage
+
+\item Determine the distance between two points, $P(x_0,y_0,z_0)$ and $Q(x_1,y_1,z_1)$.
+   (Hint: The distance between the points is the same as the length of the vector $\vec{PQ}$.)
 
 \end{problem}
 
