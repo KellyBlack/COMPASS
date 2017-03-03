@@ -630,7 +630,6 @@ the $\vec{\imath}$, $\vec{\jmath}$, and $\vec{k}$ vectors.
     \draw[->] (O) -- +(0, 4, 0) node[font = \small, pos = 1.1] {\(y\)} coordinate (Y);
     \draw[->] (O) -- +(0, 0, 4) node[font = \small, pos = 1.1] {\(z\)} coordinate (Z);
     %
-    % Draw the unit vectors
     %
     % Draw a point in space
     \node[draw=none,shape=circle,fill, inner sep=2pt] (d1) at (4,3,1){};  % circle
@@ -668,6 +667,84 @@ the $\vec{\imath}$, $\vec{\jmath}$, and $\vec{k}$ vectors.
   \item Determine the distance between the point $(4,3,1)$ and the line $\vec{r}(t)=\left(1\vec{\imath}-2\vec{\jmath}-2\vec{k}\right)+t\left(1\vec{\imath}+6\vec{\jmath}+6\vec{k}\right)$.
     \vfill
 
+\end{problem}
+
+
+\postClass
+
+\begin{problem}
+\item Briefly state two ideas from today's class.
+  \begin{itemize}
+  \item
+  \item
+  \end{itemize}
+\item
+  \begin{subproblem}
+    \item
+  \end{subproblem}
+\end{problem}
+
+
+%=========================================================================
+% Start of activities on equations for planes
+%=========================================================================
+\preClass{Orthogonal vectors}
+
+\begin{problem}
+\item Suppose two vectors, $\vec{n}=0\vec{\imath}+0\vec{\jmath}+2\vec{k}$ and $\vec{u}$, and perpindicular to one another.
+  \begin{subproblem}
+    \item What must the value of the dot product, $\vec{n}\cdot\vec{u}$ of the two vectors be?
+      \vfill
+    \item Suppose that $\vec{u}=x\vec{\imath}+y\vec{\jmath}+z\vec{k}$.  What does that imply about the value of $z$?
+      \vfill
+    \item What restruction is there on the values of $x$ and $y$?
+      \vfill
+  \end{subproblem}
+\end{problem}
+
+
+\actTitle{Equation for a plane}
+\begin{problem}
+\item Suppose that $P$ is a point on a plane, and $\vec{n}$ is a vector that is perpendicular to the plane at the point $P$.
+
+  \tdplotsetmaincoords{60}{100}
+  \begin{tikzpicture}[tdplot_main_coords,fill opacity=.3]
+    % Draw the coordinates
+    \coordinate (O) at (0, 0, 0);
+    \draw[->] (O) -- +(4, 0, 0) node[font = \small, pos = 1.1] {\(x\)} coordinate (X);
+    \draw[->] (O) -- +(0, 4, 0) node[font = \small, pos = 1.1] {\(y\)} coordinate (Y);
+    \draw[->] (O) -- +(0, 0, 4) node[font = \small, pos = 1.1] {\(z\)} coordinate (Z);
+    %
+    %
+    % Draw a plane in space
+    \filldraw[draw=red,fill=red!10,fill opacity=0.1]  (4,0,1) -- (4,3,2.5) -- (0,3,1.5) -- (0,0,0) -- cycle;
+    % Draw a point in space
+    \node[draw=none,shape=circle,fill, inner sep=2pt] (d1) at (2,2,1.5){};  % circle
+    \node[font=\small,anchor=south west] at (d1) {P};  % label
+    % Draw the normal vector
+    \draw[->] (d1) -- +(-0.25,-0.5,1) node[font = \small,pos=1.4] {$\vec{n}$};
+  \end{tikzpicture}
+
+  \begin{subproblem}
+    \item Mark and label a point $Q$ on the plane in the diagram above.
+    \item What is the angle between the vector $\vec{PQ}$ and the vector $\vec{n}$?
+      \vspace{3em}
+    \item What can you say about the dot product and the cross product of the vectors $\vec{PQ}$ and $\vec{n}$? Which is an easier relationship to work with?
+      \label{activity:planes:normalRelationship}
+      \vfill
+
+      \clearpage
+
+    \item Assume that $P$ is a fixed point, $P=x_0\vec{\imath}+y_0\vec{\jmath}+z_0\vec{k}$, and $Q$ is any point in the plane, $Q=x\vec{\imath}+y\vec{\jmath}+z\vec{k}$.
+      Determine the vector $\vec{PQ}$.
+        \vfill
+    \item Using the relationship from part \ref{activity:planes:normalRelationship}, determine a relationship that describes all points on the plane.
+      \vfill
+    \item Suppose that the point $P=3\vec{\imath}-1\vec{\jmath}+2\vec{k}$ is on a plane, and the vector $\vec{n}=-5\vec{\imath}+4\vec{\jmath}-1\vec{k}$ is perpendicular to the plane.
+       Determine the equation for the plane.
+       \vfill
+       \vfill
+  \end{subproblem}
 \end{problem}
 
 
