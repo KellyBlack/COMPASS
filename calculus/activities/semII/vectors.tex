@@ -121,17 +121,17 @@ the $\vec{\imath}$, $\vec{\jmath}$, and $\vec{k}$ vectors.
 \item Sketch and label the vectors $\vec{u}=2\vec{\imath}+3\vec{\jmath}$ and
       $\vec{v}=-\vec{\imath}+2\vec{\jmath}$ on the diagram below.
 
-    \begin{tikzpicture}[y=1cm, x=1cm,font=\sffamily]
+    \begin{tikzpicture}[y=0.7cm, x=0.7cm,font=\sffamily]
       % ticks
-      \draw[step = 1, gray, very thin,opacity=0.35] (-4.5, -1.5) grid ( 4.5, 4.5);
+      \draw[step = 1, gray, very thin,opacity=0.25] (-4.5, -1.5) grid ( 4.5, 6.5);
       % axis
       \draw[thick,->] (-4.5,0) -- coordinate (x axis mid) (4.5,0) node[anchor = north west] {$\vec{\imath}$};
-      \draw[thick,->] (0,-1.5) -- coordinate (y axis mid) (0,4.5) node[anchor = south east] {$\vec{\jmath}$};
-      \foreach \y in {-1,1,2,3,4} {
+      \draw[thick,->] (0,-1.5) -- coordinate (y axis mid) (0,6.5) node[anchor = south east] {$\vec{\jmath}$};
+      \foreach \y in {-1,1,2,...,6} {
         \draw (1pt, \y) -- (-1pt, \y) node[anchor = east] {$\y$};
       }
       \foreach \x in {-4,-3,...,-1,1,2,3,4} {
-        \draw (\x,1pt) -- (\x,-1pt) node[anchor = north] {$\x$};
+        \draw (\x,1pt) -- (\x,-1pt) node[anchor = north ] {$\x$};
       }
     \end{tikzpicture}
 
@@ -152,7 +152,7 @@ the $\vec{\imath}$, $\vec{\jmath}$, and $\vec{k}$ vectors.
 
 \actTitle{Length of Vectors in Three Dimensions}
 \begin{problem}
-\item Sketch and label the vectors $\vec{u}=2\vec{\imath}+3\vec{\jmath}$ and
+\item Sketch and label the vectors $\vec{u}=1\vec{\imath}+2\vec{\jmath}$ and
       $\vec{v}=-3\vec{\imath}-2\vec{\jmath}$ on the diagram below.
 
   \begin{tikzpicture}[y=1.0cm, x=1.0cm,font=\sffamily]
@@ -180,20 +180,6 @@ the $\vec{\imath}$, $\vec{\jmath}$, and $\vec{k}$ vectors.
       \item Is it possible to find a value of $k$ so that $\vec{u}=k\vec{v}$? (Explain how you arrived at your conlcusion.)
       \vfill
   \end{subproblem}
-
-  \clearpage
-
-\item Given the vector $\vec{w}=4\vec{\imath} - 2 \vec{\jmath}$ answer the following questions.
-
-  \begin{subproblem}
-      \item Make a sketch of a set of axes and the vector.
-      \vfill
-      \item Determine another vector $\hat{w}$ that has a length of one and points in the same direction of $\vec{w}$.
-      \vfill
-      \item Determine another vector, $\vec{r}$, that has length 5 and points in the opposite direction as $\vec{w}$.
-      \vfill
-  \end{subproblem}
-
 
 \clearpage
 
@@ -276,6 +262,22 @@ the $\vec{\imath}$, $\vec{\jmath}$, and $\vec{k}$ vectors.
   \begin{subproblem}
     \item
   \end{subproblem}
+
+  \clearpage
+
+\item Given the vector $\vec{w}=4\vec{\imath} - 2 \vec{\jmath}$ answer the following questions.
+
+  \begin{subproblem}
+      \item Make a sketch of a set of axes and the vector.
+      \vfill
+      \item Determine another vector $\hat{w}$ that has a length of one and points in the same direction of $\vec{w}$.
+      \vfill
+      \item Determine another vector, $\vec{r}$, that has length 5 and points in the opposite direction as $\vec{w}$.
+      \vfill
+  \end{subproblem}
+
+
+
 \end{problem}
 
 \postClass
