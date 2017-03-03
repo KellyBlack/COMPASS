@@ -591,6 +591,102 @@ the $\vec{\imath}$, $\vec{\jmath}$, and $\vec{k}$ vectors.
   \end{subproblem}
 \end{problem}
 
+%=========================================================================
+% Start of activity on distance between a point and a line
+%=========================================================================
+\preClass{How close is a point to a line?}
+
+\begin{problem}
+\item Make a sketch of a coordinate axes in the $x$ and $y$ directions.
+  \vfill
+\begin{subproblem}
+  \item Mark the point $P(1,2)$ and $Q(3,1)$.
+  \item What is the distance between the two points?
+    \vspace{3em}
+\end{subproblem}
+
+\item Make a sketch of a coordinate axes in the $x$ and $y$ directions.
+  \vfill
+\begin{subproblem}
+  \item Sketch the line $y=2$ and the point $P(1,3)$.
+  \item What is the distance between the point and the line?
+    \vspace{3em}
+\end{subproblem}
+
+
+\end{problem}
+
+
+\actTitle{Distance between a point and a line}
+\begin{problem}
+
+\item Suppose $\vec{r}(t)$ is a line in space, and $P$ is a point in space.
+
+  \tdplotsetmaincoords{60}{100}
+  \begin{tikzpicture}[tdplot_main_coords]
+    % Draw the coordinates
+    \coordinate (O) at (0, 0, 0);
+    \draw[->] (O) -- +(4, 0, 0) node[font = \small, pos = 1.1] {\(x\)} coordinate (X);
+    \draw[->] (O) -- +(0, 4, 0) node[font = \small, pos = 1.1] {\(y\)} coordinate (Y);
+    \draw[->] (O) -- +(0, 0, 4) node[font = \small, pos = 1.1] {\(z\)} coordinate (Z);
+    %
+    % Draw the unit vectors
+    %
+    % Draw a point in space
+    \node[draw=none,shape=circle,fill, inner sep=2pt] (d1) at (4,3,1){};  % circle
+    \node[font=\small,anchor=south] at (d1) {P};  % label
+    % Draw a line in space
+    \draw[very thick,blue] (1,-2,-2) -- (2,4,4) node[font=\small,pos=0.9,anchor=north west] {$\vec{r}(t)$};
+  \end{tikzpicture}
+
+  \begin{subproblem}
+    \item Looking at the graph above, make a rough estimate for the point on $\vec{r}(t)$ that is closest to $P$. Mark it on the plot and call it $Q$.
+    \item Draw a vector, call it $\vec{PQ}$, that starts at the point you made and ends at $P$.
+    \item Mark an arbitrary point on the line, call it $S$.
+    \item What is the relationship between $\vec{PQ}$ and $\vec{SQ}$?
+      \vfill
+    \item Identify and label the angle $\theta$ that is between $\vec{SQ}$ and $\vec{SQ}$.
+
+    \clearpage
+
+    \item Redraw the triangle that has $\vec{PQ}$, $\vec{SQ}$, and $\vec{SP}$. Draw it as if you are looking directly at it from the side.
+      \vfill
+
+    \item Which part of the triangle represents the distance between the point $P$ and the line? Determine the distance in terms of $\theta$ and $\vec{SP}$.
+      \vfill
+
+    \item Which is more appropriate to use here a dot product or a cross product. (We want to find the expression in the previous question!)
+      \vfill
+
+    \item Determine the appropriate dot or cross product that has the relevant term in it. Manipulate it to get the distance between the point and the line.
+      \vfill
+
+  \end{subproblem}
+
+  \clearpage
+
+  \item Determine the distance between the point $(4,3,1)$ and the line $\vec{r}(t)=\left(1\vec{\imath}-2\vec{\jmath}-2\vec{k}\right)+t\left(1\vec{\imath}+6\vec{\jmath}+6\vec{k}\right)$.
+    \vfill
+
+\end{problem}
+
+
+\postClass
+
+\begin{problem}
+\item Briefly state two ideas from today's class.
+  \begin{itemize}
+  \item
+  \item
+  \end{itemize}
+\item
+  \begin{subproblem}
+    \item
+  \end{subproblem}
+\end{problem}
+
+
+
 
 
 %%% Local Variables:
