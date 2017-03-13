@@ -5,6 +5,11 @@
 \preClass{Introduction to Vectors in Three Dimensions.}
 
 \begin{problem}
+  \item Determine the distance between the points $P(2,4)$ and $Q(-1,5)$.
+
+    \vfill
+    \vfill
+
 \item Determine a way to express the point $P$ shown in the diagram below as the sum of
 the $\vec{\imath}$, $\vec{\jmath}$, and $\vec{k}$ vectors.
 
@@ -22,17 +27,14 @@ the $\vec{\imath}$, $\vec{\jmath}$, and $\vec{k}$ vectors.
     \draw[very thick,blue,->] (0,0,0) -- (0,0,1) node[font=\small,pos=0.9,anchor=south east] {$\hat{k}$};
     %
     % Draw a point in space
-    \node[draw=none,shape=circle,fill, inner sep=2pt] (d1) at (3,1,2){};  % circle
+    \node[draw=none,shape=circle,fill, inner sep=2pt] (d1) at (2,1,3){};  % circle
     \node[font=\small,anchor=south] at (d1) {P};  % label
-    \draw[thin,red,dashed] (3,0,0) -- (3,1,0) node[font=\small,pos=0.5,anchor=north] {1};
-    \draw[thin,red,dashed] (0,1,0) -- (3,1,0) node[font=\small,pos=0.25,anchor=north west] {3};
-    \draw[thin,red,dashed] (3,1,0) -- (3,1,2) node[font=\small,pos=0.75,anchor=east] {2};
+    \draw[thin,red,dashed] (2,0,0) -- (2,1,0) node[font=\small,pos=0.5,anchor=north] {1};
+    \draw[thin,red,dashed] (0,1,0) -- (2,1,0) node[font=\small,pos=0.25,anchor=north west] {2};
+    \draw[thin,red,dashed] (2,1,0) -- (2,1,3) node[font=\small,pos=0.75,anchor=west] {3};
   \end{tikzpicture}
 
-  \item Determine the distance between the point $P(2,3)$ and $Q(-1,5)$.
-
-    \vfill
-
+  \vfill
 
 \end{problem}
 
@@ -45,7 +47,7 @@ the $\vec{\imath}$, $\vec{\jmath}$, and $\vec{k}$ vectors.
   \begin{subproblem}
       \item Make sure to label the axes.
       \item Add the point $P(4,1,2)$ to your plot.
-      \item Add the point $Q(1,-1,0)$ to your plot.
+      \item Add the point $Q(1,4,0)$ to your plot.
       \item Add the vector $PQ$ to your plot.
   \end{subproblem}
   \clearpage
@@ -63,11 +65,11 @@ the $\vec{\imath}$, $\vec{\jmath}$, and $\vec{k}$ vectors.
   \node[font=\small,anchor=east] at (0,0,0) {$O$};
   %
   % Draw a point in space
-  \draw[->] (O) -- +(3, 2, 2) node[font = \small, pos = 1.1] {} coordinate (P);
+  \draw[->] (O) -- +(3, 2, 4) node[font = \small, pos = 1.1] {} coordinate (P);
   \node[font=\small,anchor=south] at (P) {P};  % label
   \draw[thin,red,dashed]  (3,0,0) -- (3,2,0) node[font=\small,pos=0.5,anchor=north] {$x$};
   \draw[thin,red,dashed]  (0,2,0) -- (3,2,0) node[font=\small,pos=0.25,anchor=north west] {$y$};
-  \draw[thin,red,dashed]  (3,2,0) -- (3,2,2) node[font=\small,pos=0.75,anchor=west] {$z$};
+  \draw[thin,red,dashed]  (3,2,0) -- (3,2,4) node[font=\small,pos=0.75,anchor=west] {$z$};
   \draw[thin,blue,dashed] (0,0,0) -- (3,2,0) node[font=\small,pos=0.5,anchor=west] {$h$};
   \draw[thin,blue] (2.8,1.8,0) -- (2.8,1.8,.4) -- (3,2,.4);
   \node[draw=none,shape=circle,fill, inner sep=2pt] (Q) at (3,2,0) {};
@@ -79,7 +81,7 @@ the $\vec{\imath}$, $\vec{\jmath}$, and $\vec{k}$ vectors.
     \vfill
   \item Determine the distance between $Q$ and $P$.
     \vfill
-  \item Determine the distance between $P$ and the origin. (Hint: Draw a side view of the triangle $OPQ$.
+  \item Determine the distance between $P$ and the origin in terms of $x$, $y$, and $z$. (Hint: Draw a side view of the triangle $OQP$.
     \vfill
 \end{subproblem}
 
@@ -93,6 +95,8 @@ the $\vec{\imath}$, $\vec{\jmath}$, and $\vec{k}$ vectors.
  \item Determine the formula for the set of all points that are a distance of 2 m from the point $Q(2,-1,5)$.
 
   \vfill
+
+  \item What is another way to describe the set of all points a distance of 2m from the point  $Q(2,-1,5)$?
 
 \end{problem}
 
@@ -128,7 +132,7 @@ the $\vec{\imath}$, $\vec{\jmath}$, and $\vec{k}$ vectors.
       \draw[thick,->] (-4.5,0) -- coordinate (x axis mid) (4.5,0) node[anchor = north west] {$\vec{\imath}$};
       \draw[thick,->] (0,-1.5) -- coordinate (y axis mid) (0,6.5) node[anchor = south east] {$\vec{\jmath}$};
       \foreach \y in {-1,1,2,...,6} {
-        \draw (1pt, \y) -- (-1pt, \y) node[anchor = east] {$\y$};
+        \draw (1pt, \y) -- (-1pt, \y) node[anchor = east,yshift=-5,xshift=2] {$\y$};
       }
       \foreach \x in {-4,-3,...,-1,1,2,3,4} {
         \draw (\x,1pt) -- (\x,-1pt) node[anchor = north ] {$\x$};
@@ -162,7 +166,7 @@ the $\vec{\imath}$, $\vec{\jmath}$, and $\vec{k}$ vectors.
     \draw[thick,->] (-4.5,0) -- coordinate (x axis mid) (4.5,0) node[anchor = north west] {$\vec{\imath}$};
     \draw[thick,->] (0,-4.5) -- coordinate (y axis mid) (0,4.5) node[anchor = south east] {$\vec{\jmath}$};
     \foreach \y in {-4,-3,...,-1,1,2,3,4} {
-      \draw (1pt, \y) -- (-1pt, \y) node[anchor = east] {$\y$};
+      \draw (1pt, \y) -- (-1pt, \y) node[anchor = east,xshift=2pt,yshift=-5pt] {$\y$};
     }
     \foreach \x in {-4,-3,...,-1,1,2,3,4} {
       \draw (\x,1pt) -- (\x,-1pt) node[anchor = north] {$\x$};
@@ -184,6 +188,7 @@ the $\vec{\imath}$, $\vec{\jmath}$, and $\vec{k}$ vectors.
 \clearpage
 
 \item Suppose that you have two vectors, $\vec{u}=u_1 \vec{\imath}+u_2\vec{\jmath}$ and $\vec{v}=v_1 \vec{\imath}+v_2\vec{\jmath}$.
+      Assume that $u_1$, $u_2$, $v_1$, and $v_2$ are constants.
 
   \begin{tikzpicture}[y=1.0cm, x=1.0cm,font=\sffamily]
     % ticks
