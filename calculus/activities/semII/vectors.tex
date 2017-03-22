@@ -545,66 +545,60 @@ where $a$, $b$, $c$, $d$, $r_1$, and $r_2$ are constants.
 \preClass{Lines}
 
 \begin{problem}
-\item Determine a way to express the point $P$ shown in the diagram below as the sum of
-the $\vec{\imath}$, $\vec{\jmath}$, and $\vec{k}$ vectors.
+\item A turtle starts at the origin. It moves at a constant speed of 1
+  meters per minute. It is facing in the direction of the positive $x$-axis.
+  Determine its position at any time.
 
-  \tdplotsetmaincoords{60}{100}
-  \begin{tikzpicture}[tdplot_main_coords]
-    % Draw the coordinates
-    \coordinate (O) at (0, 0, 0);
-    \draw[->] (O) -- +(4, 0, 0) node[font = \small, pos = 1.1] {\(x\)} coordinate (X);
-    \draw[->] (O) -- +(0, 4, 0) node[font = \small, pos = 1.1] {\(y\)} coordinate (Y);
-    \draw[->] (O) -- +(0, 0, 4) node[font = \small, pos = 1.1] {\(z\)} coordinate (Z);
-    %
-    % Draw the unit vectors
-    \draw[very thick,blue,->] (0,0,0) -- (1,0,0) node[font=\small,pos=1.7,anchor=south west] {$\hat{\imath}$};
-    \draw[very thick,blue,->] (0,0,0) -- (0,1,0) node[font=\small,pos=0.9,anchor=south west] {$\hat{\jmath}$};
-    \draw[very thick,blue,->] (0,0,0) -- (0,0,1) node[font=\small,pos=0.9,anchor=south east] {$\hat{k}$};
-    %
-    % Draw a point in space
-    \node[draw=none,shape=circle,fill, inner sep=2pt] (d1) at (3,1,2){};  % circle
-    \node[font=\small,anchor=south] at (d1) {P};  % label
-    \draw[thin,red,dashed] (3,0,0) -- (3,1,0) node[font=\small,pos=0.5,anchor=north] {1};
-    \draw[thin,red,dashed] (0,1,0) -- (3,1,0) node[font=\small,pos=0.25,anchor=north west] {3};
-    \draw[thin,red,dashed] (3,1,0) -- (3,1,2) node[font=\small,pos=0.75,anchor=east] {2};
-  \end{tikzpicture}
+  \vfill
 
-  \item Determine the distance between the point $P(2,3)$ and $Q(-1,5)$.
+\item A turtle starts at the origin. It moves at a constant speed of 1
+  meters per minute. It is facing in a direction $\frac{\pi}{2}$
+  radians from the $x$-axis and is moving along the positive $y$-axis.
+  Determine its position at any time.
 
-    \vfill
+  \vfill
 
-  \clearpage
-
-\item A turtle starts at the origin. It moves at a constant speed of 2
-  meters per minute. It is facing in a direction $\frac{\pi}{4}$
-  radians from the $x$-axis and is moving in the first
-  quadrant. Determine its position at any time.
-
-  \clearpage
 
 \end{problem}
 
 
 \actTitle{Parameterization of a Line}
 \begin{problem}
-\item Find the equation for a line that goes through the point
-  $<1,5,-2>$  and is in the direction  $<4,-2,6>$.
+
+  \item A turtle starts at the origin. It moves at a constant speed of 2
+    meters per minute. It is facing in a direction $\frac{\pi}{4}$
+    radians from the $x$-axis and is moving in the first
+    quadrant.
+    \begin{subproblem}
+      \item Draw a picture of the $x-y$ plane with the direction of movement as a vector.
+         Express its direction of movement as a vector in terms of $\hat{\imath}$ and $\hat{\jmath}$.
+        \vfill
+      \item What is its position after one minute?
+        \vfill
+      \item What is its position after two minutes?
+        \vfill
+      \item What is its position after $t$ minutes?
+        \vfill
+    \end{subproblem}
+    \vfill
+
+  \clearpage
+
+  \item At $t=0$s an object is located at the point $\hat{\imath}+5\hat{\jmath}-3\hat{k}$  and is
+  moving at a constant rate. After one minute its displacement is $4\hat{\imath}-2\hat{\jmath}+6\hat{k}$
+  away from its initial position. (All distances are in meters.)
+  Determine its position at any time.
+
+    \vfill
+
+  \item Suppose that an object's position is given by the formula you
+    derived in the previous question. Determine its velocity.
+    \sideNote{Determining velocity from position is no different in the
+      context of vectors.}
 
   \vfill
 
-\item Suppose that an object's position is given by the formula you
-  had in the previous question. Determine its velocity.
-  \sideNote{Determining velocity from position is no different in the
-    context of vectors.}
-
-  \vfill
-
-\clearpage
-\item Suppose that an object has a constant velocity given my
-  $<4,-2,6>$ m/sec. If the object starts at the point $<1,5,-2>$
-  determine its position at any time.
-
-  \vfill
+  \clearpage
 
 \item Given the equation of a line $\vec{r}(t)=\vec{r}_0 + t \vec{v}_0$ where the vectors $\vec{r}$ and $\vec{v}_0$ are constants. Determine $\frac{d}{dt}\vec{r}(t)$.
   \vfill
