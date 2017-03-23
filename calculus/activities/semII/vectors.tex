@@ -11,7 +11,7 @@
     \vfill
 
 \item Determine a way to express the point $P$ shown in the diagram below as the sum of
-the $\vec{\imath}$, $\vec{\jmath}$, and $\vec{k}$ vectors.
+the $\hat{\imath}$, $\hat{\jmath}$, and $\hat{k}$ vectors.
 
   \tdplotsetmaincoords{60}{100}
   \begin{tikzpicture}[tdplot_main_coords]
@@ -122,15 +122,15 @@ the $\vec{\imath}$, $\vec{\jmath}$, and $\vec{k}$ vectors.
 \preClass{Length of a Vector}
 
 \begin{problem}
-\item Sketch and label the vectors $\vec{u}=2\vec{\imath}+3\vec{\jmath}$ and
-      $\vec{v}=-\vec{\imath}+2\vec{\jmath}$ on the diagram below.
+\item Sketch and label the vectors $\vec{u}=2\hat{\imath}+3\hat{\jmath}$ and
+      $\vec{v}=-\hat{\imath}+2\hat{\jmath}$ on the diagram below.
 
     \begin{tikzpicture}[y=0.7cm, x=0.7cm,font=\sffamily]
       % ticks
       \draw[step = 1, gray, very thin,opacity=0.25] (-4.5, -1.5) grid ( 4.5, 6.5);
       % axis
-      \draw[thick,->] (-4.5,0) -- coordinate (x axis mid) (4.5,0) node[anchor = north west] {$\vec{\imath}$};
-      \draw[thick,->] (0,-1.5) -- coordinate (y axis mid) (0,6.5) node[anchor = south east] {$\vec{\jmath}$};
+      \draw[thick,->] (-4.5,0) -- coordinate (x axis mid) (4.5,0) node[anchor = north west] {$\hat{\imath}$};
+      \draw[thick,->] (0,-1.5) -- coordinate (y axis mid) (0,6.5) node[anchor = south east] {$\hat{\jmath}$};
       \foreach \y in {-1,1,2,...,6} {
         \draw (1pt, \y) -- (-1pt, \y) node[anchor = east,yshift=-5,xshift=2] {$\y$};
       }
@@ -156,15 +156,15 @@ the $\vec{\imath}$, $\vec{\jmath}$, and $\vec{k}$ vectors.
 
 \actTitle{Length of Vectors in Three Dimensions}
 \begin{problem}
-\item Sketch and label the vectors $\vec{u}=1\vec{\imath}+2\vec{\jmath}$ and
-      $\vec{v}=-3\vec{\imath}-2\vec{\jmath}$ on the diagram below.
+\item Sketch and label the vectors $\vec{u}=1\hat{\imath}+2\hat{\jmath}$ and
+      $\vec{v}=-3\hat{\imath}-2\hat{\jmath}$ on the diagram below.
 
   \begin{tikzpicture}[y=1.0cm, x=1.0cm,font=\sffamily]
     % ticks
     \draw[step = 1, gray, very thin,opacity=0.35] (-4.5, -4.5) grid ( 4.5, 4.5);
     % axis
-    \draw[thick,->] (-4.5,0) -- coordinate (x axis mid) (4.5,0) node[anchor = north west] {$\vec{\imath}$};
-    \draw[thick,->] (0,-4.5) -- coordinate (y axis mid) (0,4.5) node[anchor = south east] {$\vec{\jmath}$};
+    \draw[thick,->] (-4.5,0) -- coordinate (x axis mid) (4.5,0) node[anchor = north west] {$\hat{\imath}$};
+    \draw[thick,->] (0,-4.5) -- coordinate (y axis mid) (0,4.5) node[anchor = south east] {$\hat{\jmath}$};
     \foreach \y in {-4,-3,...,-1,1,2,3,4} {
       \draw (1pt, \y) -- (-1pt, \y) node[anchor = east,xshift=2pt,yshift=-5pt] {$\y$};
     }
@@ -176,10 +176,10 @@ the $\vec{\imath}$, $\vec{\jmath}$, and $\vec{k}$ vectors.
   \begin{subproblem}
       \item Determine the magnitudes of the two vectors.
       \vfill
-%      \item What are the angles between the vectors and the $\vec{\imath}$ axis.
+%      \item What are the angles between the vectors and the $\hat{\imath}$ axis.
 %      \vfill
       \item Add a sketch of the vectors $-2\vec{u}$ and $\frac{1}{2}\vec{v}$ to the plot.
-      %In each case what happens to the angle between the vector and the $\vec{\imath}$ axis?
+      %In each case what happens to the angle between the vector and the $\hat{\imath}$ axis?
       What is the relationship between the new vectors and the original vectors?
       \vfill
       \item Is it possible to find a value of $k$ so that $\vec{u}=k\vec{v}$? (Explain how you arrived at your conlcusion.)
@@ -188,7 +188,7 @@ the $\vec{\imath}$, $\vec{\jmath}$, and $\vec{k}$ vectors.
 
 \clearpage
 
-\item Suppose that you have two vectors, $\vec{u}=u_1 \vec{\imath}+u_2\vec{\jmath}$ and $\vec{v}=v_1 \vec{\imath}+v_2\vec{\jmath}$.
+\item Suppose that you have two vectors, $\vec{u}=u_1 \hat{\imath}+u_2\hat{\jmath}$ and $\vec{v}=v_1 \hat{\imath}+v_2\hat{\jmath}$.
       Assume that $u_1$, $u_2$, $v_1$, and $v_2$ are constants.
 
   \begin{tikzpicture}[y=1.0cm, x=1.0cm,font=\sffamily]
@@ -239,7 +239,7 @@ the $\vec{\imath}$, $\vec{\jmath}$, and $\vec{k}$ vectors.
 \begin{problem}
 \item The following questions refer to the vector
 \begin{eqnarray*}
-  \vec{u} & = & 3 \vec{\imath} + 1 \vec{\jmath}.
+  \vec{u} & = & 3 \hat{\imath} + 1 \hat{\jmath}.
 \end{eqnarray*}
 \begin{subproblem}
     \item Make a sketch of the vector including the coordinate axes.
@@ -255,7 +255,7 @@ the $\vec{\imath}$, $\vec{\jmath}$, and $\vec{k}$ vectors.
 
 \actTitle{Vector Components}
 \begin{problem}
-  \item Given the vector $\vec{w}=3\vec{\imath} +4 \vec{\jmath}$ answer the following questions.
+  \item Given the vector $\vec{w}=3\hat{\imath} +4 \hat{\jmath}$ answer the following questions.
 
     \begin{subproblem}
         \item Make a sketch of a set of axes and the vector.
@@ -307,7 +307,7 @@ the $\vec{\imath}$, $\vec{\jmath}$, and $\vec{k}$ vectors.
 
   \clearpage
 
-  \item If $\vec{u}=3\vec{\imath}+2\vec{\jmath}$ and $\vec{v}=1\vec{\imath}+1\vec{\jmath}$ determine the component of $\vec{u}$ that is in the direction of $\vec{v}$.
+  \item If $\vec{u}=3\hat{\imath}+2\hat{\jmath}$ and $\vec{v}=1\hat{\imath}+1\hat{\jmath}$ determine the component of $\vec{u}$ that is in the direction of $\vec{v}$.
     \vfill
 
 \end{problem}
@@ -356,10 +356,10 @@ the $\vec{\imath}$, $\vec{\jmath}$, and $\vec{k}$ vectors.
 \item The cross product of two vectors, $\vec{u}\times\vec{v}$, is
   derived by first defining  the following identities:
   \begin{eqnarray*}
-    \vec{\imath} \times \vec{\jmath} & = & \vec{k}, \\
-    \vec{\jmath} \times \vec{k} & = & \vec{\imath}, \\
-    \vec{k} \times \vec{\imath} & = & \vec{\jmath}, \\
-    \vec{u} \times \vec{u} & = & 0 \vec{\imath}, \\
+    \hat{\imath} \times \hat{\jmath} & = & \hat{k}, \\
+    \hat{\jmath} \times \hat{k} & = & \hat{\imath}, \\
+    \hat{k} \times \hat{\imath} & = & \hat{\jmath}, \\
+    \vec{u} \times \vec{u} & = & 0 \hat{\imath}, \\
     \vec{u} \times \vec{v} & = & - \vec{v} \times \vec{u}.
   \end{eqnarray*}
   \begin{subproblem}
@@ -367,11 +367,11 @@ the $\vec{\imath}$, $\vec{\jmath}$, and $\vec{k}$ vectors.
     demonstrate the relationships.
     \vfill
 
-    \item The result of $\vec{\imath}\times\vec{\jmath}$ is what kind of thing?
+    \item The result of $\hat{\imath}\times\hat{\jmath}$ is what kind of thing?
     \sideNote{Is it a scalar or a vector?}
     \vspace{3em}
 
-    \item The result of $\vec{\imath}\cdot\vec{\jmath}$ is what kind of thing?
+    \item The result of $\hat{\imath}\cdot\hat{\jmath}$ is what kind of thing?
     \sideNote{Is it a scalar or a vector?}
     \vspace{3em}
 
@@ -379,11 +379,11 @@ the $\vec{\imath}$, $\vec{\jmath}$, and $\vec{k}$ vectors.
 
   \item Suppose that
     \begin{eqnarray*}
-      \vec{u} & = & u_1 \vec{\imath} + u_2 \vec{\jmath}
+      \vec{u} & = & u_1 \hat{\imath} + u_2 \hat{\jmath}
     \end{eqnarray*}
     and
     \begin{eqnarray*}
-      \vec{v} & = & v_1 \vec{\imath} + v_2 \vec{\jmath}.
+      \vec{v} & = & v_1 \hat{\imath} + v_2 \hat{\jmath}.
     \end{eqnarray*}
     Use the definitions above and assume that the cross product obeys
     the distributive rule to derive a general formula for the cross
@@ -393,10 +393,10 @@ the $\vec{\imath}$, $\vec{\jmath}$, and $\vec{k}$ vectors.
 
     \clearpage
 
-  \item Determine the vector $\left(2 \vec{\imath} + 2\vec{\jmath}\right) \times \left(4 \vec{\imath}\right)$.
+  \item Determine the vector $\left(2 \hat{\imath} + 2\hat{\jmath}\right) \times \left(4 \hat{\imath}\right)$.
     \vfill
 
-  \item Determine the vector $\left( 4 \vec{\imath} \right)  \times  \left( 2 \vec{\imath} + 2\vec{\jmath}\right)$.
+  \item Determine the vector $\left( 4 \hat{\imath} \right)  \times  \left( 2 \hat{\imath} + 2\hat{\jmath}\right)$.
     \vfill
 
   \item What are the directions of the resulting vectors from the cross product with respect to the original vectors?
@@ -406,11 +406,11 @@ the $\vec{\imath}$, $\vec{\jmath}$, and $\vec{k}$ vectors.
 
   \item Suppose that
     \begin{eqnarray*}
-      \vec{u} & = & u_1 \vec{\imath} + u_2 \vec{\jmath} + u_3 \vec{k}
+      \vec{u} & = & u_1 \hat{\imath} + u_2 \hat{\jmath} + u_3 \hat{k}
     \end{eqnarray*}
     and
     \begin{eqnarray*}
-      \vec{v} & = & v_1 \vec{\imath} + v_2 \vec{\jmath} + v_3 \vec{k}.
+      \vec{v} & = & v_1 \hat{\imath} + v_2 \hat{\jmath} + v_3 \hat{k}.
     \end{eqnarray*}
     Use the definitions above and assume that the cross product obeys
     the distributive rule to derive a general formula for the cross product.
@@ -706,7 +706,7 @@ where $a$, $b$, $c$, $d$, $r_1$, and $r_2$ are constants.
 
   \clearpage
 
-  \item Determine the distance between the point $4\hat{\imath} + 3 \hat{\jmath} + \hat{k}$ and the line $\vec{r}(t)=\left(\hat{\imath}-2\hat{\jmath}-2\hat{k}\right)+t\left(\vec{\imath}+6\vec{\jmath}+6\vec{k}\right)$.
+  \item Determine the distance between the point $4\hat{\imath} + 3 \hat{\jmath} + \hat{k}$ and the line $\vec{r}(t)=\left(\hat{\imath}-2\hat{\jmath}-2\hat{k}\right)+t\left(\hat{\imath}+6\hat{\jmath}+6\hat{k}\right)$.
     \vfill
 
 \end{problem}
@@ -733,11 +733,11 @@ where $a$, $b$, $c$, $d$, $r_1$, and $r_2$ are constants.
 \preClass{Orthogonal vectors}
 
 \begin{problem}
-\item Suppose two vectors, $\vec{n}=0\vec{\imath}+0\vec{\jmath}+2\vec{k}$ and $\vec{u}$, and perpindicular to one another.
+\item Suppose two vectors, $\vec{n}=0\hat{\imath}+0\hat{\jmath}+2\hat{k}$ and $\vec{u}$, and perpindicular to one another.
   \begin{subproblem}
     \item What must the value of the dot product, $\vec{n}\cdot\vec{u}$ of the two vectors be?
       \vfill
-    \item Suppose that $\vec{u}=x\vec{\imath}+y\vec{\jmath}+z\vec{k}$.  What does that imply about the value of $z$?
+    \item Suppose that $\vec{u}=x\hat{\imath}+y\hat{\jmath}+z\hat{k}$.  What does that imply about the value of $z$?
       \vfill
     \item What restriction is there on the values of $x$ and $y$?
       \vfill
@@ -777,14 +777,14 @@ where $a$, $b$, $c$, $d$, $r_1$, and $r_2$ are constants.
 
       \clearpage
 
-    \item Assume that $P$ is a fixed point, $P=x_0\vec{\imath}+y_0\vec{\jmath}+z_0\vec{k}$, and $Q$ is any point on the plane, $Q=x\vec{\imath}+y\vec{\jmath}+z\vec{k}$.
+    \item Assume that $P$ is a fixed point, $P=x_0\hat{\imath}+y_0\hat{\jmath}+z_0\hat{k}$, and $Q$ is any point on the plane, $Q=x\hat{\imath}+y\hat{\jmath}+z\hat{k}$.
       Determine the vector $\overrightarrow{PQ}$.
         \vfill
     \item Assume that the vector that is perpindicular to a plane is $\vec{n}=a\hat{\imath}+b\hat{\jmath}+c\hat{k}$ where $a$, $b$, and $c$ are constants.
        Using the relationship from part \ref{activity:planes:normalRelationship}, determine a relationship that describes all points on the plane.
       \vfill
       \clearpage
-    \item Suppose that the point $P=3\vec{\imath}-1\vec{\jmath}+2\vec{k}$ is on a plane, and the vector $\vec{n}=-5\vec{\imath}+4\vec{\jmath}-1\vec{k}$ is perpendicular to the plane.
+    \item Suppose that the point $P=3\hat{\imath}-1\hat{\jmath}+2\hat{k}$ is on a plane, and the vector $\vec{n}=-5\hat{\imath}+4\hat{\jmath}-1\hat{k}$ is perpendicular to the plane.
        Determine the equation for the plane.
        \vfill
     \item Suppose that the equation for a plane is given by
@@ -812,6 +812,84 @@ where $a$, $b$, $c$, $d$, $r_1$, and $r_2$ are constants.
   \end{subproblem}
 \end{problem}
 
+
+%=========================================================================
+% Start of activities on equations for planes
+%=========================================================================
+\preClass{Distance Between A Plane And A Point}
+
+\begin{problem}
+\item What is the distance between the point $3\hat{\imath}-2\hat{\jmath}+7\hat{k}$ and $9\hat{\imath}+\hat{\jmath}-2\hat{k}$?
+  \vfill
+\end{problem}
+
+
+\actTitle{Equation for a plane}
+\begin{problem}
+\item Suppose that $P$ is a point on a plane, and $\vec{n}$ is a vector that is perpendicular to the plane at the point $P$.
+
+  \tdplotsetmaincoords{60}{100}
+  \begin{tikzpicture}[tdplot_main_coords,fill opacity=.3,scale=2]
+    % Draw the coordinates
+    \coordinate (O) at (0, 0, 0);
+    \draw[->] (O) -- +(4, 0, 0) node[font = \small, pos = 1.1] {\(x\)} coordinate (X);
+    \draw[->] (O) -- +(0, 4, 0) node[font = \small, pos = 1.1] {\(y\)} coordinate (Y);
+    \draw[->] (O) -- +(0, 0, 4) node[font = \small, pos = 1.1] {\(z\)} coordinate (Z);
+    %
+    %
+    % Draw a plane in space
+    \filldraw[draw=red,fill=red!10,fill opacity=0.1]  (4,0,1) -- (4,3,2.5) -- (0,3,1.5) -- (0,0,0) -- cycle;
+    % Draw a point in space
+    \node[draw=none,shape=circle,fill, inner sep=2pt] (d1) at (2,2,1.5){};  % circle
+    \node[font=\small,anchor=south west] at (d1) {P};  % label
+    % Draw the normal vector
+    \draw[->] (d1) -- +(-0.25,-0.5,1) node[font = \small,pos=1.4] {$\vec{n}$};
+  \end{tikzpicture}
+
+  \begin{subproblem}
+    \item Mark and label a point $Q$ on the plane in the diagram above.
+    \item What is the angle between the vector $\overrightarrow{PQ}$ and the vector $\vec{n}$?
+      \vspace{3em}
+    \item What can you say about the dot product and the cross product of the vectors $\overrightarrow{PQ}$ and $\vec{n}$? Which is an easier relationship to work with?
+      \label{activity:planes:normalRelationship}
+      \vfill
+
+      \clearpage
+
+    \item Assume that $P$ is a fixed point, $P=x_0\hat{\imath}+y_0\hat{\jmath}+z_0\hat{k}$, and $Q$ is any point on the plane, $Q=x\hat{\imath}+y\hat{\jmath}+z\hat{k}$.
+      Determine the vector $\overrightarrow{PQ}$.
+        \vfill
+    \item Assume that the vector that is perpindicular to a plane is $\vec{n}=a\hat{\imath}+b\hat{\jmath}+c\hat{k}$ where $a$, $b$, and $c$ are constants.
+       Using the relationship from part \ref{activity:planes:normalRelationship}, determine a relationship that describes all points on the plane.
+      \vfill
+      \clearpage
+    \item Suppose that the point $P=3\hat{\imath}-1\hat{\jmath}+2\hat{k}$ is on a plane, and the vector $\vec{n}=-5\hat{\imath}+4\hat{\jmath}-1\hat{k}$ is perpendicular to the plane.
+       Determine the equation for the plane.
+       \vfill
+    \item Suppose that the equation for a plane is given by
+    \begin{eqnarray*}
+      4x + 8y - 2z & = & 5.
+    \end{eqnarray*}
+    Determine the vector that is perpindicular to the plane and determine one point on the plane.
+       \vfill
+
+  \end{subproblem}
+\end{problem}
+
+
+\postClass
+
+\begin{problem}
+\item Briefly state two ideas from today's class.
+  \begin{itemize}
+  \item
+  \item
+  \end{itemize}
+\item
+  \begin{subproblem}
+    \item
+  \end{subproblem}
+\end{problem}
 
 
 
