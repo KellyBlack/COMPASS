@@ -739,7 +739,7 @@ where $a$, $b$, $c$, $d$, $r_1$, and $r_2$ are constants.
       \vfill
     \item Suppose that $\vec{u}=x\vec{\imath}+y\vec{\jmath}+z\vec{k}$.  What does that imply about the value of $z$?
       \vfill
-    \item What restruction is there on the values of $x$ and $y$?
+    \item What restriction is there on the values of $x$ and $y$?
       \vfill
   \end{subproblem}
 \end{problem}
@@ -750,7 +750,7 @@ where $a$, $b$, $c$, $d$, $r_1$, and $r_2$ are constants.
 \item Suppose that $P$ is a point on a plane, and $\vec{n}$ is a vector that is perpendicular to the plane at the point $P$.
 
   \tdplotsetmaincoords{60}{100}
-  \begin{tikzpicture}[tdplot_main_coords,fill opacity=.3]
+  \begin{tikzpicture}[tdplot_main_coords,fill opacity=.3,scale=2]
     % Draw the coordinates
     \coordinate (O) at (0, 0, 0);
     \draw[->] (O) -- +(4, 0, 0) node[font = \small, pos = 1.1] {\(x\)} coordinate (X);
@@ -769,23 +769,31 @@ where $a$, $b$, $c$, $d$, $r_1$, and $r_2$ are constants.
 
   \begin{subproblem}
     \item Mark and label a point $Q$ on the plane in the diagram above.
-    \item What is the angle between the vector $\vec{PQ}$ and the vector $\vec{n}$?
+    \item What is the angle between the vector $\overrightarrow{PQ}$ and the vector $\vec{n}$?
       \vspace{3em}
-    \item What can you say about the dot product and the cross product of the vectors $\vec{PQ}$ and $\vec{n}$? Which is an easier relationship to work with?
+    \item What can you say about the dot product and the cross product of the vectors $\overrightarrow{PQ}$ and $\vec{n}$? Which is an easier relationship to work with?
       \label{activity:planes:normalRelationship}
       \vfill
 
       \clearpage
 
-    \item Assume that $P$ is a fixed point, $P=x_0\vec{\imath}+y_0\vec{\jmath}+z_0\vec{k}$, and $Q$ is any point in the plane, $Q=x\vec{\imath}+y\vec{\jmath}+z\vec{k}$.
-      Determine the vector $\vec{PQ}$.
+    \item Assume that $P$ is a fixed point, $P=x_0\vec{\imath}+y_0\vec{\jmath}+z_0\vec{k}$, and $Q$ is any point on the plane, $Q=x\vec{\imath}+y\vec{\jmath}+z\vec{k}$.
+      Determine the vector $\overrightarrow{PQ}$.
         \vfill
-    \item Using the relationship from part \ref{activity:planes:normalRelationship}, determine a relationship that describes all points on the plane.
+    \item Assume that the vector that is perpindicular to a plane is $\vec{n}=a\hat{\imath}+b\hat{\jmath}+c\hat{k}$ where $a$, $b$, and $c$ are constants.
+       Using the relationship from part \ref{activity:planes:normalRelationship}, determine a relationship that describes all points on the plane.
       \vfill
+      \clearpage
     \item Suppose that the point $P=3\vec{\imath}-1\vec{\jmath}+2\vec{k}$ is on a plane, and the vector $\vec{n}=-5\vec{\imath}+4\vec{\jmath}-1\vec{k}$ is perpendicular to the plane.
        Determine the equation for the plane.
        \vfill
+    \item Suppose that the equation for a plane is given by
+    \begin{eqnarray*}
+      4x + 8y - 2z & = & 5.
+    \end{eqnarray*}
+    Determine the vector that is perpindicular to the plane and determine one point on the plane.
        \vfill
+
   \end{subproblem}
 \end{problem}
 
