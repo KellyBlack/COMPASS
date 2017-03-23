@@ -819,12 +819,14 @@ where $a$, $b$, $c$, $d$, $r_1$, and $r_2$ are constants.
 \preClass{Distance Between A Plane And A Point}
 
 \begin{problem}
-\item What is the distance between the point $3\hat{\imath}-2\hat{\jmath}+7\hat{k}$ and $9\hat{\imath}+\hat{\jmath}-2\hat{k}$?
+\item What is the distance between the point $3\hat{\imath}-2\hat{\jmath}+7\hat{k}$ and the point $9\hat{\imath}+\hat{\jmath}-2\hat{k}$?
+  \vfill
+\item What is the distance between the point $3\hat{\imath}-2\hat{\jmath}+7\hat{k}$ and the plane $z=2$?
   \vfill
 \end{problem}
 
 
-\actTitle{Equation for a plane}
+\actTitle{Distance between A Plane And A Point}
 \begin{problem}
 \item Suppose that $P$ is a point on a plane, and $\vec{n}$ is a vector that is perpendicular to the plane at the point $P$.
 
@@ -838,7 +840,7 @@ where $a$, $b$, $c$, $d$, $r_1$, and $r_2$ are constants.
     %
     %
     % Draw a plane in space
-    \filldraw[draw=red,fill=red!10,fill opacity=0.1]  (4,0,1) -- (4,3,2.5) -- (0,3,1.5) -- (0,0,0) -- cycle;
+    \filldraw[draw=red,fill=red!10,fill opacity=0.1]  (0,0,4) -- (0,4,0) -- (4,4,-4) -- (4,0,0) -- cycle;
     % Draw a point in space
     \node[draw=none,shape=circle,fill, inner sep=2pt] (d1) at (2,2,1.5){};  % circle
     \node[font=\small,anchor=south west] at (d1) {P};  % label
