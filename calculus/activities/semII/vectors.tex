@@ -655,7 +655,7 @@ where $a$, $b$, $c$, $d$, $r_1$, and $r_2$ are constants.
 \item Suppose $\vec{r}(t)$ is a line in space, and $P$ is a point in space.
 
   \tdplotsetmaincoords{60}{100}
-  \begin{tikzpicture}[tdplot_main_coords]
+  \begin{tikzpicture}[tdplot_main_coords,scale=2]
     % Draw the coordinates
     \coordinate (O) at (0, 0, 0);
     \draw[->] (O) -- +(4, 0, 0) node[font = \small, pos = 1.1] {\(x\)} coordinate (X);
@@ -667,7 +667,7 @@ where $a$, $b$, $c$, $d$, $r_1$, and $r_2$ are constants.
     \node[draw=none,shape=circle,fill, inner sep=2pt] (d1) at (4,3,1){};  % circle
     \node[font=\small,anchor=south] at (d1) {P};  % label
     % Draw a line in space
-    \draw[very thick,blue] (1,-2,-2) -- (2,4,4) node[font=\small,pos=0.9,anchor=north west] {$\vec{r}(t)$};
+    \draw[line width=2.5pt,blue] (1,-2,-2) -- (2,4,4) node[font=\small,pos=0.9,anchor=north west] {$\vec{r}(t)$};
   \end{tikzpicture}
 
   \begin{subproblem}
