@@ -39,7 +39,7 @@ the $\hat{\imath}$, $\hat{\jmath}$, and $\hat{k}$ vectors.
 \end{problem}
 
 
-\actTitle{Vectors in Three Dimensions}
+\actTitle{Intersection Of Two Planes}
 \begin{problem}
 \item Make a sketch of the coordinate axes in three dimensions.
 
@@ -891,6 +891,114 @@ where $a$, $b$, $c$, $d$, $r_1$, and $r_2$ are constants.
   \end{eqnarray*}
   What is the point on the plane closest to the point?
   \vfill
+
+\end{problem}
+
+
+\postClass
+
+\begin{problem}
+\item Briefly state two ideas from today's class.
+  \begin{itemize}
+  \item
+  \item
+  \end{itemize}
+\item
+  \begin{subproblem}
+    \item
+  \end{subproblem}
+\end{problem}
+
+
+%=========================================================================
+% Start of activities on equations for planes - intersection of two planes
+%=========================================================================
+\preClass{Normal To A Plane}
+
+\begin{problem}
+\item Determine a vector that is perpindicular to both of the vectors
+  $\vec{u}=2\hat{\imath} + \hat{\jmath} - 3\hat{k}$ and
+  $\vec{v}=-3\hat{\imath} - \hat{\jmath} + 2\hat{k}$.
+  \vfill
+\item Determine a vector that is normal to the plane
+  \begin{eqnarray*}
+    4x - 6y + 10z & = & -4.
+  \end{eqnarray*}
+  \vfill
+\item Determine the formula for a line through the point
+  $4\hat{\imath} + 15\hat{\jmath} + 2\hat{k}$ in the direction
+  $\hat{\imath} + 3\hat{\jmath} - 4\hat{k}$.
+  \vfill
+\end{problem}
+
+
+\actTitle{Distance between A Plane And A Point}
+\begin{problem}
+\item We will try to determine the formula for the line where two planes intersect.
+
+  \tdplotsetmaincoords{60}{100}
+  \begin{tikzpicture}[tdplot_main_coords,fill opacity=.3,scale=1.7]
+    % Draw the coordinates
+    \coordinate (O) at (0, 0, 0);
+    \draw[->] (O) -- +(6, 0, 0) node[font = \small, pos = 1.1] {\(x\)} coordinate (X);
+    \draw[->] (O) -- +(0, 6, 0) node[font = \small, pos = 1.1] {\(y\)} coordinate (Y);
+    \draw[->] (O) -- +(0, 0, 3) node[font = \small, pos = 1.1] {\(z\)} coordinate (Z);
+    %
+    %
+    % Draw a plane in space
+    \filldraw[draw=red,fill=red!10,fill opacity=0.1]   (0,0,0) -- (0,2,1) -- (4,2,-1)  -- (4,0,-2) -- cycle; %x-y+2z=0
+    \filldraw[draw=blue,fill=blue!10,fill opacity=0.1] (0,0,2) -- (0,2,1) -- (4,2,-1) -- (4,0,0) -- cycle; % 1/2*x+1/2*y+z=2
+    \filldraw[draw=blue,fill=blue!10,fill opacity=0.1] (0,2,1) -- (0,4,0) -- (4,4,-2) -- (4,2,-1) -- cycle; % 1/2*x+1/2*y+z=2
+    \filldraw[draw=red,fill=red!10,fill opacity=0.1]   (0,2,1) -- (0,4,2) -- (4,4,0)  -- (4,2,-1) -- cycle; %x-y+2z=0
+    % Draw a point in space
+    %\node[draw=none,shape=circle,fill, inner sep=2pt] (d1) at (2,2,2){};  % circle
+    % Draw the intersecting line
+    \draw[-] (0,2,1) -- +(4,0,-2);
+    % Draw a point above the plane
+    %\node[draw=none,shape=circle,fill, inner sep=2pt] (d2) at (3,3,5){};  % circle
+    %\node[font=\small,anchor=west] at (d2) {$P$};  % label
+  \end{tikzpicture}
+
+  \begin{subproblem}
+  \item Looking at the graph above, draw the vector perpindicular to
+    the first plane. Then draw the vector perpindicular to the second
+    plane.
+  \item Mark a point that is located in both planes.
+  \item Draw a vector that is in the direction of the line of intersection.
+  \item If you are given the formulas for the two planes can you determine normal vectors to both planes?
+  \item What is the relationship between the vector in the direction
+    of the line of intersection and the two normals?
+    \clearpage
+
+  \item Given the two normals how can you get a vector in the direction of the line?
+    \vspace{3em}
+
+  \item Given a point and a direction how can you get the formula for a line?
+    \vspace{3em}
+
+  \item Determine a formula for the line of intersection of the two planes given by
+  \begin{eqnarray*}
+    3x + y - 4z & = & 10, \\
+    x  - 3y + 2z & = & 4.
+  \end{eqnarray*}
+    \vfill
+
+  \end{subproblem}
+  \clearpage
+
+  \item Determine the distance between the point $P=2\hat{\imath} + \hat{\jmath} - 6\hat{k}$ and the line
+  \begin{eqnarray*}
+    \vec{r}(t) & = & (4-t)\hat{\imath} + (2+2t)\hat{\jmath} + (-3+4t)\hat{k},
+  \end{eqnarray*}
+  where $t$ is any real number.
+  \vfill
+
+  \item Determine the distance between the point $P=2\hat{\imath} + \hat{\jmath} - 6\hat{k}$ and the plane
+  \begin{eqnarray*}
+    -x + 2y + 4z & = & 2.
+  \end{eqnarray*}
+  \vfill
+
 
 \end{problem}
 
