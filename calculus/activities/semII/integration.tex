@@ -801,23 +801,42 @@ where $s>0$.
 \preClass{Volumes of Revolution}
 
 \begin{problem}
+\item A right, circular cylinder has a height $h$ and radius $R+\triangle R$.
+   A hole is drilled through the cylinder that has a radius $R$. Determine the
+   volume of the resulting shell. (Expand and simplify your answer as much as possible.)
+
+  \begin{tikzpicture}[scale=1.5]
+    \draw[thick,color=black] (1.5,2.0) arc (0:360:1.5 and 0.5); % Make the top ellipses
+    \draw[thick,color=black] (1.4,2.0) arc (0:360:1.4 and 0.45);
+
+    \draw[thick,color=black] ( 1.5,2.0) -- ( 1.5,0.0); % Mark the solid, straight sides
+    \draw[thick,color=black] (-1.5,2.0) -- (-1.5,0.0);
+
+    \draw[dashed,color=black] ( 1.4,2.0) -- ( 1.4,0.0); % Mark the inside sides
+    \draw[dashed,color=black] (-1.4,2.0) -- (-1.4,0.0);
+
+    \draw[thick,color=black]  (-1.5,0.0) arc (180:360:1.5 and 0.5); % Mark the bottom ellipses
+    \draw[dashed,color=black] ( 1.5,0.0) arc (0:180:1.5 and 0.5);
+    \draw[dashed,color=black] (1.4,0.0) arc (0:360:1.4 and 0.45);
+
+    % Annotate the plot
+    \draw[color=black,->] (0,2.0) -- (1.4,2.0) node[anchor=south] at (0.85,2) {$R$};
+    \draw[color=black] (1.6,2) -- (2,2);
+    \draw[color=black] (1.6,0) -- (2,0);
+    \draw[color=black,->] (1.9,1.2) -- (1.9,2) node at (1.9,1) {$h$};
+    \draw[color=black,->] (1.9,0.8) -- (1.9,0);
+    \draw[color=black,->] (-1.7,1) -- (-1.5,1);
+    \draw[color=black,->] (-1.2,1) -- (-1.4,1)  node[anchor=west] at (-1.2,1) {$\triangle R$};
+  \end{tikzpicture}
+
+  \vfill
+
 \item Determine the value of the integral
   \begin{eqnarray*}
     \int^R_0 2\pi x \left( R-x \right) ~ dx.
   \end{eqnarray*}
   \vfill
 
-\item What is the volume of a right circular cylinder that has a
-  radius of $R$ and a height $h$ that is resting on its base?
-
-  \vfill
-
-\item What is the volume of two cylinders stacked on top of one
-  another vertically? The first is a right circular cylinder that has a radius of
-  $R_1$ and a height $h_1$, and the second is a right circular cylinder that
-  has a radius of $R_2$ and a height $h_2$.
-
-  \vfill
 
 \end{problem}
 
