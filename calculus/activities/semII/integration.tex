@@ -1,3 +1,4 @@
+\section{Fundamental Theorem of Calculus}
 %=========================================================================
 % Start of first day's activities
 %=========================================================================
@@ -1034,6 +1035,500 @@ where $s>0$.
   \end{subproblem}
 \end{problem}
 
+\clearpage
+
+\section{Flux through a surface}
+The flux through a surface is defined to be the part of a vector field
+that is normal to a surface mutliplied by the surface area. Before
+discussing how to find the part of a vector that is normal to a
+surface we will first look at surface area. In particular, we will
+examine how to find the surface area that is formed by rotating a
+curve around an axis.
+
+\subsection{Areas of Revolution}
+One way to form a surface is to take a curve and rotate it around some
+axis. This process can be thought of as taking a string and
+``twirling'' it around the axis, just like swinging a jump rope. For
+example, one way to form a sphere is to take half of a circular
+``hoop'' and spin it around an axis (see Figure
+\ref{flux:figure:circle}) Another example is a cylinder which can be
+formed by rotating a straight, horizontal line around an axis.
+
+\begin{figure}[ht]
+  \begin{center}
+    \begin{tikzpicture}[scale=1.5]
+      \draw[thick,->] (-2,0) -- (2,0) node[anchor=west]  {$x$};
+      \draw[thick,->] (0,-1.5) -- (0,1.5) node[anchor=south] {$y$};
+      \draw[very thick,red] (1,0) arc (0:180:1);
+      \draw[thick,blue,->] (-1.5,0.5) arc (90:300:0.3 and 0.5);
+      \shade[ball color=red!10!white,opacity=0.20] (4,0) circle (1);
+     \end{tikzpicture}
+
+     \begin{tikzpicture}[scale=1.5]
+       \draw[thick,->] (-2,0) -- (2,0) node[anchor=west]  {$x$};
+       \draw[thick,->] (0,-1.5) -- (0,1.5) node[anchor=south] {$y$};
+       \draw[very thick,red] (-1,1) -- (1,1);
+       \draw[thick,blue,->] (-1.5,0.5) arc (90:300:0.3 and 0.5);
+       \fill[top color=gray!50!black,bottom color=gray!10,middle color=gray,shading=axis,opacity=0.25,shading angle=0] (3.5,0) circle (0.2 and 1);
+       \fill[left color=gray!50!black,right color=gray!50!black,middle color=gray!50,shading=axis,opacity=0.25,shading angle=0] (3.5,-1) -- (5.5,-1) arc (-90:90:0.2 and 1) -- (3.5,1) arc (90:270:0.2 and 1);
+       \fill[top color=gray!90!,bottom color=gray!2,middle color=gray!30,shading=axis,opacity=0.25,shading angle=0] (5.5,0) circle (0.2 and 1);
+       % Make an outline to make it really purty
+       \draw (5.5,1) -- (3.5,1) arc (90:270:0.2 and 1) -- (5.5,-1);
+       \draw (5.5,0) circle (0.2 and 1);
+       \draw[densely dashed] (3.5,1) arc (90:-90:.2 and 1);
+      \end{tikzpicture}
+
+  \end{center}
+  \caption{A half circle can be rotated around the $x$-axis to form a
+    sphere. A straight, horizontal line can also be rotated around the
+    $x$-axis to form a cylinder.}
+  \label{flux:figure:circle}
+\end{figure}
+
+Other curves can be rotated around the axis, and the question is how
+to find the resulting surface area given a formula for the curve.  The
+basic idea to find the surface area of such a surface is to divide up
+the original curve into small pieces, revolve each little piece around
+the axis, and then add up the surface areas for all of the little
+pieces.
+
+
+\begin{figure}[ht]
+%%>> \centerline{\psfig{file=notes/flux/fluxRiemann.eps,width=5in}}
+\begin{center}
+\begin{tikzpicture}[scale=1.5]
+  \draw[thick,->] (-0.2,0) -- (7.5,0) node[anchor=west]  {$x$};
+  \draw[thick,->] (0,-0.2) -- (0,3.5) node[anchor=south] {$y$};
+   \draw [black, very thick] plot [smooth,tension=0.5] coordinates { % , tension=0.3
+      (0,2.9) (1,1.5) (1.5, 1.1) (2,1.5) (3,2) (4,1) (5,0.7) (6,0.5) (7,0.2) (7.5,0.2)};
+
+   \foreach \x in {1,2,...,7} {
+      \draw (\x,2pt) -- (\x,-2pt) node[anchor = north] {$x_{\x}$};
+    }
+
+   \draw [black,thin] (0,0) -- (0,2.9);
+   \draw [black,thin] (1,0) -- (1,1.5);
+   \draw [black,thin] (2,0) -- (2,1.5);
+   \draw [black,thin] (3,0) -- (3,2);
+   \draw [black,thin] (4,0) -- (4,1);
+   \draw [black,thin] (5,0) -- (5,0.7);
+   \draw [black,thin] (6,0) -- (6,0.5);
+   \draw [black,thin] (7,0) -- (7,0.2);
+
+   \fill[black] (2,1.5) circle (0.05) node[anchor=south east] {$(x_2,y_2)$};
+   \fill[black] (3,2) circle (0.05) node[anchor=south west] {$(x_3,y_3)$};
+   \draw[black,thick,densely dashed] (2,1.5) -- (3,2) arc (90:-90:.2 and 2) -- (2,-1.5) arc (270:-90:0.2 and 1.5);
+   \node at (5.5,-0.5) {$\triangle x$};
+ \end{tikzpicture}
+ \end{center}
+\caption{The curve is divided up into pieces and each piece is
+  revolved around the $x$-axis.}
+\label{flux:figure:Riemann}
+\end{figure}
+
+
+For the general case, a curve given by $y=f(x)$\ is rotated around the
+$x$-axis from $x=a$\ to $x=b$, and the resulting surface area will be
+found.  The first step is to break up the curve into small pieces. In
+order to take advantage of the fundamental theorem of calculus, the
+\textbf{domain} will have to be divided up into small pieces first.
+The domain, the values on the $x$-axis from $a$\ to $b$, is first
+divided into small pieces of length $\triangle x$. Any segment along
+the line starts at $x_n=a+n\triangle x$\ and ends at
+$x_{n+1}=a+(n+1)\triangle x$ (see Figure \ref{flux:figure:Riemann}). (
+The process of breaking the domain up into small pieces is called
+``discretization''.)
+
+\begin{figure}[ht]
+%%>> \centerline{\psfig{file=notes/flux/fluxPieceDX.eps,height=3in}}
+\begin{center}
+  \begin{tikzpicture}[scale=2]
+    \draw[thick,->] (1,0) -- (4,0);
+     \draw [black, very thick] plot [smooth,tension=0.5] coordinates {
+        (1,1.5) (2,1.2) (2.5,1.1) (3,0.8) (4,0.1)};
+
+     %\draw [black,thin] (2,0) -- (2,1.2);
+     %\draw [black,thin] (3,0) -- (3,0.8);
+     \fill[black] (2,1.2) circle (0.05)  node [anchor=south] {$(x_n,y_n)$};
+     \fill[black] (3,0.8) circle (0.05)  node [anchor=south west] {$(x_{n+1},y_{n+1})$};
+     \draw[black,thick] (2,-1.2) -- (3,-0.8) arc (-90:270:.15 and 0.8);
+     \draw[black,thick] (3, 0.8) -- (2, 1.2) arc (90:270:0.1 and 1.2);
+     \draw[black,densely dashed] (2,1.2) arc (90:-90:0.1 and 1.2);
+     \draw[black,thin] (3.3,.3) -- (2.7,-.3);
+     \node at (2.5,0.2) {$\triangle x$};
+   \end{tikzpicture}
+\end{center}
+\caption{The area of a line segment that is rotated around the
+  $x$-axis is $2\pi\frac{y_{n+1}+y_n}{2}\triangle s$.}
+\label{flux:figure:lineSegmentDX}
+\end{figure}
+
+Given a formula for a line we will find the area found by revolving
+the line around the $x$-axis. Since the function changes according to
+some variable, $x$, we will try to express the surface area of each
+little piece that is found as a function of $x$\ and mutliplied by a
+$\triangle x$. If we can do this, the sum can later be expressed as an
+integral. An example of one of the little pieces can be seen in Figure
+\ref{flux:figure:lineSegmentDX}.
+
+\begin{figure}[tbh]
+%%>> \centerline{\psfig{file=notes/flux/fluxPiece.eps,height=3in}}
+\begin{center}
+  \begin{tikzpicture}[scale=2.5]
+    \draw[thick,->] (1,0) -- (4,0);
+     %\draw [black,thin] (2,0) -- (2,1.2);
+     %\draw [black,thin] (3,0) -- (3,0.8);
+     \fill[black] (2,1.2) circle (0.05)  node [anchor=south] {$(x_n,y_n)$};
+     \fill[black] (3,0.8) circle (0.05)  node [anchor=south west] {$(x_{n+1},y_{n+1})$};
+     \draw[black,thick] (2,-1.2) -- (3,-0.8) arc (-90:270:.15 and 0.8);
+     \draw[black,thick] (3, 0.8) -- (2, 1.2) arc (90:270:0.1 and 1.2);
+     \draw[black,densely dashed] (2,1.2) arc (90:-90:0.1 and 1.2);
+     \draw[black,thin] (3.3,.3) -- (2.7,-.3);
+     \node at (2.7,1.1) {$\triangle s$};
+     \node[anchor=east] at (1.8,0.6) {$R_2$};
+     \node[anchor=east] at (3.45,0.4) {$R_1$};
+     \draw[black,densely dashed] (2,0) -- (2,1.2);
+     \draw[black,densely dashed] (3,0) -- (3,0.8);
+   \end{tikzpicture}
+\end{center}
+\caption{The area of a line segment that is rotated around the
+  $x$-axis is $2\pi\frac{R_1+R_2}{2}\triangle s$.}
+\label{flux:figure:lineSegment}
+\end{figure}
+
+
+Each little piece will be treated as a line segment of length
+$\triangle s$\ that is rotated around the $x$-axis. If the distance
+from the $x$-axis to the left side of the line segment is $R_1$ and
+the distance from the $x$-axis to the right side of the line segment
+is $R_2$, the area of the resulting surface is
+$2\pi\frac{R_1+R_2}{2}\triangle s$. (See Figure
+\ref{flux:figure:lineSegment}.)
+
+Once the domain is subdivided, each straight line-segment from
+$(x_n,y_n)$\ to $(x_{n+1},y_{n+1})$\ is revolved around the $x$-axis
+(see Figure \ref{flux:figure:lineSegment}). The area of this one little
+piece is
+\begin{eqnarray*}
+  2 \pi \frac{y_{n+1}+y_n}{2} \triangle s_n.
+\end{eqnarray*}
+The length, $\triangle s_n$, of the line segment (along the curve) can
+be found through the use of the Pythagarean Theorem and is
+\begin{eqnarray*}
+  \triangle s_n & = & \sqrt{\lp x_{n+1}-x_n \rp^2 +
+    \lp y_{n+1}-y_n \rp^2}.
+\end{eqnarray*}
+The notation can be simplified a bit, and the expression is factored
+so that a $\triangle x_n$\ remains on the outside of the expression,
+\begin{eqnarray*}
+\triangle s_n  & = & \sqrt{ \triangle x_n^2 +  \triangle y_n^2}, \\
+  & = & \sqrt{ 1 +  \lp \frac{\triangle y_n}{\triangle x_n} \rp^2}
+  ~~ \triangle x_n.
+\end{eqnarray*}
+The $\triangle x_n$\ was factored out so that the whole expression can
+later be written as a Riemann sum varying over the $x$\ values.
+
+An approximation of the total surface area from $x=a$\ to $x=b$\ is
+found by adding up all of the surface areas of the little pieces
+together,
+\begin{eqnarray}
+  \sum^{N-1}_{n=0} 2 \pi \frac{y_{n+1}+y_n}{2}\triangle s_n & = &
+  \sum^{N-1}_{n=0} 2 \pi \frac{y_{n+1}+y_n}{2}
+  \sqrt{ 1 +  \lp \frac{\triangle y_n}{\triangle x_n} \rp^2} ~ \triangle x_n.
+  \label{flux:eqn:riemann}
+\end{eqnarray}
+The $y$\ values are found by using the value of the function at the
+points in its domain, $y_n=f(x_n)$. As the length of the line segments
+get closer to zero the Riemann sum approachs an integral,
+\begin{eqnarray*}
+  \int^b_a 2 \pi f(x) \sqrt{1+\lp f'(x)\rp^2} ~ dx.
+\end{eqnarray*}
+
+
+
+
+\subsection{Area of a Sphere}
+As an example, the surface area of a sphere of radius $R$\ is
+found. A semi-circle, $f(x)=\sqrt{R^2-x^2}$, is rotated around the
+$x$-axis. The area is given by the integral
+\begin{eqnarray*}
+  \int^R_{-R} 2 \pi \sqrt{R^2-x^2} \sqrt{1 + \lp
+    \frac{-x}{\sqrt{R^2-x^2}} \rp^2 } ~ dx
+    & = & \int^R_{-R} 2 \pi \sqrt{R^2-x^2} \sqrt{1 +
+      \frac{x^2}{R^2-x^2}} ~ dx, \\
+    & = & \int^R_{-R} 2 \pi \sqrt{R^2-x^2} \sqrt{
+      \frac{R^2}{R^2-x^2}} ~ dx, \\
+    & = & \int^R_{-R} 2 \pi R ~ dx, \\
+    & = & 4 \pi R^2.
+\end{eqnarray*}
+
+
+\subsection{Flux Through a Surface From A Point Charge}
+If a point charge is located at the origin the magnitude of the
+electic field at a point, $(x,y)$, can be found using Coulomb's Law,
+\begin{eqnarray*}
+  |\vec{E}| & = & \frac{k\hat{q}}{x^2+y^2},
+\end{eqnarray*}
+where $\hat{q}$\  is the total charge  of the particle. The field will
+be  pointing radially away   from the origin   (or inwards if it  is a
+negative charge).  To  find the  flux through  a surface  two examples
+will be examined. The first is the specific case of the flux through a
+cylinder, and the second situation examined is the general case of the
+flux through a surface.
+
+For negative $x$\ values the vectors for the electric field point to
+the left, and for positive $x$\ values the vectors for the electric
+field point to the right. The result is that the process of finding
+the components of the vectors is different for negative $x$\ values
+than for positive $x$\ values. We will concentrate on finding the flux
+for positive $x$\ values and leave the process of finding the flux for
+negative values as an exercise for the reader. (The formulas for the
+flux for the negative $x$\ values is the same except that a negative
+sign in front of the resulting flux is required.)
+
+\subsection{Flux Through A Cylinder}
+A straight, horizontal line that is a distance $R$\ above the $x$-axis
+can be rotated around the $x$-axis to define the surface of a cylinder
+whose radius is $R$. It is assumed that the line is located in the
+first quadrant. To find the flux through a cylinder of radius $R$\ and
+length $L$\ from a point charge at the origin, a straight, horizontal
+line is divided into small pieces, each small piece is rotated around
+the $x$-axis, and the flux is calculated through the resulting area
+(see Figure \ref{flux:figure:lineSegmentFlux}). The total flux is
+found by adding the contribution of each of the line-segments.
+
+\begin{figure}[ht]
+%%>> \centerline{\psfig{file=notes/flux/fluxCylinder.eps,height=5in}}
+\begin{center}
+  \begin{tikzpicture}[scale=1.5,>={Latex[angle=45:5pt 2]}]
+    \draw[thick,->] (-0.1,0) -- (4,0) node[anchor=west] {$x$};
+    \draw[thick,->] (0,-2) -- (0,2) node[anchor=south] {$y$};
+    \fill[black] (0,0) circle (0.1);
+    \draw[densely dotted,black] (0,0) -- (3,1.5) -- (3,0);
+    \draw[line width=1mm,blue] (2.7,1.5) -- (3.3,1.5);
+    \draw[line width=1mm,black,tips=proper,->] (3,1.5) -- (4,2) node[anchor=west] {$\vec{E}$};
+    \draw[densely dotted,black] (3,0) -- (3,1.5) node [shift={(0,-1)},anchor=west] {$R$};
+    \draw[black] (0.5,0.25) arc (45:90:0.7) node [shift={(0.25,-0.12)},anchor=south west] {$\phi$};
+    \node[anchor=north] at (1.5,0) {$x$};
+    \node[anchor=north east] at (0,0) {$q$};
+   \end{tikzpicture}
+ \end{center}
+
+ \begin{center}
+   \begin{tikzpicture}[scale=1.5,>={Latex[angle=45:5pt 2]}]
+     \fill[left color=gray!02!gray!10,right color=gray!02!gray!10,middle color=gray!02,shading=axis,opacity=0.05,shading angle=0,fill opacity=0.05] (2.7,1.5) -- (3.3,1.5) arc (90:270:0.2 and 1.5) -- (2.7,-1.5) arc (270:90:0.2 and 1.5);
+     \draw[black] (2.7,1.5) -- (3.3,1.5) arc (90:270:0.2 and 1.5) -- (2.7,-1.5) arc (270:90:0.2 and 1.5);
+     \draw[thick,->] (-0.1,0) -- (4,0) node[anchor=west] {$x$};
+     \draw[thick,->] (0,-2) -- (0,2) node[anchor=south] {$y$};
+     \fill[black] (0,0) circle (0.1);
+     \draw[densely dotted,black] (0,0) -- (3, 1.5) -- (3,0);
+     \draw[densely dotted,black] (0,0) -- (3,-1.5) -- (3,0);
+     \node[anchor=north east] at (1.5,-0.75) {$\sqrt{x^2+R^2}$};
+     \draw[line width=1mm,blue] (2.7,1.5) -- (3.3,1.5);
+     \draw[line width=1mm,black,tips=proper,->] (3,1.5) -- (4,2) node[anchor=west] {$\vec{E}$};
+     \draw[line width=1mm,black,tips=proper,->] (3,1.5) -- (3,2) node[anchor=east] {$\vec{n}$};
+     \draw[black] (3,1.7) arc (90:45:0.3) node [shift={(-0.08,0.02)},anchor=south west] {$\phi$};
+     \draw[densely dotted,black] (3,2) -- (4,2);
+     \draw[black] (0.5,0.25) arc (45:90:0.7) node [shift={(0.25,-0.12)},anchor=south west] {$\phi$};
+     \node[anchor=north] at (1.5,0) {$x$};
+     \node[anchor=north east] at (0,0) {$q$};
+     \fill[left color=gray!10!gray!30,right color=gray!10!gray!30,middle color=gray!10,shading=axis,shading angle=0,fill opacity=0.05] (2.7,1.5) -- (3.3,1.5) arc (90:-90:0.2 and 1.5) -- (2.7,-1.5) arc (-90:90:0.2 and 1.5);
+     \draw[black]  (2.7,1.5) -- (3.3,1.5) arc (90:-90:0.2 and 1.5) -- (2.7,-1.5) arc (-90:90:0.2 and 1.5);
+     %\draw[densely dotted,black] (3,0) -- (3,1.5) node [shift={(0,-1)},anchor=west] {$R$};
+    \end{tikzpicture}
+  \end{center}
+
+\caption{The flux through an area is defined to be the magnitude of
+  the vector normal to the surface multiplied by the surface area.}
+\label{flux:figure:lineSegmentFlux}
+\end{figure}
+
+The area of one of the small ``hoops'' is $2\pi R \triangle x$ (here
+$f(x)=R$, and $f'(x)=0$), and the flux is $|\vec{E}|\cos(\phi) 2\pi R
+\triangle x$. The total flux is found by adding up the flux through
+each piece:
+\begin{eqnarray*}
+  \sum^{N-1}_{n=0} |\vec{E}|\cos(\phi_n) 2\pi R \triangle x_n & = &
+  \sum^{N-1}_{n=0} \frac{k\hat{q}}{x_n^2+R^2} \cos(\phi)
+      2\pi R \triangle x_n.\\
+\end{eqnarray*}
+Assuming the line lies in the first quadrant, the cosine of $\phi$\ is
+$\frac{R}{\sqrt{x_n^2+R^2}}$, and the resulting flux is
+\begin{eqnarray*}
+\sum^{N-1}_{n=0} \lp \frac{k\hat{q}}{x_n^2+R^2} \cdot
+                     \frac{R}{\sqrt{x_n^2+R^2}}
+      2\pi R \rp ~ \triangle x_n
+  & = & \sum^{N-1}_{n=0} \lp \frac{k\hat{q}}{\lp x_n^2+R^2 \rp^{3/2}}
+      2\pi R^2 \rp ~ \triangle x_n.
+\end{eqnarray*}
+As the length of the line-segments approaches zero the Riemann sum
+approaches an integral,
+\begin{eqnarray*}
+  \int^L_{0} \frac{k\hat{q}}{\lp{x^2+R^2}\rp^{\frac{3}{2}}}
+      2\pi R^2 ~dx.
+\end{eqnarray*}
+
+For a line segment in the second quadrant, the cosine of $\phi$\ has
+the opposite sign, and the resulting integral appears to be the same
+only with a negative sign in front of it.
+
+
+\subsection{Flux Through A Surface of Revolution}
+Finding the flux through a cylinder is made easier because the normal
+to the line segment is always straight up (in the $\vec{\jmath}$\
+direction). In the general case, however, the curve that is being
+rotated is not necessarily a horizontal line, and the normal to the
+surface can be more difficult to find. We will concentrate on finding
+the portion of the electric field that is perpindicular to a straight
+line-segment. Once this is found, a Riemann sum for the flux can be
+found for the general problem.
+
+\begin{figure}[ht]
+  \begin{center}
+    \begin{tikzpicture}[scale=1.5,>={Latex[angle=45:5pt 2]}]
+      \draw[thick,->] (-0.2,0) -- (4,0) node[anchor=west] {$x$};
+      \draw[thick,->] (0,-0.2) -- (0,4) node[anchor=south] {$y$};
+      \fill[black] (0,0) circle (0.1);
+      %\draw [black, very thick] plot [smooth,tension=0.5] coordinates { % , tension=0.3
+      %   (0,2.9) (1,1.5) (1.5, 1.1) (2,1.5) (3,2) (4,1) (5,0.7) (6,0.5) (7,0.2) (7.5,0.2)};
+      \draw[line width=1mm,black] (-0.2,1.5) .. controls (0.5,1.6) .. (1,2) .. controls (2,3.2) .. (3.5,4) node[shift={(-0.2,0)},anchor=south] {$f$};
+      \draw[thick,->,black] (1,2) -- (0.4,2.8) node[anchor=south] {$\vec{n}$};
+      \draw[thick,->,black] (1,2) -- (2,4) node[anchor=south] {$\vec{E}$};
+      \draw[black] (1.2,2.4) arc (45:130:0.4) node[shift={(0.3,0)},anchor=south west] {$\theta$};
+
+      \draw[very thick,green] (0,0) -- (1,2) -- (1,0) -- (0,0);
+      \node[anchor=west,green] at (1,1) {$f(x)$};
+      \draw[green] (0.2,0) arc (0:60:0.2) node[shift={(0.4,0)},green] {$\phi$};
+      \draw[green] (1.8,2) arc (0:60:0.8) node[shift={(0.8,-0.5)},green] {$\phi$};
+      \node[black,anchor=north] at (1,0) {$x$};
+
+      \draw[thick,blue] (1,2) -- (3,2) -- (3,3.6) -- (1,2);
+      \draw[blue] (1.2,2) arc (0:45:0.2) node[shift={(0.4,0)},blue] {$\psi$};
+      \node[anchor=west,blue] at (3,2.8) {$f'(x)$};
+      \node[anchor=north,blue] at (2,2) {$1$};
+
+      \fill[black] (0,0) circle (0.1);
+      \node[anchor=south east] at (0,0) {$q$};
+      \node[anchor=south] at (3.5,0.7) {$\theta+\phi-\psi=\frac{\pi}{2}$};
+
+     \end{tikzpicture}
+   \end{center}
+\caption{The component of a vector perpindicular to a surface is the
+  length of the vector multiplied by the cosine of the angle between
+  the vector and the normal to the surface.}
+\label{flux:figure:lineSegmentGeneralFlux}
+\end{figure}
+
+First the component of the electric field that is normal to a
+line-segment is found (see Figure
+\ref{flux:figure:lineSegmentGeneralFlux}). (Again, it is assumed that
+the line segment is in the first quadrant.) The component of the
+electric field normal to a line-segment is the length of the vector
+due to the electric field mutliplied by the cosine of the angle
+between a vector perpindicular to the line and the vector from the
+electric field. If the angle between the normal and a horizontal line
+is $\psi$\ and the angle between the electric field and a horizontal
+line is $\phi$, then the angle between the normal and the electric
+field is $\frac{\pi}{2}+\psi-\phi$.
+
+The cosine of $\frac{\pi}{2}+\psi-\phi$\ can be found by looking at
+each separate angle:
+\begin{eqnarray*}
+  \cos(\frac{\pi}{2} + \psi-\phi) & = & -\sin(\psi-\phi), \\
+  & = & \cos(\psi)\sin(\phi) - \sin(\psi)\cos(\phi).
+\end{eqnarray*}
+Since the point charge is located at the origin, the electric field is
+pointing in a radial direction,
+\begin{eqnarray}
+  \label{flux:eqn:edirection}
+  \cos(\phi) & = & \frac{x}{\sqrt{x^2+y^2}}, \\
+  \sin(\phi) & = & \frac{y}{\sqrt{x^2+y^2}}. \nonumber
+\end{eqnarray}
+To handle the angle for the normal, some information must be known
+about the function. The slope of the tangent line is given by the
+derivative of the function, and the normal is the vector perpindular
+to the tangent line (see Figure
+\ref{flux:figure:lineSegmentGeneralFlux}):
+\begin{eqnarray}
+  \label{flux:eqn:fdirection}
+  \cos(\psi) & = & \frac{1}{\sqrt{1+(f'(x))^2}}, \\
+  \sin(\psi) & = & \frac{f'(x)}{\sqrt{1+(f'(x))^2}}. \nonumber
+\end{eqnarray}
+
+The component of the electric field that is normal to the line segment
+is
+\begin{eqnarray*}
+  |\vec{E}| \cos(\frac{\pi}{2} + \psi-\phi) & = &
+       \frac{k\hat{q}}{x^2+y^2}
+  \lp \cos(\psi)\sin(\phi) - \sin(\psi)\cos(\phi) \rp,  \\
+\end{eqnarray*}
+which can be expanded using equations (\ref{flux:eqn:edirection}) and
+(\ref{flux:eqn:fdirection}),
+\begin{eqnarray*}
+  \lefteqn{ \frac{k\hat{q}}{x^2+y^2}
+       \lp \cos(\psi)\sin(\phi) - \sin(\psi)\cos(\phi) \rp  ~ = } &&  \\
+     & &   \frac{k\hat{q}}{x^2+f^2(x)}
+     \lp \frac{f(x)}{\sqrt{x^2+f^2(x)}} \cdot
+     \frac{1}{\sqrt{1+\lp f'(x) \rp^2}} -
+     \frac{x}{\sqrt{x^2+f^2(x)}} \cdot
+     \frac{f'(x)}{\sqrt{1+\lp f'(x) \rp^2}} \rp.
+\end{eqnarray*}
+If the line segment is rotated around the $x$-axis the resulting flux
+is given by
+\begin{eqnarray*}
+  \lefteqn{|\vec{E}| \cos(\frac{\pi}{2}+\psi-\phi)
+    2\pi \frac{f(x_{n+1})+f(x_n)}{2}
+    \sqrt{1+ \lp f'(x_n) \rp^2}  } \\
+  & = & \frac{k\hat{q}}{x_n^2+y_n^2}
+  \lp \cos(\psi)\sin(\phi) - \sin(\psi)\cos(\phi) \rp
+     2\pi \frac{f(x_{n+1})+f(x_n)}{2} \sqrt{1+ \lp f'(x_n) \rp^2} ~
+     \triangle x_n.  \\
+\end{eqnarray*}
+After substituting from equations (\ref{flux:eqn:edirection}) and
+(\ref{flux:eqn:fdirection}), the flux for one piece can be expressed
+as
+\begin{eqnarray*}
+  \frac{k\hat{q}}{\lp x_n^2+f^2(x_n)\rp^{3/2} }
+  \lp f(x_n) - x_n f'(x_n) \rp 2 \pi \frac{f(x_{n+1})+f(x_n)}{2} ~
+  \triangle x_n.
+\end{eqnarray*}
+
+The total flux can be approximated by adding up the fluxes through
+each small piece to give
+\begin{eqnarray*}
+  \sum_{n=0}^N \lp \frac{k\hat{q}}{\lp x_n^2+f^2(x_n)\rp^{3/2} }
+  \lp f(x_n) - x_n f'(x_n) \rp 2 \pi \frac{f(x_{n+1})+f(x_n)}{2} \rp
+  ~ \triangle x_n.
+\end{eqnarray*}
+As the length of the line segments goes to zero, the Riemann sum
+approachs the integral
+\begin{eqnarray*}
+  k\hat{q}2\pi \int^b_a f(x)\frac{f(x)-xf'(x)}{\lp x^2+f^2(x) \rp^{3/2}}
+     ~ dx & = &
+     k\hat{q}2\pi \int^b_a \frac{f^2(x)-xf(x)f'(x)}{\lp x^2+f^2(x)
+       \rp^{3/2}} ~ dx.
+\end{eqnarray*}
+An $x^3$\ can be factored from the denomintor to yield
+\begin{eqnarray*}
+  k\hat{q}2\pi \int^b_a \frac{f^2(x)-xf(x)f'(x)}{x^3 \lp
+    1+\lp \frac{f(x)}{x} \rp^2 \rp^{3/2}} ~ dx,
+\end{eqnarray*}
+and the $x^3$\ can be factored into the numerator which gives
+\begin{eqnarray*}
+  k\hat{q}2\pi \int^b_a \frac{x^{-3}f^2(x)-x^{-2}f(x)f'(x)}{\lp
+    1+\lp \frac{f(x)}{x} \rp^2 \rp^{3/2}} ~ dx.
+\end{eqnarray*}
+The resulting integral can be found by using $u$-substition, where
+$u=\lp \frac{f(x)}{x} \rp^2$ giving
+\begin{eqnarray*}
+    \frac{k\hat{q}2\pi}{\sqrt{1+\lp \frac{f(x)}{x} \rp^2 }}
+     \Bigg|^b_a
+     & = & \frac{k\hat{q}2\pi x}{\sqrt{x^2 + f(x)^2}}
+     \Bigg|^b_a.
+\end{eqnarray*}
+
+
+
 %=========================================================================
 % Start of flux through a surface
 %=========================================================================
@@ -1057,6 +1552,8 @@ A surface is defined by the square with corners at $P_1(0,0,1)$, $P_2(2,0,1)$, $
 
 
 \actTitle{Flux Through A Surface}
+
+
 \begin{problem}
 \item
   \begin{subproblem}
