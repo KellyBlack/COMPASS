@@ -1110,10 +1110,16 @@ formed by rotating a straight, horizontal line around an axis.
        \draw[thick,->] (0,-1.5) -- (0,1.5) node[anchor=south] {$y$};
        \draw[very thick,red] (-1,1) -- (1,1);
        \draw[thick,blue,->] (-1.5,0.5) arc (90:300:0.3 and 0.5);
-       %\fill[top color=gray!50!black,bottom color=gray!10,middle color=gray,
-      %       shading=axis,opacity=0.25,shading angle=0] (3.5,0) circle (0.2 and 1);
-       \fill[left color=gray!50!black,right color=gray!50!black,middle color=gray!50,shading=axis,opacity=0.25,shading angle=0] (3.5,-1) -- (5.5,-1) arc (-90:90:0.2 and 1) -- (3.5,1) arc (90:270:0.2 and 1);
-       \fill[top color=gray!90!,bottom color=gray!2,middle color=gray!30,shading=axis,opacity=0.25,shading angle=0] (5.5,0) circle (0.2 and 1);
+
+       % Shade the bottom of the cylinder
+       \fill[top color=gray!50!black,bottom color=gray!10,middle color=gray,
+             shading=axis,opacity=0.25,shading angle=0] (3.5,0) circle (0.2 and 1);
+       % Shade the outside of the cylinder
+       \fill[left color=gray!30,right color=gray!90!black,middle color=gray!10,
+             shading=axis,opacity=0.25,shading angle=0] (3.5,-1) -- (5.5,-1) arc (-90:90:0.2 and 1) -- (3.5,1) arc (90:270:0.2 and 1);
+       % Shade the inside of the cylinder
+       \fill[top color=gray!30!black,bottom color=gray!90!black,middle color=gray!50,
+             shading=axis,opacity=0.25,shading angle=0] (5.5,0) circle (0.2 and 1);
        % Make an outline to make it really purty
        \draw (5.5,1) -- (3.5,1) arc (90:270:0.2 and 1) -- (5.5,-1);
        \draw (5.5,0) circle (0.2 and 1);
@@ -1358,7 +1364,7 @@ found by adding the contribution of each of the line-segments.
 
  \begin{center}
    \begin{tikzpicture}[scale=1.5,>={Latex[angle=45:5pt 2]}]
-     \fill[left color=gray!02!gray!10,right color=gray!02!gray!10,middle color=gray!02,shading=axis,opacity=0.05,shading angle=0,fill opacity=0.05] (2.7,1.5) -- (3.3,1.5) arc (90:270:0.2 and 1.5) -- (2.7,-1.5) arc (270:90:0.2 and 1.5);
+     \fill[left color=gray!70,right color=gray!50,middle color=gray!02,shading=axis,opacity=0.05,shading angle=0,fill opacity=0.05] (2.7,1.5) -- (3.3,1.5) arc (90:270:0.2 and 1.5) -- (2.7,-1.5) arc (270:90:0.2 and 1.5);
      \draw[black] (2.7,1.5) -- (3.3,1.5) arc (90:270:0.2 and 1.5) -- (2.7,-1.5) arc (270:90:0.2 and 1.5);
      \draw[thick,->] (-0.1,0) -- (4,0) node[anchor=west] {$x$};
      \draw[thick,->] (0,-2) -- (0,2) node[anchor=south] {$y$};
@@ -1374,7 +1380,7 @@ found by adding the contribution of each of the line-segments.
      \draw[black] (0.5,0.25) arc (45:90:0.7) node [shift={(0.25,-0.12)},anchor=south west] {$\phi$};
      \node[anchor=north] at (1.5,0) {$x$};
      \node[anchor=north east] at (0,0) {$q$};
-     \fill[left color=gray!10!gray!30,right color=gray!10!gray!30,middle color=gray!10,shading=axis,shading angle=0,fill opacity=0.05] (2.7,1.5) -- (3.3,1.5) arc (90:-90:0.2 and 1.5) -- (2.7,-1.5) arc (-90:90:0.2 and 1.5);
+     \fill[left color=gray!10!gray!30,right color=gray!10!gray!30,middle color=gray!5,shading=axis,shading angle=0,fill opacity=0.05] (2.7,1.5) -- (3.3,1.5) arc (90:-90:0.2 and 1.5) -- (2.7,-1.5) arc (-90:90:0.2 and 1.5);
      \draw[black]  (2.7,1.5) -- (3.3,1.5) arc (90:-90:0.2 and 1.5) -- (2.7,-1.5) arc (-90:90:0.2 and 1.5);
      %\draw[densely dotted,black] (3,0) -- (3,1.5) node [shift={(0,-1)},anchor=west] {$R$};
     \end{tikzpicture}
