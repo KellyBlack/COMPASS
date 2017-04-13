@@ -966,28 +966,28 @@ where $s>0$.
 
 
 \item Determine the area of the slice of a sector shown below in terms of
-  $\theta$, $L_1$, and $L_2$. 
+  $\theta$, $L_1$, and $L_2$.
   %\includegraphics[width=12em]{ink/revolution/sectorDifference}
 
   \begin{tikzpicture}[scale=3.5,>={Latex[angle=45:5pt 2]}]
-    \fill[left color=gray!50!black,right color=gray!50,middle color=gray!50,shading=axis,opacity=0.25] 
+    \fill[left color=gray!50!black,right color=gray!50,middle color=gray!50,shading=axis,opacity=0.25]
        (60:1) arc (60:120:1) -- (120:0.85) arc (120:60:0.85) -- (60:1);
     %\fill[color=white] (0,0) -- (60:0.85) arc (60:120:0.85) -- (0,0);
     \draw[black,thick] (0,0) -- (60:1) arc (60:120:1) -- (0,0)
        node[anchor=south,shift={(0,0.2)}] {$\theta$} ;
     \draw[black,thick] (60:0.85) arc (60:120:0.85);
     \draw[black] (0.05,0.0866) arc (60:120:.1);
-    \begin{scope}[shift={(0.04,-0.025)}]
-      \draw[black] (60:1) -- ++(-30:0.6);
-      \draw[black] (0,0) -- ++(-30:0.6);
-      \draw[black,<-] (-30:0.5) -- ++(60:0.3) node at ++(60:0.2) {$L_1$};
-      \draw[black,->] (0.76,0.38) -- ++(60:0.3);
-      \draw[black] (60:0.85) -- ++(-30:0.15);
-      \draw[black,<-] (-30:0.1) -- ++(60:0.2) node at ++(60:0.1) {$L_2$};
-      \draw[black,->] (0.3,0.3) -- ++(60:0.45);
+    \begin{scope}[rotate=-30,shift={(0.05,0)}]
+      \draw[black] (0,1) -- ++(0.6,0);
+      \draw[black] (0,0) -- ++(0.6,0);
+      \draw[black,<-] (0.5,0) -- (0.5,0.3) node at ++(0,0.2) {$L_1$};
+      \draw[black,->] (0.5,0.6) -- (0.5,1);
+      \draw[black] (0,0.85) -- (0.15,0.85);
+      \draw[black,<-] (0.1,0) -- (0.1,0.2) node at (0.1,0.3) {$L_2$};
+      \draw[black,->] (0.1,0.5) -- (0.1,0.85);
+      \node[font=\small] at (0.1,0.92) {$\triangle L$};
     \end{scope}
     %\node[anchor=north west,font=\small] at (60:0.45) {$L_2$};
-    \node[anchor=north west,font=\small] at (60:0.92) {$\triangle L$};
 
     \node[black,anchor=south] at (0,1) {$S_1$};
     \node[black,anchor=north] at (0,0.85) {$S_2$};
