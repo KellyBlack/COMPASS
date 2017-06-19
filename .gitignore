@@ -12,4 +12,5 @@
 *.toc
 *.csv
 *.pdf
+*.gz
 auto
