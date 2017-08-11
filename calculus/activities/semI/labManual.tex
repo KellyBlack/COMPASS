@@ -6,37 +6,31 @@
 \usepackage{ifpdf}
 \usepackage{etoolbox}
 \usepackage{multicol}
-
+\usepackage{qrcode}
 
 \newtoggle{solutions}
 \toggletrue{solutions}
 \togglefalse{solutions}
 
-\ifpdf 
-   \pdfcompresslevel=9
-   \pdfoutput=1
-                                                                                            
-                       
-   \usepackage[pdftex]{graphicx}
-   \usepackage[pdftex]{geometry}
-   \usepackage[pdftex]{color}
-   \usepackage{hyperref}
-   \hypersetup{
-     pdftitle={Recitation Activities for the COMPASS program},
-     pdfsubject={ODE},
-     pdfauthor={Kelly Black},
-     pdfkeywords={classroom activities, calculus, physics},
-     anchorcolor = {red},
-     colorlinks = {true},
-     %pdfpagemode={FullScreen}
-   }
-\else
-   \usepackage{epsfig}
-   \usepackage{color}
-\fi
+\usepackage{graphicx}
+\usepackage{geometry}
+% \usepackage{color}
+\usepackage{hyperref}
+\hypersetup{
+  pdftitle={Recitation Activities for the COMPASS program},
+  pdfsubject={ODE},
+  pdfauthor={Kelly Black},
+  pdfkeywords={classroom activities, calculus, physics},
+  anchorcolor = {blue},
+  colorlinks = {true},
+  runcolor = {black},
+  linkcolor = {red},
+  urlcolor = {black},
+  % pdfpagemode={FullScreen}
+}
 
 \usepackage{pgf}
-\usepackage{pstricks} 
+%\usepackage{pstricks} 
 
 
 \pagestyle{myheadings}
@@ -77,6 +71,10 @@ with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
 A copy of the license is included in the section entitled "GNU
 Free Documentation License".
 
+
+\vfill
+
+\qrcode[height=1in,hyperlink,tight]{https://github.com/KellyBlack/COMPASS}
 
 
 \tableofcontents
