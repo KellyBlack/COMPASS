@@ -134,7 +134,7 @@ plotter.setFigure(None,(8, 2),80,'w','k')
 plotter.clearPlot()
 plotter.setupGrid(0.3,'--',
                   1.0,1.0,7.1,
-                  0.0,0.25,1.1)
+                  0.0,0.5,2.6)
 plotter.setAxesBounds(0.9,7.1,-0.1,1.1)
 plotter.axesDecorations('Sequence of Numbers','n','Value')
 

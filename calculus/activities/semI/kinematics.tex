@@ -449,42 +449,67 @@ then the average rate of change is positive.
   \item
   \end{itemize}
 
-  \item A sequence of numbers is given by
+  \item An object's position is given by the function
     \begin{eqnarray*}
-      \left\{ 1,~0.5,~0.33\bar{3},~0.25,~0.20,~0.166\bar{6}, \ldots \right\}.
+      x(t) & = & t^2 + 1.
     \end{eqnarray*}
 
     \begin{subproblem}
-    \item Determine the formula to get the value of the number in the
-      sequence as a function of $n$ where $n=1$ is the first number in
-      the sequence.
+    \item Determine the object's position at the times $t=2$, $1.5$,
+      $1.25$, $1.125$, and $t=1$. Arrange the information in a
+      vertical table with the time in the first column and the
+      position in the second column.
 
       \vfill
 
-    \item Sketch the numbers in the sequence. For each value of $n$
-      mark the height using a dot.
-
-      \scalebox{0.8}{\input{py/week1/sequenceOne_day2.pgf}}
+    \item Add a second column to the table, and determine the average
+      rate of change between $t=1$ and the time for each row.
 
     \end{subproblem}
 
+    \clearpage
 
-  \item A sequence of numbers is given by
+  \item An object's position is given by the function
     \begin{eqnarray*}
-      \left\{ 0.0,~0.5,~0.75,~0.875,~0.9375, \ldots \right\}.
+      x(t) & = & t^2 + 1.
     \end{eqnarray*}
 
     \begin{subproblem}
-    \item Determine the formula to get the value of the number in the
-      sequence as a function of $n$ where $n=1$ is the first number in
-      the sequence.
+    \item Determine the formula for the position at
+      $t_n=1+\frac{1}{2^n}$ where $n$ is a non-negative integer
+      ($n=0$, $1$, $2$, $\ldots$).
 
       \vfill
 
-    \item Sketch the numbers in the sequence. For each value of $n$
-      mark the height using a dot.
+    \item Determine the formula for the average rate of change between
+      $t=1$ and $t_n$.
 
-      \scalebox{0.8}{\input{py/week1/sequenceOne_day2.pgf}}
+      \vfill
+
+    \item Sketch the average rates of change on the plot below. For
+      each value of $n$ mark a dot for the height given by the average
+      rate of change.
+
+      %\scalebox{0.8}{\input{py/week1/sequenceOne_day2.pgf}}
+
+      \begin{tikzpicture}[y=1.0cm, x=1.75cm,font=\sffamily]
+        % ticks
+        \draw[xstep = 1, ystep=0.5,gray, very thin,opacity=0.85,dashed] (0.0, 0.0) grid ( 7.1, 2.5);
+        % axis
+        \draw[thick,->] (-0.5,0) -- coordinate (x axis mid) (7.1,0) 
+        node[anchor = north west] {$n$};
+        \draw[thick,->] (0,-0.5) -- coordinate (y axis mid) (0,2.7) 
+          node[anchor = south east] {Avg. Vel.};
+
+          \foreach \y in {0.5,1,1.5,2,2.5} {
+            \draw (1pt, \y) -- (-1pt, \y) node[anchor = east] {$\y$};
+          }
+          \foreach \x in {1,2,3,4,5,6,7} {
+            \draw (\x,1pt) -- (\x,-1pt) node[anchor = north] {$\x$};
+          }
+
+        \end{tikzpicture}
+
 
     \end{subproblem}
 \end{problem}
