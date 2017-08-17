@@ -496,9 +496,9 @@ then the average rate of change is positive.
         % ticks
         \draw[xstep = 1, ystep=0.5,gray, very thin,opacity=0.85,dashed] (0.0, 0.0) grid ( 7.1, 2.5);
         % axis
-        \draw[thick,->] (-0.5,0) -- coordinate (x axis mid) (7.1,0) 
+        \draw[thick,->] (-0.5,0) -- coordinate (x axis mid) (7.1,0)
         node[anchor = north west] {$n$};
-        \draw[thick,->] (0,-0.5) -- coordinate (y axis mid) (0,2.7) 
+        \draw[thick,->] (0,-0.5) -- coordinate (y axis mid) (0,2.7)
           node[anchor = south east] {Avg. Vel.};
 
           \foreach \y in {0.5,1,1.5,2,2.5} {
@@ -593,6 +593,7 @@ then the average rate of change is positive.
 
 \item The questions below refer to the following plot, and the
   position is given by $x(t)=t^2$.
+  \label{activity:3:graph}
 
   \scalebox{0.7}{\input{py/week1/averageRateChange_day3.pgf}}
 
@@ -652,6 +653,24 @@ then the average rate of change is positive.
     \item Explain how this result follows based on the equation.
       \vspace{3em}
   \end{subproblem}
+
+  \item Explain how the previous result relates to the slope of the
+    lines in question \ref{activity:3:graph}.
+
+    \vfill
+
+  \clearpage
+
+  \item Determine the average rate of change for
+    \begin{eqnarray*}
+      h(t) & = & t^3
+    \end{eqnarray*}
+    from $t=2$ to $t=2+h$. Repeat the steps from the previous questions.
+    That is make a sketch of the graph with the secant lines and then
+    determine the average rate of change analytically. Determine the
+    value as $h$ gets very close to zero.
+
+    \vfill
 
 \end{problem}
 
