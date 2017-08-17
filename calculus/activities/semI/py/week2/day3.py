@@ -11,6 +11,31 @@ plotter = BasicPlot()
 
 
 
+###############################
+plotter.clearPlot()
+
+# Make the plot for the velocity
+plotter.subplot(2,1,1)
+
+plotter.addFunction([0,4],[4,-3],'k-',2.0)
+plotter.setupGrid(0.3,'--',
+                  0.0,1.0,4.1,
+                  -4.0,1.0,4.1)
+plotter.setAxesBounds(0.0,4.1,-4.1,4.1)
+plotter.axesDecorations('Velocity of an Object','','velocity  (m/sec)')
+
+## make the empty plot for the distance
+plotter.subplot(2,1,2)
+plotter.setupGrid(0.3,'--',
+                  0.0,1.0,4.1,
+                  -2.0,2.0,8.1)
+plotter.setAxesBounds(-0.1,4.1,-1.1,6.1)
+plotter.axesDecorations('Position of an Object','Time (sec)','Position (m)')
+
+#plt.show()
+plt.savefig('velocityPlot_week2Day3.pgf',format='pgf')
+exit(0)
+
 
 ###############################
 plotter.clearPlot()
@@ -61,4 +86,3 @@ plotter.axesDecorations('Position of an Object','Time (sec)','Position (m)')
 
 #plt.show()
 plt.savefig('noContDeriv_week2Day3.pgf',format='pgf')
-
