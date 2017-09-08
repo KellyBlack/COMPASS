@@ -643,7 +643,7 @@ and its initial velocity is zero and its initial position is $x(0)=0$m.
 \end{problem}
 
 
-\actTitle{The Inverse}
+\actTitle{The Product Rule and the Inverse Function}
 \begin{problem}
 
 \item The position of an object is given in the plot below.
@@ -708,6 +708,7 @@ and its initial velocity is zero and its initial position is $x(0)=0$m.
     \vfill
   \item What is the difference in the areas in terms of the functions
     $f$ and $g$?
+    \sideNote{Use the previous two answers.}
     \vfill
   \end{subproblem}
 
@@ -722,18 +723,29 @@ and its initial velocity is zero and its initial position is $x(0)=0$m.
 
   \begin{subproblem}
     \item Express the difference in the areas in terms of the areas of
-      region A, region B, and the overlap in these two
-      regions. (Region A is across the whole top, and region B is
+      region $A$, region $B$, and the overlap in these two
+      regions. (Region $A$ is across the whole top, and region $B$ is
       across the whole side.)
       \vfill
 
-    \item Express the formula you have in the previous question using
-      the formulas for the areas in terms of $f(t)$, $f(t+\Delta t)$,
-      $g(t)$, and $g(t+\Delta t)$.
+    \item Determine the area of region $A$.
+      \sideNote{Determine the width and height of the rectangle.}
+      \vfill
+
+    \item Determine the area of region $B$.
+      \vfill
+
+    \item Determine the area of region $A\cap B$.
+      \vfill
+
+    \clearpage
+
+    \item Express the formula you have for the difference in the areas
+      in terms of $f(t)$, $f(t+\Delta t)$, $g(t)$, and $g(t+\Delta t)$.
       \vfill
 
     \item To get the average rate of change divide the previous
-      expression by $\Delta t$ and simplify the expression.
+      expression by $\Delta t$ and break the expression into three terms.
 
       \vfill
 
@@ -895,23 +907,6 @@ and its initial velocity is zero and its initial position is $x(0)=0$m.
 
   \clearpage
 
-\item The graph of two functions, $f(t)$ and $g(t)$ is given in the
-  figure below. Use the graphs to answer the questions below.
-
-  \scalebox{0.75}{\input{py/week4/compositionTwoFunctionsDec.pgf}}
-
-  \begin{subproblem}
-  \item For what values of $t$ is the function $f(g(t))$ increasing?
-    \vfill
-  \item For what values of $t$ is the function $f(g(t))$ decreasing?
-    \vfill
-  \item For what values of $t$ is the function $g(f(t))$ increasing?
-    \vfill
-  \item For what values of $t$ is the function $g(f(t))$ decreasing?
-    \vfill
-  \end{subproblem}
-
-  \clearpage
 
 \item We look at the function $f(g(t))$.
   \begin{subproblem}
@@ -951,6 +946,24 @@ and its initial velocity is zero and its initial position is $x(0)=0$m.
   \item
   \item
   \end{itemize}
+  \item The graph of two functions, $f(t)$ and $g(t)$ is given in the
+    figure below. Use the graphs to answer the questions below.
+
+    \scalebox{0.75}{\input{py/week4/compositionTwoFunctionsDec.pgf}}
+
+    \begin{subproblem}
+    \item For what values of $t$ is the function $f(g(t))$ increasing?
+      \vfill
+    \item For what values of $t$ is the function $f(g(t))$ decreasing?
+      \vfill
+    \item For what values of $t$ is the function $g(f(t))$ increasing?
+      \vfill
+    \item For what values of $t$ is the function $g(f(t))$ decreasing?
+      \vfill
+    \end{subproblem}
+
+\clearpage
+
 \item Determine the derivatives of each of the following functions.
   \begin{subproblem}
   \item $(t^3-1)^5$
