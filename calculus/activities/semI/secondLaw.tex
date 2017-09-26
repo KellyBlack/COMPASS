@@ -1850,28 +1850,19 @@ and its initial velocity is zero and its initial position is $x(0)=0$m.
   The values of both $x$ and $y$ should be positive.
   \vfill
 
-\item Analytically determine the values of $x$ and $y$ that achieve the
-  following goals:
-  \begin{eqnarray*}
-    \mathrm{Minimize:} && x+y, \\
-    \mathrm{Constraint:} && y - \frac{10}{x}  =  0.
-  \end{eqnarray*}
-  \vfill
 
 \end{problem}
 
 
 \actTitle{Determining Position With Friction}
 \begin{problem}
-\item Determine the values of $x$ and $y$ that achieve the following
-  goals: \sideNote{Examine the problem graphically first and then do
-    it analytically.}
-  \begin{eqnarray*}
-    \mathrm{Maximize:} & & y - e^x, \\
-    \mathrm{Constraint:} & & y - x  =  0.
-  \end{eqnarray*}
-
-  \vfill
+  \item Analytically determine the values of $x$ and $y$ that achieve the
+    following goals:
+    \begin{eqnarray*}
+      \mathrm{Minimize:} && x+y, \\
+      \mathrm{Constraint:} && y - \frac{10}{x}  =  0.
+    \end{eqnarray*}
+    \vfill
 
   \clearpage
 
@@ -1888,8 +1879,7 @@ and its initial velocity is zero and its initial position is $x(0)=0$m.
   \item The object is initially moving at a speed of 4 m/second to the
     right. Determine the speed at any time.
     \vfill
-  \item The object starts at the origin, $x=0$, at the initial
-    time. What is the position of the object at any time?
+    \vfill
   \end{subproblem}
 
   \clearpage
@@ -1907,6 +1897,7 @@ and its initial velocity is zero and its initial position is $x(0)=0$m.
     $\alpha$ is a constant. Determine the differential equation
     describing the velocity.
 
+    \vfill
     \vfill
 
     \clearpage
@@ -1939,7 +1930,7 @@ and its initial velocity is zero and its initial position is $x(0)=0$m.
 \item You are asked to construct a system that will propel a 3kg
   object along a track. Assume that the air resistance is proportional
   to the speed of the object. You are told to construct the systems so
-  that it moves 2 meters after 3 seconds.
+  that its velocity is 2 m/sec when the time is 3 seconds.
   \begin{subproblem}
   \item Determine the position of the object at any time.
     \sideNote{You should have two constants, the initial velocity
@@ -1950,16 +1941,20 @@ and its initial velocity is zero and its initial position is $x(0)=0$m.
   \item The cost of the system depends on the values of the initial
     velocity, $v_0$, and the coefficient of friction, $\alpha$. You
     are told that the cost of the device used to propel the object is
-    twice the initial velocity squared plus three times the reciprocal
-    of the friction coefficient squared. Determine the cost to build
+    twice the initial velocity squared plus three times the
+    friction coefficient squared. Determine the cost to build
     the system.
 
     \vfill
 
   \item Express the system in terms of the constraint and the cost.
-    \vfill
+  \begin{eqnarray*}
+    \mathrm{Minimize:}  & &  \\
+    \mathrm{Constraint:}  & &
+  \end{eqnarray*}
   \item Determine the values of $v_0$ and $\alpha$ that will achieve
-    the objective with the least cost.
+    the objective with the least cost. Use a graphical approach to provide
+    your argument why your solution is a minimal cost and not a maximum cost.
     \vfill
   \end{subproblem}
 \end{problem}
