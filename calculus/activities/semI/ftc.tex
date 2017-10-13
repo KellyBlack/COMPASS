@@ -8,13 +8,46 @@
   only move left or right. The positive direction is to the right, and
   the $\vec{i}$ component of the velocity is given in the plot below.
 
-  \scalebox{0.5}{\input{py/week8/piecewiseConstantVelI_week8day2.pgf}}
+  %\scalebox{0.5}{\input{py/week8/piecewiseConstantVelI_week8day2.pgf}}
+
+  \begin{tikzpicture}[y=0.4cm, x=1.75cm,font=\sffamily]
+    % ticks
+    \draw[xstep = 1, ystep=1,gray,dashed] (0.0, 0.0) grid ( 4.5, 16.5);  %  very thin,opacity=0.85,
+    % axis
+    \draw[thick,->] (-0.5,0) -- coordinate (x axis mid) (4.5,0)  node[anchor = north west] {$t$ (sec)};
+    \draw[->] (0,-0.5) -- coordinate (y axis mid) (0,16.5) node[anchor = south east] {Vel. (m/sec)};
+
+      \foreach \y in {2,4,...,16} {
+        \draw (1pt, \y) -- (-1pt, \y) node[anchor = east] {$\y$};
+      }
+      \foreach \x in {1,2,3,4} {
+        \draw (\x,1pt) -- (\x,-1pt) node[anchor = north] {$\x$};
+      }
+
+     %\draw[scale=1.0,domain=0:5.1,smooth,variable=\x,very thick,black,samples=60]
+    %    plot ({\x},{(\x)^2}); %node[anchor= west] {$f(x)=e^{ax}$};
+
+    %\draw[pattern=crosshatch dots, pattern color=black,very thin,opacity=0.85] (1,0) rectangle (3,1);
+    %\draw[pattern=crosshatch dots, pattern color=black,very thin,opacity=0.85] (3,0) rectangle (5,9);
+
+     \draw[ultra thick] (0,0) -- (2,0);
+     \fill[black] (0,0) circle [radius=0.5ex];
+     \fill[white] (2,0) circle [radius=0.5ex];
+     \draw (2,0) circle [radius=0.5ex];
+
+     \draw[very thick] (2,4) -- (4,4);
+     \fill[black] (2,4) circle [radius=0.5ex];
+     \fill[white] (4,4) circle [radius=0.5ex];
+     \draw (4,4) circle [radius=0.5ex];
+
+    \end{tikzpicture}
+
 
   \begin{subproblem}
     \item Make a sketch of the free body diagram.
       \vspace{4em}
     \item Determine the total change in the position of the object
-      after 4 seconds.
+      from $t=0$ to $t=4$ seconds.
       \vfill
   \end{subproblem}
   \clearpage
@@ -23,13 +56,56 @@
   only move left or right. The positive direction is to the right, and
   the $\vec{i}$ component of the velocity is given in the plot below.
 
-  \scalebox{0.5}{\input{py/week8/piecewiseConstantVekII_week8day2.pgf}}
+  %\scalebox{0.5}{\input{py/week8/piecewiseConstantVekII_week8day2.pgf}}
+
+  \begin{tikzpicture}[y=0.4cm, x=1.75cm,font=\sffamily]
+    % ticks
+    \draw[xstep = 1, ystep=1,gray,dashed] (0.0, 0.0) grid ( 4.5, 16.5);  %  very thin,opacity=0.85,
+    % axis
+    \draw[thick,->] (-0.5,0) -- coordinate (x axis mid) (4.5,0)  node[anchor = north west] {$t$ (sec)};
+    \draw[->] (0,-0.5) -- coordinate (y axis mid) (0,16.5) node[anchor = south east] {Vel. (m/sec)};
+
+      \foreach \y in {2,4,...,16} {
+        \draw (1pt, \y) -- (-1pt, \y) node[anchor = east] {$\y$};
+      }
+      \foreach \x in {1,2,3,4} {
+        \draw (\x,1pt) -- (\x,-1pt) node[anchor = north] {$\x$};
+      }
+
+     %\draw[scale=1.0,domain=0:5.1,smooth,variable=\x,very thick,black,samples=60]
+    %    plot ({\x},{(\x)^2}); %node[anchor= west] {$f(x)=e^{ax}$};
+
+    %\draw[pattern=crosshatch dots, pattern color=black,very thin,opacity=0.85] (1,0) rectangle (3,1);
+    %\draw[pattern=crosshatch dots, pattern color=black,very thin,opacity=0.85] (3,0) rectangle (5,9);
+
+     \draw[ultra thick] (0,0) -- (1,0);
+     \fill[black] (0,0) circle [radius=0.5ex];
+     \fill[white] (1,0) circle [radius=0.5ex];
+     \draw (1,0) circle [radius=0.5ex];
+
+     \draw[very thick] (1,1) -- (2,1);
+     \fill[black] (1,1) circle [radius=0.5ex];
+     \fill[white] (2,1) circle [radius=0.5ex];
+     \draw (2,1) circle [radius=0.5ex];
+
+     \draw[very thick] (2,4) -- (3,4);
+     \fill[black] (2,4) circle [radius=0.5ex];
+     \fill[white] (3,4) circle [radius=0.5ex];
+     \draw (3,4) circle [radius=0.5ex];
+
+     \draw[very thick] (3,9) -- (4,9);
+     \fill[black] (3,9) circle [radius=0.5ex];
+     \fill[white] (4,9) circle [radius=0.5ex];
+     \draw (4,9) circle [radius=0.5ex];
+
+    \end{tikzpicture}
+
 
   \begin{subproblem}
     \item Make a sketch of the free body diagram.
       \vspace{4em}
     \item Determine the total change in the position of the object
-      after 4 seconds.  
+      from $t=0$ to $t=4$ seconds.
       \vfill
   \end{subproblem}
 
@@ -48,17 +124,39 @@
     \item Make a sketch of the \textbf{velocity} in the $\vec{i}$
       direction using the axes below.
 
-      \scalebox{0.5}{\input{py/week8/changingVelGrid_week8day2.pgf}}
+      %\scalebox{0.5}{\input{py/week8/changingVelGrid_week8day2.pgf}}
+      \begin{tikzpicture}[y=0.4cm, x=1.75cm,font=\sffamily]
+        % ticks
+        \draw[xstep = 1, ystep=1,gray,dashed] (0.0, 0.0) grid ( 4.5, 16.5);  %  very thin,opacity=0.85,
+        % axis
+        \draw[thick,->] (-0.5,0) -- coordinate (x axis mid) (4.5,0)  node[anchor = north west] {$t$ (sec)};
+        \draw[->] (0,-0.5) -- coordinate (y axis mid) (0,16.5) node[anchor = south east] {Vel. (m/sec)};
+
+          \foreach \y in {2,4,...,16} {
+            \draw (1pt, \y) -- (-1pt, \y) node[anchor = east] {$\y$};
+          }
+          \foreach \x in {1,2,3,4} {
+            \draw (\x,1pt) -- (\x,-1pt) node[anchor = north] {$\x$};
+          }
+
+         %\draw[scale=1.0,domain=0:5.1,smooth,variable=\x,very thick,black,samples=60]
+        %    plot ({\x},{(\x)^2}); %node[anchor= west] {$f(x)=e^{ax}$};
+
+        %\draw[pattern=crosshatch dots, pattern color=black,very thin,opacity=0.85] (1,0) rectangle (3,1);
+        %\draw[pattern=crosshatch dots, pattern color=black,very thin,opacity=0.85] (3,0) rectangle (5,9);
+
+        \end{tikzpicture}
+
 
     \item Determine the change in the position of the object after 4
       seconds by dividing up the time into four equally spaced
-      intervals and assuming that the force is constant over each
+      intervals from $t=0$ to $t=4$ and assume that the force is constant over each
       interval. Sketch the assumed, piecewise constant velocity, on the
-      axes above.  
+      axes above.
       \vfill
     \item Determine the change in position of the object after 4
       seconds by dividing up the time into eight equally spaced
-      intervals and assuming that the force is constant over each
+      intervals from $t=0$ to $t=4$ and assume that the force is constant over each
       interval. Sketch the assumed, piecewise constant velocity, on the
       axes above.
       \vfill
@@ -80,8 +178,8 @@
 \begin{problem}
 \item Briefly state two ideas from today's class.
   \begin{itemize}
-  \item 
-  \item 
+  \item
+  \item
   \end{itemize}
 \item The position of an object is given by the equations
   below. Determine the velocity at any time.
@@ -101,17 +199,17 @@
     \vfill
   \end{subproblem}
 \clearpage
-\item The velocity of an object is 
+\item The velocity of an object is
   \begin{eqnarray*}
     \vec{v}(t) & = & \cos(2t) \vec{i}.
   \end{eqnarray*}
   \begin{subproblem}
-  \item Make a sketch of the velocity.  
+  \item Make a sketch of the velocity.
     \sideNote{ Be sure to label your axes and label all important
       points on your graph.}
     \vfill
   \item Express the change in the position from time 0 to time $T$ as
-    a definite integral.  
+    a definite integral.
     \vfill
   \item Determine the change in the position from time 0 to time $T$
     by solving the definite integral.
@@ -124,7 +222,7 @@
   \end{subproblem}
   \clearpage
 
-\item The velocity of an object is 
+\item The velocity of an object is
   \begin{eqnarray*}
     \vec{v}(t) & = & \lp 5 - 5 e^{t/3} \rp \vec{i}.
   \end{eqnarray*}
@@ -133,10 +231,10 @@
       your axes and label all important points on your graph.}
     \vfill
   \item Express the change in the position from time 0 to time $T$ as
-    a definite integral.  
+    a definite integral.
     \vfill
   \item Determine the change in the position from time 0 to time $T$
-    by solving the definite integral.  
+    by solving the definite integral.
     \vfill
   \end{subproblem}
 \end{problem}
@@ -207,8 +305,8 @@
 \begin{problem}
 \item Briefly state two ideas from today's class.
   \begin{itemize}
-  \item 
-  \item 
+  \item
+  \item
   \end{itemize}
 \item Determine the derivatives of the following functions:
   %\sideNote{Leave the answer in terms of $u'(t)$.}
@@ -303,8 +401,8 @@
 \begin{problem}
 \item Briefly state two ideas from today's class.
   \begin{itemize}
-  \item 
-  \item 
+  \item
+  \item
   \end{itemize}
 \item An object has a mass of 3 kg. It initially starts with a
   velocity of $2\vec{j}$ at the point $\vec{x}=1\vec{i}$. It is
@@ -423,14 +521,14 @@
 \begin{problem}
 \item Briefly state two ideas from today's class.
   \begin{itemize}
-  \item 
-  \item 
+  \item
+  \item
   \end{itemize}
 \item An object has uniform density, and it is 0.1 m thick. Its mass
   is 10 kg. The object is bounded on the left by $x=0$, on the right
   by $x=5$, above by $y=x^2$, and below by $y=-x^2$.
   \begin{subproblem}
-    \item Make a sketch of the object. 
+    \item Make a sketch of the object.
       \sideNote{Indicate how you are going to subdivide the object to
         calculate the volume.}
       \vfill
@@ -542,8 +640,8 @@
 \begin{problem}
 \item Briefly state two ideas from today's class.
   \begin{itemize}
-  \item 
-  \item 
+  \item
+  \item
   \end{itemize}
 \item A metal plate is 0.2 m thick. The object is bounded on the left by
   $x=2$, on the right by $x=5$, above by $y=x^2$, and below by
@@ -572,7 +670,7 @@
 
 
 \actTitle{Practice With Work Integrals}
-\begin{problem} 
+\begin{problem}
 \item A block is arranged as shown in the diagram below. The block has
   a mass of 50 kg, and its height, $H$, is 1m.  The coefficient of
   friction between the block and the base it is resting on is 0.2. A
@@ -623,10 +721,10 @@
 \begin{problem}
 \item Briefly state two ideas from today's class.
   \begin{itemize}
-  \item 
-  \item 
+  \item
+  \item
   \end{itemize}
-\item 
+\item
   \begin{subproblem}
     \item
   \end{subproblem}
@@ -664,18 +762,18 @@
 \actTitle{Derivatives of Other Trigonometric Functions}
 \begin{problem}
 
-\item We examine the identity 
+\item We examine the identity
   \begin{eqnarray*}
     \sin^2(\theta) + \cos^2(\theta) & = & 1.
   \end{eqnarray*}
-  
+
   \begin{subproblem}
   \item Make a sketch of the unit circle. Use the definition of sine
     and cosine to explain why the identity above is true.
     \sideNote{Just give a heuristic explanation.}
     \vfill
 
-  \item Divide both sides of the identity by $\cos^2(\theta)$. 
+  \item Divide both sides of the identity by $\cos^2(\theta)$.
     \vfill
 
   \item Use the definition of the tangent and secant to express the
@@ -719,8 +817,8 @@
 \begin{problem}
 \item Briefly state two ideas from today's class.
   \begin{itemize}
-  \item 
-  \item 
+  \item
+  \item
   \end{itemize}
 \item A person is standing at the origin, $(0,0)$, and they are facing
   in the positive $x$-direction. The person turns to the left
