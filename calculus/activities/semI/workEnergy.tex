@@ -137,32 +137,6 @@
 \end{problem}
 
 
-%===============================================================================
-% Start of activity on more formal overview of Riemann sums and work integrals.
-%===============================================================================
-\preClass{Approximation of Work Integrals}
-
-\begin{problem}
-\item An arrow is placed in a bow, and the bow is pulled back. The
-  force due to the bow string on the arrow is 700N/m multiplied by the
-  displacement.
-  \begin{subproblem}
-  \item Make a sketch of the force as a function of the displacement.
-    \sideNote{Label the axes and units used.}
-    \vfill
-  \item The maximum force a person can apply to the bow string is
-    300N. How far back can the person pull the arrow?
-    \vfill
-  \item The maximum force a person can apply to the bow string is
-    200N. How far back can the person pull the arrow?
-    \vfill
-  \end{subproblem}
-\end{problem}
-
-
-
-\end{problem}
-
 
 %=========================================================================
 % Start of discussion on impulse and momentum
@@ -210,51 +184,53 @@
 \begin{problem}
 \item A 2 kg object starts from rest on a straight track, and it can
   only move left or right. The positive direction is to the right, and
-  a force is applied with the $\vec{i}$ component given by the plot
-  below.
+  a force is applied with the $\vec{i}$ component given by $F(x)=x^2$.
 
   \scalebox{0.5}{\input{py/week8/piecewiseConstantForceI_week8day1.pgf}}
 
   \begin{subproblem}
     \item Make a sketch of the free body diagram.
       \vspace{4em}
-    \item Determine the work on the object by the force after 4
-      seconds.
+    \item Divide the the position into two equal length pieces between $x=1$ and $x=5$ meters.
+    Assume that the force is constant over each piece, and is the same as the value of the force on the left side of each interval.
+    Determine an approximation for the work over each interval and then estimate the total work.
       \vfill
   \end{subproblem}
   \clearpage
 
 \item A 2 kg object starts from rest on a straight track, and it can
   only move left or right. The positive direction is to the right, and
-  a force is applied with the $\vec{i}$ component given by the plot
-  below.
+  a force is applied with the $\vec{i}$ component given by $F(x)=x^2$.
 
   \scalebox{0.5}{\input{py/week8/piecewiseConstantForceII_week8day1.pgf}}
 
   \begin{subproblem}
     \item Make a sketch of the free body diagram.
       \vspace{4em}
-    \item Determine the work on the object by the force after 4
-      seconds.
+    \item Divide the the position into four equal length pieces between $x=1$ and $x=5$ meters.
+    Assume that the force is constant over each piece, and is the same as the value of the force on the left side of each interval.
+    Determine an approximation for the work over each interval and then estimate the total work.
       \vfill
   \end{subproblem}
   \clearpage
 
-\item A 2 kg object starts from rest on a straight track, and it can
-  only move left or right. Assume that there is no friction on the
-  object. The positive direction is to the right, and the force that
-  is applied is in the $\vec{i}$ direction, and the magnitude is shown
-  in the plot below.
+  \item A 2 kg object starts from rest on a straight track, and it can
+    only move left or right. The positive direction is to the right, and
+    a force is applied with the $\vec{i}$ component given by $F(x)=x^2$.
 
-  \scalebox{0.5}{\input{py/week8/piecewiseConstantForceIII_week8day1.pgf}}
+    \scalebox{0.5}{\input{py/week8/piecewiseConstantForceII_week8day1.pgf}}
 
-  \begin{subproblem}
-    \item Make a sketch of the free body diagram.
+    \begin{subproblem}
+      \item Make a sketch of the free body diagram.
+        \vspace{4em}
+      \item Divide the the position into $N$ equal length pieces between $x=1$ and $x=5$ meters. Determine the starting point and length of each interval.
       \vspace{4em}
-    \item Determine the change in momentum of the object after 4
-      seconds.
+      \item Assume that the force is constant over each piece, and is the same as the value of the force on the left side of each interval.
+      Determine an approximation for the work over each interval.
       \vfill
-  \end{subproblem}
+      \item Determine an estimate of the total work.
+        \vfill
+    \end{subproblem}
 
 \end{problem}
 
