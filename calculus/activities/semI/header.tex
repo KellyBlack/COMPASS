@@ -178,6 +178,16 @@
 }}
 {\end{list}}
 
+\newenvironment{subsubproblem}
+{\begin{list}
+{(\roman{enumiii})}
+{\usecounter{enumiii}
+\setlength{\rightmargin}{0pt}
+\setlength{\parsep}{1em}
+\setlength{\listparindent}{0pt}
+}}
+{\end{list}}
+
 \newenvironment{multiEqn}
 {\begin{eqnarray*} 
  \begin{array}{rclclclcl}}
