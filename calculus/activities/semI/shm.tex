@@ -805,8 +805,15 @@
     t)-\vec{r}(t)$. Blow up, redraw, and focus just on the two
     positions on the circle.
 
-    \includegraphics[width=7cm]{ink/week12/circularAcceleration}
-
+\begin{tikzpicture}[y=2.2cm, x=2.2cm,font=\sffamily]
+  \draw[black,->] (-1.5,0) -- (1.5,0) node[anchor=north east] {$x$};
+  \draw[black,->] (0,-1.5) -- (0,1.5) node[anchor=north east] {$y$};
+  \draw[black,thick] (0,0) circle [radius=1];
+  \fill[black,shift={+(55:1)}] (0,0) circle [radius=0.025];
+  \fill[black,shift={+(65:1)}] (0,0) circle [radius=0.025];
+  \draw[black,->,ultra thick] (0,0) -- +(55:1) node[anchor=west,shift={(0.15,-0.05)}] {$\vec{r}(t)$};
+  \draw[black,->,ultra thick] (0,0) -- +(65:1) node[anchor=west,shift={(0,0.2)}] {$\vec{r}(t+\triangle t)$};
+\end{tikzpicture}
     \vfill
 
     \sideNote{Draw the velocity vectors and then sketch the difference.}
@@ -815,7 +822,15 @@
     below. Blow up, redraw, and focus just on the two positions on the
     circle.
 
-    \includegraphics[width=7cm]{ink/week12/circularAcceleration}
+    \begin{tikzpicture}[y=2.2cm, x=2.2cm,font=\sffamily]
+      \draw[black,->] (-1.5,0) -- (1.5,0) node[anchor=north east] {$x$};
+      \draw[black,->] (0,-1.5) -- (0,1.5) node[anchor=north east] {$y$};
+      \draw[black,thick] (0,0) circle [radius=1];
+      \fill[black,shift={+(55:1)}] (0,0) circle [radius=0.025];
+      \fill[black,shift={+(65:1)}] (0,0) circle [radius=0.025];
+      \draw[black,->,ultra thick] (0,0) -- +(55:1) node[anchor=west,shift={(0.15,-0.05)}] {$\vec{r}(t)$};
+      \draw[black,->,ultra thick] (0,0) -- +(65:1) node[anchor=west,shift={(0,0.2)}] {$\vec{r}(t+\triangle t)$};
+    \end{tikzpicture}
 
     \vfill
 
@@ -846,18 +861,27 @@
 
 \item An object whose position is given by $\vec{r}(t)$ is moving in
   two dimensions. The angle between the velocity and the position is
-  $\theta$ as shown in the diagram below. The velocity can be
+  $\gamma$ as shown in the diagram below. The velocity can be
   expressed by two components, one in the direction of the position
   vector and the other direction
   perpendicular to the position vector. \\
-  \includegraphics[width=6cm]{ink/week12/angularComponents}
+  \begin{tikzpicture}[y=2.8cm, x=2.8cm,font=\sffamily]
+    \draw[black,->] (-0.2,0) -- (1.5,0) node[anchor=north east] {$x$};
+    \draw[black,->] (0,-0.2) -- (0,1.5) node[anchor=north east] {$y$};
+    \draw[black,->,ultra thick] (0,0) -- +(55:1.3) node[midway,above,shift={(-0.05,0.05)}] {$\vec{r}(t)$};
+    \draw[black,->] (55:1.35) -- +(55:0.65);
+    \draw[black,->] (55:1.35) -- +(-35:0.25);
+    \draw[black,->] (55:1.35) -- +(35:0.7) node[anchor=west,shift={(0.0,0.0)}] {$\vec{v}(t)$};
+    \node at (53:1.7) {$\gamma$};
+    \draw (55:1.35) ++(35:0.2) arc(35:43:0.5);
+  \end{tikzpicture}
 
   \begin{subproblem}
   \item Determine the magnitude of the component of the velocity that
     is parallel to the position vector and the magnitude of the
     component of the velocity that is perpendicular to the position
     vector. Your answer should be in terms of the magnitude of
-    $\vec{v}$ and the angle between the vectors, $\theta$.
+    $\vec{v}$ and the angle between the vectors, $\gamma$.
 
     \vfill
 
