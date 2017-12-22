@@ -81,6 +81,45 @@
 
         \vfill
 
+        \clearpage
+
+    \item Assume that the original intensity of the light occurs at step 0.
+    A new step is started each time the light is reflected from one of the sides of the pane of glass.
+    Use the axes below to indicate the value of the intensity at each step starting at step 0.
+
+      \begin{tikzpicture}[y=0.5cm, x=2.0cm,font=\sffamily]
+        \begin{scope}[shift={(0,0)}]
+          %% ticks
+          \draw[xstep = 1, ystep=1,black,dashed] % very thin,opacity=0.85,
+              (0.0, 0.0) grid ( 7.0, 5.0);
+          %% axis
+          \draw[ultra thick,->] (0,0) -- coordinate (x axis mid) (7.1,0)
+               node[anchor = north west] {$n$ (step)};
+
+          \draw[ultra thick,->] (0,0) -- coordinate (y axis mid) (0,5.2)
+               node[anchor = south west,shift={(-0.2,-0.2)}] {Intensity};
+
+          \foreach \y in {200,400,...,1000} {
+            \draw (1pt, \y/200) -- (-1pt,\y/200) node[anchor = east] {$\y$}; }
+
+          \foreach \x in {1,...,7} {
+            \draw (\x,1pt) -- (\x,-1pt) node[anchor =north] {$\x$}; }
+
+          %%\draw[thick] plot [smooth] coordinates { (0,-2) (0.5,-0.5) (1,0) (1.5,-0.5) (2,-1.5) (3,0) (4,2) (5,0) (6,-2)};
+
+        \end{scope}
+
+        \end{tikzpicture}
+
+    \item What is happening with the value of the intensity after each step?
+      \vfill
+
+    \item After a large number of steps what will happen to the intensity?
+      \vfill
+
+    \item Determine a formula for the value of the intensity given the number of steps.
+      \vfill
+
   \end{subproblem}
 
 \clearpage
