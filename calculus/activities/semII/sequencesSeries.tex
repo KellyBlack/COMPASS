@@ -30,20 +30,20 @@
   When a beam of light moves through one material with an index of refraction $n_1$ and then strikes a second material some of the light is reflected and some of the light passes through the material.
   We assume that the first material has an index of refraction given by $n_1$, and the second material has an index of refraction of $n_2$.
 
-\begin{tikzpicture}[y=1.0cm,x=1.0cm,font=\sffamily]
-\node[anchor=west] at (0,2.0) {Material 1};
-\node[anchor=west] at (0,1.0) {Index of refraction};
-\node[anchor=west] at (0,0.0) {is $n_1$};
+    \begin{tikzpicture}[y=1.0cm,x=1.0cm,font=\sffamily]
+    \node[anchor=west] at (0,2.0) {Material 1};
+    \node[anchor=west] at (0,1.0) {Index of refraction};
+    \node[anchor=west] at (0,0.0) {is $n_1$};
 
-\node[anchor=west] at (9,2.0) {Material 2};
-\node[anchor=west] at (9,1.0) {Index of refraction};
-\node[anchor=west] at (9,0.0) {is $n_2$};
+    \node[anchor=west] at (9,2.0) {Material 2};
+    \node[anchor=west] at (9,1.0) {Index of refraction};
+    \node[anchor=west] at (9,0.0) {is $n_2$};
 
-\draw[ultra thick,black] (6,-0.5) -- (6,2.5);
-\draw[thick,->] (4,1.0) -- (5.9,1.0) node[anchor=south east] {$I_0$};
-\draw[thick,->] (5.9,0.7) -- (4.9,0.7) node[anchor=north ] {$I_{\mathrm{reflected}}$};
-\draw[thick,->] (6.1,1.0) -- (7.0,1.0) node[anchor=south west] {$I_{\mathrm{refracted}}$};
-\end{tikzpicture}
+    \draw[ultra thick,black] (6,-0.5) -- (6,2.5);
+    \draw[thick,->] (4,1.0) -- (5.9,1.0) node[anchor=south east] {$I_0$};
+    \draw[thick,->] (5.9,0.7) -- (4.9,0.7) node[anchor=north ] {$I_{\mathrm{reflected}}$};
+    \draw[thick,->] (6.1,1.0) -- (7.0,1.0) node[anchor=south west] {$I_{\mathrm{refracted}}$};
+    \end{tikzpicture}
 
   If the intensity of the original beam is $I_0$ then the intensity of the light reflected is
   \begin{eqnarray*}
