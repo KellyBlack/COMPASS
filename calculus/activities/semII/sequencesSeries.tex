@@ -130,11 +130,36 @@
 \item A sequence of numbers, $\left\{ a_n \right\}_{n=1}^\infty$, is
   given by
   \begin{eqnarray*}
-    a_n & = & \frac{\sin(n)}{n}.
+    a_n & = & \frac{\cos(n)}{n}.
   \end{eqnarray*}
   Plot the numbers on the axes below. (Your calculator should be in radians mode.)
 
-  \scalebox{0.75}{\input{py/sequences/firstSequenceAxes.pgf}}
+  %\scalebox{0.75}{\input{py/sequences/firstSequenceAxes.pgf}}
+
+  \begin{tikzpicture}[y=3.0cm, x=2.0cm,font=\sffamily]
+    \begin{scope}[shift={(0,0)}]
+      %% ticks
+      \draw[xstep = 1, ystep=0.25,black,dashed] % very thin,opacity=0.85,
+          (0.0, -1.0) grid ( 7.0, 1.0);
+      %% axis
+      \draw[ultra thick,->] (0,0) -- coordinate (x axis mid) (7.1,0)
+           node[anchor = north west] {$n$};
+
+      \draw[ultra thick,->] (0,-1) -- coordinate (y axis mid) (0,1.1)
+           node[anchor = south,shift={(0.05,0.05)}] {$a_n$};
+
+      \foreach \y in {-1.00,-0.75,-0.5,-0.25,0.25,0.5,0.75,1.00} {
+        \draw (1pt, \y) -- (-1pt,\y) node[anchor = east] {$\y$}; }
+
+      \foreach \x in {1,...,7} {
+        \draw (\x,1pt) -- (\x,-1pt) node[anchor =north,shift={(-0.05,0)}] {$\x$}; }
+
+      %%\draw[thick] plot [smooth] coordinates { (0,-2) (0.5,-0.5) (1,0) (1.5,-0.5) (2,-1.5) (3,0) (4,2) (5,0) (6,-2)};
+
+    \end{scope}
+
+    \end{tikzpicture}
+
 
   \begin{subproblem}
   \item Plot the numbers given by $b_n=\frac{1}{n}$ on the plot
@@ -148,6 +173,9 @@
       \lim_{n\rightarrow\infty} \frac{1}{n} & = & \\
       \lim_{n\rightarrow\infty} \frac{-1}{n} & = &
     \end{eqnarray*}
+  \item What does this imply about the value of $a_n$ as $n$ gets large?
+    Explain your reasoning.
+    \vfill
   \end{subproblem}
 
   \clearpage
