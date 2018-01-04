@@ -235,8 +235,10 @@
 \begin{problem}
   \item Write out the numbers given by $\frac{1}{n}$ where $n=1$,
     2, 3, 4, and 5.
+    \sideNote{This is called a sequence.}
     \vfill
   \item Determine the sum of the numbers in the previous problem.
+    \sideNote{This is called a series.}
     \vfill
   \item Determine the value of the sum
     \begin{eqnarray*}
@@ -251,11 +253,11 @@
   \item We look at the intensity of light that is reflected within a pane of glass.
 
     \begin{tikzpicture}[y=1.0cm,x=1.0cm,font=\sffamily]
-    \node[anchor=west] at (0,2.0) {Material 1 - $n_1$};
-    \node[anchor=west] at (15,2.0) {Material 1 - $n_1$};
+    \node[anchor=west] at (0,2.0) {Material 1: $n_1$};
+    \node[anchor=west] at (15,2.0) {Material 1: $n_1$};
 
     \fill[gray!20!white] (6,-0.5) rectangle(12,2.5);
-    \node[anchor=west] at (8,2.0) {Mat. 2 - $n_2$};
+    \node[anchor=west] at (8,2.0) {Mat. 2: $n_2$};
 
     \draw[ultra thick,black] (6,-0.5) -- (6,2.5);
     \draw[ultra thick,black] (12,-0.5) -- (12,2.5);
@@ -286,7 +288,7 @@
     \item When the beam of light strikes the other side, the right side, of the glass, part of that beam is reflected.
     Determine the intensity of the light that is reflected on the right side of the glass.
     Determine the sum of the light intensities within the glass after one internal bounce.
-    \sideNote{Leave your answer as 1,000 times a fraction but do not simplify the fraction. The idea is to try and find the pattern.}
+    \sideNote{Leave your answer as a sum that includes terms with 1,000 times a fraction but do not simplify the fractions. The idea is to try and find the pattern.}
       \vfill
 
     \item The portion of the beam of light that is reflected back strikes the left side of the glass pane.
@@ -349,6 +351,9 @@
       S_N & = & A + A \cdot r + A \cdot r^2 + A \cdot r^3 + \cdots + A \cdot r^N.
     \end{eqnarray*}
     For this situation state the values of $A$ and $r$.
+    \sideNote{You can just use the pattern from the previous questions to demonstrate the result.}
+      \vfill
+      \vfill
       \vfill
 
     \clearpage
@@ -361,6 +366,7 @@
       \vfill
 
     \item Treat $S_{N+1}$ and $S_N$ as two unknowns in the two equations above, and use the two equations to determine a formula for $S_n$ only in terms of $A$, $r$, and $N$.
+      \sideNote{What happens to the value of $S_N$ as $N$ gets large?}
       \vfill
 
   \end{subproblem}
