@@ -310,23 +310,23 @@
 
         \clearpage
 
-    \item Assume that the original intensity of the light occurs at step 0.
+    \item Assume that the  intensity within the pane due to the first refracted beam of light occurs at step 0.
     A new step is started each time the light is reflected from one of the sides of the pane of glass.
-    Use the axes below to indicate the value of the intensity of light within the pane given the number of bounces.
+    Use the axes below to indicate the value of the total intensity of light within the pane given the number of bounces.
 
       \begin{tikzpicture}[y=0.5cm, x=2.0cm,font=\sffamily]
         \begin{scope}[shift={(0,0)}]
           %% ticks
           \draw[xstep = 1, ystep=1,black,dashed] % very thin,opacity=0.85,
-              (0.0, 0.0) grid ( 7.0, 5.0);
+              (0.0, 0.0) grid ( 7.0, 6.0);
           %% axis
           \draw[ultra thick,->] (0,0) -- coordinate (x axis mid) (7.1,0)
                node[anchor = north west] {$n$ (step)};
 
-          \draw[ultra thick,->] (0,0) -- coordinate (y axis mid) (0,5.2)
-               node[anchor = south west,shift={(-0.2,-0.2)}] {Intensity};
+          \draw[ultra thick,->] (0,0) -- coordinate (y axis mid) (0,6.2)
+               node[anchor = south west,shift={(-0.2,-0.2)}] {Total Intensity};
 
-          \foreach \y in {200,400,...,1000} {
+          \foreach \y in {200,400,...,1200} {
             \draw (1pt, \y/200) -- (-1pt,\y/200) node[anchor = east] {$\y$}; }
 
           \foreach \x in {1,...,7} {
@@ -344,7 +344,23 @@
     \item After a large number of steps what will happen to the total intensity?
       \vfill
 
+    \item Show that the intensity after $N$ bounces, $S_N$, can be written in the form
+    \begin{eqnarray*}
+      S_N & = & A + A \cdot r + A \cdot r^2 + A \cdot r^3 + \cdots + A \cdot r^N.
+    \end{eqnarray*}
+    For this situation state the values of $A$ and $r$.
+      \vfill
+
+    \clearpage
+
     \item Determine a formula for the value of the difference between the total intensity between $N$ bounces and $N+1$ bounces.
+      \vfill
+
+
+    \item Show that $S_{N+1} = A + r S_N$.
+      \vfill
+
+    \item Treat $S_{N+1}$ and $S_N$ as two unknowns in the two equations above, and use the two equations to determine a formula for $S_n$ only in terms of $A$, $r$, and $N$.
       \vfill
 
   \end{subproblem}
