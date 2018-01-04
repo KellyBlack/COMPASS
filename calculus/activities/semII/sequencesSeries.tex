@@ -248,35 +248,30 @@
 \actTitle{Series}
 
 \begin{problem}
-\item A ball is dropped from a height of one meter. Each time it bounces it goes
-  back up to one half of the height of the previous bounce.
-  \begin{subproblem}
-  \item Determine the height of each of the bounces just before the balls strikes
-        the ground the third time. Determine the total distance traveled by the ball
-        just before it hits the floor the third time.
-    \vfill
-  \item Determine the total vertical distance traveled by the ball
-    just before it hits the floor the fourth time.
-    \vfill
-  \item Determine the total vertical distance traveled by the ball
-    just before it hits the floor the fifth time.
-    \vfill
-  \item Determine the total vertical distance traveled by the ball
-    just before it hits the floor the sixth time.
-    \vfill
-  \end{subproblem}
+  \item We look at the intensity of light that is reflected within a pane of glass.
 
-  \clearpage
+    \begin{tikzpicture}[y=1.0cm,x=1.0cm,font=\sffamily]
+    \node[anchor=west] at (0,2.0) {Material 1 - $n_1$};
+    \node[anchor=west] at (15,2.0) {Material 1 - $n_1$};
 
-  \item What is the difference between the set of heights you calculated and the
-    total distance the ball traveled?
+    \fill[gray!20!white] (6,-0.5) rectangle(12,2.5);
+    \node[anchor=west] at (8,2.0) {Mat. 2 - $n_2$};
 
-    \vfill
+    \draw[ultra thick,black] (6,-0.5) -- (6,2.5);
+    \draw[ultra thick,black] (12,-0.5) -- (12,2.5);
+    \draw[thick,->] (3,0.7) -- (6,0.7) node[anchor=south east] {$I_0$};
+    \draw[thick,->] (6,0.4) -- (3,0.4) node[anchor=north ] {$I_{\mathrm{reflected}}$};
+    \draw[thick,->] (6,0.7) -- (8.0,0.7) node[anchor=south west] {$I_{\mathrm{refracted}}$};
+    \end{tikzpicture}
 
-  \item Determine a general formula for the distance the ball travels just before
-    the ball hits the ball the $N$\textsuperscript{th} time.
+  If the intensity of the original beam is $I_0$ then the intensity of the light reflected is
+  \begin{eqnarray*}
+    I_{\mathrm{reflected}} & = & \left(\frac{n_1-n_2}{n_1+n_2}\right)^2 I_0,
+  \end{eqnarray*}
 
-    \vfill
+  A beam of light with intensity 1,000 N/C passes through air, $n_1=1$, and is moving from the left to the right.
+  The beam hits the left face of a glass pane, $n_2=1.2$, that is perpendicular to the light beam.
+
 
 \end{problem}
 
@@ -288,10 +283,35 @@
   \item
   \item
   \end{itemize}
-\item
-  \begin{subproblem}
-    \item
-  \end{subproblem}
+  \item A ball is dropped from a height of one meter. Each time it bounces it goes
+    back up to one half of the height of the previous bounce.
+    \begin{subproblem}
+    \item Determine the height of each of the bounces just before the balls strikes
+          the ground the third time. Determine the total distance traveled by the ball
+          just before it hits the floor the third time.
+      \vfill
+    \item Determine the total vertical distance traveled by the ball
+      just before it hits the floor the fourth time.
+      \vfill
+    \item Determine the total vertical distance traveled by the ball
+      just before it hits the floor the fifth time.
+      \vfill
+    \item Determine the total vertical distance traveled by the ball
+      just before it hits the floor the sixth time.
+      \vfill
+    \end{subproblem}
+
+    \clearpage
+
+    \item What is the difference between the set of heights you calculated and the
+      total distance the ball traveled?
+
+      \vfill
+
+    \item Determine a general formula for the distance the ball travels just before
+      the ball hits the ball the $N$\textsuperscript{th} time.
+      \vfill
+
 \end{problem}
 
 %=========================================================================
