@@ -435,8 +435,8 @@
 
 \actTitle{The Integral Test}
 \begin{problem}
-  \item A glass lens can be used to make an image appear in different place. An example is shown in the diagram below.
-  A lens has a focal length, $f$. An object is sitting a distance $s_1$ to the left of the lens, and the resulting image
+  \item A glass lens can be used to make it look as if an objet appears in different place. An example is shown in the diagram below.
+  A lens has a focal length, $f_1$. An object is sitting a distance $s_1$ to the left of the lens, and the resulting image
   appears to be sitting a distance of $s_2$ from the lens.
 
   \newcommand{\stickFigure}[3]{%
@@ -454,24 +454,63 @@
 
       % Draw the lens
       \draw[thick,black] (-4,-3) arc(-10: 10:17.276);
-      \draw[thick,black] (-4,-3) arc(190:170:17.276) node[anchor=south] at (-4,3) {Focal Length $ = f$};
+      \draw[thick,black] (-4,-3) arc(190:170:17.276) node[anchor=south] at (-4,3) {Focal Length $ = f_1$};
 
       % Draw the stick figures
       \stickFigure{-6}{0}{1cm}
-      \stickFigure{-2}{0}{-0.8cm}
+      \stickFigure{3}{0}{-0.8cm}
 
       % Annotate the figure
-      \draw[thin,->] (-6,1.05) -- (-4.25,1.05) -- (-3.75,1.0) -- (-2,-0.85);
+      \draw[thin,->] (-6,1.05) -- (-4.25,1.05) -- (-3.75,1.0) -- (3,-0.85);
       \draw[thin] (-6,   0) -- (-6,-2) node[anchor=north] {$s_1$};
-      \draw[thin] (-2,-1.1) -- (-2,-2) node[anchor=north] {$s_2$};
+      \draw[thin] (3,-1.1) -- (3,-2) node[anchor=north] {$s_2$};
     \end{tikzpicture}
 
     The relationship between the three variables is
-    \begin{eqnarray*}
-      \frac{1}{s_1} + \frac{1}{s_2} & = & \frac{1}{f}.
-    \end{eqnarray*}
+    \begin{eqnarray}
+      \label{eqn:lensDistOne}
+      \frac{1}{s_1} + \frac{1}{s_2} & = & \frac{1}{f_1}.
+    \end{eqnarray}
     In this case the lens is convex on both sides, so if the original object is to the left of the lens then $s_1$ is positive.
     If the image is to the right then $s_2$ is positive as well.
+
+    Now suppose that there are two lenses. We start with the same situation as above, but a second lens is added very close to the first lens as shown in the diagram below.
+    The location where the object appears, though, has not changed which is not correct. The second lens will change the location of the image.
+    Because the image from the first lens is to the right of the new convex lens, the distance is negative. Also, we assume that the lenses are close,
+    so the image's distance to the second lens is approximately $-s_2$.
+
+    \begin{tikzpicture}[y=1.0cm, x=1.0cm,font=\sffamily,scale=0.75]
+        %% axis
+        \draw[ultra thick] (-7,0) -- coordinate (x axis mid) (7.1,0)
+             node[anchor = north west] {$x$};
+
+        % Draw the first lens
+        \draw[thick,black] (-4,-3) arc(-10: 10:17.276);
+        \draw[thick,black] (-4,-3) arc(190:170:17.276);
+        % Draw the second lens
+        \draw[thick,red] (-3.3,-3) arc(-10: 10:17.276);
+        \draw[thick,red] (-3.3,-3) arc(190:170:17.276);
+
+        % Draw the stick figures
+        \stickFigure{-6}{0}{1cm}
+        \stickFigure{ 3}{0}{-0.8cm}
+
+        % Annotate the figure
+        % Annotate the figure
+        \draw[thin,->] (-6,1.05) -- (-4.25,1.05) -- (-3.75,1.0) -- (3,-0.85);
+        \draw[thin] (-6,   0) -- (-6,-2) node[anchor=north] {$s_1$};
+        \draw[thin] (3,-1.1) -- (3,-2) node[anchor=north] {$s_2$};
+      \end{tikzpicture}
+
+      The distance to where the correct image should be is called $s_3$, and it satisfies
+      \begin{eqnarray}
+        \label{eqn:lensDistTwo}
+        \frac{-1}{s_2} + \frac{1}{s_3} & = & \frac{1}{f_2},
+      \end{eqnarray}
+      where $f_2$ is the focal length of the second lens.
+
+
+\clearpage
 
 \item Determine which of the following series converges or
   diverges.
