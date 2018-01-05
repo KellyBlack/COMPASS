@@ -418,17 +418,54 @@
 \preClass{Area under curves}
 
 \begin{problem}
-\item We examine a series,
+\item We examine an approximation of the area under the graph of a function,
 \begin{eqnarray*}
-  \sum^\infty_{n=1} \frac{1}{n^2}.
+  f(x) & = & \frac{1}{x}.
 \end{eqnarray*}
   \begin{subproblem}
-  \item On the graph below mark the height of $\frac{1}{n^2}$ for each $n$.\\[10pt]
-  \centerline{\scalebox{1.0}{\input{py/sequences/integralTestIntro.pgf}}}
-  \item On the graph above, for each $n$ add rectangles that have a height of $\frac{1}{n^2}$,
-  and the width of each rectangle is 1.
-  \item On the graph above add the graph of the function ${\displaystyle f(x)=\frac{1}{x^2}}$ treating the horizontal
-  axis as $x$ and treat the function as being continuous.
+    \item Make a sketch of the graph on the axes below. \\
+    \begin{tikzpicture}[y=1.5cm, x=1.0cm,font=\sffamily]
+      \begin{scope}[shift={(0,0)}]
+        %% ticks
+        \draw[xstep = 1, ystep=1,black,dashed] % very thin,opacity=0.85,
+            (0.0, 0.0) grid ( 7.0, 3.0);
+        %% axis
+        \draw[ultra thick,->] (0,0) -- coordinate (x axis mid) (7.1,0)
+             node[anchor = north west] {$x$};
+
+        \draw[ultra thick,->] (0,0) -- coordinate (y axis mid) (0,3.1)
+             node[anchor = south east,shift={(-0.2,-0.2)}] {$y$};
+
+        \foreach \y in {1,2,3} {
+          \draw (1pt, \y) -- (-1pt,\y) node[anchor = east] {$\y$}; }
+
+        \foreach \x in {1,...,7} {
+          \draw (\x,1pt) -- (\x,-1pt) node[anchor =north] {$\x$}; }
+
+      \end{scope}
+
+      \end{tikzpicture}
+
+\item Determine an approximation of the integral
+  \begin{eqnarray*}
+    \int_1^6 \frac{1}{x} ~ dx
+  \end{eqnarray*}
+  using a left sided Riemann sum where $\triangle x$=1.
+  Make a sketch of the rectangles that are used to approximate the integral using your sketch above.
+  Is your approximation too low or too high? (Explain why.)
+
+  \vfill
+
+  \item Determine an approximation of the integral
+    \begin{eqnarray*}
+      \int_1^6 \frac{1}{x} ~ dx
+    \end{eqnarray*}
+    using a right sided Riemann sum where $\triangle x$=1.
+    Make a sketch of the rectangles that are used to approximate the integral using your sketch above.
+    Is your approximation too low or too high? (Explain why.)
+
+    \vfill
+
   \end{subproblem}
 \end{problem}
 
