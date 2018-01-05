@@ -435,6 +435,44 @@
 
 \actTitle{The Integral Test}
 \begin{problem}
+  \item A glass lens can be used to make an image appear in different place. An example is shown in the diagram below.
+  A lens has a focal length, $f$. An object is sitting a distance $s_1$ to the left of the lens, and the resulting image
+  appears to be sitting a distance of $s_2$ from the lens.
+
+  \newcommand{\stickFigure}[3]{%
+    \begin{scope}[shift={(#1,#2)},y=#3]
+      \fill[black] (0,1.0) circle[radius=3pt];       % Draw the head
+      \draw[black] (0,1.0) -- (0,.33);               % Draw the body
+      \draw[black] (-0.25,0) -- (0,.33) -- (.25,0);  % Draw the legs
+      \draw[black] (-.3,0.8) -- (.3,0.8);            % Draw the arms
+    \end{scope}
+  }
+  \begin{tikzpicture}[y=1.0cm, x=1.0cm,font=\sffamily,scale=0.75]
+      %% axis
+      \draw[ultra thick] (-7,0) -- coordinate (x axis mid) (7.1,0)
+           node[anchor = north west] {$x$};
+
+      % Draw the lens
+      \draw[thick,black] (-4,-3) arc(-10: 10:17.276);
+      \draw[thick,black] (-4,-3) arc(190:170:17.276) node[anchor=south] at (-4,3) {Focal Length $ = f$};
+
+      % Draw the stick figures
+      \stickFigure{-6}{0}{1cm}
+      \stickFigure{-2}{0}{-0.8cm}
+
+      % Annotate the figure
+      \draw[thin,->] (-6,1.05) -- (-4.25,1.05) -- (-3.75,1.0) -- (-2,-0.85);
+      \draw[thin] (-6,   0) -- (-6,-2) node[anchor=north] {$s_1$};
+      \draw[thin] (-2,-1.1) -- (-2,-2) node[anchor=north] {$s_2$};
+    \end{tikzpicture}
+
+    The relationship between the three variables is
+    \begin{eqnarray*}
+      \frac{1}{s_1} + \frac{1}{s_2} & = & \frac{1}{f}.
+    \end{eqnarray*}
+    In this case the lens is convex on both sides, so if the original object is to the left of the lens then $s_1$ is positive.
+    If the image is to the right then $s_2$ is positive as well.
+
 \item Determine which of the following series converges or
   diverges.
   \sideNote{Clearly state your reasoning. The process and
