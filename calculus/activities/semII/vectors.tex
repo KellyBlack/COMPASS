@@ -10,31 +10,55 @@
     \vfill
     \vfill
 
-\item Determine a way to express the point $P$ shown in the diagram below as the sum of
-the $\hat{\imath}$, $\hat{\jmath}$, and $\hat{k}$ vectors.
+\item Determine a way to express the point $R$ shown in the diagram below as the sum of
+the $\hat{\imath}$ and $\hat{\jmath}$ vectors.
 
-  \tdplotsetmaincoords{60}{100}
+  \tdplotsetmaincoords{0}{0}
   \begin{tikzpicture}[tdplot_main_coords]
     % Draw the coordinates
     \coordinate (O) at (0, 0, 0);
     \draw[->] (O) -- +(4, 0, 0) node[font = \small, pos = 1.1] {\(x\)} coordinate (X);
     \draw[->] (O) -- +(0, 4, 0) node[font = \small, pos = 1.1] {\(y\)} coordinate (Y);
-    \draw[->] (O) -- +(0, 0, 4) node[font = \small, pos = 1.1] {\(z\)} coordinate (Z);
     %
     % Draw the unit vectors
-    \draw[very thick,blue,->] (0,0,0) -- (1,0,0) node[font=\small,pos=1.7,anchor=south west] {$\hat{\imath}$};
+    \draw[very thick,blue,->] (0,0,0) -- (1,0,0) node[font=\small,pos=0.9,anchor=south west] {$\hat{\imath}$};
     \draw[very thick,blue,->] (0,0,0) -- (0,1,0) node[font=\small,pos=0.9,anchor=south west] {$\hat{\jmath}$};
-    \draw[very thick,blue,->] (0,0,0) -- (0,0,1) node[font=\small,pos=0.9,anchor=south east] {$\hat{k}$};
     %
     % Draw a point in space
-    \node[draw=none,shape=circle,fill, inner sep=2pt] (d1) at (2,1,3){};  % circle
-    \node[font=\small,anchor=south] at (d1) {P};  % label
-    \draw[thin,red,dashed] (2,0,0) -- (2,1,0) node[font=\small,pos=0.5,anchor=north] {1};
-    \draw[thin,red,dashed] (0,1,0) -- (2,1,0) node[font=\small,pos=0.25,anchor=north west] {2};
-    \draw[thin,red,dashed] (2,1,0) -- (2,1,3) node[font=\small,pos=0.75,anchor=west] {3};
+    \node[draw=none,shape=circle,fill, inner sep=2pt] (d1) at (2,1,0){};  % circle
+    \node[font=\small,anchor=south] at (d1) {R};  % label
+    \draw[thin,red,dashed] (2,0,0) -- (2,1,0) node[font=\small,pos=0.5,anchor=west] {1};
+    \draw[thin,red,dashed] (0,1,0) -- (2,1,0) node[font=\small,pos=0.5,anchor=south] {2};
   \end{tikzpicture}
 
   \vfill
+
+  \item Determine a way to express the point $P$ shown in the diagram below as the sum of
+  the $\hat{\imath}$, $\hat{\jmath}$, and $\hat{k}$ vectors.
+
+    \tdplotsetmaincoords{60}{100}
+    \begin{tikzpicture}[tdplot_main_coords]
+      % Draw the coordinates
+      \coordinate (O) at (0, 0, 0);
+      \draw[->] (O) -- +(4, 0, 0) node[font = \small, pos = 1.1] {\(x\)} coordinate (X);
+      \draw[->] (O) -- +(0, 4, 0) node[font = \small, pos = 1.1] {\(y\)} coordinate (Y);
+      \draw[->] (O) -- +(0, 0, 4) node[font = \small, pos = 1.1] {\(z\)} coordinate (Z);
+      %
+      % Draw the unit vectors
+      \draw[very thick,blue,->] (0,0,0) -- (1,0,0) node[font=\small,pos=1.7,anchor=south west] {$\hat{\imath}$};
+      \draw[very thick,blue,->] (0,0,0) -- (0,1,0) node[font=\small,pos=0.9,anchor=south west] {$\hat{\jmath}$};
+      \draw[very thick,blue,->] (0,0,0) -- (0,0,1) node[font=\small,pos=0.9,anchor=south east] {$\hat{k}$};
+      %
+      % Draw a point in space
+      \node[draw=none,shape=circle,fill, inner sep=2pt] (d1) at (2,1,3){};  % circle
+      \node[font=\small,anchor=south] at (d1) {P};  % label
+      \draw[thin,red,dashed] (2,0,0) -- (2,1,0) node[font=\small,pos=0.5,anchor=north] {1};
+      \draw[thin,red,dashed] (0,1,0) -- (2,1,0) node[font=\small,pos=0.25,anchor=north west] {2};
+      \draw[thin,red,dashed] (2,1,0) -- (2,1,3) node[font=\small,pos=0.75,anchor=west] {3};
+    \end{tikzpicture}
+
+    \vfill
+
 
 \end{problem}
 
