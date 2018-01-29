@@ -156,10 +156,10 @@ the $\hat{\imath}$ and $\hat{\jmath}$ vectors.
       \draw[thick,->] (-4.5,0) -- coordinate (x axis mid) (4.5,0) node[anchor = north west] {$\hat{\imath}$};
       \draw[thick,->] (0,-1.5) -- coordinate (y axis mid) (0,6.5) node[anchor = south east] {$\hat{\jmath}$};
       \foreach \y in {-1,1,2,...,6} {
-        \draw (1pt, \y) -- (-1pt, \y) node[anchor = east,yshift=-5,xshift=2] {$\y$};
+        \draw[very thick] (1pt, \y) -- (-1pt, \y) node[anchor = east,yshift=-5,xshift=2] {$\y$};
       }
       \foreach \x in {-4,-3,...,-1,1,2,3,4} {
-        \draw (\x,1pt) -- (\x,-1pt) node[anchor = north ] {$\x$};
+        \draw[very thick] (\x,1pt) -- (\x,-1pt) node[anchor = north ] {$\x$};
       }
     \end{tikzpicture}
 
