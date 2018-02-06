@@ -555,7 +555,7 @@ where $a$, $b$, $c$, $d$, $r_1$, and $r_2$ are constants.
 \vfill
 \clearpage
 
-\item Solve the following system directly without using the previous formula. Can a solution be found?
+\item Solve the following system directly without using the previous formula. Can a solution be found? \label{question:linearSolvable}
 \begin{eqnarray*}
   \begin{array}{lcl}
      4x - 2y & = & 6, \\
@@ -594,6 +594,33 @@ What do the graphs indicate about the solutions to the system?
     \draw[very thick] (\x,2pt) -- (\x,-2pt) node[anchor = north ] {$\x$};
   }
 \end{tikzpicture}
+
+\clearpage
+
+\item The system of equations in question \ref{question:linearSolvable} is
+\begin{eqnarray*}
+  \begin{array}{lcl}
+     4x - 2y & = & 6, \\
+    -2x + y & = & -3.
+  \end{array}
+\end{eqnarray*}
+Using the axes below plot the graph of the first equation and then plot the graph of the second equation.
+What do the graphs indicate about the solutions to the system?
+
+\begin{tikzpicture}[y=0.7cm, x=0.7cm,font=\sffamily]
+  % ticks
+  \draw[step = 2, gray, very thin,opacity=0.25] (-8.5, -8.5) grid ( 8.5, 8.5);
+  % axis
+  \draw[thick,->] (-8.5,0) -- coordinate (x axis mid) (8.5,0) node[anchor = north west] {$\hat{\imath}$};
+  \draw[thick,->] (0,-8.5) -- coordinate (y axis mid) (0,8.5) node[anchor = south east] {$\hat{\jmath}$};
+  \foreach \y in {-8,-6,...,-2,2,4,...,8} {
+    \draw[very thick] (2pt, \y) -- (-2pt, \y) node[anchor = east,yshift=-5,xshift=2] {$\y$};
+  }
+  \foreach \x in {-8,-6,...,-2,2,4,...,8} {
+    \draw[very thick] (\x,2pt) -- (\x,-2pt) node[anchor = north ] {$\x$};
+  }
+\end{tikzpicture}
+
 
 \end{problem}
 
