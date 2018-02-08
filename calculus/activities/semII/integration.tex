@@ -17,9 +17,11 @@
      \draw[line width=2.2,->] (0,-1) -- (0,4);
      \begin{scope}
        \clip (0,0) rectangle (2,2);
-       \draw[red] (1,0) circle(1.0);
+       \draw[red,thick] (1,0) circle(1.0);
      \end{scope}
-     \draw[red] (2,0) -- (3,3);
+     \draw[red,thick] (2,0) -- (3,3);
+     \fill[red] (0,0) circle(0.03);
+     \fill[red] (3,3) circle(0.03);
      \node[left] at (-0.2,3.5) {$f$};
      \node[below] at (3.5,-0.2) {$x$};
      \foreach \x in {-1,1,2,3,4}
