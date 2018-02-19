@@ -480,9 +480,30 @@ where $s>0$.
 \begin{problem}
 \item For each of the triangles below, determine the length of the
   side with the missing length. Also, determine the sine, cosine, and tangent
-  for the angle in the lower right part of the triangle.
+  for the angle in the lower left part of the triangle.
   \begin{subproblem}
-  \item \includegraphics[width=10em]{ink/trigSubs/triangleValuesBottomHyp}
+  \item %%\includegraphics[width=10em]{ink/trigSubs/triangleValuesBottomHyp}
+
+  \begin{minipage}[h]{0.4\linewidth}
+  \begin{tikzpicture}[y=0.5cm, x=.5cm,font=\sffamily]
+    %% Draw the base, upright and hypotenuse
+    \draw[thick] (0,0) -- (5,0) -- (5,6.25) -- (0,0);
+    \draw[thin] (4.5,0) -- (4.5,0.5) -- (5,0.5);
+    \node[anchor=north] at (2.5,0) {$5$};
+    %\node[anchor=west] at (5,3.1) {$2\sqrt{3}$};
+    \node[anchor=south east] at (2.5,3.1) {$8$};
+    \node[anchor=south west,xshift=4] at (0,0) {$\alpha$};
+    %\node[anchor=north east,yshift=-18] at (2,4) {$\frac{\pi}{6}$};
+  \end{tikzpicture}
+\end{minipage}
+\begin{minipage}[h]{0.4\linewidth}
+  \begin{eqnarray*}
+    \sin(\alpha) & = & \\ [10pt]
+    \cos(\alpha) & = & \\ [10pt]
+    \tan(\alpha) & = & \\ [10pt]
+  \end{eqnarray*}
+\end{minipage}
+
     \vfill
   \item \includegraphics[width=10em]{ink/trigSubs/triangleValuesLeftBottom}
     \vfill
