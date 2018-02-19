@@ -528,10 +528,32 @@ where $s>0$.
   \end{eqnarray*}
 \end{minipage}
 
+    \vfill
 
-    \vfill
-  \item \includegraphics[width=10em]{ink/trigSubs/triangleValuesLeftHyp}
-    \vfill
+  \item %%\includegraphics[width=10em]{ink/trigSubs/triangleValuesLeftHyp}
+
+    \begin{minipage}[h]{0.4\linewidth}
+    \begin{tikzpicture}[y=0.75cm, x=0.75cm,font=\sffamily]
+      %% Draw the base, upright and hypotenuse
+      \draw[thick] (0,0) -- (7.755,0) -- (7.755,2) -- (0,0);
+      \draw[thin] (7.2,0) -- (7.2,0.5) -- (7.755,0.5);
+      %\node[anchor=north] at (3.6,0) {$5$};
+      \node[anchor=west] at (7.755,1) {$2$};
+      \node[anchor=south east] at (3.6,1.0) {$8$};
+      \node[anchor=south west,xshift=36] at (0,0) {$\alpha$};
+      %\node[anchor=north east,yshift=-18] at (2,4) {$\frac{\pi}{6}$};
+    \end{tikzpicture}
+    \end{minipage}
+    \begin{minipage}[h]{0.4\linewidth}
+    \begin{eqnarray*}
+      \sin(\alpha) & = & \\ [10pt]
+      \cos(\alpha) & = & \\ [10pt]
+      \tan(\alpha) & = & \\ [10pt]
+    \end{eqnarray*}
+    \end{minipage}
+
+      \vfill
+
   \end{subproblem}
 \end{problem}
 
