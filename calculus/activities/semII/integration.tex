@@ -505,7 +505,30 @@ where $s>0$.
 \end{minipage}
 
     \vfill
-  \item \includegraphics[width=10em]{ink/trigSubs/triangleValuesLeftBottom}
+
+\item %%\includegraphics[width=10em]{ink/trigSubs/triangleValuesLeftBottom}
+
+  \begin{minipage}[h]{0.4\linewidth}
+  \begin{tikzpicture}[y=1cm, x=1cm,font=\sffamily]
+    %% Draw the base, upright and hypotenuse
+    \draw[thick] (0,0) -- (5,0) -- (5,2) -- (0,0);
+    \draw[thin] (4.5,0) -- (4.5,0.5) -- (5,0.5);
+    \node[anchor=north] at (2.5,0) {$5$};
+    \node[anchor=west] at (5,1) {$2$};
+    %\node[anchor=south east] at (2.5,3.1) {$8$};
+    \node[anchor=south west,xshift=24] at (0,0) {$\alpha$};
+    %\node[anchor=north east,yshift=-18] at (2,4) {$\frac{\pi}{6}$};
+  \end{tikzpicture}
+\end{minipage}
+\begin{minipage}[h]{0.4\linewidth}
+  \begin{eqnarray*}
+    \sin(\alpha) & = & \\ [10pt]
+    \cos(\alpha) & = & \\ [10pt]
+    \tan(\alpha) & = & \\ [10pt]
+  \end{eqnarray*}
+\end{minipage}
+
+
     \vfill
   \item \includegraphics[width=10em]{ink/trigSubs/triangleValuesLeftHyp}
     \vfill
