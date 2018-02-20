@@ -641,9 +641,30 @@ where $s>0$.
 \begin{problem}
 \item For each of the triangles below, determine the length of the
   side with the missing length. Also, determine the sine, cosine, and tangent
-    for the angle in the lower right part of the triangle.
+    for the angle in the lower left part of the triangle.
   \begin{subproblem}
-  \item \includegraphics[width=10em]{ink/trigSubs/triangleSymbolsLeftHyp}
+  \item %%\includegraphics[width=10em]{ink/trigSubs/triangleSymbolsLeftHyp}
+
+    \begin{minipage}[h]{0.4\linewidth}
+    \begin{tikzpicture}[y=0.75cm, x=0.75cm,font=\sffamily]
+      %% Draw the base, upright and hypotenuse
+      \draw[thick] (0,0) -- (7.755,0) -- (7.755,2) -- (0,0);
+      \draw[thin] (7.2,0) -- (7.2,0.5) -- (7.755,0.5);
+      %%\node[anchor=north] at (3.6,0) {$x$};
+      \node[anchor=west] at (7.755,1) {$y$};
+      \node[anchor=south east] at (3.6,1.0) {$h$};
+      \node[anchor=south west,xshift=36] at (0,0) {$\alpha$};
+      %\node[anchor=north east,yshift=-18] at (2,4) {$\frac{\pi}{6}$};
+    \end{tikzpicture}
+    \end{minipage}
+    \begin{minipage}[h]{0.4\linewidth}
+    \begin{eqnarray*}
+      \sin(\alpha) & = & \\ [10pt]
+      \cos(\alpha) & = & \\ [10pt]
+      \tan(\alpha) & = & \\ [10pt]
+    \end{eqnarray*}
+    \end{minipage}
+
     \vfill
   \item \includegraphics[width=10em]{ink/trigSubs/triangleSymbolsBottomLeft}
     \vfill
