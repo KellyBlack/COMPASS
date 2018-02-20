@@ -690,7 +690,29 @@ where $s>0$.
 
 
     \vfill
-  \item \includegraphics[width=10em]{ink/trigSubs/triangleSymbolsBottomHyp}
+  \item %%\includegraphics[width=10em]{ink/trigSubs/triangleSymbolsBottomHyp}
+
+    \begin{minipage}[h]{0.4\linewidth}
+    \begin{tikzpicture}[y=0.75cm, x=0.75cm,font=\sffamily]
+      %% Draw the base, upright and hypotenuse
+      \draw[thick] (0,0) -- (7.755,0) -- (7.755,2) -- (0,0);
+      \draw[thin] (7.2,0) -- (7.2,0.5) -- (7.755,0.5);
+      \node[anchor=north] at (3.6,0) {$x$};
+      %%\node[anchor=west] at (7.755,1) {$2$};
+      \node[anchor=south east] at (3.6,1.0) {$h$};
+      \node[anchor=south west,xshift=36] at (0,0) {$\alpha$};
+      %\node[anchor=north east,yshift=-18] at (2,4) {$\frac{\pi}{6}$};
+    \end{tikzpicture}
+    \end{minipage}
+    \begin{minipage}[h]{0.4\linewidth}
+    \begin{eqnarray*}
+      \sin(\alpha) & = & \\ [10pt]
+      \cos(\alpha) & = & \\ [10pt]
+      \tan(\alpha) & = & \\ [10pt]
+    \end{eqnarray*}
+    \end{minipage}
+
+
     \vfill
   \end{subproblem}
 \end{problem}
@@ -704,18 +726,30 @@ where $s>0$.
   $x$-axis.
   \begin{subproblem}
     \item Make a rough sketch of the rod.
-         \vspace{5em}
+         \vspace{7em}
+
    \item Divide the rod into $n$ equal parts, and determine the length of
          each part, and the coordinates for the endpoints.
-         \vspace{2em}
-     \item Mark a point 3m above the \textbf{right end} of the rod in your picture. Determine the
-         electric field due to the charge in one small piece of the rod.
-         (Determine the $\vec{i}$ and $\vec{j}$ components separately.)
-       \vfill
-     \item Add up the components of the electic field to get a sum representing the
-      $\vec{i}$ and $\vec{j}$ components of the electic field.
-      \vfill
+         \vspace{7em}
+
+   \item Mark a point 3m above the \textbf{right end} of the rod in your picture.
+    Determine the magnitude of the electric field due to one small piece of the rod.
+    Assume that the small piece is located at a point, $x_j$.
+
+    \vfill
+
     \clearpage
+
+   \item Use the magnitude to determine the components of the electric field due to the charge in one small piece of the rod.
+       Determine the $\vec{i}$ and $\vec{j}$ components separately, and they should only depend on $x_j$.
+     \vfill
+
+   \item Add up the components of the electic field to get a sum representing the
+    $\vec{i}$ and $\vec{j}$ components of the electic field.
+    \vfill
+
+    \clearpage
+
     \item Determine the integrals that represent the $\vec{i}$ and $\vec{j}$ components of the electic field at the point.
       Determine the values of the integrals and determine the electric field above the center of the rod.
       \vfill
