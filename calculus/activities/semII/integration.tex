@@ -1403,11 +1403,11 @@ The flux through a surface is defined to be the part of a vector field
 that is normal to a surface mutliplied by the surface area. Before
 discussing how to find the part of a vector that is normal to a
 surface we will first look at surface area. In particular, we will
-examine how to find the surface area that is formed by rotating a
-curve around an axis.
+examine how to find the surface area that is formed by rotating the
+graph of a function around an axis.
 
 \subsection{Areas of Revolution}
-One way to form a surface is to take a curve and rotate it around some
+One way to form a surface is to take a graph and rotate it around some
 axis. This process can be thought of as taking a string and
 ``twirling'' it around the axis, just like swinging a jump rope. For
 example, one way to form a sphere is to take half of a circular
@@ -1453,10 +1453,10 @@ formed by rotating a straight, horizontal line around an axis.
   \label{flux:figure:circle}
 \end{figure}
 
-Other curves can be rotated around the axis, and the question is how
-to find the resulting surface area given a formula for the curve.  The
+Other graphs can be rotated around the axis, and the question is how
+to find the resulting surface area given a formula for the graph.  The
 basic idea to find the surface area of such a surface is to divide up
-the original curve into small pieces, revolve each little piece around
+the domain of the function small pieces, revolve each little piece of the graph around
 the axis, and then add up the surface areas for all of the little
 pieces.
 
@@ -1489,15 +1489,15 @@ pieces.
    \node at (5.5,-0.5) {$\triangle x$};
  \end{tikzpicture}
  \end{center}
-\caption{The curve is divided up into pieces and each piece is
+\caption{The graph is divided up into pieces and each piece is
   revolved around the $x$-axis.}
 \label{flux:figure:Riemann}
 \end{figure}
 
 
-For the general case, a curve given by $y=f(x)$\ is rotated around the
+For the general case, a graph of the function $y=f(x)$\ is rotated around the
 $x$-axis from $x=a$\ to $x=b$, and the resulting surface area will be
-found.  The first step is to break up the curve into small pieces. In
+found.  The first step is to break up the graph into small pieces. In
 order to take advantage of the fundamental theorem of calculus, the
 \textbf{domain} will have to be divided up into small pieces first.
 The domain, the values on the $x$-axis from $a$\ to $b$, is first
@@ -1580,7 +1580,7 @@ piece is
 \begin{eqnarray*}
   2 \pi \frac{y_{n+1}+y_n}{2} \triangle s_n.
 \end{eqnarray*}
-The length, $\triangle s_n$, of the line segment (along the curve) can
+The length, $\triangle s_n$, of the line segment (along the graph) can
 be found through the use of the Pythagarean Theorem and is
 \begin{eqnarray*}
   \triangle s_n & = & \sqrt{\lp x_{n+1}-x_n \rp^2 +
@@ -1744,7 +1744,7 @@ only with a negative sign in front of it.
 \subsection{Flux Through A Surface of Revolution}
 Finding the flux through a cylinder is made easier because the normal
 to the line segment is always straight up (in the $\hat{\jmath}$\
-direction). In the general case, however, the curve that is being
+direction). In the general case, however, the graph that is being
 rotated is not necessarily a horizontal line, and the normal to the
 surface can be more difficult to find. We will concentrate on finding
 the portion of the electric field that is perpindicular to a straight
