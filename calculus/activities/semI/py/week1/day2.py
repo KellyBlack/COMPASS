@@ -39,7 +39,7 @@ plt.savefig('activity2PreClass.pgf',format='pgf')
 
 
 # Make the plot for the position
-
+plotter.clearPlot()
 a = 1.0
 b = 5.0
 
