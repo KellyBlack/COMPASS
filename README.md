@@ -7,6 +7,8 @@ the support from the National Science Foundation (NSF IUSE Proposal
 1431882).
 
 
+Information on daily goals for the course can be found in the
+[course guide](https://kellyblack.github.io/COMPASS/html/index.html).
 
 
 Copyright (C)  2015-2018 Kelly Black
