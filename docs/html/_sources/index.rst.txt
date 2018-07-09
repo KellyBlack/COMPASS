@@ -10,6 +10,9 @@ Documentation for COMPASS
    :maxdepth: 2
    :caption: Contents:
 
+   overview
+   calcOne
+   calcTwo
 
 
 Indices and tables
