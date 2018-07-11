@@ -53,6 +53,42 @@ Students should be able to do each of the following:
 	written description of a situation.
 
 
+Goals for day 2
+^^^^^^^^^^^^^^^^^^^^^^
+
+Students should be able to do each of the following:
+
+* Determine the displacement of an object given its velocity.
+
+* Identify the difference between distance an object travels and the
+	object's displacement from a given position.
+
+* Determine local minimums and maximums of an object's displacement
+	given the velocity.
+
+* Identify that local minimum and maximums occur when an object's
+	velocity changes sign.
+
+* Be able to calculate the average rate of change of a function over a
+	given interval.
+
+* Identify the difference between total change and average rate of
+	change.
+
+* Determine the displacement over a time interval given the average
+	rate of change.
+
+* Determine whether or not displacement is negative or positive given
+	the average rate of change.
+
+* Determine  whether or not the average rate of change is positive or
+	negative given the displacement.
+
+* Relate the average rate of change with the slope of the secant line.
+
+* Determine a sequence of average rates of changes over smaller
+	intervals chosen by the student.
+
 The Derivative
 ---------------
 
