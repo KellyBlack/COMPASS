@@ -3,6 +3,30 @@
 Calculus One
 ====================
 
+The calculus one topics focus on how to quantify change. They include
+the following:
+
+* Average Rate of Change
+* Instantaneous Rate of Change
+
+	* The Limit
+	* The Definition of the Derivative
+	* Derivative Rules
+
+* Change Over An Interval
+
+	* The Mean Value Theorem
+	* Increasing/Decreasing Over an Interval
+		
+* Total Change
+
+	* Total Change
+	* Riemann Sums
+	* The Definite Integral
+	* The Fundamental Theorem of Calculus
+
+The goals for each day are given below.
+
 Kinematics
 ------------
 
