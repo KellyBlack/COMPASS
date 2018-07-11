@@ -25,13 +25,33 @@ the following:
 	* The Definite Integral
 	* The Fundamental Theorem of Calculus
 
+The goals for each day are given below.
+
 Kinematics
 ------------
 
-Goal for day 1
+Goals for day 1
 ^^^^^^^^^^^^^^^^^^^^^^
 
-Stuff about position and velocity
+Students should be able to do each of the following:
+
+* Determine if the change in position is positive or negative given
+	the velocity.
+
+* Make rough sketches of the position given piecewise constant
+	velocities.
+
+* Relate how the sign of the velocity impacts the change in position.
+
+* Given a piecewise linear position determine the velocity of an
+	object.
+
+* Calculate estimates for the change in position given the velocity
+	over a given set of time intervals.
+
+* Sketch a plot of the graph of the position or the velocity given a
+	written description of a situation.
+
 
 The Derivative
 ---------------
