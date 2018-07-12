@@ -30,7 +30,7 @@ The goals for each day are given below.
 Kinematics
 ------------
 
-Goals for day 1
+Goals for activity  1
 ^^^^^^^^^^^^^^^^^^^^^^
 
 Students should be able to do each of the following:
@@ -53,7 +53,7 @@ Students should be able to do each of the following:
 	written description of a situation.
 
 
-Goals for day 2
+Goals for activity  2
 ^^^^^^^^^^^^^^^^^^^^^^
 
 Students should be able to do each of the following:
@@ -88,6 +88,12 @@ Students should be able to do each of the following:
 
 * Determine a sequence of average rates of changes over smaller
 	intervals chosen by the student.
+
+	Goals for activity  3
+^^^^^^^^^^^^^^^^^^^^^^
+
+Students should be able to do each of the following:
+
 
 The Derivative
 ---------------
