@@ -89,10 +89,30 @@ Students should be able to do each of the following:
 * Determine a sequence of average rates of changes over smaller
 	intervals chosen by the student.
 
-	Goals for activity  3
-^^^^^^^^^^^^^^^^^^^^^^
+
+Goals for activity  3
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Students should be able to do each of the following:
+
+* Compute the average rate of change of a function over an arbitary
+	interval.
+
+* Construct a sequence of intervals whose width gets close to zero and
+	approximate the average rate of change over each interval.
+
+* State the difference between the total change and average rate of
+	change over an interval.
+
+* Demonstrate that the average rate of change gets close to a specific
+	value for a low order polynomial when the width of the interval gets
+	closer to zero.
+
+* Calculate the instantaneous rate of change of a low order polynomial
+	at an arbitrary value of time.
+
+* Identify the relationship between the instantaneous rate of change
+	and the slope of the tangent line.
 
 
 The Derivative
