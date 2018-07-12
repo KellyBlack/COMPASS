@@ -129,6 +129,35 @@ Students should be able to do each of the following:
 * Determine the slope of the tangent line of a low order polynomial.
 
 
+Goals for activity  5
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Students should be able to do each of the following:
+
+* Make a rough sketch of an object's position given the graph of its velocity.
+
+* Make a rough sketch of an object's velocity given the graph of its
+	position.
+
+* Recognize that an object's position decreases when the velocity is
+	negative.
+
+* Recognize that an object's position increases then the velocity is
+	positive.
+
+* Recognize that a constant velocity results in a linear position
+	graph.
+
+* Identify local minima and maxima based on the change in sign of the
+	velocity.
+
+* Explain why knowing that the velocity is zero does not necessarily
+	imply that the position is at a local minimum or local maximum.
+
+* Recognize that if you are given the velocity you need to be given
+	the position at one point in order to reconstruct the position of an
+	object. 
+
 The Derivative
 ---------------
 
