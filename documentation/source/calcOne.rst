@@ -115,6 +115,20 @@ Students should be able to do each of the following:
 	and the slope of the tangent line.
 
 
+Goals for activity  4
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Students should be able to do each of the following:
+
+* Determine the derivative of a low order polynomial using the
+	definition of the derivative.
+
+* Determine the derivative of the square root using the definition of
+	the derivative and the conjugate of the numerator.
+
+* Determine the slope of the tangent line of a low order polynomial.
+
+
 The Derivative
 ---------------
 
