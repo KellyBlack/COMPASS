@@ -160,3 +160,19 @@ Students should be able to do each of the following:
 
 
 
+Goals for activity  6
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Students should be able to do each of the following:
+
+* Use the power rool to determine the derivative of a function.
+
+* Use the poer rule to determine the anti-derivative of a function.
+
+* Recognize that the anti-derivative cannot be uniquely determined.
+
+* Determine the anti-derivative of a function given one value of the
+	anti-derivative at a pre-determined point. (Solve for the constant
+	that results from determining the anti-derivative.)
+
+
