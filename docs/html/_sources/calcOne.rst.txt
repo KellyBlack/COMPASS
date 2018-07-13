@@ -200,3 +200,30 @@ Students should be able to do each of the following:
 	initial velocity.
 
 
+Goals for activity  8
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Students should be able to do each of the following:
+
+* Determine the position of an object given a piecewise defined
+	velocity and an initial position.
+
+* Determine when the local minima or local maxima occur for the position
+	function given a velocity function based on where the velocity
+	changes signs.
+
+* Given a simple constrained maximization problem, make a sketch of
+	the constraint.
+
+* Given a simple constrained maximization problem, make a sketch of
+	the family of costs functions.
+
+* Given a simple constrained maximization problem determine the
+	solution graphically by examining the constraint and a family of
+	solutions to the cost function and estimating where the cost
+	function touches the constraint at a single point.
+
+
+
+
+
