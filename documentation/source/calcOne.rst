@@ -176,3 +176,27 @@ Students should be able to do each of the following:
 	that results from determining the anti-derivative.)
 
 
+Newton's Second Law
+-----------------------
+
+
+Goals for activity  7
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Students should be able to do each of the following:
+
+* Determine the acceleration of an object given its position.
+
+* Determine the position of an object given its acceleration, initial
+	velocity, and initial position.
+
+* Make a sketch of the free body diagram of an object when the forces
+	are in simple orientations such as along the primary axes.
+
+* Derive the equation of motion for an object using Newton's Second
+	Law.
+
+* Determine the displacement of an object given its acceleration and
+	initial velocity.
+
+
