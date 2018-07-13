@@ -158,26 +158,5 @@ Students should be able to do each of the following:
 	the position at one point in order to reconstruct the position of an
 	object. 
 
-The Derivative
----------------
-
-Stuff about the derivative
-
-Power Rule
-^^^^^^^^^^^^^^^^
-
-The power rule
-
-Product Rule
-^^^^^^^^^^^^^^^^^^
-
-The product rule
-
-Chain Rule
-^^^^^^^^^^^^^^
-
-Yeah, you know the deal....
-
-Daily goals for calc one.
 
 
