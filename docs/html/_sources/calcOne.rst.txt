@@ -237,5 +237,19 @@ Students should be able to do each of the following:
 	defined, nonconstant functions.
 
 
+Goals for activity  10
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Students should be able to do each of the following:
+
+* Determine the inverse of a function given the function in tabular,
+	graphical, or algebraic form.
+
+* Derive the product rule for differentiation.
+
+* Use the product rule to determine the derivative of the product of
+	two functions.
+
+* Use the product rule to determine the derivative of the product of
+	more than two functions.
 
