@@ -224,6 +224,18 @@ Students should be able to do each of the following:
 	function touches the constraint at a single point.
 
 
+Goals for activity  9
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Students should be able to do each of the following:
+
+* Determine the position of an object given the forces acting on it
+	and the necessary initial conditions.
+
+* Determine the position of an object given the forces acting on it
+	and the necessary initial conditions where the forces are piecewise
+	defined, nonconstant functions.
+
 
 
 
