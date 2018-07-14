@@ -253,3 +253,34 @@ Students should be able to do each of the following:
 * Use the product rule to determine the derivative of the product of
 	more than two functions.
 
+Goals for activity  11
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Students should be able to do each of the following:
+
+* Evaluate the composition of two functions given the functions in
+	tabular, graphical, or algebraic forms.
+
+* Derive the chain rule for differentiation.
+
+* Use the chain rule to determine the derivative of the composition of
+	two functions.
+
+* Use the chain rule and the product rule to determine the derivative
+	of functions that are products and compositions of multiple
+	functions.
+
+
+Goals for activity  12
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Students should be able to do each of the following:
+
+* Determine the derivative of relationships using implicit
+	differentiation.
+
+* Determine the equation of the tangent line to relationships that are
+	not functions using implicit differentiation.
+
+
+
