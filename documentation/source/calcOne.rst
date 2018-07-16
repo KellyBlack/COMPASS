@@ -300,3 +300,30 @@ Students should be able to do each of the following:
 
 
 
+Goals for activity  14
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Students should be able to do each of the following:
+
+* Calculate the factorial of any positive integer.
+
+* Derive the differential equation for the velocity of an object where
+  the only forces acting on the object are air friction and a possible
+  normal force.
+
+* Derive the average and instantaneous rates of change for a simple
+  exponential function.
+
+* Provide a numerical argument as to why the derivative of $e^t$ is $e^t$.
+
+* Recognize that $e$ is a number and is approximately 2.718.
+
+* Determine the derivative of a simple exponential function when the base is $e$.
+
+* Recognize that polynomial functions do not grow as fast as
+  exponential functions with positive rates.
+
+* Recognize that simple exponential functions can either decay or
+  grow, and correctly draw the basic shape of the graph of a simple
+  exponential function.
+
