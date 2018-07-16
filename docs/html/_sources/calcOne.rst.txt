@@ -327,3 +327,24 @@ Students should be able to do each of the following:
   grow, and correctly draw the basic shape of the graph of a simple
   exponential function.
 
+
+
+Goals for activity  15
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Students should be able to do each of the following:
+
+* Determine the inverse of a simple exponential function.
+
+* Show that the derivative of :math:`\ln(t)` is :math:`\frac{1}{t}`.
+
+* Determine the anti-derivative of :math:`\frac{1}{t}`.
+
+* Use the chain rule to determine the anti-derivative of
+  :math:`\frac{f'(t)}{f(t)}` where :math:`f(t)` is a differential
+  function and not zero.
+
+* Perform basic algebraic manipulations of exponential and logarithmic
+  functions.
+
+
