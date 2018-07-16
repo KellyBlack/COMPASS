@@ -283,4 +283,20 @@ Students should be able to do each of the following:
 	not functions using implicit differentiation.
 
 
+        
+Goals for activity  13
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Students should be able to do each of the following:
+
+* Determine the parameterized path for objects moving in a straight line.
+
+* Determine the parameterized path for objects moving along a circle.
+
+* Determine the velocity of an object given its parameterized path as a function of time.
+
+* Determine a vector tangent to the graph of a parameterized path
+  given the formula for the path as a function of time.
+
+
 
