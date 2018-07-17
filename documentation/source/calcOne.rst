@@ -378,3 +378,24 @@ Students should be able to do each of the following:
   optimization problem given in a written form.
 
 
+Goals for activity  18
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Students should be able to do each of the following:
+
+* Sketch the graph of the derivative of the sine and the cosine
+  function given a graph of the original function.
+
+* Provide an argument that the derivative of the sine function is the
+  cosine function based on the graphs of the functions.
+
+* Provide an argument that the derivative of the cosine function is
+  the negative sine function based on the graphs of the functions.
+
+* Provide an argument that the derivative of the sine function is the
+  cosine function based on numerical approximations of the limit
+  definition of the derivative.
+
+* Provide an argument that the derivative of the cosine function is
+  the negative cosine function based on numerical approximations of
+  the limit definition of the derivative.
