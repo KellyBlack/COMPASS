@@ -363,7 +363,18 @@ Students should be able to do each of the following:
   the method of separation of variables.
 
 
+Goals for activity  17
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Students should be able to do each of the following:
 
+* Approximate the solution to a given constrained optimization problem
+  graphically.
+
+* Determine the solution to a given constrained optimization problem
+  analytically.
+
+* Derive the constraint and cost function for a constrained
+  optimization problem given in a written form.
 
 
