@@ -348,3 +348,22 @@ Students should be able to do each of the following:
   functions.
 
 
+Goals for activity  16
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Students should be able to do each of the following:
+
+* Derive the equations of motion for a moving object taking into
+  consideration air friction.
+
+* Determine a solution to a simple linear differential equation using
+  an appropriate guess for the general form of the solution.
+
+* Determine a solution to a simple linear differential equation using
+  the method of separation of variables.
+
+
+
+
+
+
