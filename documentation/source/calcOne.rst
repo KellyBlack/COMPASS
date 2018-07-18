@@ -426,3 +426,14 @@ Students should be able to do each of the following:
   rule, product rule, and/or the chain rule.
 
 
+
+Goals for activity  20
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Students should be able to do each of the following:
+
+* Given a physical situation discretize the motion in time by breaking
+  the time up into discrete intervals.
+
+* Construct a sum that represents an approximation to the motion of an
+  object after discretizing the movement in time.
