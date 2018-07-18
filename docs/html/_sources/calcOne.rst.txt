@@ -415,3 +415,24 @@ Students should be able to do each of the following:
 * Determine the anti-derivative of a general sine or cosine function
   both graphically and analytically.
 
+
+Goals for activity  20
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Students should be able to do each of the following:
+
+* Determine vector components in the *x* and *y* directions given the
+  magnitude and an angle associated with a vector.
+
+* Derive the equations of motion for an object when one of the forces
+  is rotting at a constant rate.
+
+* Determine the anti-derivative of a general sine or cosine function.
+
+* Determine the position of an object given an acceleration with a
+  general since or cosine function and given the initial position and
+  velocity of the object.
+
+* Determine the derivative of any function that includes powers,
+  exponentials, logarithms, or trigonometric functions using the power
+  rule, product rule, and/or the chain rule.
