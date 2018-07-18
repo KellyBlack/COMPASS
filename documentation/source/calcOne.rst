@@ -426,6 +426,9 @@ Students should be able to do each of the following:
   rule, product rule, and/or the chain rule.
 
 
+Work/Energy
+-----------------------
+
 
 Goals for activity  20
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -437,3 +440,22 @@ Students should be able to do each of the following:
 
 * Construct a sum that represents an approximation to the motion of an
   object after discretizing the movement in time.
+
+
+Goals for activity  21
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Students should be able to do each of the following:
+
+* Construct a Riemann sum to approximate the work done on an object
+  given the force as a function of its position.
+
+* Determine if an approximation for the work will be high or low given
+  the graph of the force as a function of its position.
+
+* Use correct notation to express the Riemann sum representing the
+  approximation of the work done on an object given the force as a
+  function of its position for an arbitrary number of intervals.
+
+* Recognize that increasing the number of intervals for a Riemann sum
+  will result in a better approximation of the work done on an object.
