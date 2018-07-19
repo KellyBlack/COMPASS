@@ -494,6 +494,8 @@ Students should be able to do each of the following:
 
 * Use *u*-substitution to determine the general anti-derivative of a function.
 
+
+
 Goals for activity  24
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -508,4 +510,17 @@ Students should be able to do each of the following:
   the object's position.
 
 
+
+Goals for activity  25
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Students should be able to do each of the following:
+
+* Determine the area between to curves.
+
+* Determine the mass of an two dimensional object given its density
+  and the bounds on the object. (Students should be able to derive
+  integrals in either the horizontal or vertical directions.)
+
+* 
 
