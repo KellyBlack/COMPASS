@@ -522,6 +522,8 @@ Students should be able to do each of the following:
   and the bounds on the object. (Students should be able to derive
   integrals in either the horizontal or vertical directions.)
 
+
+
 Goals for activity  26
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -544,3 +546,21 @@ Students should be able to do each of the following:
   * Estimate the center of mass from the graphical depiction.
 
   * Determine the center of mass analytically.
+
+
+Goals for activity  27
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Students should be able to do each of the following:
+
+* Draw a free body diagram for an object with multiple forces acting in two dimensions.
+
+* Determine the differential equations describing the motion of an
+  object with forces acting in two dimensions.
+
+* Construct an approximation to the solution of a differential
+  equation by dividing the time in to sub-intervals and constructing a
+  Riemann sum to determine the change in momentum of the object.
+
+* Use the approximation to estimate the work done by a force on an
+  object.
