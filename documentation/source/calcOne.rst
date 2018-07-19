@@ -522,5 +522,25 @@ Students should be able to do each of the following:
   and the bounds on the object. (Students should be able to derive
   integrals in either the horizontal or vertical directions.)
 
-* 
+Goals for activity  26
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Students should be able to do each of the following:
+
+* Determine the density of a one dimensional object whose density
+  varies.
+
+* Determine the first moment of a one dimensional object whose density
+  varies.
+
+* Determine the center of mass of a one dimensional object whose
+  density varies.
+
+* Given a two dimensional object with a description of the bounds the
+    student should be able to do the following:
+
+  * Sketch a picture of the object.
+
+  * Estimate the center of mass from the graphical depiction.
+
+  * Determine the center of mass analytically.
