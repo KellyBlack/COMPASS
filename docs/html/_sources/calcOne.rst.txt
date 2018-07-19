@@ -499,5 +499,13 @@ Goals for activity  24
 
 Students should be able to do each of the following:
 
-* 
+* Determine the change in momentum of an object given formulas for the
+  forces as functions of time.
+
+* Derive the impulse-momentum theorem from Newton's Second Law.
+
+* Determine the work done by a force given the force as a function of
+  the object's position.
+
+
 
