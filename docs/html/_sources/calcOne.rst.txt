@@ -459,3 +459,25 @@ Students should be able to do each of the following:
 
 * Recognize that increasing the number of intervals for a Riemann sum
   will result in a better approximation of the work done on an object.
+
+
+Fundamental Theorem of Calculus
+---------------------------------
+
+
+Goals for activity  22
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Students should be able to do each of the following:
+
+* Use Riemann sums to construct an approximation for the signed area
+  under a curve given the function, an interval, and the number of
+  sub-intervals.
+
+* Determine an approximation for the displacement of an object over a
+  given time interval using Riemann sums given the velocity of the
+  object.
+
+* Use correct notation to express the Riemann sum used to approximate
+  the displacement of an object given its velocity and an arbitrary
+  number of sub-intervals.
