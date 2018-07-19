@@ -481,3 +481,23 @@ Students should be able to do each of the following:
 * Use correct notation to express the Riemann sum used to approximate
   the displacement of an object given its velocity and an arbitrary
   number of sub-intervals.
+
+
+Goals for activity  23
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Students should be able to do each of the following:
+
+* Recognize the relationship between the signed area function and the integral notation.
+
+* Determine an exact analytic value for a simple definite integral.
+
+* Use *u*-substitution to determine the general anti-derivative of a function.
+
+Goals for activity  24
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Students should be able to do each of the following:
+
+* 
+
