@@ -597,7 +597,43 @@ Students should be able to do each of the following:
   the dominant term in a solution.
 
 * Use Newton's Second Law to derive the differential equation
-  describing the motion of a spring mass system without friction.
+  describing the motion of a spring-mass system without friction.
 
-* Determine the position of an object that is part of a spring mass
+* Determine the position of an object that is part of a spring-mass
   system without friction given appropriate initial conditions.
+
+
+Goals for activity  30
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Students should be able to do each of the following:
+
+* Use Newton's Second Law to derive the differential equation
+  describing the motion of a spring-mass system without friction where
+  some parameters for the system are not explicitly defined
+  numerically.
+
+* Based on a written description of a spring-mass system without
+  friction, determine the cost function and constraint associated with
+  the system.
+
+
+Goals for activity  31
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Students should be able to do each of the following:
+
+* Recognize that the linearization of a function and the tangent line
+  at the same point are the same functions.
+
+* Determine the linearization of a given function at a point.
+
+* Use the linearization of a function at a point to construct an
+  approximation to the original function at a nearby point.
+
+* Use a coherent strategy to determine which point to use for a
+  linearization based on the context of a written question.
+
+* Convert an expression into an equivalent root finding problem.
+
+* Use the linearization to approximate the zero of a function.
