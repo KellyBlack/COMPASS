@@ -648,3 +648,11 @@ Students should be able to do each of the following:
 
 * Derive the formula for the dot product.
 
+Goals for activity  33
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Students should be able to do each of the following:
+
+* Calculate the cross product of two vectors.
+
+* Derive the formula for the cross product.
