@@ -656,3 +656,18 @@ Students should be able to do each of the following:
 * Calculate the cross product of two vectors.
 
 * Derive the formula for the cross product.
+
+
+Goals for activity  34
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Students should be able to do each of the following:
+
+* Determine the formula for the path of an object moving around a
+  circle of a given radius centered at the origin.
+
+* Determine the angular velocity of an object moving in a circle given
+  the formula for the path as a function of time.
+
+* Determine the speed and acceleration of an object moving in a circle
+  given the formula for the path as a function of time.
