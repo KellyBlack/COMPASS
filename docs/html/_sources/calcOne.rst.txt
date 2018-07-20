@@ -671,3 +671,33 @@ Students should be able to do each of the following:
 
 * Determine the speed and acceleration of an object moving in a circle
   given the formula for the path as a function of time.
+
+
+Goals for activity  35
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Students should be able to do each of the following:
+
+* Determine the center of mass of a one-dimensional rod whose density
+  is given as a function of position along the rod.
+
+* Determine the moment of inertia of a one-dimensional rod whose
+  density is given as a function of position along the rod.
+
+
+Goals for activity  36
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Students should be able to do each of the following:
+
+* Determine the tangent vector given a formula for an object's
+  position that is moving along a circle of a given radius centered at
+  the origin.
+
+* Determine the general formula for the kinetic energy of an object
+  moving along a circle with a constant angular velocity.
+
+* Show that the velocity and position vectors for an object moving
+  along a circle with a constant angular velocity are perpendicular.
+
+
