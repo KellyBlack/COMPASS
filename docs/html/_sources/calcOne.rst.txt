@@ -701,3 +701,24 @@ Students should be able to do each of the following:
   along a circle with a constant angular velocity are perpendicular.
 
 
+
+Goals for activity  37
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Students should be able to do each of the following:
+
+* Show that if an object is moving around a circle with a constant
+  angular velocity then
+  :math:`\|\vec{a}\|=\frac{\|\vec{v}\|^2}{\|\vec{r}\|}`.
+
+* Show that if an object is moving around a circle with a constant
+  angular velocity then the acceleration is perpendicular to the
+  velocity vector and parallel to the position vector.
+
+* Show that if an object is moving around a circle but not at a
+  constant angular velocity then the identity
+  :math:`\|\vec{a}\|=\frac{\|\vec{v}\|^2}{\|\vec{r}\|}` is not
+  necessarily true.
+
+* Determine the angular and radial components of the acceleration for
+  an object that  is moving around a circle.
