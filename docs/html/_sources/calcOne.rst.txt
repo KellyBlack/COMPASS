@@ -637,3 +637,14 @@ Students should be able to do each of the following:
 * Convert an expression into an equivalent root finding problem.
 
 * Use the linearization to approximate the zero of a function.
+
+
+Goals for activity  32
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Students should be able to do each of the following:
+
+* Calculate the dot product of two vectors.
+
+* Derive the formula for the dot product.
+
