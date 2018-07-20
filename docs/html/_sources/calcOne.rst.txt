@@ -577,3 +577,27 @@ Students should be able to do each of the following:
 * Use the derivative rules for other trigonometric functions to
   determine anti-derivatives. For example, students should be able to
   determine the anti-derivative of :math:`\sec^2(t)`.
+
+
+Goals for activity  29
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Students should be able to do each of the following:
+
+* Determine the position of an object given an acceleration as a
+  function of time and appropriate initial conditions.
+
+* Evaluate the stability of a solution with respect to growth, decay,
+  and oscillatory behaviour.
+
+* For solutions that grow in time identify the growth rate based on
+  the dominant term in a solution.
+
+* For solutions that decay in time identify the decay rate based on
+  the dominant term in a solution.
+
+* Use Newton's Second Law to derive the differential equation
+  describing the motion of a spring mass system without friction.
+
+* Determine the position of an object that is part of a spring mass
+  system without friction given appropriate initial conditions.
