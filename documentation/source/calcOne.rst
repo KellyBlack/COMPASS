@@ -722,3 +722,20 @@ Students should be able to do each of the following:
 
 * Determine the angular and radial components of the acceleration for
   an object that  is moving around a circle.
+
+
+
+Goals for activity  38
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Students should be able to do each of the following:
+
+* Define a limitation on the domain of a basic trigonometric function
+  that allows an inverse function to be defined on the restricted
+  domain.
+
+* Determine the derivative of the inverse of a basic trigonometric
+  function using implicit differentiation.
+
+* Derive the general relationship of the derivative of an inverse
+  function in terms of the original function.
