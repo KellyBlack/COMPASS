@@ -564,3 +564,16 @@ Students should be able to do each of the following:
 
 * Use the approximation to estimate the work done by a force on an
   object.
+
+Goals for activity  28
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Students should be able to do each of the following:
+
+* Use the product and quotient rules to derive the derivative formulas
+  for all trigonometric functions based on the derivatives of the sine
+  and cosine functions.
+
+* Use the derivative rules for other trigonometric functions to
+  determine anti-derivatives. For example, students should be able to
+  determine the anti-derivative of :math:`\sec^2(t)`.
